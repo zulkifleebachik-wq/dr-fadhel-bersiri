@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="ms" data-lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tasbih Yang Kita Lupakan</title>
+<meta name="description" content="Peringatan Ulama Siri 01: Tasbih menyelamatkan daripada duka, kesusahan dan takut. Prof. Dr Fadil Salih as-Samarra'i, nota renungan dwibahasa AtTartil.">
+<meta property="og:title" content="Tasbih Yang Kita Lupakan · Peringatan Ulama Siri 01 | AtTartil">
+<meta property="og:description" content="Prof. Dr Fadil Salih as-Samarra'i: tasbih menyelamatkan daripada duka, kesusahan dan takut.">
+<meta property="og:image" content="reel-poster-ms.jpg">
+<link rel="icon" href="attartil-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Amiri+Quran&family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --hutan:#10301f;      /* deep forest */
+  --hijau:#2f7a10;      /* logo green, softened */
+  --daun:#3d9002;       /* logo centre */
+  --lime:#9ad102;       /* logo ring */
+  --kuning:#ffe14d;     /* logo yellow, softened */
+  --kuning-pucat:#fff7cf;
+  --hitam:#141414;
+  --kertas:#fbfaf3;
+  --kad:#ffffff;
+  --lembut:#f1f6e6;
+  --teks:#1f2420;
+  --redup:#5b6658;
+  --garis:#e3e9d6;
+  --ayat:#24600c;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --kertas:#0e1510; --kad:#151e17; --lembut:#1a2a1c; --teks:#ecefe7; --redup:#a7b3a3;
+    --garis:#273626; --ayat:#b5e05a; --kuning-pucat:#2a2711; --hijau:#9ad102;
+  }
+}
+:root[data-theme="dark"]{
+  --kertas:#0e1510; --kad:#151e17; --lembut:#1a2a1c; --teks:#ecefe7; --redup:#a7b3a3;
+  --garis:#273626; --ayat:#b5e05a; --kuning-pucat:#2a2711; --hijau:#9ad102;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--kertas);color:var(--teks);
+  font-family:"Lora",Georgia,serif;font-size:18px;line-height:1.85}
+
+/* language switching */
+html[data-lang="ms"] .en{display:none!important}
+html[data-lang="en"] .ms{display:none!important}
+
+/* TOP BAR */
+.bar{position:sticky;top:0;z-index:10;background:rgba(16,48,31,.94);backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);border-bottom:3px solid var(--lime)}
+.bar .in{max-width:780px;margin:0 auto;padding:8px 16px;display:flex;align-items:center;gap:10px}
+.bar img{width:38px;height:38px;border-radius:50%;flex:none}
+.bar .nm{color:#fff;font-family:"Inter",system-ui,sans-serif;font-size:.78rem;font-weight:600;letter-spacing:.06em;line-height:1.25;flex:1;min-width:0}
+.bar .nm small{display:block;color:var(--kuning);font-weight:500;letter-spacing:.04em}
+.toggle{display:flex;background:#0a1f14;border:1px solid #2c5a1b;border-radius:999px;padding:3px;flex:none}
+.toggle button{appearance:none;border:0;background:transparent;color:#cfe3c4;font-family:"Inter",system-ui,sans-serif;
+  font-weight:600;font-size:.8rem;padding:6px 13px;border-radius:999px;cursor:pointer;min-height:32px}
+.toggle button[aria-pressed="true"]{background:var(--kuning);color:var(--hitam)}
+.toggle button:focus-visible{outline:2px solid var(--lime);outline-offset:2px}
+
+/* HERO */
+header.hero{position:relative;overflow:hidden;color:#fff;text-align:center;
+  background:radial-gradient(110% 80% at 50% 0%,#2f6a17 0%,#16402a 55%,#0d2618 100%);padding:44px 16px 54px}
+header.hero::before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;
+  border:2px solid rgba(154,209,2,.18);left:50%;top:-250px;transform:translateX(-50%)}
+header.hero::after{content:"";position:absolute;width:360px;height:360px;border-radius:50%;
+  border:2px solid rgba(255,225,77,.14);left:50%;top:-170px;transform:translateX(-50%)}
+.hero .logo{position:relative;z-index:1;width:112px;height:112px;margin:0 auto 18px;border-radius:50%;
+  box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.hero .tag{position:relative;z-index:1;display:inline-block;font-family:"Inter",system-ui,sans-serif;font-size:.72rem;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--hitam);background:var(--kuning);padding:3px 12px;border-radius:999px}
+.hero .ar-big{position:relative;z-index:1;font-family:"Amiri",serif;font-size:2.3rem;line-height:1.6;color:var(--kuning);margin:16px 0 0}
+.hero h1{position:relative;z-index:1;font-weight:600;font-size:2rem;line-height:1.3;margin:8px 0 10px}
+.hero p.sub{position:relative;z-index:1;font-style:italic;color:#dcead2;margin:0 auto;max-width:540px;font-size:1.02rem}
+
+.wrap{max-width:760px;margin:0 auto;padding:0 16px 56px}
+.ar{font-family:"Amiri",serif;direction:rtl;line-height:2.1}
+.ayat{font-family:"Amiri Quran","Amiri",serif;direction:rtl;font-size:1.55rem;line-height:2.35;color:var(--ayat);text-align:center;margin:.3em 0 .5em}
+
+section{margin-top:44px}
+h2{font-size:1.32rem;color:var(--teks);margin:0 0 14px;display:flex;align-items:center;gap:12px;line-height:1.35}
+h2 .no{flex:none;width:34px;height:34px;border-radius:50%;background:var(--hutan);color:var(--kuning);
+  font-family:"Inter",system-ui,sans-serif;font-size:.9rem;display:grid;place-items:center;font-weight:600;
+  box-shadow:0 0 0 3px var(--lime)}
+.pembuka{font-size:1.14rem;font-style:italic;margin:40px 0 0;padding:20px 22px;border-radius:14px;
+  background:var(--kuning-pucat);border-left:5px solid var(--kuning);position:relative}
+.label{display:inline-block;font-family:"Inter",system-ui,sans-serif;font-size:.68rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
+  padding:3px 11px;border-radius:999px;margin-bottom:10px}
+.l-video{background:var(--hutan);color:var(--kuning)}
+.l-ayat{background:var(--lembut);color:var(--hijau);border:1px solid var(--garis)}
+.l-ulama{background:var(--kuning);color:var(--hitam)}
+.l-renung{background:rgba(255,225,77,.16);color:var(--kuning);border:1px solid rgba(255,225,77,.4)}
+.nota-kecil{font-size:.9rem;color:var(--redup)}
+mark{background:linear-gradient(transparent 58%,rgba(255,225,77,.55) 58%);color:inherit;padding:0 2px}
+
+.video{margin:4px auto 22px;max-width:360px;background:var(--hutan);border-radius:20px;padding:10px;
+  box-shadow:0 10px 26px rgba(16,48,31,.18),0 0 0 3px var(--lime)}
+.video video{display:block;width:100%;height:auto;max-height:70vh;border-radius:12px;background:#000}
+.video p{margin:8px 4px 2px;font-family:"Inter",system-ui,sans-serif;font-size:.74rem;color:#cfe3c4;line-height:1.45;text-align:center}
+.video p b{color:var(--kuning);font-weight:600}
+.penceramah{background:var(--kad);border:1px solid var(--garis);border-left:5px solid var(--lime);border-radius:12px;
+  padding:12px 16px;margin:0 0 18px;font-size:.92rem;line-height:1.7}
+.penceramah p{margin:0}
+.sertai{margin-top:44px;border-radius:22px;overflow:hidden;background:linear-gradient(160deg,#2f6a17 0%,#16402a 55%,#0d2618 100%);
+  color:#fff;text-align:center;padding:30px 20px 26px;position:relative}
+.sertai::before{content:"";position:absolute;width:300px;height:300px;border-radius:50%;border:2px solid rgba(154,209,2,.25);
+  left:50%;top:-150px;transform:translateX(-50%)}
+.sertai img{position:relative;width:92px;height:92px;border-radius:50%;box-shadow:0 8px 22px rgba(0,0,0,.35)}
+.sertai h2{display:block;color:#fff;font-size:1.45rem;margin:14px 0 6px}
+.sertai .lead{color:#dcead2;margin:0 auto 16px;max-width:520px;font-size:1rem}
+.sertai ul{list-style:none;padding:0;margin:0 auto 20px;max-width:420px;text-align:left;font-size:.98rem}
+.sertai li{position:relative;padding:5px 0 5px 28px}
+.sertai li::before{content:"";position:absolute;left:4px;top:15px;width:11px;height:11px;border-radius:50%;background:var(--kuning)}
+.sertai .harga{font-family:"Inter",system-ui,sans-serif;color:var(--lime);font-weight:600;margin:0 0 16px;font-size:.92rem}
+.cta{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.cta a{font-family:"Inter",system-ui,sans-serif;font-weight:600;text-decoration:none;border-radius:999px;padding:12px 20px;
+  font-size:.95rem;min-height:44px;display:inline-flex;align-items:center;gap:6px}
+.cta .utama{background:var(--kuning);color:var(--hitam)}
+.cta .kedua{background:transparent;color:#fff;border:2px solid var(--lime)}
+.cta a:focus-visible{outline:3px solid #fff;outline-offset:2px}
+.sosial{margin-top:18px;font-family:"Inter",system-ui,sans-serif;font-size:.82rem;color:#cfe3c4}
+.sosial a{color:var(--kuning);text-decoration:none;margin:0 4px;white-space:nowrap;display:inline-block;padding:4px 0}
+.kontras{background:var(--kad);border:1px solid var(--garis);border-radius:14px;padding:14px 16px;margin:12px 0;
+  display:grid;grid-template-columns:1fr 1fr;gap:10px;text-align:center}
+.kontras div{border-radius:10px;padding:8px}
+.kontras .ya{background:var(--lembut)}
+.kontras .tidak{opacity:.7}
+.kontras .ar{font-size:1.35rem;margin:0;line-height:1.7}
+.kontras .ya .ar{color:var(--ayat)}
+.kontras small{display:block;font-size:.82rem;color:var(--redup);line-height:1.4}
+
+.kisah{background:var(--kad);border:1px solid var(--garis);border-radius:18px;padding:0;margin:20px 0;overflow:hidden;
+  box-shadow:0 6px 18px rgba(16,48,31,.06)}
+.kisah .kepala{display:flex;gap:14px;align-items:center;padding:16px 20px;background:var(--hutan);color:#fff}
+.kisah .ikon{flex:none;width:46px;height:46px;border-radius:50%;display:grid;place-items:center;font-size:1.35rem;
+  background:#0a1f14;box-shadow:0 0 0 2px var(--lime)}
+.kisah h3{margin:0;font-size:1.1rem;line-height:1.35;color:#fff}
+.kisah .susah{font-size:.86rem;color:#cfe3c4;line-height:1.5}
+.kisah .susah b{color:var(--kuning)}
+.kisah .isi{padding:18px 20px 20px}
+.terj{font-size:.98rem;color:var(--redup);text-align:center;margin:0 0 4px}
+.ref{font-family:"Inter",system-ui,sans-serif;font-size:.76rem;font-weight:500;color:var(--hijau);text-align:center;letter-spacing:.03em}
+.pisah{height:1px;background:var(--garis);margin:16px 0}
+.pengajaran{background:var(--kuning-pucat);border-radius:12px;padding:12px 16px;margin-top:16px;font-size:.98rem;border-left:4px solid var(--kuning)}
+
+.kunci{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+@media (min-width:640px){.kunci{grid-template-columns:repeat(4,1fr)}}
+.kunci div{background:var(--kad);border:1px solid var(--garis);border-top:4px solid var(--lime);border-radius:12px;padding:12px 10px;text-align:center}
+.kunci .ar{font-size:1.7rem;color:var(--ayat);line-height:1.5;margin:0}
+.kunci span{display:block;font-size:.86rem;color:var(--redup);line-height:1.45}
+.kunci b{color:var(--teks)}
+
+ul.pandangan{list-style:none;padding:0;margin:0 0 6px}
+ul.pandangan li{position:relative;padding:8px 0 8px 28px;border-bottom:1px dashed var(--garis)}
+ul.pandangan li:last-child{border-bottom:0}
+ul.pandangan li::before{content:"";position:absolute;left:4px;top:19px;width:10px;height:10px;border-radius:50%;
+  background:var(--lime);box-shadow:0 0 0 3px rgba(154,209,2,.25)}
+
+blockquote{margin:16px 0;background:var(--kad);border:1px solid var(--garis);border-right:5px solid var(--daun);
+  border-radius:14px;padding:16px 18px}
+blockquote .ar{font-size:1.25rem;margin:0;color:var(--teks)}
+blockquote .tr{font-size:.98rem;margin:8px 0 8px;padding-top:8px;border-top:1px dashed var(--garis)}
+blockquote cite{display:block;font-style:normal;font-family:"Inter",system-ui,sans-serif;font-size:.74rem;color:var(--redup);line-height:1.55}
+
+.renung{background:linear-gradient(160deg,#16402a 0%,#0d2618 70%,#0a1d12 100%);color:#eef3ea;border-radius:20px;
+  padding:28px 22px;position:relative;overflow:hidden}
+.renung::after{content:"";position:absolute;right:-60px;bottom:-60px;width:200px;height:200px;border-radius:50%;
+  border:2px solid rgba(255,225,77,.18)}
+.renung h2{color:#fff}
+.renung p{margin:0 0 14px;position:relative;z-index:1}
+.renung p:last-child{margin:0;font-size:1.08rem}
+.renung em{color:var(--kuning);font-style:normal}
+
+ol.muhasabah{counter-reset:m;list-style:none;padding:0;margin:0}
+ol.muhasabah li{counter-increment:m;position:relative;padding:12px 14px 12px 52px;margin-bottom:10px;background:var(--kad);
+  border:1px solid var(--garis);border-radius:12px}
+ol.muhasabah li::before{content:counter(m);position:absolute;left:14px;top:12px;width:26px;height:26px;border-radius:50%;
+  background:var(--kuning);color:var(--hitam);font-family:"Inter",system-ui,sans-serif;font-size:.8rem;font-weight:600;display:grid;place-items:center}
+ul.amal{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+ul.amal li{background:var(--lembut);border-radius:12px;padding:12px 16px;border-left:5px solid var(--daun)}
+ul.amal li b{color:var(--hijau)}
+
+.zikir{text-align:center;margin-top:44px;padding:26px 16px;border-radius:20px;background:var(--kuning-pucat);border:1px solid rgba(255,225,77,.6)}
+.zikir .ar{font-size:2.1rem;color:var(--ayat);margin:0;line-height:1.7}
+.zikir p{color:var(--redup);font-style:italic;margin:2px 0 0}
+
+footer{margin-top:44px;padding-top:18px;border-top:3px solid var(--hutan);font-family:"Inter",system-ui,sans-serif;font-size:.8rem;color:var(--redup);line-height:1.65}
+footer .visi{display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:16px;text-align:left}
+footer .visi img{width:46px;height:46px;border-radius:50%}
+footer .visi span{font-family:"Lora",serif;font-style:italic;font-size:1rem;color:var(--teks);line-height:1.4}
+footer .visi b{display:block;font-style:normal;font-family:"Inter",system-ui,sans-serif;font-size:.78rem;color:var(--hijau);letter-spacing:.05em}
+footer ol{padding-left:18px;margin:6px 0 12px}
+
+@media (max-width:520px){
+  body{font-size:17px}
+  .bar .nm{font-size:.7rem}
+  .hero .ar-big{font-size:1.85rem}
+  .hero h1{font-size:1.6rem}
+  .hero .logo{width:96px;height:96px}
+  .ayat{font-size:1.36rem}
+  .kisah .kepala{padding:14px 16px}
+  .kisah .isi{padding:16px}
+}
+@media print{
+  .bar{position:static}
+  .toggle{display:none}
+  body{background:#fff;font-size:12pt}
+  .kisah,blockquote,.renung,ul.amal li,ol.muhasabah li{break-inside:avoid}
+  header.hero,.renung,.kisah .kepala,.bar{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+</style>
+</head>
+<body>
+
+<div class="bar"><div class="in">
+  <img src="attartil-logo.png" alt="">
+  <div class="nm">ATTARTIL QURANIC INSTITUTE<small><span class="ms">Nota Renungan</span><span class="en">Reflection Notes</span></small></div>
+  <div class="toggle" role="group" aria-label="Bahasa / Language">
+    <button type="button" data-set="en" aria-pressed="false">EN</button>
+    <button type="button" data-set="ms" aria-pressed="true">BM</button>
+  </div>
+</div></div>
+
+<header class="hero">
+  <img class="logo" src="attartil-logo.png" alt="AtTartil Quranic Institute">
+  <div><span class="tag"><span class="ms">Nota Renungan</span><span class="en">Reflection Notes</span></span></div>
+  <p class="ar-big">التَّسْبِيحُ يُنْجِي مِنَ الغَمِّ وَالكَرْبِ</p>
+  <h1><span class="ms">Tasbih Yang Kita Lupakan</span><span class="en">The Forgotten Tasbih</span></h1>
+  <p class="sub ms">Ia ada di hujung jari kita setiap hari, tetapi jarang kita sedar bahawa tasbih ialah jalan keluar yang Allah sebut sendiri dalam al-Qur'an.</p>
+  <p class="sub en">It is at our fingertips every day, yet we rarely realise that tasbih is a way out that Allah Himself names in the Qur'an.</p>
+</header>
+
+<main class="wrap">
+
+  <p class="pembuka ms">Kita mengulang tasbih dalam solat harian kita, tetapi hati entah ke mana. Kita melafazkan <i>Subhanallah</i> selepas solat, tergesa-gesa, seolah-olah satu kebiasaan. Padahal kalimah inilah yang menemani seorang Nabi di dalam perut ikan, dan kalimah inilah yang Allah ajarkan kepada Rasul-Nya ketika dadanya sempit.</p>
+  <p class="pembuka en">We repeat our tasbih in our daily prayers, but our hearts are elsewhere. We say <i>Subhanallah</i> after prayer, in a hurry, as if it were a habit. Yet this is the very phrase that kept a Prophet company in the belly of a whale, and the phrase Allah taught His Messenger when his chest grew tight.</p>
+
+  <section>
+    <span class="label l-video"><span class="ms">Inti video</span><span class="en">From the video</span></span>
+    <figure class="video">
+      <video class="ms" controls playsinline preload="metadata" poster="reel-poster-ms.jpg">
+        <source src="reel-ms.mp4" type="video/mp4">
+      </video>
+      <video class="en" controls playsinline preload="metadata" poster="reel-poster-en.jpg">
+        <source src="reel-en.mp4" type="video/mp4">
+      </video>
+      <p><b>التسبيح يُنجي من الغم والكرب</b><br><span class="ms">Peringatan Ulama · Siri 01 · Prof. Dr Fadil Salih as-Samarra'i<br>Bahasa Arab, sari kata Melayu · 1 min 26 s</span><span class="en">Scholars' Reminders · Episode 01 · Prof. Dr Fadil Salih al-Samarra'i<br>Arabic, English subtitles · 1 min 26 s</span></p>
+    </figure>
+    <div class="penceramah">
+      <p class="ms"><b>Penceramah: Prof. Dr Fadil Salih as-Samarra'i</b> (lahir 1933, Samarra, Iraq). PhD nahu (tatabahasa Arab), Universiti Ain Shams, Kaherah (1968); bekas profesor nahu di Universiti Baghdad selama kira-kira 40 tahun; ahli al-Majma' al-'Ilmi al-'Iraqi (Akademi Sains Iraq); pengarang <i>Ma'ani an-Nahw</i> (Makna-makna Nahu) dan <i>at-Ta'bir al-Qur'ani</i> (Gaya Pengungkapan al-Qur'an); dikenali melalui rancangan TV <i>Lamasat Bayaniyyah</i> (Sentuhan Keindahan Bahasa).</p>
+      <p class="en"><b>Speaker: Prof. Dr Fadil Salih al-Samarra'i</b> (b. 1933, Samarra, Iraq). PhD in Arabic grammar, Ain Shams University, Cairo (1968); professor of grammar at the University of Baghdad for about 40 years; member of the Iraqi Academy of Sciences (al-Majma' al-'Ilmi al-'Iraqi); author of <i>Ma'ani al-Nahw</i> and <i>al-Ta'bir al-Qur'ani</i>; widely known through the TV programme <i>Lamasat Bayaniyya</i>.</p>
+    </div>
+    <p class="ms">Penceramah dalam video ini menyampaikan satu mesej ringkas tetapi dalam: <mark><b>tasbih menyelamatkan daripada kedukaan, kesusahan dan ketakutan</b></mark>. Beliau membuktikannya dengan tiga kisah daripada al-Qur'an, dan menarik perhatian kepada satu pilihan kata yang halus:</p>
+    <p class="en">The speaker in this video gives one short but deep message: <mark><b>tasbih saves us from grief, hardship and fear</b></mark>. He supports it with three stories from the Qur'an, and points out one subtle choice of words:</p>
+    <div class="kontras">
+      <div class="ya"><p class="ar">مِنَ المُسَبِّحِينَ</p><small><span class="ms">✓ Firman Allah: daripada orang yang bertasbih</span><span class="en">✓ What Allah said: of those who glorify Him</span></small></div>
+      <div class="tidak"><p class="ar">مِنَ الذَّاكِرِينَ</p><small><span class="ms">✗ Bukan: daripada orang yang berzikir</span><span class="en">✗ Not: of those who remember Him</span></small></div>
+    </div>
+    <p class="nota-kecil ms">Ini ialah pengamatan bahasa penceramah: Allah menyebut sifat <i>tasbih</i> secara khusus sebagai sebab Nabi Yunus diselamatkan.</p>
+    <p class="nota-kecil en">This is the speaker's linguistic observation: Allah names the quality of <i>tasbih</i> specifically as the reason Prophet Yunus was saved.</p>
+  </section>
+
+  <section>
+    <h2><span class="no">1</span><span class="ms">Tiga Kisah, Tiga Kesusahan</span><span class="en">Three Stories, Three Kinds of Hardship</span></h2>
+
+    <article class="kisah">
+      <div class="kepala"><div class="ikon">🐋</div>
+        <div><h3><span class="ms">Nabi Yunus di dalam perut ikan</span><span class="en">Prophet Yunus in the belly of the whale</span></h3>
+        <div class="susah"><span class="ms">Kesusahan: <b>al-ghamm</b> (kedukaan yang menyelubungi) dalam tiga kegelapan</span><span class="en">Hardship: <b>al-ghamm</b> (grief that closes in) within three layers of darkness</span></div></div></div>
+      <div class="isi">
+        <span class="label l-ayat"><span class="ms">Ayat</span><span class="en">Verses</span></span>
+        <p class="ayat">فَلَوْلَا أَنَّهُ كَانَ مِنَ الْمُسَبِّحِينَ ﴿١٤٣﴾ لَلَبِثَ فِي بَطْنِهِ إِلَى يَوْمِ يُبْعَثُونَ ﴿١٤٤﴾</p>
+        <p class="terj ms">"Maka kalaulah ia bukan dari orang-orang yang sentiasa mengingati Allah (dengan zikir dan tasbih), tentulah ia akan tinggal di dalam perut ikan itu hingga ke hari manusia dibangkitkan keluar dari kubur."</p>
+        <p class="terj en">"And had he not been of those who exalt Allah, he would have remained inside its belly until the Day they are resurrected."</p>
+        <p class="ref">as-Saffat 37:143–144</p>
+        <div class="pisah"></div>
+        <p class="ayat">فَنَادَى فِي الظُّلُمَاتِ أَنْ لَا إِلَهَ إِلَّا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ ﴿٨٧﴾ فَاسْتَجَبْنَا لَهُ وَنَجَّيْنَاهُ مِنَ الْغَمِّ وَكَذَلِكَ نُنْجِي الْمُؤْمِنِينَ ﴿٨٨﴾</p>
+        <p class="terj ms">"...maka ia pun menyeru dalam keadaan yang gelap-gelita dengan berkata: "Sesungguhnya tiada Tuhan (yang dapat menolong) melainkan Engkau (ya Allah)! Maha Suci Engkau (daripada melakukan aniaya, tolongkanlah daku)! Sesungguhnya aku adalah dari orang-orang yang menganiaya diri sendiri". Maka Kami kabulkan permohonan doanya, dan Kami selamatkan dia dari kesusahan yang menyelubunginya; dan sebagaimana Kami menyelamatkannya Kami akan selamatkan orang-orang yang beriman."</p>
+        <p class="terj en">"...And he called out within the darknesses, "There is no deity except You; exalted are You. Indeed, I have been of the wrongdoers." So We responded to him and saved him from the distress. And thus do We save the believers."</p>
+        <p class="ref">al-Anbiya' 21:87–88</p>
+        <div class="pengajaran ms">💡 <b>Perhatikan:</b> <i>wa kadhalika nunjil-mu'minin</i> (dan demikianlah Kami selamatkan orang beriman). Janji itu tidak terhenti pada Nabi Yunus; ia terbuka untuk kita.</div>
+        <div class="pengajaran en">💡 <b>Notice:</b> <i>wa kadhalika nunjil-mu'minin</i> (and thus do We save the believers). The promise did not end with Prophet Yunus; it is open to us.</div>
+      </div>
+    </article>
+
+    <article class="kisah">
+      <div class="kepala"><div class="ikon">🤲</div>
+        <div><h3><span class="ms">Rasulullah ﷺ dan dada yang sempit</span><span class="en">The Prophet ﷺ and a tightened chest</span></h3>
+        <div class="susah"><span class="ms">Kesusahan: <b>dhiq as-sadr</b> (sempit dada) kerana kata-kata orang</span><span class="en">Hardship: <b>dhiq as-sadr</b> (a tight chest) because of what people said</span></div></div></div>
+      <div class="isi">
+        <span class="label l-ayat"><span class="ms">Ayat</span><span class="en">Verses</span></span>
+        <p class="ayat">وَلَقَدْ نَعْلَمُ أَنَّكَ يَضِيقُ صَدْرُكَ بِمَا يَقُولُونَ ﴿٩٧﴾ فَسَبِّحْ بِحَمْدِ رَبِّكَ وَكُنْ مِنَ السَّاجِدِينَ ﴿٩٨﴾</p>
+        <p class="terj ms">"Dan demi sesungguhnya Kami mengetahui, bahawa engkau resah gelisah dan sempit dada dengan sebab apa yang mereka katakan. Oleh itu, bertasbihlah engkau dengan memuji Tuhanmu, serta jadilah dari orang-orang yang sujud."</p>
+        <p class="terj en">"And We already know that your breast is constrained by what they say. So exalt [Allah] with praise of your Lord and be of those who prostrate [to Him]."</p>
+        <p class="ref">al-Hijr 15:97–98</p>
+        <div class="pengajaran ms">💡 <b>Perhatikan:</b> Allah tidak berkata "balaslah mereka". Ubat yang diberi untuk hati yang terluka ialah <b>fasabbih</b> (maka bertasbihlah).</div>
+        <div class="pengajaran en">💡 <b>Notice:</b> Allah did not say "answer them back". The remedy given for a wounded heart is <b>fasabbih</b> (so glorify).</div>
+      </div>
+    </article>
+
+    <article class="kisah">
+      <div class="kepala"><div class="ikon">🔥</div>
+        <div><h3><span class="ms">Nabi Musa sebelum berdepan Firaun</span><span class="en">Prophet Musa before facing Pharaoh</span></h3>
+        <div class="susah"><span class="ms">Kesusahan: <b>al-khauf</b> (ketakutan) menghadapi tugas yang berat</span><span class="en">Hardship: <b>al-khawf</b> (fear) in the face of a heavy mission</span></div></div></div>
+      <div class="isi">
+        <span class="label l-ayat"><span class="ms">Ayat</span><span class="en">Verses</span></span>
+        <p class="ayat">كَيْ نُسَبِّحَكَ كَثِيرًا ﴿٣٣﴾ وَنَذْكُرَكَ كَثِيرًا ﴿٣٤﴾</p>
+        <p class="terj ms">"Supaya kami sentiasa beribadat dan memujiMu, dan (supaya) kami sentiasa menyebut dan mengingatiMu;"</p>
+        <p class="terj en">"That we may exalt You much and remember You much."</p>
+        <p class="ref"><span class="ms">Taha 20:33–34 (sebahagian daripada doa Nabi Musa, ayat 25–35)</span><span class="en">Taha 20:33–34 (part of Prophet Musa's supplication, verses 25–35)</span></p>
+        <div class="pengajaran ms">💡 <b>Perhatikan:</b> Ketika meminta Harun sebagai pembantu, tujuan yang Nabi Musa sebut ialah supaya mereka <b>banyak bertasbih</b>. Penceramah membuat kesimpulan bahawa tasbih menghilangkan resah, duka dan takut, serta menyelamatkan daripada kesusahan.</div>
+        <div class="pengajaran en">💡 <b>Notice:</b> When asking for Harun as his helper, the purpose Prophet Musa named was that they would <b>glorify Allah much</b>. The speaker concludes that tasbih removes anxiety, grief and fear, and rescues from hardship.</div>
+      </div>
+    </article>
+  </section>
+
+  <section>
+    <h2><span class="no">2</span><span class="ms">Empat Beban Hati yang Disebut</span><span class="en">Four Burdens of the Heart</span></h2>
+    <div class="kunci">
+      <div><p class="ar">الهَمّ</p><span><b>al-hamm</b><br><span class="ms">(resah memikirkan apa yang akan datang)</span><span class="en">(anxiety about what lies ahead)</span></span></div>
+      <div><p class="ar">الغَمّ</p><span><b>al-ghamm</b><br><span class="ms">(duka yang menyelubungi dan menyesakkan)</span><span class="en">(grief that closes in and suffocates)</span></span></div>
+      <div><p class="ar">الكَرْب</p><span><b>al-karb</b><br><span class="ms">(kesusahan berat yang menghimpit)</span><span class="en">(heavy, pressing hardship)</span></span></div>
+      <div><p class="ar">الخَوْف</p><span><b class="ms">al-khauf</b><b class="en">al-khawf</b><br><span class="ms">(ketakutan)</span><span class="en">(fear)</span></span></div>
+    </div>
+    <p class="nota-kecil ms" style="margin-top:10px">Huraian makna di atas ialah ringkasan umum untuk pembaca, bukan takrif daripada satu kitab tertentu.</p>
+    <p class="nota-kecil en" style="margin-top:10px">These meanings are a general summary for readers, not definitions taken from a particular book.</p>
+  </section>
+
+  <section>
+    <h2><span class="no">3</span><span class="ms">Apa Kata Ulama Tafsir</span><span class="en">What the Scholars of Tafsir Say</span></h2>
+    <span class="label l-ulama"><span class="ms">Nukilan · Tafsir Ibn Kathir</span><span class="en">Quoted · Tafsir Ibn Kathir</span></span>
+
+    <p class="ms">Tentang maksud <i>al-musabbihin</i> dalam as-Saffat 143, Ibn Kathir menukilkan beberapa pandangan:</p>
+    <p class="en">On the meaning of <i>al-musabbihin</i> in as-Saffat 143, Ibn Kathir reports several views:</p>
+    <ul class="pandangan ms">
+      <li><b>Amal soleh semasa senang</b>: pendapat ad-Dahhak bin Qais, Abul-'Aliyah, Wahb bin Munabbih dan Qatadah; dipilih oleh Ibn Jarir (at-Tabari).</li>
+      <li><b>Orang yang bersolat</b>: pendapat Ibn 'Abbas, Sa'id bin Jubair, al-Hasan, as-Suddi dan lain-lain.</li>
+      <li><b>Ucapan baginda di dalam kegelapan</b> (<i>La ilaha illa anta subhanaka...</i>): pendapat Sa'id bin Jubair dan lain-lain.</li>
+    </ul>
+    <ul class="pandangan en">
+      <li><b>Good deeds done in times of ease</b>: the view of ad-Dahhak ibn Qays, Abul-'Aliyah, Wahb ibn Munabbih and Qatadah; preferred by Ibn Jarir (at-Tabari).</li>
+      <li><b>Those who pray</b>: the view of Ibn 'Abbas, Sa'id ibn Jubayr, al-Hasan, as-Suddi and others.</li>
+      <li><b>His words in the darkness</b> (<i>La ilaha illa anta subhanaka...</i>): the view of Sa'id ibn Jubayr and others.</li>
+    </ul>
+
+    <blockquote>
+      <p class="ar">قيل: لولا ما تقدم له من العمل في الرخاء ... وفي حديث ابن عباس: "تعرّف إلى الله في الرخاء يعرفك في الشدة"</p>
+      <p class="tr ms">"Dikatakan: kalaulah bukan kerana amal yang telah dilakukannya ketika senang ... dan dalam hadis Ibn 'Abbas: <b>'Kenalilah Allah ketika senang, nescaya Dia mengenalimu ketika susah.'</b>"</p>
+      <p class="tr en">"It was said: had it not been for the deeds he had done in times of ease ... and in the hadith of Ibn 'Abbas: <b>'Know Allah in times of ease, and He will know you in times of hardship.'</b>"</p>
+      <cite class="ms">Ibn Kathir (w. 774H), <i>Tafsir al-Qur'an al-'Azim</i>, cet. Dar Ibn al-Jawzi, 6/397 (Shamela). Menurut nota pentahqiq: diriwayatkan oleh Ahmad dalam al-Musnad (5/19, no. 2803); sanadnya disahihkan oleh pentahqiq al-Musnad, dan pentahqiq menilainya hasan al-isnad.</cite>
+      <cite class="en">Ibn Kathir (d. 774 AH), <i>Tafsir al-Qur'an al-'Azim</i>, Dar Ibn al-Jawzi ed., 6/397 (Shamela). Per the editor's note: narrated by Ahmad in al-Musnad (5/19, no. 2803); its chain was graded sahih by the editors of al-Musnad, and the editor grades it hasan al-isnad.</cite>
+    </blockquote>
+
+    <blockquote>
+      <p class="ar">فاشتغل بذكر الله وتحميده وتسبيحه وعبادته التي هي الصلاة</p>
+      <p class="tr ms">"Maka sibukkanlah dirimu dengan mengingati Allah, memuji-Nya, bertasbih kepada-Nya dan beribadah kepada-Nya, iaitu solat."</p>
+      <p class="tr en">"So occupy yourself with the remembrance of Allah, praising Him, glorifying Him and worshipping Him, which is the prayer."</p>
+      <cite class="ms">Ibn Kathir, tentang al-Hijr 15:97–98, <i>Tafsir al-Qur'an al-'Azim</i>, cet. Dar Ibn al-Jawzi, 4/665 (Shamela)</cite>
+      <cite class="en">Ibn Kathir, on al-Hijr 15:97–98, <i>Tafsir al-Qur'an al-'Azim</i>, Dar Ibn al-Jawzi ed., 4/665 (Shamela)</cite>
+    </blockquote>
+
+    <blockquote>
+      <p class="ar">﴿وَكَذَلِكَ نُنْجِي الْمُؤْمِنِينَ﴾ أي: إذا كانوا في الشدائد ودعونا منيبين إلينا، ولا سيما إذا دعوا بهذا الدعاء في حال البلاء</p>
+      <p class="tr ms">"Maksudnya: apabila mereka berada dalam kesusahan lalu berdoa kepada Kami sambil kembali kepada Kami, terutamanya apabila mereka berdoa dengan doa ini ketika ditimpa ujian."</p>
+      <p class="tr en">"That is: when they are in hardship and call upon Us, turning back to Us, especially when they supplicate with this supplication in times of trial."</p>
+      <cite class="ms">Ibn Kathir, tentang al-Anbiya' 21:88, <i>Tafsir al-Qur'an al-'Azim</i>, cet. Dar Ibn al-Jawzi, 5/357 (Shamela)</cite>
+      <cite class="en">Ibn Kathir, on al-Anbiya' 21:88, <i>Tafsir al-Qur'an al-'Azim</i>, Dar Ibn al-Jawzi ed., 5/357 (Shamela)</cite>
+    </blockquote>
+    <p class="nota-kecil ms">Nombor jilid/halaman mengikut cetakan Dar Ibn al-Jawzi dalam al-Maktabah al-Shamela; halaman mungkin berbeza dalam cetakan lain.</p>
+    <p class="nota-kecil en">Volume/page numbers follow the Dar Ibn al-Jawzi edition in al-Maktabah al-Shamela; pagination may differ in other editions.</p>
+  </section>
+
+  <section class="renung">
+    <span class="label l-renung"><span class="ms">Tadabbur · renungan peribadi</span><span class="en">Tadabbur · personal reflection</span></span>
+    <h2><span class="ms">Betapa Kita Tidak Menghargainya</span><span class="en">How Little We Value It</span></h2>
+    <div class="ms">
+      <p>Apabila hati sesak, kita mencari telefon. Apabila takut, kita mencari orang untuk mengadu. Apabila duka, kita mencari hiburan. Semuanya kita cuba, <em>kecuali satu kalimah yang paling ringan di lidah</em>.</p>
+      <p>Nabi Yunus tidak punya apa-apa di dalam perut ikan: tiada cahaya, tiada sahabat, tiada jalan keluar. Yang tinggal hanya <em>Subhanaka</em>. Dan itu sudah cukup.</p>
+      <p>Mungkin kita tidak menghargai tasbih kerana kita merasakan ia terlalu kecil. Padahal yang kecil di mata kita, besar di sisi Allah. Bukan biji tasbih yang menyelamatkan, tetapi hati yang benar-benar menyucikan Allah daripada segala kekurangan, lalu mengakui kekurangan diri sendiri.</p>
+      <p>Barangkali pintu keluar daripada kesusahan kita sudah lama ada di hujung lidah. Kita sahaja yang belum mengetuknya.</p>
+    </div>
+    <div class="en">
+      <p>When our hearts feel heavy, we reach for our phones. When we are afraid, we look for someone to complain to. When we grieve, we look for distraction. We try everything, <em>except the one phrase that is lightest on the tongue</em>.</p>
+      <p>Prophet Yunus had nothing in the belly of the whale: no light, no companion, no way out. All that remained was <em>Subhanaka</em>. And that was enough.</p>
+      <p>Perhaps we undervalue tasbih because it seems too small. Yet what is small in our eyes is great with Allah. It is not the beads that save, but a heart that truly declares Allah free of every imperfection, and then admits its own.</p>
+      <p>Perhaps the door out of our hardship has long been at the tip of our tongue. We simply have not knocked on it yet.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="no">4</span><span class="ms">Muhasabah</span><span class="en">Muhasabah (self-reflection)</span></h2>
+    <ol class="muhasabah ms">
+      <li>Bila kali terakhir saya bertasbih dengan hati yang hadir, bukan sekadar menghitung bilangan?</li>
+      <li>Ketika dada saya sempit, apakah perkara pertama yang saya cari: manusia, atau Allah?</li>
+      <li>Adakah saya "mengenali Allah ketika senang", supaya Dia mengenali saya ketika susah?</li>
+    </ol>
+    <ol class="muhasabah en">
+      <li>When did I last glorify Allah with a present heart, not just counting numbers?</li>
+      <li>When my chest feels tight, what do I turn to first: people, or Allah?</li>
+      <li>Do I "know Allah in times of ease", so that He will know me in times of hardship?</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2><span class="no">5</span><span class="ms">Amalan Minggu Ini</span><span class="en">Practice This Week</span></h2>
+    <ul class="amal ms">
+      <li><b>Tasbih yang hadir:</b> selepas setiap solat fardu, perlahankan <i>Subhanallah</i>. Fahami maknanya: Maha Suci Allah daripada segala kekurangan.</li>
+      <li><b>Doa Nabi Yunus:</b> amalkan <span class="ar" style="font-size:1.1rem">لَا إِلَهَ إِلَّا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ</span> ketika rasa tertekan.</li>
+      <li><b>Bila sakit hati kerana kata-kata orang:</b> ingat al-Hijr 98. Sebelum membalas, bertasbih dan sujud dahulu.</li>
+      <li><b>Simpanan ketika senang:</b> tetapkan satu waktu tasbih harian semasa hidup tenang, bukan hanya ketika ditimpa ujian.</li>
+    </ul>
+    <ul class="amal en">
+      <li><b>A present tasbih:</b> after every obligatory prayer, slow down your <i>Subhanallah</i>. Reflect on its meaning: Allah is free of every imperfection.</li>
+      <li><b>The supplication of Prophet Yunus:</b> say <span class="ar" style="font-size:1.1rem">لَا إِلَهَ إِلَّا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ</span> when you feel under pressure.</li>
+      <li><b>When hurt by people's words:</b> remember al-Hijr 98. Before replying, glorify Allah and prostrate first.</li>
+      <li><b>Savings for hard times:</b> set a daily time for tasbih while life is calm, not only when trials come.</li>
+    </ul>
+  </section>
+
+  <div class="zikir">
+    <p class="ar">سُبْحَانَ اللهِ وَبِحَمْدِهِ</p>
+    <p class="ms">Maha Suci Allah, dan dengan memuji-Nya.</p>
+    <p class="en">Glory be to Allah, and with His praise.</p>
+  </div>
+
+  <section class="sertai">
+    <img src="attartil-logo.png" alt="AtTartil Quranic Institute">
+    <h2><span class="ms">Ingin memahami al-Qur'an seperti ini?</span><span class="en">Want to understand the Qur'an like this?</span></h2>
+    <p class="lead ms">Sertai <b>AFAM (AtTartil Full-Access Membership)</b> dan teruskan perjalanan daripada membaca, kepada memahami, merenung dan mengamalkan al-Qur'an.</p>
+    <p class="lead en">Join <b>AFAM (AtTartil Full-Access Membership)</b> and continue the journey from reading the Qur'an to understanding, reflecting on and living it.</p>
+    <ul class="ms">
+      <li>Akses kepada kelas rakaman dan program-program lepas AtTartil</li>
+      <li>Kandungan tadabbur dan bahasa al-Qur'an</li>
+      <li>Belajar ikut masa anda, di mana-mana peranti</li>
+      <li>Komuniti pelajar untuk bertanya dan saling menyokong</li>
+    </ul>
+    <ul class="en">
+      <li>Access to AtTartil's recorded classes and past programmes</li>
+      <li>Tadabbur and Qur'anic language content</li>
+      <li>Learn at your own pace, on any device</li>
+      <li>A learners' community for questions and support</li>
+    </ul>
+    <p class="harga"><span class="ms">$10 sebulan atau $120 setahun</span><span class="en">$10 a month or $120 a year</span></p>
+    <div class="cta">
+      <a class="utama" href="https://attartilqi.com/afam" target="_blank" rel="noopener"><span class="ms">Sertai AFAM</span><span class="en">Join AFAM</span> →</a>
+      <a class="kedua" href="https://wa.me/6593725111" target="_blank" rel="noopener"><span class="ms">Tanya di WhatsApp</span><span class="en">Ask on WhatsApp</span></a>
+    </div>
+    <p class="sosial"><span class="ms">Ikuti siri Peringatan Ulama:</span><span class="en">Follow the Scholars' Reminders series:</span><br>
+      <a href="https://www.instagram.com/attartilqi/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/attartil" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.youtube.com/channel/UCPv1RPGjbULC0Wfx9BQ3v1Q" target="_blank" rel="noopener">YouTube</a> · <a href="https://www.tiktok.com/@attartilcs" target="_blank" rel="noopener">TikTok</a> · <a href="https://chat.whatsapp.com/JCuiFYFNTSn3CycNfE0k6T" target="_blank" rel="noopener"><span class="ms">Komuniti WhatsApp</span><span class="en">WhatsApp Community</span></a></p>
+  </section>
+
+  <p style="text-align:center;margin:36px 0 0;font-family:'Inter',system-ui,sans-serif;font-weight:600"><a href="../" style="color:var(--hijau);text-decoration:none">← <span class="ms">Semua siri Peringatan Ulama</span><span class="en">All Scholars' Reminders episodes</span></a></p>
+
+  <footer>
+    <div class="visi"><img src="attartil-logo.png" alt=""><span><b>ATTARTIL QURANIC INSTITUTE</b>"Where Qur'anic Knowledge Transforms Lives"</span></div>
+    <div class="ms">
+      <b>Rujukan</b>
+      <ol>
+        <li>Teks ayat: al-Maktabah al-Shamela (riwayat Hafs 'an 'Asim).</li>
+        <li>Terjemahan ayat (BM): <i>Tafsir Pimpinan ar-Rahman</i>, Sheikh Abdullah Basmeih (JAKIM).</li>
+        <li>Ibn Kathir, <i>Tafsir al-Qur'an al-'Azim</i>, cet. Dar Ibn al-Jawzi: 4/665; 5/357; 6/397 (al-Maktabah al-Shamela).</li>
+        <li>Isi ceramah: rakaman video pendek (bahasa Arab) bertajuk "التسبيح يُنجي من الغم والكرب".</li>
+      </ol>
+      <p>Bahagian bertanda "Tadabbur" ialah renungan peribadi, bukan tafsir. Nota ini ialah bahan pembelajaran dan bukan fatwa.</p>
+    </div>
+    <div class="en">
+      <b>References</b>
+      <ol>
+        <li>Arabic verse text: al-Maktabah al-Shamela (Hafs 'an 'Asim).</li>
+        <li>English verse translation: Saheeh International.</li>
+        <li>Ibn Kathir, <i>Tafsir al-Qur'an al-'Azim</i>, Dar Ibn al-Jawzi ed.: 4/665; 5/357; 6/397 (al-Maktabah al-Shamela).</li>
+        <li>Lecture content: short video clip (in Arabic) titled "التسبيح يُنجي من الغم والكرب".</li>
+      </ol>
+      <p>Sections marked "Tadabbur" are personal reflection, not tafsir. These notes are learning material and not a fatwa.</p>
+    </div>
+  </footer>
+</main>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  var titles={ms:"Tasbih Yang Kita Lupakan",en:"The Forgotten Tasbih"};
+  function set(lang){
+    root.setAttribute("data-lang",lang);
+    root.setAttribute("lang",lang);
+    document.title=titles[lang];
+    var b=document.querySelectorAll(".toggle button");
+    for(var i=0;i<b.length;i++){b[i].setAttribute("aria-pressed",b[i].getAttribute("data-set")===lang?"true":"false");}
+    var v=document.querySelectorAll("video");
+    for(var j=0;j<v.length;j++){if(!v[j].classList.contains(lang)){try{v[j].pause();}catch(e){}}}
+    try{localStorage.setItem("tasbih-lang",lang);}catch(e){}
+  }
+  var saved=null;
+  try{saved=localStorage.getItem("tasbih-lang");}catch(e){}
+  if(saved==="ms"||saved==="en"){set(saved);}
+  document.querySelector(".toggle").addEventListener("click",function(e){
+    var t=e.target.closest("button");
+    if(t){set(t.getAttribute("data-set"));}
+  });
+})();
+</script>
+</body>
+</html>
