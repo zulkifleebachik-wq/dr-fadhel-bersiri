@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="ms" data-lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nazzala dan Anzala</title>
+<meta name="description" content="Peringatan Ulama Siri 03: Nazzala dan anzala, adakah satu beransur-ansur dan satu sekaligus? Prof. Dr Fadil Salih as-Samarra'i, nota renungan dwibahasa AtTartil.">
+<meta property="og:title" content="Nazzala dan Anzala · Peringatan Ulama Siri 03 | AtTartil">
+<meta property="og:description" content="Prof. Dr Fadil Salih as-Samarra'i: dua kata "menurunkan" dalam al-Qur'an, dan rahsia pilihannya.">
+<meta property="og:image" content="reel-poster-ms.jpg">
+<link rel="icon" href="attartil-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Amiri+Quran&family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --hutan:#10301f;      /* deep forest */
+  --hijau:#2f7a10;      /* logo green, softened */
+  --daun:#3d9002;       /* logo centre */
+  --lime:#9ad102;       /* logo ring */
+  --kuning:#ffe14d;     /* logo yellow, softened */
+  --kuning-pucat:#fff7cf;
+  --hitam:#141414;
+  --kertas:#fbfaf3;
+  --kad:#ffffff;
+  --lembut:#f1f6e6;
+  --teks:#1f2420;
+  --redup:#5b6658;
+  --garis:#e3e9d6;
+  --ayat:#24600c;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --kertas:#0e1510; --kad:#151e17; --lembut:#1a2a1c; --teks:#ecefe7; --redup:#a7b3a3;
+    --garis:#273626; --ayat:#b5e05a; --kuning-pucat:#2a2711; --hijau:#9ad102;
+  }
+}
+:root[data-theme="dark"]{
+  --kertas:#0e1510; --kad:#151e17; --lembut:#1a2a1c; --teks:#ecefe7; --redup:#a7b3a3;
+  --garis:#273626; --ayat:#b5e05a; --kuning-pucat:#2a2711; --hijau:#9ad102;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--kertas);color:var(--teks);
+  font-family:"Lora",Georgia,serif;font-size:18px;line-height:1.85}
+
+/* language switching */
+html[data-lang="ms"] .en{display:none!important}
+html[data-lang="en"] .ms{display:none!important}
+
+/* TOP BAR */
+.bar{position:sticky;top:0;z-index:10;background:rgba(16,48,31,.94);backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);border-bottom:3px solid var(--lime)}
+.bar .in{max-width:780px;margin:0 auto;padding:8px 16px;display:flex;align-items:center;gap:10px}
+.bar img{width:38px;height:38px;border-radius:50%;flex:none}
+.bar .nm{color:#fff;font-family:"Inter",system-ui,sans-serif;font-size:.78rem;font-weight:600;letter-spacing:.06em;line-height:1.25;flex:1;min-width:0}
+.bar .nm small{display:block;color:var(--kuning);font-weight:500;letter-spacing:.04em}
+.toggle{display:flex;background:#0a1f14;border:1px solid #2c5a1b;border-radius:999px;padding:3px;flex:none}
+.toggle button{appearance:none;border:0;background:transparent;color:#cfe3c4;font-family:"Inter",system-ui,sans-serif;
+  font-weight:600;font-size:.8rem;padding:6px 13px;border-radius:999px;cursor:pointer;min-height:32px}
+.toggle button[aria-pressed="true"]{background:var(--kuning);color:var(--hitam)}
+.toggle button:focus-visible{outline:2px solid var(--lime);outline-offset:2px}
+
+/* HERO */
+header.hero{position:relative;overflow:hidden;color:#fff;text-align:center;
+  background:radial-gradient(110% 80% at 50% 0%,#2f6a17 0%,#16402a 55%,#0d2618 100%);padding:44px 16px 54px}
+header.hero::before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;
+  border:2px solid rgba(154,209,2,.18);left:50%;top:-250px;transform:translateX(-50%)}
+header.hero::after{content:"";position:absolute;width:360px;height:360px;border-radius:50%;
+  border:2px solid rgba(255,225,77,.14);left:50%;top:-170px;transform:translateX(-50%)}
+.hero .logo{position:relative;z-index:1;width:112px;height:112px;margin:0 auto 18px;border-radius:50%;
+  box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.hero .tag{position:relative;z-index:1;display:inline-block;font-family:"Inter",system-ui,sans-serif;font-size:.72rem;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--hitam);background:var(--kuning);padding:3px 12px;border-radius:999px}
+.hero .ar-big{position:relative;z-index:1;font-family:"Amiri",serif;font-size:2.3rem;line-height:1.6;color:var(--kuning);margin:16px 0 0}
+.hero h1{position:relative;z-index:1;font-weight:600;font-size:2rem;line-height:1.3;margin:8px 0 10px}
+.hero p.sub{position:relative;z-index:1;font-style:italic;color:#dcead2;margin:0 auto;max-width:540px;font-size:1.02rem}
+
+.wrap{max-width:760px;margin:0 auto;padding:0 16px 56px}
+.ar{font-family:"Amiri",serif;direction:rtl;line-height:2.1}
+.ayat{font-family:"Amiri Quran","Amiri",serif;direction:rtl;font-size:1.55rem;line-height:2.35;color:var(--ayat);text-align:center;margin:.3em 0 .5em}
+
+section{margin-top:44px}
+h2{font-size:1.32rem;color:var(--teks);margin:0 0 14px;display:flex;align-items:center;gap:12px;line-height:1.35}
+h2 .no{flex:none;width:34px;height:34px;border-radius:50%;background:var(--hutan);color:var(--kuning);
+  font-family:"Inter",system-ui,sans-serif;font-size:.9rem;display:grid;place-items:center;font-weight:600;
+  box-shadow:0 0 0 3px var(--lime)}
+.pembuka{font-size:1.14rem;font-style:italic;margin:40px 0 0;padding:20px 22px;border-radius:14px;
+  background:var(--kuning-pucat);border-left:5px solid var(--kuning);position:relative}
+.label{display:inline-block;font-family:"Inter",system-ui,sans-serif;font-size:.68rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
+  padding:3px 11px;border-radius:999px;margin-bottom:10px}
+.l-video{background:var(--hutan);color:var(--kuning)}
+.l-ayat{background:var(--lembut);color:var(--hijau);border:1px solid var(--garis)}
+.l-ulama{background:var(--kuning);color:var(--hitam)}
+.l-renung{background:rgba(255,225,77,.16);color:var(--kuning);border:1px solid rgba(255,225,77,.4)}
+.nota-kecil{font-size:.9rem;color:var(--redup)}
+mark{background:linear-gradient(transparent 58%,rgba(255,225,77,.55) 58%);color:inherit;padding:0 2px}
+
+.video{margin:4px auto 22px;max-width:360px;background:var(--hutan);border-radius:20px;padding:10px;
+  box-shadow:0 10px 26px rgba(16,48,31,.18),0 0 0 3px var(--lime)}
+.video video{display:block;width:100%;height:auto;max-height:70vh;border-radius:12px;background:#000}
+.video p{margin:8px 4px 2px;font-family:"Inter",system-ui,sans-serif;font-size:.74rem;color:#cfe3c4;line-height:1.45;text-align:center}
+.video p b{color:var(--kuning);font-weight:600}
+.penceramah{background:var(--kad);border:1px solid var(--garis);border-left:5px solid var(--lime);border-radius:12px;
+  padding:12px 16px;margin:0 0 18px;font-size:.92rem;line-height:1.7}
+.penceramah p{margin:0}
+.sertai{margin-top:44px;border-radius:22px;overflow:hidden;background:linear-gradient(160deg,#2f6a17 0%,#16402a 55%,#0d2618 100%);
+  color:#fff;text-align:center;padding:30px 20px 26px;position:relative}
+.sertai::before{content:"";position:absolute;width:300px;height:300px;border-radius:50%;border:2px solid rgba(154,209,2,.25);
+  left:50%;top:-150px;transform:translateX(-50%)}
+.sertai img{position:relative;width:92px;height:92px;border-radius:50%;box-shadow:0 8px 22px rgba(0,0,0,.35)}
+.sertai h2{display:block;color:#fff;font-size:1.45rem;margin:14px 0 6px}
+.sertai .lead{color:#dcead2;margin:0 auto 16px;max-width:520px;font-size:1rem}
+.sertai ul{list-style:none;padding:0;margin:0 auto 20px;max-width:420px;text-align:left;font-size:.98rem}
+.sertai li{position:relative;padding:5px 0 5px 28px}
+.sertai li::before{content:"";position:absolute;left:4px;top:15px;width:11px;height:11px;border-radius:50%;background:var(--kuning)}
+.sertai .harga{font-family:"Inter",system-ui,sans-serif;color:var(--lime);font-weight:600;margin:0 0 16px;font-size:.92rem}
+.cta{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.cta a{font-family:"Inter",system-ui,sans-serif;font-weight:600;text-decoration:none;border-radius:999px;padding:12px 20px;
+  font-size:.95rem;min-height:44px;display:inline-flex;align-items:center;gap:6px}
+.cta .utama{background:var(--kuning);color:var(--hitam)}
+.cta .kedua{background:transparent;color:#fff;border:2px solid var(--lime)}
+.cta a:focus-visible{outline:3px solid #fff;outline-offset:2px}
+.sosial{margin-top:18px;font-family:"Inter",system-ui,sans-serif;font-size:.82rem;color:#cfe3c4}
+.sosial a{color:var(--kuning);text-decoration:none;margin:0 4px;white-space:nowrap;display:inline-block;padding:4px 0}
+.kontras{background:var(--kad);border:1px solid var(--garis);border-radius:14px;padding:14px 16px;margin:12px 0;
+  display:grid;grid-template-columns:1fr 1fr;gap:10px;text-align:center}
+.kontras div{border-radius:10px;padding:8px}
+.kontras .ya{background:var(--lembut)}
+.kontras .tidak{opacity:.7}
+.kontras .ar{font-size:1.35rem;margin:0;line-height:1.7}
+.kontras .ya .ar{color:var(--ayat)}
+.kontras small{display:block;font-size:.82rem;color:var(--redup);line-height:1.4}
+
+.kisah{background:var(--kad);border:1px solid var(--garis);border-radius:18px;padding:0;margin:20px 0;overflow:hidden;
+  box-shadow:0 6px 18px rgba(16,48,31,.06)}
+.kisah .kepala{display:flex;gap:14px;align-items:center;padding:16px 20px;background:var(--hutan);color:#fff}
+.kisah .ikon{flex:none;width:46px;height:46px;border-radius:50%;display:grid;place-items:center;font-size:1.35rem;
+  background:#0a1f14;box-shadow:0 0 0 2px var(--lime)}
+.kisah h3{margin:0;font-size:1.1rem;line-height:1.35;color:#fff}
+.kisah .susah{font-size:.86rem;color:#cfe3c4;line-height:1.5}
+.kisah .susah b{color:var(--kuning)}
+.kisah .isi{padding:18px 20px 20px}
+.terj{font-size:.98rem;color:var(--redup);text-align:center;margin:0 0 4px}
+.ref{font-family:"Inter",system-ui,sans-serif;font-size:.76rem;font-weight:500;color:var(--hijau);text-align:center;letter-spacing:.03em}
+.pisah{height:1px;background:var(--garis);margin:16px 0}
+.pengajaran{background:var(--kuning-pucat);border-radius:12px;padding:12px 16px;margin-top:16px;font-size:.98rem;border-left:4px solid var(--kuning)}
+
+.kunci{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+@media (min-width:640px){.kunci{grid-template-columns:repeat(4,1fr)}}
+.kunci div{background:var(--kad);border:1px solid var(--garis);border-top:4px solid var(--lime);border-radius:12px;padding:12px 10px;text-align:center}
+.kunci .ar{font-size:1.7rem;color:var(--ayat);line-height:1.5;margin:0}
+.kunci span{display:block;font-size:.86rem;color:var(--redup);line-height:1.45}
+.kunci b{color:var(--teks)}
+
+ul.pandangan{list-style:none;padding:0;margin:0 0 6px}
+ul.pandangan li{position:relative;padding:8px 0 8px 28px;border-bottom:1px dashed var(--garis)}
+ul.pandangan li:last-child{border-bottom:0}
+ul.pandangan li::before{content:"";position:absolute;left:4px;top:19px;width:10px;height:10px;border-radius:50%;
+  background:var(--lime);box-shadow:0 0 0 3px rgba(154,209,2,.25)}
+
+blockquote{margin:16px 0;background:var(--kad);border:1px solid var(--garis);border-right:5px solid var(--daun);
+  border-radius:14px;padding:16px 18px}
+blockquote .ar{font-size:1.25rem;margin:0;color:var(--teks)}
+blockquote .tr{font-size:.98rem;margin:8px 0 8px;padding-top:8px;border-top:1px dashed var(--garis)}
+blockquote cite{display:block;font-style:normal;font-family:"Inter",system-ui,sans-serif;font-size:.74rem;color:var(--redup);line-height:1.55}
+
+.renung{background:linear-gradient(160deg,#16402a 0%,#0d2618 70%,#0a1d12 100%);color:#eef3ea;border-radius:20px;
+  padding:28px 22px;position:relative;overflow:hidden}
+.renung::after{content:"";position:absolute;right:-60px;bottom:-60px;width:200px;height:200px;border-radius:50%;
+  border:2px solid rgba(255,225,77,.18)}
+.renung h2{color:#fff}
+.renung p{margin:0 0 14px;position:relative;z-index:1}
+.renung p:last-child{margin:0;font-size:1.08rem}
+.renung em{color:var(--kuning);font-style:normal}
+
+ol.muhasabah{counter-reset:m;list-style:none;padding:0;margin:0}
+ol.muhasabah li{counter-increment:m;position:relative;padding:12px 14px 12px 52px;margin-bottom:10px;background:var(--kad);
+  border:1px solid var(--garis);border-radius:12px}
+ol.muhasabah li::before{content:counter(m);position:absolute;left:14px;top:12px;width:26px;height:26px;border-radius:50%;
+  background:var(--kuning);color:var(--hitam);font-family:"Inter",system-ui,sans-serif;font-size:.8rem;font-weight:600;display:grid;place-items:center}
+ul.amal{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+ul.amal li{background:var(--lembut);border-radius:12px;padding:12px 16px;border-left:5px solid var(--daun)}
+ul.amal li b{color:var(--hijau)}
+
+.zikir{text-align:center;margin-top:44px;padding:26px 16px;border-radius:20px;background:var(--kuning-pucat);border:1px solid rgba(255,225,77,.6)}
+.zikir .ar{font-size:2.1rem;color:var(--ayat);margin:0;line-height:1.7}
+.zikir p{color:var(--redup);font-style:italic;margin:2px 0 0}
+
+footer{margin-top:44px;padding-top:18px;border-top:3px solid var(--hutan);font-family:"Inter",system-ui,sans-serif;font-size:.8rem;color:var(--redup);line-height:1.65}
+footer .visi{display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:16px;text-align:left}
+footer .visi img{width:46px;height:46px;border-radius:50%}
+footer .visi span{font-family:"Lora",serif;font-style:italic;font-size:1rem;color:var(--teks);line-height:1.4}
+footer .visi b{display:block;font-style:normal;font-family:"Inter",system-ui,sans-serif;font-size:.78rem;color:var(--hijau);letter-spacing:.05em}
+footer ol{padding-left:18px;margin:6px 0 12px}
+
+@media (max-width:520px){
+  body{font-size:17px}
+  .bar .nm{font-size:.7rem}
+  .hero .ar-big{font-size:1.85rem}
+  .hero h1{font-size:1.6rem}
+  .hero .logo{width:96px;height:96px}
+  .ayat{font-size:1.36rem}
+  .kisah .kepala{padding:14px 16px}
+  .kisah .isi{padding:16px}
+}
+
+/* Siri 02: jadual perbandingan */
+.banding{border:1px solid var(--garis);border-radius:14px;overflow:hidden;margin:14px 0 10px;background:#fff}
+.brow{display:grid;grid-template-columns:92px 1fr 1fr;border-top:1px solid var(--garis)}
+.brow:first-child{border-top:0}
+.brow>div{padding:10px 10px;text-align:center}
+.brow>div:first-child{text-align:left;font-family:"Inter",system-ui,sans-serif;font-size:.8rem;font-weight:600;color:var(--hijau);display:flex;align-items:center}
+.brow .ar{display:block;font-family:"Amiri Quran","Amiri",serif;font-size:1.3rem;line-height:1.9;color:var(--ayat);direction:rtl}
+.brow small{display:block;font-family:"Inter",system-ui,sans-serif;font-size:.74rem;line-height:1.35;color:var(--redup)}
+.brow .lebih{background:var(--kuning-pucat)}
+.bhead>div{background:var(--hutan);color:var(--kuning);font-family:"Inter",system-ui,sans-serif;font-size:.8rem;font-weight:600;padding:9px 6px}
+.bhead>div.lebih{background:var(--hutan)}
+.kontras .ya small{display:block;font-family:"Inter",system-ui,sans-serif;font-size:.76rem;color:var(--redup);margin-top:4px}
+.kontras .ya u{text-decoration-color:var(--kuning);text-decoration-thickness:3px;text-underline-offset:6px}
+@media (max-width:420px){.brow{grid-template-columns:70px 1fr 1fr}.brow .ar{font-size:1.12rem}}
+@media print{
+  .bar{position:static}
+  .toggle{display:none}
+  body{background:#fff;font-size:12pt}
+  .kisah,blockquote,.renung,ul.amal li,ol.muhasabah li{break-inside:avoid}
+  header.hero,.renung,.kisah .kepala,.bar{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+</style>
+<body>
+
+<div class="bar"><div class="in">
+  <img src="attartil-logo.png" alt="">
+  <div class="nm">ATTARTIL QURANIC INSTITUTE<small><span class="ms">Nota Renungan</span><span class="en">Reflection Notes</span></small></div>
+  <div class="toggle" role="group" aria-label="Bahasa / Language">
+    <button type="button" data-set="en" aria-pressed="false">EN</button>
+    <button type="button" data-set="ms" aria-pressed="true">BM</button>
+  </div>
+</div></div>
+
+<header class="hero">
+  <img class="logo" src="attartil-logo.png" alt="AtTartil Quranic Institute">
+  <div><span class="tag"><span class="ms">Peringatan Ulama · Siri 03</span><span class="en">Scholars' Reminders · Episode 03</span></span></div>
+  <p class="ar-big">نَزَّلَ<br>أَنْزَلَ</p>
+  <h1><span class="ms">Nazzala dan Anzala: Dua Kata "Menurunkan"</span><span class="en">Nazzala and Anzala: Two Words for "Sending Down"</span></h1>
+  <p class="sub ms">Adakah satu bermaksud beransur-ansur dan satu lagi sekaligus? Atau ada rahsia lain di sebalik pilihan kata Allah?</p>
+  <p class="sub en">Does one mean gradual and the other all at once? Or is there another secret behind Allah's choice of word?</p>
+</header>
+
+<main class="wrap">
+
+  <p class="pembuka ms">Dalam terjemahan, kedua-duanya menjadi satu perkataan: "menurunkan". Tetapi dalam al-Qur'an, Allah kadang-kadang berfirman <b>نَزَّلَ</b> (<i>nazzala</i>) dan kadang-kadang <b>أَنْزَلَ</b> (<i>anzala</i>), kadang-kadang dalam ayat yang sama. Ulama sudah lama bertanya: kenapa?</p>
+  <p class="pembuka en">In translation, both become one word: "sent down". But in the Qur'an, Allah sometimes says <b>نَزَّلَ</b> (<i>nazzala</i>) and sometimes <b>أَنْزَلَ</b> (<i>anzala</i>), at times in the very same verse. Scholars have long asked: why?</p>
+
+  <section>
+    <span class="label l-video"><span class="ms">Inti video</span><span class="en">From the video</span></span>
+    <figure class="video">
+      <video class="ms" controls playsinline preload="metadata" poster="reel-poster-ms.jpg">
+        <source src="video-ms.mp4" type="video/mp4">
+      </video>
+      <video class="en" controls playsinline preload="metadata" poster="reel-poster-en.jpg">
+        <source src="video-en.mp4" type="video/mp4">
+      </video>
+      <p><b>نزّل · أنزل</b><br><span class="ms">Peringatan Ulama · Siri 03 · Prof. Dr Fadil Salih as-Samarra'i<br>Bahasa Arab, sari kata Melayu · 3 min 22 s</span><span class="en">Scholars' Reminders · Episode 03 · Prof. Dr Fadil Salih al-Samarra'i<br>Arabic, English subtitles · 3 min 22 s</span></p>
+    </figure>
+    <div class="penceramah">
+      <p class="ms"><b>Penceramah: Prof. Dr Fadil Salih as-Samarra'i</b> (lahir 1933, Samarra, Iraq). PhD nahu (tatabahasa Arab), Universiti Ain Shams, Kaherah (1968); bekas profesor nahu di Universiti Baghdad selama kira-kira 40 tahun; ahli al-Majma' al-'Ilmi al-'Iraqi (Akademi Sains Iraq); pengarang <i>Ma'ani an-Nahw</i> (Makna-makna Nahu) dan <i>at-Ta'bir al-Qur'ani</i> (Gaya Pengungkapan al-Qur'an); dikenali melalui rancangan TV <i>Lamasat Bayaniyyah</i> (Sentuhan Keindahan Bahasa).</p>
+      <p class="en"><b>Speaker: Prof. Dr Fadil Salih al-Samarra'i</b> (b. 1933, Samarra, Iraq). PhD in Arabic grammar, Ain Shams University, Cairo (1968); professor of grammar at the University of Baghdad for about 40 years; member of the Iraqi Academy of Sciences (al-Majma' al-'Ilmi al-'Iraqi); author of <i>Ma'ani al-Nahw</i> and <i>al-Ta'bir al-Qur'ani</i>; widely known through the TV programme <i>Lamasat Bayaniyya</i>.</p>
+    </div>
+    <p class="ms">Dalam klip ini Dr Fadil membentangkan satu pendapat lama, dalilnya, dan bantahan terhadapnya. Kesimpulan beliau: <mark><b>nazzala tidak semestinya bermaksud "beransur-ansur". Ia lebih kuat penegasannya, dan dipilih apabila perkara yang diturunkan lebih penting dalam konteks ayat.</b></mark></p>
+    <p class="en">In this clip Dr Fadil presents an old view, its proof, and the rebuttal against it. His conclusion: <mark><b>nazzala does not necessarily mean "gradually". It is more emphatic, and is chosen when what is sent down is more weighty in the context of the verse.</b></mark></p>
+  </section>
+
+  <section>
+    <h2><span class="no">1</span><span class="ms">Dua Bentuk, Satu Akar</span><span class="en">Two Forms, One Root</span></h2>
+    <div class="banding" role="table">
+      <div class="brow bhead" role="row"><div role="columnheader"></div><div role="columnheader">أَنْزَلَ</div><div role="columnheader">نَزَّلَ</div></div>
+      <div class="brow" role="row"><div role="rowheader"><span class="ms">Wazan</span><span class="en">Pattern</span></div><div><span class="ar">أَفْعَلَ</span><small><span class="ms">af‘ala (tambahan hamzah)</span><span class="en">af‘ala (added hamza)</span></small></div><div class="lebih"><span class="ar">فَعَّلَ</span><small><span class="ms">fa‘‘ala (huruf tengah bersyaddah)</span><span class="en">fa‘‘ala (doubled middle letter)</span></small></div></div>
+      <div class="brow" role="row"><div role="rowheader"><span class="ms">Akar</span><span class="en">Root</span></div><div><span class="ar">ن ز ل</span><small><span class="ms">nūn-zāy-lām (turun)</span><span class="en">n-z-l (to descend)</span></small></div><div><span class="ar">ن ز ل</span><small><span class="ms">sama</span><span class="en">same</span></small></div></div>
+      <div class="brow" role="row"><div role="rowheader"><span class="ms">Pendapat lama</span><span class="en">Older view</span></div><div><span class="ar">جُمْلَةً</span><small><span class="ms">turun sekaligus</span><span class="en">all at once</span></small></div><div class="lebih"><span class="ar">مُنَجَّمًا</span><small><span class="ms">munajjaman (beransur-ansur)</span><span class="en">munajjaman (in instalments)</span></small></div></div>
+      <div class="brow" role="row"><div role="rowheader"><span class="ms">Dr Fadil</span><span class="en">Dr Fadil</span></div><div><small><span class="ms">lebih umum</span><span class="en">more general</span></small></div><div class="lebih"><small><span class="ms">lebih kuat penegasan (<i>ākad</i>) dan lebih penting (<i>ahamm</i>)</span><span class="en">more emphatic (<i>ākad</i>) and more weighty (<i>ahamm</i>)</span></small></div></div>
+    </div>
+    <p class="nota-kecil ms">Huraian dalam kurungan ialah ringkasan untuk pembaca, bukan terjemahan ayat.</p>
+    <p class="nota-kecil en">Glosses in brackets are reader summaries, not verse translations.</p>
+  </section>
+
+  <section>
+    <h2><span class="no">2</span><span class="ms">Ayat yang Menjadi Dalil</span><span class="en">The Verse Used as Proof</span></h2>
+
+    <article class="kisah">
+      <div class="kepala"><div class="ikon">📖</div>
+        <div><h3><span class="ms">Ali 'Imran: dua kata dalam satu ayat</span><span class="en">Al 'Imran: two words in one verse</span></h3>
+        <div class="susah"><span class="ms"><b>nazzala</b> untuk al-Qur'an, <b>anzala</b> untuk Taurat dan Injil</span><span class="en"><b>nazzala</b> for the Qur'an, <b>anzala</b> for the Torah and Gospel</span></div></div></div>
+      <div class="isi">
+        <span class="label l-ayat"><span class="ms">Ayat</span><span class="en">Verses</span></span>
+        <p class="ayat"><mark>نَزَّلَ</mark> عَلَيْكَ الْكِتَابَ بِالْحَقِّ مُصَدِّقًا لِمَا بَيْنَ يَدَيْهِ وَ<mark>أَنْزَلَ</mark> التَّوْرَاةَ وَالْإِنْجِيلَ ﴿٣﴾ مِنْ قَبْلُ هُدًى لِلنَّاسِ وَ<mark>أَنْزَلَ</mark> الْفُرْقَانَ ﴿٤﴾</p>
+        <p class="terj ms">"Ia menurunkan kepadamu (wahai Muhammad) Kitab Suci (Al-Quran) dengan mengandungi kebenaran, yang mengesahkan isi Kitab-kitab Suci yang telah diturunkan dahulu daripadanya, dan Ia juga yang menurunkan Kitab-kitab Taurat dan Injil. Sebelum (Al-Quran diturunkan), menjadi petunjuk bagi umat manusia. Dan Ia juga yang menurunkan Al-Furqaan (yang membezakan antara yang benar dengan yang salah)…"</p>
+        <p class="terj en">"He has sent down upon you, [O Muḥammad], the Book in truth, confirming what was before it. And He revealed the Torah and the Gospel. Before, as guidance for the people. And He revealed the Criterion [i.e., the Qur’ān]…"</p>
+        <p class="ref">Ali 'Imran 3:3–4 (petikan / excerpt)</p>
+        <div class="pengajaran ms">💡 <b>Perhatikan:</b> Basmeih menterjemah kedua-duanya "menurunkan". Pendapat lama berkata: al-Qur'an turun berperingkat selama bertahun-tahun, maka <i>nazzala</i>; Taurat dan Injil turun sekaligus, maka <i>anzala</i>.</div>
+        <div class="pengajaran en">💡 <b>Notice:</b> translations render both as "sent down/revealed". The older view says: the Qur'an came down in stages over years, hence <i>nazzala</i>; the Torah and Gospel came down at once, hence <i>anzala</i>.</div>
+      </div>
+    </article>
+
+    <div class="kontras" style="grid-template-columns:1fr">
+      <div class="ya"><p class="ar">وَأَنْزَلَ الْفُرْقَانَ</p><small><span class="ms">Dr Fadil: <i>al-Furqān</i> (pembeza) tidak semestinya al-Qur'an. Ia apa sahaja yang membezakan hak dan batil; ia juga disebut bersama Nabi Musa. Al-Qur'an juga furqān dengan makna ini.</span><span class="en">Dr Fadil: <i>al-Furqān</i> (the Criterion) is not necessarily the Qur'an. It is whatever distinguishes truth from falsehood; it is also mentioned with Musa. The Qur'an is a furqān in this sense too.</span></small></div>
+    </div>
+    <p class="nota-kecil ms">Perhatikan: Saheeh International menambah "[i.e., the Qur’ān]" pada al-Furqān dalam 3:4. Dr Fadil berpandangan maknanya lebih umum.</p>
+    <p class="nota-kecil en">Note: Saheeh International adds "[i.e., the Qur’ān]" for al-Furqān in 3:4. Dr Fadil holds the meaning is broader.</p>
+  </section>
+
+  <section>
+    <h2><span class="no">3</span><span class="ms">Ayat yang Membantah</span><span class="en">The Verse That Rebuts</span></h2>
+
+    <article class="kisah">
+      <div class="kepala"><div class="ikon">⚖️</div>
+        <div><h3><span class="ms">al-Furqan: <i>nuzzila</i> … "sekaligus"</span><span class="en">al-Furqan: <i>nuzzila</i> … "all at once"</span></h3>
+        <div class="susah"><span class="ms">Bentuk <b>nazzala</b>, tetapi bersama <b>jumlatan wāḥidah</b></span><span class="en">The form <b>nazzala</b>, yet with <b>jumlatan wāḥidah</b></span></div></div></div>
+      <div class="isi">
+        <span class="label l-ayat"><span class="ms">Ayat</span><span class="en">Verse</span></span>
+        <p class="ayat">وَقَالَ الَّذِينَ كَفَرُوا لَوْلَا <mark>نُزِّلَ</mark> عَلَيْهِ الْقُرْآنُ <mark>جُمْلَةً وَاحِدَةً</mark> كَذَلِكَ لِنُثَبِّتَ بِهِ فُؤَادَكَ وَرَتَّلْنَاهُ تَرْتِيلًا ﴿٣٢﴾</p>
+        <p class="terj ms">"Dan orang-orang yang kafir berkata: "Mengapa tidak diturunkan Al-Quran itu kepada Muhammad semuanya sekali (dengan sekaligus)?" Al-Quran diturunkan dengan cara (beransur-ansur) itu kerana Kami hendak menetapkan hatimu (wahai Muhammad) dengannya, dan Kami nyatakan bacaannya kepadamu dengan teratur satu persatu."</p>
+        <p class="terj en">"And those who disbelieve say, "Why was the Qur’ān not revealed to him all at once?" Thus [it is] that We may strengthen thereby your heart. And We have spaced it distinctly."</p>
+        <p class="ref">al-Furqan 25:32</p>
+        <div class="pengajaran ms">💡 <b>Perhatikan:</b> jika <i>nazzala</i> semestinya bermaksud "beransur-ansur", maka "<i>nuzzila</i> … sekaligus" menjadi bercanggah. Inilah dalil ulama yang menolak pendapat lama itu.</div>
+        <div class="pengajaran en">💡 <b>Notice:</b> if <i>nazzala</i> must mean "gradually", then "<i>nuzzila</i> … all at once" would contradict itself. This is the proof of the scholars who rejected the older view.</div>
+      </div>
+    </article>
+
+    <p class="ayat">إِنَّا <mark>أَنْزَلْنَاهُ</mark> فِي لَيْلَةِ الْقَدْرِ ﴿١﴾</p>
+    <p class="terj ms">"Sesungguhnya Kami telah menurunkan (Al-Quran) ini pada Malam Lailatul-Qadar,"</p>
+    <p class="terj en">"Indeed, We sent it [i.e., the Qur’ān] down during the Night of Decree."</p>
+    <p class="ref">al-Qadr 97:1</p>
+    <p class="nota-kecil ms">Dalam klip, Dr Fadil menyebut ayat ini sebagai contoh <i>anzala</i> yang umum. Beliau juga menyebut pandangan bahawa <i>anzala</i> lebih umum: untuk yang beransur-ansur dan yang tidak.</p>
+    <p class="nota-kecil en">In the clip, Dr Fadil cites this verse as an example of <i>anzala</i> used generally. He also mentions the view that <i>anzala</i> is the more general word: for gradual and non-gradual alike.</p>
+  </section>
+
+  <section>
+    <h2><span class="no">4</span><span class="ms">Empat Kata Kunci</span><span class="en">Four Key Words</span></h2>
+    <div class="kunci">
+      <div><p class="ar">نَزَّلَ</p><span><b>nazzala</b><br><span class="ms">(menurunkan; wazan fa‘‘ala)</span><span class="en">(sent down; form fa‘‘ala)</span></span></div>
+      <div><p class="ar">أَنْزَلَ</p><span><b>anzala</b><br><span class="ms">(menurunkan; wazan af‘ala)</span><span class="en">(sent down; form af‘ala)</span></span></div>
+      <div><p class="ar">جُمْلَةً وَاحِدَةً</p><span><b>jumlatan wāḥidah</b><br><span class="ms">(sekaligus, satu kali)</span><span class="en">(all at once)</span></span></div>
+      <div><p class="ar">السِّيَاق</p><span><b>as-siyāq</b><br><span class="ms">(konteks ayat dan sekitarnya)</span><span class="en">(the context of the passage)</span></span></div>
+    </div>
+    <p class="nota-kecil ms" style="margin-top:10px">Huraian makna di atas ialah ringkasan umum untuk pembaca, bukan takrif daripada satu kitab tertentu.</p>
+    <p class="nota-kecil en" style="margin-top:10px">These meanings are a general summary for readers, not definitions taken from a particular book.</p>
+  </section>
+
+  <section>
+    <h2><span class="no">5</span><span class="ms">Apa Kata Ulama</span><span class="en">What the Scholars Say</span></h2>
+    <span class="label l-ulama"><span class="ms">Nukilan · ada perbezaan pandangan</span><span class="en">Quoted · scholars differ</span></span>
+    <p class="ms">Soalannya: adakah bentuk <i>nazzala</i> dengan sendirinya menunjukkan turun beransur-ansur?</p>
+    <p class="en">The question: does the form <i>nazzala</i> by itself indicate coming down gradually?</p>
+
+    <blockquote>
+      <p class="ar">فإن قلت: لم قيل (نَزَّلَ عَلَيْكَ الْكِتابَ) (وَأَنْزَلَ التَّوْراةَ وَالْإِنْجِيلَ)؟ قلت: لأن القرآن نزل منجماً، ونزل الكتابان جملة.</p>
+      <p class="tr ms"><b>Pandangan 1, az-Zamakhsyari: ya, ia menunjukkan beransur-ansur.</b> "Jika engkau bertanya: kenapa dikatakan <i>nazzala</i> bagi al-Kitab dan <i>anzala</i> bagi Taurat dan Injil? Aku menjawab: kerana al-Qur'an turun <i>munajjaman</i> (beransur-ansur), manakala dua kitab itu turun sekaligus."</p>
+      <p class="tr en"><b>View 1, al-Zamakhshari: yes, it indicates gradual descent.</b> "If you ask: why is <i>nazzala</i> said of the Book and <i>anzala</i> of the Torah and Gospel? I say: because the Qur'an came down <i>munajjaman</i> (in instalments), while the two books came down all at once."</p>
+      <cite class="ms">az-Zamakhsyari (w. 538H), <i>al-Kasysyaf</i>, 1/336, tafsir 3:3 (Shamela; cetakan bersama <i>al-Intisaf</i>).</cite>
+      <cite class="en">al-Zamakhshari (d. 538 AH), <i>al-Kashshaf</i>, 1/336, on 3:3 (Shamela; edition with <i>al-Intisaf</i>).</cite>
+    </blockquote>
+
+    <blockquote>
+      <p class="ar">فَلَوْ كَانَ التَّضْعِيفُ فِي نَزَلَ مُفِيدًا لِلتَّنْجِيمِ لَاحْتَاجَ قَوْلُهُ تَعَالَى: لَوْلا نُزِّلَ عَلَيْهِ الْقُرْآنُ جُمْلَةً واحِدَةً إِلَى تَأْوِيلٍ، لِأَنَّ التَّضْعِيفَ دَالٌّ عَلَى التَّنْجِيمِ وَالتَّكْثِيرِ، وَقَوْلُهُ: جُمْلَةً واحِدَةً يُنَافِي ذَلِكَ</p>
+      <p class="tr ms"><b>Pandangan 2, Abu Hayyan: tidak, kedua-duanya satu makna.</b> "Jika syaddah (penggandaan huruf) pada <i>nazala</i> menunjukkan beransur-ansur, maka firman-Nya «<i>lau lā nuzzila ‘alaihil-Qur’ānu jumlatan wāḥidah</i>» memerlukan takwilan, kerana syaddah itu menunjukkan beransur dan banyak, sedangkan «sekaligus» menafikannya." Beliau juga berhujah bahawa bacaan qiraat dengan kedua-dua bentuk menunjukkan maknanya sama.</p>
+      <p class="tr en"><b>View 2, Abu Hayyan: no, both carry one meaning.</b> "If the doubling in <i>nazala</i> indicated instalments, then His words «<i>law lā nuzzila ‘alayhi l-Qur’ānu jumlatan wāḥidah</i>» would need reinterpreting, since the doubling indicates instalments and multiplicity, while «all at once» negates that." He also argues that the qira'at reading both forms shows they mean the same.</p>
+      <cite class="ms">Abu Hayyan al-Andalusi (w. 745H), <i>al-Bahr al-Muhit</i>, cet. Dar al-Fikr, 1/168 (tafsir 2:23); juga 3/16 (tafsir 3:3) (Shamela).</cite>
+      <cite class="en">Abu Hayyan al-Andalusi (d. 745 AH), <i>al-Bahr al-Muhit</i>, Dar al-Fikr ed., 1/168 (on 2:23); also 3/16 (on 3:3) (Shamela).</cite>
+    </blockquote>
+
+    <blockquote>
+      <p class="ar">(نزّل) على صيغة فعّل وهي تفيد التكثير … كما أن فعّل تفيد التدرج … وصيغة (نزّل) تفيد الإهتمام، أما في قوله تعالى (وأنزل التوراة والإنجيل) جاء الفعل (أنزل) لأنه نزل جملة واحدة.</p>
+      <p class="tr ms"><b>Pandangan 3, Dr Fadil as-Samarra'i: penekanan dan kepentingan.</b> Dalam klip, beliau tidak menghadkan <i>nazzala</i> kepada makna beransur-ansur, kerana dalil itu telah dibantah dengan 25:32; pilihan kata bergantung pada <i>siyāq</i> (konteks): yang lebih penting didatangkan <i>nazzala</i>. Dalam jawapan bertulis beliau, beliau menyebut wazan <i>fa‘‘ala</i> boleh membawa makna banyak dan beransur, dan menambah: "bentuk <i>nazzala</i> menunjukkan perhatian (<i>al-ihtimām</i>)."</p>
+      <p class="tr en"><b>View 3, Dr Fadil al-Samarra'i: emphasis and weight.</b> In the clip he does not limit <i>nazzala</i> to the gradual meaning, since that proof was rebutted with 25:32; the choice depends on the <i>siyāq</i> (context): what is more weighty takes <i>nazzala</i>. In a written answer he notes that the <i>fa‘‘ala</i> form can carry multiplicity and gradualness, and adds: "the form <i>nazzala</i> indicates attention and importance (<i>al-ihtimām</i>)."</p>
+      <cite class="ms">Fadil Salih as-Samarra'i, <i>Lamasat Bayaniyyah fi Nusus min at-Tanzil (Muhadarat)</i>, soalan no. 166, hlm. 720 (Shamela; penomboran automatik Shamela, bukan cetakan).</cite>
+      <cite class="en">Fadil Salih al-Samarra'i, <i>Lamasat Bayaniyya fi Nusus min al-Tanzil (Muhadarat)</i>, question no. 166, p. 720 (Shamela's automatic page numbering, not a printed edition).</cite>
+    </blockquote>
+    <p class="nota-kecil ms">Petikan az-Zamakhsyari dibaca terus daripada <i>al-Kasysyaf</i>; Abu Hayyan juga menukilnya dalam <i>al-Bahr al-Muhit</i> 3/16 lalu menolaknya. Nombor jilid/halaman mungkin berbeza dalam cetakan lain.</p>
+    <p class="nota-kecil en">The al-Zamakhshari quote was read directly from <i>al-Kashshaf</i>; Abu Hayyan also quotes it in <i>al-Bahr al-Muhit</i> 3/16 and rejects it. Pagination may differ in other editions.</p>
+  </section>
+
+  <section class="renung">
+    <span class="label l-renung"><span class="ms">Tadabbur · renungan peribadi</span><span class="en">Tadabbur · personal reflection</span></span>
+    <h2><span class="ms">Setiap Huruf Ditimbang</span><span class="en">Every Letter Is Weighed</span></h2>
+    <div class="ms">
+      <p>Hanya satu hamzah di depan dan satu syaddah (tanda penggandaan huruf) di tengah membezakan <em>anzala</em> daripada <em>nazzala</em>. Namun ulama besar, dari az-Zamakhsyari hingga Abu Hayyan dan Dr Fadil, membincangkan perbezaan kecil itu.</p>
+      <p>Itu kerana mereka yakin: tiada huruf dalam al-Qur'an yang diletakkan sia-sia. Mereka berbeza pendapat dengan adab, membawa dalil, dan menerima bantahan dengan dalil juga.</p>
+      <p>Dan al-Qur'an itu sendiri turun beransur-ansur selama bertahun-tahun, sebagaimana 25:32 menyebut sebabnya: untuk meneguhkan hati Rasulullah ﷺ. Ia sampai kepada kita ayat demi ayat; begitu juga ia patut masuk ke hati kita, sedikit demi sedikit tetapi berterusan.</p>
+    </div>
+    <div class="en">
+      <p>Only a hamza in front and a shadda (the doubling mark) in the middle separate <em>anzala</em> from <em>nazzala</em>. Yet great scholars, from al-Zamakhshari to Abu Hayyan and Dr Fadil, debated that small difference.</p>
+      <p>That is because they were certain: no letter in the Qur'an is placed in vain. They differed with courtesy, brought proofs, and answered rebuttals with proofs too.</p>
+      <p>And the Qur'an itself came down in stages over years, as 25:32 gives the reason: to strengthen the Prophet's ﷺ heart. It reached us verse by verse; so too should it enter our hearts, little by little but without stopping.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="no">6</span><span class="ms">Muhasabah</span><span class="en">Muhasabah (self-reflection)</span></h2>
+    <ol class="muhasabah ms">
+      <li>Adakah saya membaca al-Qur'an dengan rasa bahawa setiap huruf dipilih dengan teliti?</li>
+      <li>Apabila berbeza pendapat, adakah saya membawa dalil dan adab, atau hanya suara yang kuat?</li>
+      <li>Berapa banyak ayat yang benar-benar "turun" ke hati saya minggu ini?</li>
+    </ol>
+    <ol class="muhasabah en">
+      <li>Do I read the Qur'an aware that every letter was chosen with care?</li>
+      <li>When I disagree, do I bring proof and courtesy, or only a loud voice?</li>
+      <li>How many verses truly "came down" into my heart this week?</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2><span class="no">7</span><span class="ms">Amalan Minggu Ini</span><span class="en">Practice This Week</span></h2>
+    <ul class="amal ms">
+      <li><b>Cari dua bentuk:</b> dalam bacaan harian, tandakan setiap kali bertemu نَزَّلَ dan أَنْزَلَ.</li>
+      <li><b>Sedikit tetapi tetap:</b> pilih satu ayat sehari untuk difahami, seperti al-Qur'an turun beransur-ansur.</li>
+      <li><b>Lihat konteks:</b> sebelum membuat kesimpulan tentang satu kata, baca ayat sebelum dan selepasnya.</li>
+      <li><b>Belajar bahasa al-Qur'an:</b> kenali wazan <i>fa‘‘ala</i> dan <i>af‘ala</i>; ia membuka banyak rahsia makna.</li>
+    </ul>
+    <ul class="amal en">
+      <li><b>Find the two forms:</b> in your daily reading, mark each time you meet نَزَّلَ and أَنْزَلَ.</li>
+      <li><b>Little but steady:</b> choose one verse a day to understand, as the Qur'an came down in stages.</li>
+      <li><b>Look at the context:</b> before concluding about a word, read the verses before and after it.</li>
+      <li><b>Learn the Qur'an's language:</b> get to know the forms <i>fa‘‘ala</i> and <i>af‘ala</i>; they open many secrets of meaning.</li>
+    </ul>
+  </section>
+
+  <div class="zikir">
+    <p class="ar">كَذَلِكَ لِنُثَبِّتَ بِهِ فُؤَادَكَ</p>
+    <p class="ms">"…Al-Quran diturunkan dengan cara (beransur-ansur) itu kerana Kami hendak menetapkan hatimu (wahai Muhammad) dengannya…" (al-Furqan 25:32)</p>
+    <p class="en">"…Thus [it is] that We may strengthen thereby your heart…" (25:32)</p>
+  </div>
+
+  <section class="sertai">
+    <img src="attartil-logo.png" alt="AtTartil Quranic Institute">
+    <h2><span class="ms">Ingin memahami al-Qur'an seperti ini?</span><span class="en">Want to understand the Qur'an like this?</span></h2>
+    <p class="lead ms">Sertai <b>AFAM (AtTartil Full-Access Membership)</b> dan teruskan perjalanan daripada membaca, kepada memahami, merenung dan mengamalkan al-Qur'an.</p>
+    <p class="lead en">Join <b>AFAM (AtTartil Full-Access Membership)</b> and continue the journey from reading the Qur'an to understanding, reflecting on and living it.</p>
+    <ul class="ms">
+      <li>Akses kepada kelas rakaman dan program-program lepas AtTartil</li>
+      <li>Kandungan tadabbur dan bahasa al-Qur'an</li>
+      <li>Belajar ikut masa anda, di mana-mana peranti</li>
+      <li>Komuniti pelajar untuk bertanya dan saling menyokong</li>
+    </ul>
+    <ul class="en">
+      <li>Access to AtTartil's recorded classes and past programmes</li>
+      <li>Tadabbur and Qur'anic language content</li>
+      <li>Learn at your own pace, on any device</li>
+      <li>A learners' community for questions and support</li>
+    </ul>
+    <p class="harga"><span class="ms">$10 sebulan atau $120 setahun</span><span class="en">$10 a month or $120 a year</span></p>
+    <div class="cta">
+      <a class="utama" href="https://attartilqi.com/afam" target="_blank" rel="noopener"><span class="ms">Sertai AFAM</span><span class="en">Join AFAM</span> →</a>
+      <a class="kedua" href="https://wa.me/6593725111" target="_blank" rel="noopener"><span class="ms">Tanya di WhatsApp</span><span class="en">Ask on WhatsApp</span></a>
+    </div>
+    <p class="sosial"><span class="ms">Ikuti siri Peringatan Ulama:</span><span class="en">Follow the Scholars' Reminders series:</span><br>
+      <a href="https://www.instagram.com/attartilqi/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/attartil" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.youtube.com/channel/UCPv1RPGjbULC0Wfx9BQ3v1Q" target="_blank" rel="noopener">YouTube</a> · <a href="https://www.tiktok.com/@attartilcs" target="_blank" rel="noopener">TikTok</a> · <a href="https://chat.whatsapp.com/JCuiFYFNTSn3CycNfE0k6T" target="_blank" rel="noopener"><span class="ms">Komuniti WhatsApp</span><span class="en">WhatsApp Community</span></a></p>
+  </section>
+
+  <p style="text-align:center;margin:36px 0 0;font-family:'Inter',system-ui,sans-serif;font-weight:600"><a href="../" style="color:var(--hijau);text-decoration:none">← <span class="ms">Semua siri Peringatan Ulama</span><span class="en">All Scholars' Reminders episodes</span></a></p>
+
+  <footer>
+    <div class="visi"><img src="attartil-logo.png" alt=""><span><b>ATTARTIL QURANIC INSTITUTE</b>"Where Qur'anic Knowledge Transforms Lives"</span></div>
+    <div class="ms">
+      <b>Rujukan</b>
+      <ol>
+        <li>Teks ayat: al-Maktabah al-Shamela (riwayat Hafs 'an 'Asim).</li>
+        <li>Terjemahan ayat (BM): <i>Tafsir Pimpinan ar-Rahman</i>, Sheikh Abdullah Basmeih (JAKIM).</li>
+        <li>az-Zamakhsyari, <i>al-Kasysyaf</i>, 1/336; Abu Hayyan, <i>al-Bahr al-Muhit</i>, cet. Dar al-Fikr, 1/168 dan 3/16; Fadil Salih as-Samarra'i, <i>Lamasat Bayaniyyah fi Nusus min at-Tanzil (Muhadarat)</i>, hlm. 720 (penomboran Shamela) (al-Maktabah al-Shamela; halaman mungkin berbeza dalam cetakan lain).</li>
+        <li>Isi ceramah: rakaman video (bahasa Arab), klip yang sama dengan Siri 02, bahagian 5:44–9:01 (نزّل · أنزل).</li>
+      </ol>
+      <p>Bahagian bertanda "Tadabbur" ialah renungan peribadi, bukan tafsir. Nota ini ialah bahan pembelajaran dan bukan fatwa.</p>
+    </div>
+    <div class="en">
+      <b>References</b>
+      <ol>
+        <li>Arabic verse text: al-Maktabah al-Shamela (Hafs 'an 'Asim).</li>
+        <li>English verse translation: Saheeh International.</li>
+        <li>al-Zamakhshari, <i>al-Kashshaf</i>, 1/336; Abu Hayyan, <i>al-Bahr al-Muhit</i>, Dar al-Fikr ed., 1/168 and 3/16; Fadil Salih al-Samarra'i, <i>Lamasat Bayaniyya fi Nusus min al-Tanzil (Muhadarat)</i>, p. 720 (Shamela numbering) (al-Maktabah al-Shamela; pagination may differ in other editions).</li>
+        <li>Lecture content: video recording (in Arabic), same clip as Episode 02, part 5:44–9:01 (نزّل · أنزل).</li>
+      </ol>
+      <p>Sections marked "Tadabbur" are personal reflection, not tafsir. These notes are learning material and not a fatwa.</p>
+    </div>
+  </footer>
+</main>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  var titles={ms:"Nazzala dan Anzala",en:"Nazzala and Anzala"};
+  function set(lang){
+    root.setAttribute("data-lang",lang);
+    root.setAttribute("lang",lang);
+    document.title=titles[lang];
+    var b=document.querySelectorAll(".toggle button");
+    for(var i=0;i<b.length;i++){b[i].setAttribute("aria-pressed",b[i].getAttribute("data-set")===lang?"true":"false");}
+    var v=document.querySelectorAll("video");
+    for(var j=0;j<v.length;j++){if(!v[j].classList.contains(lang)){try{v[j].pause();}catch(e){}}}
+    try{localStorage.setItem("tasbih-lang",lang);}catch(e){}
+  }
+  var saved=null;
+  try{saved=localStorage.getItem("tasbih-lang");}catch(e){}
+  if(saved==="ms"||saved==="en"){set(saved);}
+  document.querySelector(".toggle").addEventListener("click",function(e){
+    var t=e.target.closest("button");
+    if(t){set(t.getAttribute("data-set"));}
+  });
+})();
+</script>
+</body>
+</html>
+
+

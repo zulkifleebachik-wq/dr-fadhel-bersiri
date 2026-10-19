@@ -506,10 +506,10 @@ footer ol{padding-left:18px;margin:6px 0 12px}
     for(var i=0;i<b.length;i++){b[i].setAttribute("aria-pressed",b[i].getAttribute("data-set")===lang?"true":"false");}
     var v=document.querySelectorAll("video");
     for(var j=0;j<v.length;j++){if(!v[j].classList.contains(lang)){try{v[j].pause();}catch(e){}}}
-    try{localStorage.setItem("drfadhel-lang",lang);}catch(e){}
+    try{localStorage.setItem("tasbih-lang",lang);}catch(e){}
   }
   var saved=null;
-  try{saved=localStorage.getItem("drfadhel-lang");}catch(e){}
+  try{saved=localStorage.getItem("tasbih-lang");}catch(e){}
   if(saved==="ms"||saved==="en"){set(saved);}
   document.querySelector(".toggle").addEventListener("click",function(e){
     var t=e.target.closest("button");
