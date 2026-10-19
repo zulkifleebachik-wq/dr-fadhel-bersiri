@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="ms" data-lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ajal: Tidak Ditangguh, Tidak Dipercepat</title>
+<meta name="description" content="Peringatan Ulama Siri 07: Kenapa 'la yasta'khiruna' disebut sebelum 'wa la yastaqdimun'? Prof. Dr Fadil Salih as-Samarra'i, nota renungan dwibahasa AtTartil.">
+<meta property="og:title" content="Ajal: Tidak Ditangguh, Tidak Dipercepat · Peringatan Ulama Siri 07 | AtTartil">
+<meta property="og:description" content="Prof. Dr Fadil Salih as-Samarra'i: kenapa ditangguhkan disebut dahulu?">
+<meta property="og:image" content="reel-poster-ms.jpg">
+<link rel="icon" href="attartil-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Amiri+Quran&family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --hutan:#10301f;      /* deep forest */
+  --hijau:#2f7a10;      /* logo green, softened */
+  --daun:#3d9002;       /* logo centre */
+  --lime:#9ad102;       /* logo ring */
+  --kuning:#ffe14d;     /* logo yellow, softened */
+  --kuning-pucat:#fff7cf;
+  --hitam:#141414;
+  --kertas:#fbfaf3;
+  --kad:#ffffff;
+  --lembut:#f1f6e6;
+  --teks:#1f2420;
+  --redup:#5b6658;
+  --garis:#e3e9d6;
+  --ayat:#24600c;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --kertas:#0e1510; --kad:#151e17; --lembut:#1a2a1c; --teks:#ecefe7; --redup:#a7b3a3;
+    --garis:#273626; --ayat:#b5e05a; --kuning-pucat:#2a2711; --hijau:#9ad102;
+  }
+}
+:root[data-theme="dark"]{
+  --kertas:#0e1510; --kad:#151e17; --lembut:#1a2a1c; --teks:#ecefe7; --redup:#a7b3a3;
+  --garis:#273626; --ayat:#b5e05a; --kuning-pucat:#2a2711; --hijau:#9ad102;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--kertas);color:var(--teks);
+  font-family:"Lora",Georgia,serif;font-size:18px;line-height:1.85}
+
+/* language switching */
+html[data-lang="ms"] .en{display:none!important}
+html[data-lang="en"] .ms{display:none!important}
+
+/* TOP BAR */
+.bar{position:sticky;top:0;z-index:10;background:rgba(16,48,31,.94);backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);border-bottom:3px solid var(--lime)}
+.bar .in{max-width:780px;margin:0 auto;padding:8px 16px;display:flex;align-items:center;gap:10px}
+.bar img{width:38px;height:38px;border-radius:50%;flex:none}
+.bar .nm{color:#fff;font-family:"Inter",system-ui,sans-serif;font-size:.78rem;font-weight:600;letter-spacing:.06em;line-height:1.25;flex:1;min-width:0}
+.bar .nm small{display:block;color:var(--kuning);font-weight:500;letter-spacing:.04em}
+.toggle{display:flex;background:#0a1f14;border:1px solid #2c5a1b;border-radius:999px;padding:3px;flex:none}
+.toggle button{appearance:none;border:0;background:transparent;color:#cfe3c4;font-family:"Inter",system-ui,sans-serif;
+  font-weight:600;font-size:.8rem;padding:6px 13px;border-radius:999px;cursor:pointer;min-height:32px}
+.toggle button[aria-pressed="true"]{background:var(--kuning);color:var(--hitam)}
+.toggle button:focus-visible{outline:2px solid var(--lime);outline-offset:2px}
+
+/* HERO */
+header.hero{position:relative;overflow:hidden;color:#fff;text-align:center;
+  background:radial-gradient(110% 80% at 50% 0%,#2f6a17 0%,#16402a 55%,#0d2618 100%);padding:44px 16px 54px}
+header.hero::before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;
+  border:2px solid rgba(154,209,2,.18);left:50%;top:-250px;transform:translateX(-50%)}
+header.hero::after{content:"";position:absolute;width:360px;height:360px;border-radius:50%;
+  border:2px solid rgba(255,225,77,.14);left:50%;top:-170px;transform:translateX(-50%)}
+.hero .logo{position:relative;z-index:1;width:112px;height:112px;margin:0 auto 18px;border-radius:50%;
+  box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.hero .tag{position:relative;z-index:1;display:inline-block;font-family:"Inter",system-ui,sans-serif;font-size:.72rem;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--hitam);background:var(--kuning);padding:3px 12px;border-radius:999px}
+.hero .ar-big{position:relative;z-index:1;font-family:"Amiri",serif;font-size:2.3rem;line-height:1.6;color:var(--kuning);margin:16px 0 0}
+.hero h1{position:relative;z-index:1;font-weight:600;font-size:2rem;line-height:1.3;margin:8px 0 10px}
+.hero p.sub{position:relative;z-index:1;font-style:italic;color:#dcead2;margin:0 auto;max-width:540px;font-size:1.02rem}
+
+.wrap{max-width:760px;margin:0 auto;padding:0 16px 56px}
+.ar{font-family:"Amiri",serif;direction:rtl;line-height:2.1}
+.ayat{font-family:"Amiri Quran","Amiri",serif;direction:rtl;font-size:1.55rem;line-height:2.35;color:var(--ayat);text-align:center;margin:.3em 0 .5em}
+
+section{margin-top:44px}
+h2{font-size:1.32rem;color:var(--teks);margin:0 0 14px;display:flex;align-items:center;gap:12px;line-height:1.35}
+h2 .no{flex:none;width:34px;height:34px;border-radius:50%;background:var(--hutan);color:var(--kuning);
+  font-family:"Inter",system-ui,sans-serif;font-size:.9rem;display:grid;place-items:center;font-weight:600;
+  box-shadow:0 0 0 3px var(--lime)}
+.pembuka{font-size:1.14rem;font-style:italic;margin:40px 0 0;padding:20px 22px;border-radius:14px;
+  background:var(--kuning-pucat);border-left:5px solid var(--kuning);position:relative}
+.label{display:inline-block;font-family:"Inter",system-ui,sans-serif;font-size:.68rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
+  padding:3px 11px;border-radius:999px;margin-bottom:10px}
+.l-video{background:var(--hutan);color:var(--kuning)}
+.l-ayat{background:var(--lembut);color:var(--hijau);border:1px solid var(--garis)}
+.l-ulama{background:var(--kuning);color:var(--hitam)}
+.l-renung{background:rgba(255,225,77,.16);color:var(--kuning);border:1px solid rgba(255,225,77,.4)}
+.nota-kecil{font-size:.9rem;color:var(--redup)}
+mark{background:linear-gradient(transparent 58%,rgba(255,225,77,.55) 58%);color:inherit;padding:0 2px}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) mark{background:linear-gradient(transparent 58%,rgba(255,225,77,.28) 58%)}}
+:root[data-theme="dark"] mark{background:linear-gradient(transparent 58%,rgba(255,225,77,.28) 58%)}
+
+.video{margin:4px auto 22px;max-width:360px;background:var(--hutan);border-radius:20px;padding:10px;
+  box-shadow:0 10px 26px rgba(16,48,31,.18),0 0 0 3px var(--lime)}
+.video video{display:block;width:100%;height:auto;max-height:70vh;border-radius:12px;background:#000}
+.video p{margin:8px 4px 2px;font-family:"Inter",system-ui,sans-serif;font-size:.74rem;color:#cfe3c4;line-height:1.45;text-align:center}
+.video p b{color:var(--kuning);font-weight:600}
+.penceramah{background:var(--kad);border:1px solid var(--garis);border-left:5px solid var(--lime);border-radius:12px;
+  padding:12px 16px;margin:0 0 18px;font-size:.92rem;line-height:1.7}
+.penceramah p{margin:0}
+.sertai{margin-top:44px;border-radius:22px;overflow:hidden;background:linear-gradient(160deg,#2f6a17 0%,#16402a 55%,#0d2618 100%);
+  color:#fff;text-align:center;padding:30px 20px 26px;position:relative}
+.sertai::before{content:"";position:absolute;width:300px;height:300px;border-radius:50%;border:2px solid rgba(154,209,2,.25);
+  left:50%;top:-150px;transform:translateX(-50%)}
+.sertai img{position:relative;width:92px;height:92px;border-radius:50%;box-shadow:0 8px 22px rgba(0,0,0,.35)}
+.sertai h2{display:block;color:#fff;font-size:1.45rem;margin:14px 0 6px}
+.sertai .lead{color:#dcead2;margin:0 auto 16px;max-width:520px;font-size:1rem}
+.sertai ul{list-style:none;padding:0;margin:0 auto 20px;max-width:420px;text-align:left;font-size:.98rem}
+.sertai li{position:relative;padding:5px 0 5px 28px}
+.sertai li::before{content:"";position:absolute;left:4px;top:15px;width:11px;height:11px;border-radius:50%;background:var(--kuning)}
+.sertai .harga{font-family:"Inter",system-ui,sans-serif;color:var(--lime);font-weight:600;margin:0 0 16px;font-size:.92rem}
+.cta{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.cta a{font-family:"Inter",system-ui,sans-serif;font-weight:600;text-decoration:none;border-radius:999px;padding:12px 20px;
+  font-size:.95rem;min-height:44px;display:inline-flex;align-items:center;gap:6px}
+.cta .utama{background:var(--kuning);color:var(--hitam)}
+.cta .kedua{background:transparent;color:#fff;border:2px solid var(--lime)}
+.cta a:focus-visible{outline:3px solid #fff;outline-offset:2px}
+.sosial{margin-top:18px;font-family:"Inter",system-ui,sans-serif;font-size:.82rem;color:#cfe3c4}
+.sosial a{color:var(--kuning);text-decoration:none;margin:0 4px;white-space:nowrap;display:inline-block;padding:4px 0}
+.kontras{background:var(--kad);border:1px solid var(--garis);border-radius:14px;padding:14px 16px;margin:12px 0;
+  display:grid;grid-template-columns:1fr 1fr;gap:10px;text-align:center}
+.kontras div{border-radius:10px;padding:8px}
+.kontras .ya{background:var(--lembut)}
+.kontras .tidak{opacity:.7}
+.kontras .ar{font-size:1.35rem;margin:0;line-height:1.7}
+.kontras .ya .ar{color:var(--ayat)}
+.kontras small{display:block;font-size:.82rem;color:var(--redup);line-height:1.4}
+
+.kisah{background:var(--kad);border:1px solid var(--garis);border-radius:18px;padding:0;margin:20px 0;overflow:hidden;
+  box-shadow:0 6px 18px rgba(16,48,31,.06)}
+.kisah .kepala{display:flex;gap:14px;align-items:center;padding:16px 20px;background:var(--hutan);color:#fff}
+.kisah .ikon{flex:none;width:46px;height:46px;border-radius:50%;display:grid;place-items:center;font-size:1.35rem;
+  background:#0a1f14;box-shadow:0 0 0 2px var(--lime)}
+.kisah h3{margin:0;font-size:1.1rem;line-height:1.35;color:#fff}
+.kisah .susah{font-size:.86rem;color:#cfe3c4;line-height:1.5}
+.kisah .susah b{color:var(--kuning)}
+.kisah .isi{padding:18px 20px 20px}
+.terj{font-size:.98rem;color:var(--redup);text-align:center;margin:0 0 4px}
+.ref{font-family:"Inter",system-ui,sans-serif;font-size:.76rem;font-weight:500;color:var(--hijau);text-align:center;letter-spacing:.03em}
+.pisah{height:1px;background:var(--garis);margin:16px 0}
+.pengajaran{background:var(--kuning-pucat);border-radius:12px;padding:12px 16px;margin-top:16px;font-size:.98rem;border-left:4px solid var(--kuning)}
+
+.kunci{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+@media (min-width:640px){.kunci{grid-template-columns:repeat(4,1fr)}}
+.kunci div{background:var(--kad);border:1px solid var(--garis);border-top:4px solid var(--lime);border-radius:12px;padding:12px 10px;text-align:center}
+.kunci .ar{font-size:1.7rem;color:var(--ayat);line-height:1.5;margin:0}
+.kunci span{display:block;font-size:.86rem;color:var(--redup);line-height:1.45}
+.kunci b{color:var(--teks)}
+
+ul.pandangan{list-style:none;padding:0;margin:0 0 6px}
+ul.pandangan li{position:relative;padding:8px 0 8px 28px;border-bottom:1px dashed var(--garis)}
+ul.pandangan li:last-child{border-bottom:0}
+ul.pandangan li::before{content:"";position:absolute;left:4px;top:19px;width:10px;height:10px;border-radius:50%;
+  background:var(--lime);box-shadow:0 0 0 3px rgba(154,209,2,.25)}
+
+blockquote{margin:16px 0;background:var(--kad);border:1px solid var(--garis);border-right:5px solid var(--daun);
+  border-radius:14px;padding:16px 18px}
+blockquote .ar{font-size:1.25rem;margin:0;color:var(--teks)}
+blockquote .tr{font-size:.98rem;margin:8px 0 8px;padding-top:8px;border-top:1px dashed var(--garis)}
+blockquote cite{display:block;font-style:normal;font-family:"Inter",system-ui,sans-serif;font-size:.74rem;color:var(--redup);line-height:1.55}
+
+.renung{background:linear-gradient(160deg,#16402a 0%,#0d2618 70%,#0a1d12 100%);color:#eef3ea;border-radius:20px;
+  padding:28px 22px;position:relative;overflow:hidden}
+.renung::after{content:"";position:absolute;right:-60px;bottom:-60px;width:200px;height:200px;border-radius:50%;
+  border:2px solid rgba(255,225,77,.18)}
+.renung h2{color:#fff}
+.renung p{margin:0 0 14px;position:relative;z-index:1}
+.renung p:last-child{margin:0;font-size:1.08rem}
+.renung em{color:var(--kuning);font-style:normal}
+
+ol.muhasabah{counter-reset:m;list-style:none;padding:0;margin:0}
+ol.muhasabah li{counter-increment:m;position:relative;padding:12px 14px 12px 52px;margin-bottom:10px;background:var(--kad);
+  border:1px solid var(--garis);border-radius:12px}
+ol.muhasabah li::before{content:counter(m);position:absolute;left:14px;top:12px;width:26px;height:26px;border-radius:50%;
+  background:var(--kuning);color:var(--hitam);font-family:"Inter",system-ui,sans-serif;font-size:.8rem;font-weight:600;display:grid;place-items:center}
+ul.amal{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+ul.amal li{background:var(--lembut);border-radius:12px;padding:12px 16px;border-left:5px solid var(--daun)}
+ul.amal li b{color:var(--hijau)}
+
+.zikir{text-align:center;margin-top:44px;padding:26px 16px;border-radius:20px;background:var(--kuning-pucat);border:1px solid rgba(255,225,77,.6)}
+.zikir .ar{font-size:2.1rem;color:var(--ayat);margin:0;line-height:1.7}
+.zikir p{color:var(--redup);font-style:italic;margin:2px 0 0}
+
+footer{margin-top:44px;padding-top:18px;border-top:3px solid var(--hutan);font-family:"Inter",system-ui,sans-serif;font-size:.8rem;color:var(--redup);line-height:1.65}
+footer .visi{display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:16px;text-align:left}
+footer .visi img{width:46px;height:46px;border-radius:50%}
+footer .visi span{font-family:"Lora",serif;font-style:italic;font-size:1rem;color:var(--teks);line-height:1.4}
+footer .visi b{display:block;font-style:normal;font-family:"Inter",system-ui,sans-serif;font-size:.78rem;color:var(--hijau);letter-spacing:.05em}
+footer ol{padding-left:18px;margin:6px 0 12px}
+
+@media (max-width:520px){
+  body{font-size:17px}
+  .bar .nm{font-size:.7rem}
+  .hero .ar-big{font-size:1.85rem}
+  .hero h1{font-size:1.6rem}
+  .hero .logo{width:96px;height:96px}
+  .ayat{font-size:1.36rem}
+  .kisah .kepala{padding:14px 16px}
+  .kisah .isi{padding:16px}
+}
+
+/* Siri 02: jadual perbandingan */
+.banding{border:1px solid var(--garis);border-radius:14px;overflow:hidden;margin:14px 0 10px;background:var(--kad)}
+.brow{display:grid;grid-template-columns:92px 1fr 1fr;border-top:1px solid var(--garis)}
+.brow:first-child{border-top:0}
+.brow>div{padding:10px 10px;text-align:center}
+.brow>div:first-child{text-align:left;font-family:"Inter",system-ui,sans-serif;font-size:.8rem;font-weight:600;color:var(--hijau);display:flex;align-items:center}
+.brow .ar{display:block;font-family:"Amiri Quran","Amiri",serif;font-size:1.3rem;line-height:1.9;color:var(--ayat);direction:rtl}
+.brow small{display:block;font-family:"Inter",system-ui,sans-serif;font-size:.74rem;line-height:1.35;color:var(--redup)}
+.brow .lebih{background:var(--kuning-pucat)}
+.bhead>div{background:var(--hutan);color:var(--kuning);font-family:"Inter",system-ui,sans-serif;font-size:.8rem;font-weight:600;padding:9px 6px}
+.bhead>div.lebih{background:var(--hutan)}
+.kontras .ya small{display:block;font-family:"Inter",system-ui,sans-serif;font-size:.76rem;color:var(--redup);margin-top:4px}
+.kontras .ya u{text-decoration-color:var(--kuning);text-decoration-thickness:3px;text-underline-offset:6px}
+@media (max-width:420px){.brow{grid-template-columns:70px 1fr 1fr}.brow .ar{font-size:1.12rem}}
+@media print{
+  .bar{position:static}
+  .toggle{display:none}
+  body{background:#fff;font-size:12pt}
+  .kisah,blockquote,.renung,ul.amal li,ol.muhasabah li{break-inside:avoid}
+  header.hero,.renung,.kisah .kepala,.bar{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+.nw{white-space:nowrap}
+</style>
+<body>
+
+<div class="bar"><div class="in">
+  <img src="attartil-logo.png" alt="">
+  <div class="nm">ATTARTIL QURANIC INSTITUTE<small><span class="ms">Nota Renungan</span><span class="en">Reflection Notes</span></small></div>
+  <div class="toggle" role="group" aria-label="Bahasa / Language">
+    <button type="button" data-set="en" aria-pressed="false">EN</button>
+    <button type="button" data-set="ms" aria-pressed="true">BM</button>
+  </div>
+</div></div>
+
+<header class="hero">
+  <img class="logo" src="attartil-logo.png" alt="AtTartil Quranic Institute">
+  <div><span class="tag"><span class="ms">Peringatan Ulama · Siri 07</span><span class="en">Scholars' Reminders · Episode 07</span></span></div>
+  <p class="ar-big">لَا يَسْتَأْخِرُونَ سَاعَةً<br>وَلَا يَسْتَقْدِمُونَ</p>
+  <h1><span class="ms">Ajal: Tidak Ditangguh, Tidak Dipercepat</span><span class="en">The Appointed Term: Not Delayed, Not Advanced</span></h1>
+  <p class="sub ms">Kenapa Allah menyebut "ditangguhkan" dahulu, sebelum "dipercepatkan"?</p>
+  <p class="sub en">Why does Allah mention "delayed" first, before "advanced"?</p>
+</header>
+
+<main class="wrap">
+
+  <p class="pembuka ms">Siapa yang tidak mahu umurnya dipanjangkan? Hampir setiap orang, jika ditanya, mahu ajalnya dilewatkan. <span class="nw">Al-Qur'an</span> mengetahui isi hati ini, lalu menjawabnya terlebih dahulu: ajal tidak akan ditangguhkan walau sesaat.</p>
+  <p class="pembuka en">Who does not wish for a longer life? Nearly everyone, if asked, would want their death postponed. The Qur'an knows this wish of the heart, and answers it first: the term will not be delayed by even a moment.</p>
+
+  <section>
+    <span class="label l-video"><span class="ms">Inti video</span><span class="en">From the video</span></span>
+    <figure class="video">
+      <video class="ms" controls playsinline preload="metadata" poster="reel-poster-ms.jpg">
+        <source src="video-ms.mp4" type="video/mp4">
+      </video>
+      <video class="en" controls playsinline preload="metadata" poster="reel-poster-en.jpg">
+        <source src="video-en.mp4" type="video/mp4">
+      </video>
+      <p><b>لا يستأخرون ساعة ولا يستقدمون</b><br><span class="ms">Peringatan Ulama · Siri 07 · Prof. Dr Fadil Salih <span class="nw">as-Samarra'i</span><br>Bahasa Arab, sari kata Melayu · 1 min 2 s</span><span class="en">Scholars' Reminders · Episode 07 · Prof. Dr Fadil Salih <span class="nw">al-Samarra'i</span><br>Arabic, English subtitles · 1 min 2 s</span></p>
+    </figure>
+    <div class="penceramah">
+      <p class="ms"><b>Penceramah: Prof. Dr Fadil Salih <span class="nw">as-Samarra'i</span></b> (lahir 1933, Samarra, Iraq). PhD bahasa Arab, Universiti Ain Shams, Kaherah (1968); bekas profesor nahu di Universiti Baghdad selama kira-kira 40 tahun; ahli <span class="nw">al-Majma'</span> <span class="nw">al-'Ilmi</span> <span class="nw">al-'Iraqi</span> (Akademi Sains Iraq); pengarang <i>Ma'ani <span class="nw">an-Nahw</span></i> (Makna-makna Nahu) dan <i><span class="nw">at-Ta'bir</span> <span class="nw">al-Qur'ani</span></i> (Gaya Pengungkapan <span class="nw">al-Qur'an)</span>; dikenali melalui rancangan TV <i>Lamasat Bayaniyyah</i> (Sentuhan Keindahan Bahasa).</p>
+      <p class="en"><b>Speaker: Prof. Dr Fadil Salih <span class="nw">al-Samarra'i</span></b> (b. 1933, Samarra, Iraq). PhD in Arabic language, Ain Shams University, Cairo (1968); professor of grammar at the University of Baghdad for about 40 years; member of the Iraqi Academy of Sciences (<span class="nw">al-Majma'</span> <span class="nw">al-'Ilmi</span> <span class="nw">al-'Iraqi)</span>; author of <i>Ma'ani <span class="nw">al-Nahw</span></i> and <i><span class="nw">al-Ta'bir</span> <span class="nw">al-Qur'ani</span></i>; widely known through the TV programme <i>Lamasat Bayaniyya</i>.</p>
+    </div>
+    <p class="ms">Jawapan Dr Fadil: <mark><b>manusia sangat ingin ajalnya ditangguhkan, kerana cinta dunia. Maka Allah menafikan dahulu apa yang paling mereka harapkan.</b></mark></p>
+    <p class="en">Dr Fadil's answer: <mark><b>people long for their death to be delayed, out of love of this world. So Allah first negates what they hope for most.</b></mark></p>
+  </section>
+
+  <section>
+    <h2><span class="no">1</span><span class="ms">Ayat yang Dibincangkan</span><span class="en">The Verse Discussed</span></h2>
+    <article class="kisah">
+      <div class="kepala"><div class="ikon">⏳</div>
+        <div><h3><span class="ms"><span class="nw">al-A'raf:</span> ajal setiap umat</span><span class="en"><span class="nw">al-A'raf:</span> every nation's term</span></h3>
+        <div class="susah"><span class="ms"><b>ditangguhkan</b> dahulu, kemudian <b>dipercepatkan</b></span><span class="en"><b>delayed</b> first, then <b>advanced</b></span></div></div></div>
+      <div class="isi">
+        <span class="label l-ayat"><span class="ms">Ayat</span><span class="en">Verse</span></span>
+        <p class="ayat">وَلِكُلِّ أُمَّةٍ أَجَلٌ فَإِذَا جَاءَ أَجَلُهُمْ <mark>لَا يَسْتَأْخِرُونَ</mark> سَاعَةً <mark>وَلَا يَسْتَقْدِمُونَ</mark> ﴿٣٤﴾</p>
+        <p class="terj ms">"Dan bagi tiap-tiap umat ada tempoh (yang telah ditetapkan); maka apabila datang tempohnya, tidak dapat mereka dikemudiankan walau sesaatpun, dan tidak dapat pula mereka didahulukan."</p>
+        <p class="terj en">"And for every nation is a [specified] term. So when their time has come, they will not remain behind an hour, nor will they precede [it]."</p>
+        <p class="ref"><span class="nw">al-A'raf</span> 7:34</p>
+        <div class="pengajaran ms">💡 <b>Perhatikan:</b> lafaz <b><bdi lang="ar">فَإِذَا جَاءَ أَجَلُهُمْ لَا يَسْتَأْخِرُونَ سَاعَةً وَلَا يَسْتَقْدِمُونَ</bdi></b> juga terdapat dalam <span class="nw">an-Nahl</span> 16:61. Dalam klip, Dr Fadil membacanya tanpa menyebut surah.</div>
+        <div class="pengajaran en">💡 <b>Notice:</b> the wording <b><bdi lang="ar">فَإِذَا جَاءَ أَجَلُهُمْ لَا يَسْتَأْخِرُونَ سَاعَةً وَلَا يَسْتَقْدِمُونَ</bdi></b> also occurs in <span class="nw">al-Nahl</span> 16:61. In the clip, Dr Fadil recites it without naming the surah.</div>
+      </div>
+    </article>
+  </section>
+
+  <section>
+    <h2><span class="no">2</span><span class="ms">Kenapa Susunan Ini?</span><span class="en">Why This Order?</span></h2>
+    <div class="banding" role="table">
+      <div class="brow bhead" role="row"><div role="columnheader"></div><div role="columnheader">لَا يَسْتَأْخِرُونَ</div><div role="columnheader">وَلَا يَسْتَقْدِمُونَ</div></div>
+      <div class="brow" role="row"><div role="rowheader"><span class="ms">Makna</span><span class="en">Meaning</span></div><div class="lebih"><small><span class="ms">tidak dapat ditangguhkan</span><span class="en">cannot be delayed</span></small></div><div><small><span class="ms">tidak dapat dipercepatkan</span><span class="en">cannot be advanced</span></small></div></div>
+      <div class="brow" role="row"><div role="rowheader"><span class="ms">Hati manusia</span><span class="en">The human heart</span></div><div class="lebih"><small><span class="ms">inilah yang paling diharapkan: umur dipanjangkan</span><span class="en">what people hope for most: a longer life</span></small></div><div><small><span class="ms">jarang diharapkan; tetapi manusia kadang-kadang "mendekatinya", seperti pergi berperang</span><span class="en">rarely wished for; yet people sometimes "approach" it, as by going to battle</span></small></div></div>
+      <div class="brow" role="row"><div role="rowheader"><span class="ms">Kenapa disebut</span><span class="en">Why mentioned</span></div><div class="lebih"><small><span class="ms">dinafikan dahulu kerana itulah harapan terbesar</span><span class="en">negated first, as it is the strongest hope</span></small></div><div><small><span class="ms">untuk menetapkan bahawa ajal itu tertentu, tidak boleh dipercepat oleh usaha manusia</span><span class="en">to establish that the term is fixed, not hastened by human action</span></small></div></div>
+    </div>
+    <p class="nota-kecil ms">Jadual ini meringkaskan penerangan Dr Fadil dalam klip.</p>
+    <p class="nota-kecil en">This table summarises Dr Fadil's explanation in the clip.</p>
+  </section>
+
+  <section>
+    <h2><span class="no">3</span><span class="ms">Bukti: Yang Tertulis Mati Akan Keluar ke Tempatnya</span><span class="en">The Proof: Those Decreed Would Go Out to Their Place</span></h2>
+    <p class="ayat">قُلْ لَوْ كُنْتُمْ فِي بُيُوتِكُمْ لَبَرَزَ الَّذِينَ كُتِبَ عَلَيْهِمُ الْقَتْلُ إِلَى مَضَاجِعِهِمْ</p>
+    <p class="terj ms">"…katakanlah (wahai Muhammad): "Kalau kamu berada di rumah kamu sekalipun nescaya keluarlah juga orang-orang yang telah ditakdirkan (oleh Allah) akan terbunuh itu ke tempat mati masing-masing"…"</p>
+    <p class="terj en">"…Say, "Even if you had been inside your houses, those decreed to be killed would have come out to their death beds."…"</p>
+    <p class="ref">Ali 'Imran 3:154 (petikan / excerpt)</p>
+    <p class="ms">Dr Fadil: walaupun seseorang pergi berperang dan berjihad, itu tidak mempercepat ajalnya; dan walaupun duduk di rumah, ajal tetap datang pada waktunya. "Ini dijadikan <i>mīzān</i> (neraca) yang umum."</p>
+    <p class="en">Dr Fadil: even if one goes out to fight, that does not hasten one's death; and even staying at home, death comes at its time. "This is made a general <i>mīzān</i> (rule)."</p>
+  </section>
+
+  <section>
+    <h2><span class="no">4</span><span class="ms">Di Tempat Lain, Susunan Terbalik</span><span class="en">Elsewhere, the Reverse Order</span></h2>
+    <div class="kontras">
+      <div class="ya"><p class="ar"><u>لَا يَسْتَأْخِرُونَ</u> سَاعَةً وَلَا يَسْتَقْدِمُونَ</p><small><span class="ms"><span class="nw">al-A'raf</span> 7:34, <span class="nw">an-Nahl</span> 16:61 · "ditangguhkan" dahulu</span><span class="en">7:34, 16:61 · "delayed" first</span></small></div>
+      <div class="ya"><p class="ar">مَا <u>تَسْبِقُ</u> مِنْ أُمَّةٍ أَجَلَهَا وَمَا يَسْتَأْخِرُونَ</p><small><span class="ms"><span class="nw">al-Hijr</span> 15:5 · "mendahului" dahulu</span><span class="en">15:5 · "precede" first</span></small></div>
+    </div>
+    <p class="terj ms">"Sesuatu umat itu tidak dapat mendahului tempohnya yang telah ditentukan, dan mereka juga tidak dapat mengundurkannya."</p>
+    <p class="terj en">"No nation will precede its term, nor will they remain thereafter."</p>
+    <p class="ref"><span class="nw">al-Hijr</span> 15:5</p>
+    <p class="ms">Dalam tulisannya, Dr Fadil menerangkan: dalam <span class="nw">al-Hijr,</span> kaum itu meminta malaikat diturunkan, seolah-olah mereka mahu mempercepat ajal (azab) mereka. Maka didahulukan "mendahului" (<i>tasbiq</i>). Susunan ini, katanya, hanya datang dalam konteks pembinasaan dan hukuman.</p>
+    <p class="en">In his writing, Dr Fadil explains: in <span class="nw">al-Hijr,</span> the people demanded that angels be sent down, as if wanting to hasten their term (of punishment). So "precede" (<i>tasbiq</i>) comes first. This order, he says, only comes in the context of destruction and punishment.</p>
+  </section>
+
+  <section>
+    <h2><span class="no">5</span><span class="ms">Empat Kata Kunci</span><span class="en">Four Key Words</span></h2>
+    <div class="kunci">
+      <div><p class="ar">أَجَل</p><span><b>ajal</b><br><span class="ms">(tempoh yang ditetapkan; hujung umur)</span><span class="en">(the appointed term; end of life)</span></span></div>
+      <div><p class="ar">سَاعَة</p><span><b>sā‘ah</b><br><span class="ms">(sesaat; tempoh paling singkat)</span><span class="en">(a moment; the shortest time)</span></span></div>
+      <div><p class="ar">يَسْتَأْخِرُونَ</p><span><b>yasta’khirūn</b><br><span class="ms">(meminta / dapat ditangguhkan; wazan istaf‘ala)</span><span class="en">(seek / manage to be delayed; form istaf‘ala)</span></span></div>
+      <div><p class="ar">يَسْتَقْدِمُونَ</p><span><b>yastaqdimūn</b><br><span class="ms">(meminta / dapat didahulukan)</span><span class="en">(seek / manage to be advanced)</span></span></div>
+    </div>
+    <p class="nota-kecil ms" style="margin-top:10px">Huraian makna di atas ialah ringkasan umum untuk pembaca, bukan takrif daripada satu kitab tertentu.</p>
+    <p class="nota-kecil en" style="margin-top:10px">These meanings are a general summary for readers, not definitions taken from a particular book.</p>
+  </section>
+
+  <section>
+    <h2><span class="no">6</span><span class="ms">Apa Kata Ulama</span><span class="en">What the Scholars Say</span></h2>
+    <span class="label l-ulama"><span class="ms">Nukilan · ada perbezaan pandangan</span><span class="en">Quoted · scholars differ</span></span>
+
+    <blockquote>
+      <p class="ar">فناسب تأخير الأجل في هذه الآية تقديم "يستأخرون" في الآية موضع السؤال ثم إن الناس يرغبون بتأخير الأجل وبخاصة الظالم يرغب بتأخير أجله</p>
+      <p class="tr ms"><b>Dr Fadil <span class="nw">as-Samarra'i</span></b> (tentang <span class="nw">an-Nahl</span> 16:61, selepas <b><bdi lang="ar">وَلَكِنْ يُؤَخِّرُهُمْ إِلَى أَجَلٍ مُسَمًّى</bdi></b>): "Maka penangguhan ajal dalam ayat ini sesuai dengan didahulukan 'yasta’khirūn' dalam ayat yang ditanya. Kemudian, manusia memang suka ajalnya ditangguhkan, terutama orang zalim yang mahu ajalnya dilewatkan."</p>
+      <p class="tr en"><b>Dr Fadil <span class="nw">al-Samarra'i</span></b> (on <span class="nw">al-Nahl</span> 16:61, after <b><bdi lang="ar">وَلَكِنْ يُؤَخِّرُهُمْ إِلَى أَجَلٍ مُسَمًّى</bdi></b>): "So the delaying of the term in this verse suits fronting 'yasta’khirūn' in the verse in question. Moreover, people desire their term to be delayed, especially the wrongdoer who wants his term postponed."</p>
+      <cite class="ms">Fadil Salih <span class="nw">as-Samarra'i,</span> <i>Lamasat Bayaniyyah fi Nusus min <span class="nw">at-Tanzil</span> (Muhadarat)</i>, hlm. 876; lihat juga hlm. 520 (Shamela; penomboran automatik Shamela, bukan cetakan).</cite>
+      <cite class="en">Fadil Salih <span class="nw">al-Samarra'i,</span> <i>Lamasat Bayaniyya fi Nusus min <span class="nw">al-Tanzil</span> (Muhadarat)</i>, p. 876; see also p. 520 (Shamela's automatic page numbering, not a printed edition).</cite>
+    </blockquote>
+
+    <blockquote>
+      <p class="ar">وقال ساعَةً لأنها أقل الأوقات في استعمال الناس. يقول المستعجل لصاحبه: في ساعة، يريد أقصر وقت وأقربه.</p>
+      <p class="tr ms"><b><span class="nw">az-Zamakhsyari</span></b>, tentang kata <i>sā‘ah</i>: "Dia menyebut 'sesaat' kerana itulah waktu yang paling sedikit dalam penggunaan manusia. Orang yang tergesa-gesa berkata kepada temannya: 'sekejap sahaja', maksudnya waktu yang paling singkat dan paling dekat."</p>
+      <p class="tr en"><b><span class="nw">al-Zamakhshari</span></b>, on the word <i>sā‘a</i>: "He said 'an hour' because it is the smallest unit of time in people's usage. A hurried person tells his companion 'in an hour', meaning the shortest and nearest time."</p>
+      <cite class="ms"><span class="nw">az-Zamakhsyari</span> (w. 538H), <i><span class="nw">al-Kasysyaf</span></i>, 2/101, tafsir <span class="nw">al-A'raf</span> 7:34 (Shamela).</cite>
+      <cite class="en"><span class="nw">al-Zamakhshari</span> (d. 538 AH), <i><span class="nw">al-Kashshaf</span></i>, 2/101, on 7:34 (Shamela).</cite>
+    </blockquote>
+
+    <p class="ms"><b>Apakah maksud "ajal" dalam 7:34?</b> <span class="nw">Ar-Razi</span> mencatat dua pandangan:</p>
+    <p class="en"><b>What does "term" mean in 7:34?</b> <span class="nw">Al-Razi</span> records two views:</p>
+    <ul class="pandangan ms">
+      <li><b>Pandangan 1</b> (Ibn 'Abbas, <span class="nw">al-Hasan,</span> Muqatil): tempoh yang diberi kepada setiap umat yang mendustakan rasulnya, sebelum azab pembinasaan turun. <span class="nw">Ar-Razi</span> menilai pandangan ini lebih utama, kerana ayat menyebut "setiap umat", bukan "setiap orang".</li>
+      <li><b>Pandangan 2:</b> ajal ialah umur setiap individu; apabila sampai, ia tidak boleh didahulukan atau dilewatkan. Huraian Dr Fadil dalam klip (cinta dunia, tidak mahu mati) selari dengan pandangan ini.</li>
+    </ul>
+    <ul class="pandangan en">
+      <li><b>View 1</b> (Ibn 'Abbas, <span class="nw">al-Hasan,</span> Muqatil): the respite given to each nation that denied its messenger, before the punishment of destruction. <span class="nw">Al-Razi</span> judges this view stronger, since the verse says "every nation", not "every person".</li>
+      <li><b>View 2:</b> the term is each individual's lifespan; when it comes, it is neither advanced nor delayed. Dr Fadil's explanation in the clip (love of this world, not wanting to die) fits this view.</li>
+    </ul>
+    <p class="nota-kecil ms">Fakhr <span class="nw">ad-Din</span> <span class="nw">ar-Razi</span> (w. 606H), <i>Mafatih <span class="nw">al-Ghaib</span></i>, 14/234 (Shamela). Beliau juga menjawab soalan: bagaimana "didahulukan" boleh berlaku setelah ajal tiba? Jawapannya: "apabila datang ajal" difahami sebagai "apabila ajal hampir". Nombor jilid/halaman mungkin berbeza dalam cetakan lain.</p>
+    <p class="nota-kecil en">Fakhr <span class="nw">al-Din</span> <span class="nw">al-Razi</span> (d. 606 AH), <i>Mafatih <span class="nw">al-Ghayb</span></i>, 14/234 (Shamela). He also answers: how can "advancing" occur once the term has come? His answer: "when their term comes" is read as "when it draws near". Pagination may differ in other editions.</p>
+  </section>
+
+  <section class="renung">
+    <span class="label l-renung"><span class="ms">Tadabbur · renungan peribadi</span><span class="en">Tadabbur · personal reflection</span></span>
+    <h2><span class="ms">Harapan yang Dijawab Dahulu</span><span class="en">The Hope Answered First</span></h2>
+    <div class="ms">
+      <p>Allah tidak memulakan dengan perkara yang jarang kita fikirkan. Dia memulakan dengan harapan yang paling kuat dalam hati kita: "berilah aku masa lagi". Dan jawapannya: tidak, walau sesaat.</p>
+      <p>Ini bukan untuk menakutkan semata-mata, tetapi untuk menyedarkan. Jika ajal tidak dapat ditangguhkan, maka yang boleh kita tangguhkan hanyalah dosa, bukan taubat.</p>
+      <p>Dan jika ajal juga tidak dapat dipercepatkan, maka tiada sebab untuk takut melakukan kebaikan yang berisiko. Hidup dan mati di tangan Allah.</p>
+    </div>
+    <div class="en">
+      <p>Allah does not begin with what we rarely think about. He begins with the strongest hope in our hearts: "give me more time". And the answer: no, not by a moment.</p>
+      <p>This is not merely to frighten, but to awaken. If death cannot be delayed, then what we should delay is sin, not repentance.</p>
+      <p>And if death cannot be hastened either, there is no reason to fear doing good that carries risk. Life and death are in Allah's hands.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="no">7</span><span class="ms">Muhasabah</span><span class="en">Muhasabah (self-reflection)</span></h2>
+    <ol class="muhasabah ms">
+      <li>Apakah perkara yang saya tangguhkan kerana menyangka masih ada masa?</li>
+      <li>Jika ajal saya tiba hari ini, apakah yang paling saya kesali?</li>
+      <li>Adakah takut mati menghalang saya daripada melakukan kebaikan?</li>
+    </ol>
+    <ol class="muhasabah en">
+      <li>What am I postponing because I assume there is still time?</li>
+      <li>If my term came today, what would I regret most?</li>
+      <li>Does fear of death keep me from doing good?</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2><span class="no">8</span><span class="ms">Amalan Minggu Ini</span><span class="en">Practice This Week</span></h2>
+    <ul class="amal ms">
+      <li><b>Jangan tangguh taubat:</b> pilih satu dosa atau kelalaian, dan bertaubat hari ini.</li>
+      <li><b>Selesaikan satu hutang:</b> hutang wang, janji atau maaf kepada seseorang.</li>
+      <li><b>Ingat mati dengan tenang:</b> sekali sehari, renungkan <b><bdi lang="ar">لَا يَسْتَأْخِرُونَ سَاعَةً</bdi></b>.</li>
+      <li><b>Belajar bahasa <span class="nw">al-Qur'an:</span></b> kenali wazan <i>istaf‘ala</i> dalam yasta’khirūn dan yastaqdimūn.</li>
+    </ul>
+    <ul class="amal en">
+      <li><b>Do not delay repentance:</b> choose one sin or lapse, and repent today.</li>
+      <li><b>Settle one debt:</b> money, a promise, or an apology owed to someone.</li>
+      <li><b>Remember death calmly:</b> once a day, reflect on <b><bdi lang="ar">لَا يَسْتَأْخِرُونَ سَاعَةً</bdi></b>.</li>
+      <li><b>Learn the Qur'an's language:</b> get to know the form <i>istaf‘ala</i> in yasta’khirūn and yastaqdimūn.</li>
+    </ul>
+  </section>
+
+  <div class="zikir">
+    <p class="ar">فَإِذَا جَاءَ أَجَلُهُمْ لَا يَسْتَأْخِرُونَ سَاعَةً وَلَا يَسْتَقْدِمُونَ</p>
+    <p class="ms">"…maka apabila datang tempohnya, tidak dapat mereka dikemudiankan walau sesaatpun, dan tidak dapat pula mereka didahulukan." (<span class="nw">al-A'raf</span> 7:34)</p>
+    <p class="en">"…So when their time has come, they will not remain behind an hour, nor will they precede [it]." (7:34)</p>
+  </div>
+
+  <section class="sertai">
+    <img src="attartil-logo.png" alt="AtTartil Quranic Institute">
+    <h2><span class="ms">Ingin memahami <span class="nw">al-Qur'an</span> seperti ini?</span><span class="en">Want to understand the Qur'an like this?</span></h2>
+    <p class="lead ms">Sertai <b>AFAM (AtTartil Full-Access Membership)</b> dan teruskan perjalanan daripada membaca, kepada memahami, merenung dan mengamalkan <span class="nw">al-Qur'an.</span></p>
+    <p class="lead en">Join <b>AFAM (AtTartil Full-Access Membership)</b> and continue the journey from reading the Qur'an to understanding, reflecting on and living it.</p>
+    <ul class="ms">
+      <li>Akses kepada kelas rakaman dan program-program lepas AtTartil</li>
+      <li>Kandungan tadabbur dan bahasa <span class="nw">al-Qur'an</span></li>
+      <li>Belajar ikut masa anda, di mana-mana peranti</li>
+      <li>Komuniti pelajar untuk bertanya dan saling menyokong</li>
+    </ul>
+    <ul class="en">
+      <li>Access to AtTartil's recorded classes and past programmes</li>
+      <li>Tadabbur and Qur'anic language content</li>
+      <li>Learn at your own pace, on any device</li>
+      <li>A learners' community for questions and support</li>
+    </ul>
+    <p class="harga"><span class="ms">$10 sebulan atau $120 setahun</span><span class="en">$10 a month or $120 a year</span></p>
+    <div class="cta">
+      <a class="utama" href="https://attartilqi.com/afam" target="_blank" rel="noopener"><span class="ms">Sertai AFAM</span><span class="en">Join AFAM</span> →</a>
+      <a class="kedua" href="https://wa.me/6593725111" target="_blank" rel="noopener"><span class="ms">Tanya di WhatsApp</span><span class="en">Ask on WhatsApp</span></a>
+    </div>
+    <p class="sosial"><span class="ms">Ikuti siri Peringatan Ulama:</span><span class="en">Follow the Scholars' Reminders series:</span><br>
+      <a href="https://www.instagram.com/attartilqi/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/attartil" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.youtube.com/channel/UCPv1RPGjbULC0Wfx9BQ3v1Q" target="_blank" rel="noopener">YouTube</a> · <a href="https://www.tiktok.com/@attartilcs" target="_blank" rel="noopener">TikTok</a> · <a href="https://chat.whatsapp.com/JCuiFYFNTSn3CycNfE0k6T" target="_blank" rel="noopener"><span class="ms">Komuniti WhatsApp</span><span class="en">WhatsApp Community</span></a></p>
+  </section>
+
+  <p style="text-align:center;margin:36px 0 0;font-family:'Inter',system-ui,sans-serif;font-weight:600"><a href="../" style="color:var(--hijau);text-decoration:none">← <span class="ms">Semua siri Peringatan Ulama</span><span class="en">All Scholars' Reminders episodes</span></a></p>
+
+  <footer>
+    <div class="visi"><img src="attartil-logo.png" alt=""><span><b>ATTARTIL QURANIC INSTITUTE</b>"Where Qur'anic Knowledge Transforms Lives"</span></div>
+    <div class="ms">
+      <b>Rujukan</b>
+      <ol>
+        <li>Teks ayat: <span class="nw">al-Maktabah</span> <span class="nw">al-Shamela</span> (riwayat Hafs 'an 'Asim).</li>
+        <li>Terjemahan ayat (BM): <i>Tafsir Pimpinan <span class="nw">ar-Rahman</span></i>, Sheikh Abdullah Basmeih (JAKIM).</li>
+        <li>Fadil Salih <span class="nw">as-Samarra'i,</span> <i>Lamasat Bayaniyyah fi Nusus min <span class="nw">at-Tanzil</span> (Muhadarat)</i>, hlm. 520 dan 876 (penomboran Shamela); <span class="nw">az-Zamakhsyari,</span> <i><span class="nw">al-Kasysyaf</span></i>, 2/101; <span class="nw">ar-Razi,</span> <i>Mafatih <span class="nw">al-Ghaib</span></i>, 14/234 (<span class="nw">al-Maktabah</span> <span class="nw">al-Shamela;</span> halaman mungkin berbeza dalam cetakan lain).</li>
+        <li>Isi ceramah: rakaman video (bahasa Arab), klip pendek 59 saat (لا يستأخرون ساعة ولا يستقدمون).</li>
+      </ol>
+      <p>Bahagian bertanda "Tadabbur" ialah renungan peribadi, bukan tafsir. Nota ini ialah bahan pembelajaran dan bukan fatwa.</p>
+    </div>
+    <div class="en">
+      <b>References</b>
+      <ol>
+        <li>Arabic verse text: <span class="nw">al-Maktabah</span> <span class="nw">al-Shamela</span> (Hafs 'an 'Asim).</li>
+        <li>English verse translation: Saheeh International.</li>
+        <li>Fadil Salih <span class="nw">al-Samarra'i,</span> <i>Lamasat Bayaniyya fi Nusus min <span class="nw">al-Tanzil</span> (Muhadarat)</i>, pp. 520 and 876 (Shamela numbering); <span class="nw">al-Zamakhshari,</span> <i><span class="nw">al-Kashshaf</span></i>, 2/101; <span class="nw">al-Razi,</span> <i>Mafatih <span class="nw">al-Ghayb</span></i>, 14/234 (<span class="nw">al-Maktabah</span> <span class="nw">al-Shamela;</span> pagination may differ in other editions).</li>
+        <li>Lecture content: video recording (in Arabic), short 59-second clip (لا يستأخرون ساعة ولا يستقدمون).</li>
+      </ol>
+      <p>Sections marked "Tadabbur" are personal reflection, not tafsir. These notes are learning material and not a fatwa.</p>
+    </div>
+  </footer>
+</main>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  var titles={ms:"Ajal: Tidak Ditangguh, Tidak Dipercepat",en:"The Appointed Term: Not Delayed, Not Advanced"};
+  function set(lang){
+    root.setAttribute("data-lang",lang);
+    root.setAttribute("lang",lang);
+    document.title=titles[lang];
+    var b=document.querySelectorAll(".toggle button");
+    for(var i=0;i<b.length;i++){b[i].setAttribute("aria-pressed",b[i].getAttribute("data-set")===lang?"true":"false");}
+    var v=document.querySelectorAll("video");
+    for(var j=0;j<v.length;j++){if(!v[j].classList.contains(lang)){try{v[j].pause();}catch(e){}}}
+    try{localStorage.setItem("tasbih-lang",lang);}catch(e){}
+  }
+  var saved=null;
+  try{saved=localStorage.getItem("tasbih-lang");}catch(e){}
+  if(saved==="ms"||saved==="en"){set(saved);}
+  document.querySelector(".toggle").addEventListener("click",function(e){
+    var t=e.target.closest("button");
+    if(t){set(t.getAttribute("data-set"));}
+  });
+})();
+</script>
+</body>
+</html>
+
+
+
+
+
+
