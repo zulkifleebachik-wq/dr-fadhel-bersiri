@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="ms" data-lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Luasnya Syurga, Luasnya Kurnia</title>
+<meta name="description" content="Peringatan Ulama Siri 02: Kenapa 'arduha as-samawat' dan 'ka'ardi as-sama''? Prof. Dr Fadil Salih as-Samarra'i, nota renungan dwibahasa AtTartil.">
+<meta property="og:title" content="Luasnya Syurga, Luasnya Kurnia · Peringatan Ulama Siri 02 | AtTartil">
+<meta property="og:description" content="Prof. Dr Fadil Salih as-Samarra'i: dua ayat syurga, lima perbezaan, satu pintu kurnia.">
+<meta property="og:image" content="reel-poster-ms.jpg">
+<link rel="icon" href="attartil-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Amiri+Quran&family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --hutan:#10301f;      /* deep forest */
+  --hijau:#2f7a10;      /* logo green, softened */
+  --daun:#3d9002;       /* logo centre */
+  --lime:#9ad102;       /* logo ring */
+  --kuning:#ffe14d;     /* logo yellow, softened */
+  --kuning-pucat:#fff7cf;
+  --hitam:#141414;
+  --kertas:#fbfaf3;
+  --kad:#ffffff;
+  --lembut:#f1f6e6;
+  --teks:#1f2420;
+  --redup:#5b6658;
+  --garis:#e3e9d6;
+  --ayat:#24600c;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --kertas:#0e1510; --kad:#151e17; --lembut:#1a2a1c; --teks:#ecefe7; --redup:#a7b3a3;
+    --garis:#273626; --ayat:#b5e05a; --kuning-pucat:#2a2711; --hijau:#9ad102;
+  }
+}
+:root[data-theme="dark"]{
+  --kertas:#0e1510; --kad:#151e17; --lembut:#1a2a1c; --teks:#ecefe7; --redup:#a7b3a3;
+  --garis:#273626; --ayat:#b5e05a; --kuning-pucat:#2a2711; --hijau:#9ad102;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--kertas);color:var(--teks);
+  font-family:"Lora",Georgia,serif;font-size:18px;line-height:1.85}
+
+/* language switching */
+html[data-lang="ms"] .en{display:none!important}
+html[data-lang="en"] .ms{display:none!important}
+
+/* TOP BAR */
+.bar{position:sticky;top:0;z-index:10;background:rgba(16,48,31,.94);backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);border-bottom:3px solid var(--lime)}
+.bar .in{max-width:780px;margin:0 auto;padding:8px 16px;display:flex;align-items:center;gap:10px}
+.bar img{width:38px;height:38px;border-radius:50%;flex:none}
+.bar .nm{color:#fff;font-family:"Inter",system-ui,sans-serif;font-size:.78rem;font-weight:600;letter-spacing:.06em;line-height:1.25;flex:1;min-width:0}
+.bar .nm small{display:block;color:var(--kuning);font-weight:500;letter-spacing:.04em}
+.toggle{display:flex;background:#0a1f14;border:1px solid #2c5a1b;border-radius:999px;padding:3px;flex:none}
+.toggle button{appearance:none;border:0;background:transparent;color:#cfe3c4;font-family:"Inter",system-ui,sans-serif;
+  font-weight:600;font-size:.8rem;padding:6px 13px;border-radius:999px;cursor:pointer;min-height:32px}
+.toggle button[aria-pressed="true"]{background:var(--kuning);color:var(--hitam)}
+.toggle button:focus-visible{outline:2px solid var(--lime);outline-offset:2px}
+
+/* HERO */
+header.hero{position:relative;overflow:hidden;color:#fff;text-align:center;
+  background:radial-gradient(110% 80% at 50% 0%,#2f6a17 0%,#16402a 55%,#0d2618 100%);padding:44px 16px 54px}
+header.hero::before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;
+  border:2px solid rgba(154,209,2,.18);left:50%;top:-250px;transform:translateX(-50%)}
+header.hero::after{content:"";position:absolute;width:360px;height:360px;border-radius:50%;
+  border:2px solid rgba(255,225,77,.14);left:50%;top:-170px;transform:translateX(-50%)}
+.hero .logo{position:relative;z-index:1;width:112px;height:112px;margin:0 auto 18px;border-radius:50%;
+  box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.hero .tag{position:relative;z-index:1;display:inline-block;font-family:"Inter",system-ui,sans-serif;font-size:.72rem;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--hitam);background:var(--kuning);padding:3px 12px;border-radius:999px}
+.hero .ar-big{position:relative;z-index:1;font-family:"Amiri",serif;font-size:2.3rem;line-height:1.6;color:var(--kuning);margin:16px 0 0}
+.hero h1{position:relative;z-index:1;font-weight:600;font-size:2rem;line-height:1.3;margin:8px 0 10px}
+.hero p.sub{position:relative;z-index:1;font-style:italic;color:#dcead2;margin:0 auto;max-width:540px;font-size:1.02rem}
+
+.wrap{max-width:760px;margin:0 auto;padding:0 16px 56px}
+.ar{font-family:"Amiri",serif;direction:rtl;line-height:2.1}
+.ayat{font-family:"Amiri Quran","Amiri",serif;direction:rtl;font-size:1.55rem;line-height:2.35;color:var(--ayat);text-align:center;margin:.3em 0 .5em}
+
+section{margin-top:44px}
+h2{font-size:1.32rem;color:var(--teks);margin:0 0 14px;display:flex;align-items:center;gap:12px;line-height:1.35}
+h2 .no{flex:none;width:34px;height:34px;border-radius:50%;background:var(--hutan);color:var(--kuning);
+  font-family:"Inter",system-ui,sans-serif;font-size:.9rem;display:grid;place-items:center;font-weight:600;
+  box-shadow:0 0 0 3px var(--lime)}
+.pembuka{font-size:1.14rem;font-style:italic;margin:40px 0 0;padding:20px 22px;border-radius:14px;
+  background:var(--kuning-pucat);border-left:5px solid var(--kuning);position:relative}
+.label{display:inline-block;font-family:"Inter",system-ui,sans-serif;font-size:.68rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
+  padding:3px 11px;border-radius:999px;margin-bottom:10px}
+.l-video{background:var(--hutan);color:var(--kuning)}
+.l-ayat{background:var(--lembut);color:var(--hijau);border:1px solid var(--garis)}
+.l-ulama{background:var(--kuning);color:var(--hitam)}
+.l-renung{background:rgba(255,225,77,.16);color:var(--kuning);border:1px solid rgba(255,225,77,.4)}
+.nota-kecil{font-size:.9rem;color:var(--redup)}
+mark{background:linear-gradient(transparent 58%,rgba(255,225,77,.55) 58%);color:inherit;padding:0 2px}
+
+.video{margin:4px auto 22px;max-width:360px;background:var(--hutan);border-radius:20px;padding:10px;
+  box-shadow:0 10px 26px rgba(16,48,31,.18),0 0 0 3px var(--lime)}
+.video video{display:block;width:100%;height:auto;max-height:70vh;border-radius:12px;background:#000}
+.video p{margin:8px 4px 2px;font-family:"Inter",system-ui,sans-serif;font-size:.74rem;color:#cfe3c4;line-height:1.45;text-align:center}
+.video p b{color:var(--kuning);font-weight:600}
+.penceramah{background:var(--kad);border:1px solid var(--garis);border-left:5px solid var(--lime);border-radius:12px;
+  padding:12px 16px;margin:0 0 18px;font-size:.92rem;line-height:1.7}
+.penceramah p{margin:0}
+.sertai{margin-top:44px;border-radius:22px;overflow:hidden;background:linear-gradient(160deg,#2f6a17 0%,#16402a 55%,#0d2618 100%);
+  color:#fff;text-align:center;padding:30px 20px 26px;position:relative}
+.sertai::before{content:"";position:absolute;width:300px;height:300px;border-radius:50%;border:2px solid rgba(154,209,2,.25);
+  left:50%;top:-150px;transform:translateX(-50%)}
+.sertai img{position:relative;width:92px;height:92px;border-radius:50%;box-shadow:0 8px 22px rgba(0,0,0,.35)}
+.sertai h2{display:block;color:#fff;font-size:1.45rem;margin:14px 0 6px}
+.sertai .lead{color:#dcead2;margin:0 auto 16px;max-width:520px;font-size:1rem}
+.sertai ul{list-style:none;padding:0;margin:0 auto 20px;max-width:420px;text-align:left;font-size:.98rem}
+.sertai li{position:relative;padding:5px 0 5px 28px}
+.sertai li::before{content:"";position:absolute;left:4px;top:15px;width:11px;height:11px;border-radius:50%;background:var(--kuning)}
+.sertai .harga{font-family:"Inter",system-ui,sans-serif;color:var(--lime);font-weight:600;margin:0 0 16px;font-size:.92rem}
+.cta{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.cta a{font-family:"Inter",system-ui,sans-serif;font-weight:600;text-decoration:none;border-radius:999px;padding:12px 20px;
+  font-size:.95rem;min-height:44px;display:inline-flex;align-items:center;gap:6px}
+.cta .utama{background:var(--kuning);color:var(--hitam)}
+.cta .kedua{background:transparent;color:#fff;border:2px solid var(--lime)}
+.cta a:focus-visible{outline:3px solid #fff;outline-offset:2px}
+.sosial{margin-top:18px;font-family:"Inter",system-ui,sans-serif;font-size:.82rem;color:#cfe3c4}
+.sosial a{color:var(--kuning);text-decoration:none;margin:0 4px;white-space:nowrap;display:inline-block;padding:4px 0}
+.kontras{background:var(--kad);border:1px solid var(--garis);border-radius:14px;padding:14px 16px;margin:12px 0;
+  display:grid;grid-template-columns:1fr 1fr;gap:10px;text-align:center}
+.kontras div{border-radius:10px;padding:8px}
+.kontras .ya{background:var(--lembut)}
+.kontras .tidak{opacity:.7}
+.kontras .ar{font-size:1.35rem;margin:0;line-height:1.7}
+.kontras .ya .ar{color:var(--ayat)}
+.kontras small{display:block;font-size:.82rem;color:var(--redup);line-height:1.4}
+
+.kisah{background:var(--kad);border:1px solid var(--garis);border-radius:18px;padding:0;margin:20px 0;overflow:hidden;
+  box-shadow:0 6px 18px rgba(16,48,31,.06)}
+.kisah .kepala{display:flex;gap:14px;align-items:center;padding:16px 20px;background:var(--hutan);color:#fff}
+.kisah .ikon{flex:none;width:46px;height:46px;border-radius:50%;display:grid;place-items:center;font-size:1.35rem;
+  background:#0a1f14;box-shadow:0 0 0 2px var(--lime)}
+.kisah h3{margin:0;font-size:1.1rem;line-height:1.35;color:#fff}
+.kisah .susah{font-size:.86rem;color:#cfe3c4;line-height:1.5}
+.kisah .susah b{color:var(--kuning)}
+.kisah .isi{padding:18px 20px 20px}
+.terj{font-size:.98rem;color:var(--redup);text-align:center;margin:0 0 4px}
+.ref{font-family:"Inter",system-ui,sans-serif;font-size:.76rem;font-weight:500;color:var(--hijau);text-align:center;letter-spacing:.03em}
+.pisah{height:1px;background:var(--garis);margin:16px 0}
+.pengajaran{background:var(--kuning-pucat);border-radius:12px;padding:12px 16px;margin-top:16px;font-size:.98rem;border-left:4px solid var(--kuning)}
+
+.kunci{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+@media (min-width:640px){.kunci{grid-template-columns:repeat(4,1fr)}}
+.kunci div{background:var(--kad);border:1px solid var(--garis);border-top:4px solid var(--lime);border-radius:12px;padding:12px 10px;text-align:center}
+.kunci .ar{font-size:1.7rem;color:var(--ayat);line-height:1.5;margin:0}
+.kunci span{display:block;font-size:.86rem;color:var(--redup);line-height:1.45}
+.kunci b{color:var(--teks)}
+
+ul.pandangan{list-style:none;padding:0;margin:0 0 6px}
+ul.pandangan li{position:relative;padding:8px 0 8px 28px;border-bottom:1px dashed var(--garis)}
+ul.pandangan li:last-child{border-bottom:0}
+ul.pandangan li::before{content:"";position:absolute;left:4px;top:19px;width:10px;height:10px;border-radius:50%;
+  background:var(--lime);box-shadow:0 0 0 3px rgba(154,209,2,.25)}
+
+blockquote{margin:16px 0;background:var(--kad);border:1px solid var(--garis);border-right:5px solid var(--daun);
+  border-radius:14px;padding:16px 18px}
+blockquote .ar{font-size:1.25rem;margin:0;color:var(--teks)}
+blockquote .tr{font-size:.98rem;margin:8px 0 8px;padding-top:8px;border-top:1px dashed var(--garis)}
+blockquote cite{display:block;font-style:normal;font-family:"Inter",system-ui,sans-serif;font-size:.74rem;color:var(--redup);line-height:1.55}
+
+.renung{background:linear-gradient(160deg,#16402a 0%,#0d2618 70%,#0a1d12 100%);color:#eef3ea;border-radius:20px;
+  padding:28px 22px;position:relative;overflow:hidden}
+.renung::after{content:"";position:absolute;right:-60px;bottom:-60px;width:200px;height:200px;border-radius:50%;
+  border:2px solid rgba(255,225,77,.18)}
+.renung h2{color:#fff}
+.renung p{margin:0 0 14px;position:relative;z-index:1}
+.renung p:last-child{margin:0;font-size:1.08rem}
+.renung em{color:var(--kuning);font-style:normal}
+
+ol.muhasabah{counter-reset:m;list-style:none;padding:0;margin:0}
+ol.muhasabah li{counter-increment:m;position:relative;padding:12px 14px 12px 52px;margin-bottom:10px;background:var(--kad);
+  border:1px solid var(--garis);border-radius:12px}
+ol.muhasabah li::before{content:counter(m);position:absolute;left:14px;top:12px;width:26px;height:26px;border-radius:50%;
+  background:var(--kuning);color:var(--hitam);font-family:"Inter",system-ui,sans-serif;font-size:.8rem;font-weight:600;display:grid;place-items:center}
+ul.amal{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+ul.amal li{background:var(--lembut);border-radius:12px;padding:12px 16px;border-left:5px solid var(--daun)}
+ul.amal li b{color:var(--hijau)}
+
+.zikir{text-align:center;margin-top:44px;padding:26px 16px;border-radius:20px;background:var(--kuning-pucat);border:1px solid rgba(255,225,77,.6)}
+.zikir .ar{font-size:2.1rem;color:var(--ayat);margin:0;line-height:1.7}
+.zikir p{color:var(--redup);font-style:italic;margin:2px 0 0}
+
+footer{margin-top:44px;padding-top:18px;border-top:3px solid var(--hutan);font-family:"Inter",system-ui,sans-serif;font-size:.8rem;color:var(--redup);line-height:1.65}
+footer .visi{display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:16px;text-align:left}
+footer .visi img{width:46px;height:46px;border-radius:50%}
+footer .visi span{font-family:"Lora",serif;font-style:italic;font-size:1rem;color:var(--teks);line-height:1.4}
+footer .visi b{display:block;font-style:normal;font-family:"Inter",system-ui,sans-serif;font-size:.78rem;color:var(--hijau);letter-spacing:.05em}
+footer ol{padding-left:18px;margin:6px 0 12px}
+
+@media (max-width:520px){
+  body{font-size:17px}
+  .bar .nm{font-size:.7rem}
+  .hero .ar-big{font-size:1.85rem}
+  .hero h1{font-size:1.6rem}
+  .hero .logo{width:96px;height:96px}
+  .ayat{font-size:1.36rem}
+  .kisah .kepala{padding:14px 16px}
+  .kisah .isi{padding:16px}
+}
+
+/* Siri 02: jadual perbandingan */
+.banding{border:1px solid var(--garis);border-radius:14px;overflow:hidden;margin:14px 0 10px;background:#fff}
+.brow{display:grid;grid-template-columns:92px 1fr 1fr;border-top:1px solid var(--garis)}
+.brow:first-child{border-top:0}
+.brow>div{padding:10px 10px;text-align:center}
+.brow>div:first-child{text-align:left;font-family:"Inter",system-ui,sans-serif;font-size:.8rem;font-weight:600;color:var(--hijau);display:flex;align-items:center}
+.brow .ar{display:block;font-family:"Amiri Quran","Amiri",serif;font-size:1.3rem;line-height:1.9;color:var(--ayat);direction:rtl}
+.brow small{display:block;font-family:"Inter",system-ui,sans-serif;font-size:.74rem;line-height:1.35;color:var(--redup)}
+.brow .lebih{background:var(--kuning-pucat)}
+.bhead>div{background:var(--hutan);color:var(--kuning);font-family:"Inter",system-ui,sans-serif;font-size:.8rem;font-weight:600;padding:9px 6px}
+.bhead>div.lebih{background:var(--hutan)}
+.kontras .ya small{display:block;font-family:"Inter",system-ui,sans-serif;font-size:.76rem;color:var(--redup);margin-top:4px}
+.kontras .ya u{text-decoration-color:var(--kuning);text-decoration-thickness:3px;text-underline-offset:6px}
+@media (max-width:420px){.brow{grid-template-columns:70px 1fr 1fr}.brow .ar{font-size:1.12rem}}
+@media print{
+  .bar{position:static}
+  .toggle{display:none}
+  body{background:#fff;font-size:12pt}
+  .kisah,blockquote,.renung,ul.amal li,ol.muhasabah li{break-inside:avoid}
+  header.hero,.renung,.kisah .kepala,.bar{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+</style>
+<body>
+
+<div class="bar"><div class="in">
+  <img src="attartil-logo.png" alt="">
+  <div class="nm">ATTARTIL QURANIC INSTITUTE<small><span class="ms">Nota Renungan</span><span class="en">Reflection Notes</span></small></div>
+  <div class="toggle" role="group" aria-label="Bahasa / Language">
+    <button type="button" data-set="en" aria-pressed="false">EN</button>
+    <button type="button" data-set="ms" aria-pressed="true">BM</button>
+  </div>
+</div></div>
+
+<header class="hero">
+  <img class="logo" src="attartil-logo.png" alt="AtTartil Quranic Institute">
+  <div><span class="tag"><span class="ms">Peringatan Ulama · Siri 02</span><span class="en">Scholars' Reminders · Episode 02</span></span></div>
+  <p class="ar-big">عَرْضُهَا السَّمَاوَاتُ<br>كَعَرْضِ السَّمَاءِ</p>
+  <h1><span class="ms">Luasnya Syurga, Luasnya Kurnia</span><span class="en">The Width of Paradise, the Width of His Bounty</span></h1>
+  <p class="sub ms">Dua ayat yang hampir serupa. Satu huruf, satu perkataan dan satu penutup yang berbeza membuka makna yang sangat dalam.</p>
+  <p class="sub en">Two verses that look almost the same. One letter, one word and one closing phrase that differ open a meaning of great depth.</p>
+</header>
+
+<main class="wrap">
+
+  <p class="pembuka ms">Kita sering membaca dua ayat tentang syurga ini dan menyangka kedua-duanya sama. Terjemahan Melayu pun menterjemahkan kedua-duanya dengan kata yang sama: "seluas segala langit dan bumi". Tetapi dalam bahasa Arab, Allah memilih kata yang berbeza, dan setiap pilihan itu membawa pesan untuk kita.</p>
+  <p class="pembuka en">We often read these two verses about Paradise and assume they say the same thing. Even translations render them almost alike. But in Arabic, Allah chose different words, and each choice carries a message for us.</p>
+
+  <section>
+    <span class="label l-video"><span class="ms">Inti video</span><span class="en">From the video</span></span>
+    <figure class="video">
+      <video class="ms" controls playsinline preload="metadata" poster="reel-poster-ms.jpg">
+        <source src="video-ms.mp4" type="video/mp4">
+      </video>
+      <video class="en" controls playsinline preload="metadata" poster="reel-poster-en.jpg">
+        <source src="video-en.mp4" type="video/mp4">
+      </video>
+      <p><b>عرضها السماوات · كعرض السماء</b><br><span class="ms">Peringatan Ulama · Siri 02 · Prof. Dr Fadil Salih as-Samarra'i<br>Bahasa Arab, sari kata Melayu · 5 min 47 s</span><span class="en">Scholars' Reminders · Episode 02 · Prof. Dr Fadil Salih al-Samarra'i<br>Arabic, English subtitles · 5 min 47 s</span></p>
+    </figure>
+    <div class="penceramah">
+      <p class="ms"><b>Penceramah: Prof. Dr Fadil Salih as-Samarra'i</b> (lahir 1933, Samarra, Iraq). PhD nahu (tatabahasa Arab), Universiti Ain Shams, Kaherah (1968); bekas profesor nahu di Universiti Baghdad selama kira-kira 40 tahun; ahli al-Majma' al-'Ilmi al-'Iraqi (Akademi Sains Iraq); pengarang <i>Ma'ani an-Nahw</i> (Makna-makna Nahu) dan <i>at-Ta'bir al-Qur'ani</i> (Gaya Pengungkapan al-Qur'an); dikenali melalui rancangan TV <i>Lamasat Bayaniyyah</i> (Sentuhan Keindahan Bahasa).</p>
+      <p class="en"><b>Speaker: Prof. Dr Fadil Salih al-Samarra'i</b> (b. 1933, Samarra, Iraq). PhD in Arabic grammar, Ain Shams University, Cairo (1968); professor of grammar at the University of Baghdad for about 40 years; member of the Iraqi Academy of Sciences (al-Majma' al-'Ilmi al-'Iraqi); author of <i>Ma'ani al-Nahw</i> and <i>al-Ta'bir al-Qur'ani</i>; widely known through the TV programme <i>Lamasat Bayaniyya</i>.</p>
+    </div>
+    <p class="ms">Soalan dalam rancangan ini: kenapa satu ayat berbunyi <b>«عَرْضُهَا السَّمَاوَاتُ وَالْأَرْضُ»</b> dan satu lagi <b>«عَرْضُهَا <mark>كَ</mark>عَرْضِ <mark>السَّمَاءِ</mark> وَالْأَرْضِ»</b>? Jawapan Dr Fadil ringkasnya: <mark><b>setiap perbezaan dalam ayat al-Hadid menunjukkan "lebih": tempat yang lebih luas, untuk manusia yang lebih ramai, dengan kurnia yang lebih besar.</b></mark></p>
+    <p class="en">The question in this programme: why does one verse say <b>«عَرْضُهَا السَّمَاوَاتُ وَالْأَرْضُ»</b> and the other <b>«عَرْضُهَا <mark>كَ</mark>عَرْضِ <mark>السَّمَاءِ</mark> وَالْأَرْضِ»</b>? Dr Fadil's answer in short: <mark><b>every difference in the al-Hadid verse points to "more": a wider place, for more people, with a greater bounty.</b></mark></p>
+  </section>
+
+  <section>
+    <h2><span class="no">1</span><span class="ms">Lima Perbezaan dalam Dua Ayat</span><span class="en">Five Differences in Two Verses</span></h2>
+    <div class="banding" role="table">
+      <div class="brow bhead" role="row"><div role="columnheader"></div><div role="columnheader">Ali 'Imran 3:133</div><div role="columnheader">al-Hadid 57:21</div></div>
+      <div class="brow" role="row"><div role="rowheader"><span class="ms">Perintah</span><span class="en">Command</span></div><div><span class="ar">سَارِعُوا</span><small><span class="ms">sāri‘ū (bersegeralah)</span><span class="en">sāri‘ū (hasten)</span></small></div><div class="lebih"><span class="ar">سَابِقُوا</span><small><span class="ms">sābiqū (berlumba-lumbalah)</span><span class="en">sābiqū (race)</span></small></div></div>
+      <div class="brow" role="row"><div role="rowheader"><span class="ms">Langit</span><span class="en">Sky</span></div><div><span class="ar">السَّمَاوَاتُ</span><small><span class="ms">as-samāwāt (langit-langit, jamak)</span><span class="en">as-samāwāt (heavens, plural)</span></small></div><div class="lebih"><span class="ar">السَّمَاءِ</span><small><span class="ms">as-samā’ (langit, mufrad: lebih umum)</span><span class="en">as-samā’ (sky, singular: more general)</span></small></div></div>
+      <div class="brow" role="row"><div role="rowheader"><span class="ms">Bandingan</span><span class="en">Comparison</span></div><div><span class="ar">عَرْضُهَا</span><small><span class="ms">tanpa huruf "seperti"</span><span class="en">no word "like"</span></small></div><div class="lebih"><span class="ar">كَعَرْضِ</span><small><span class="ms">kāf at-tasybīh ("seperti")</span><span class="en">kāf of comparison ("like")</span></small></div></div>
+      <div class="brow" role="row"><div role="rowheader"><span class="ms">Untuk siapa</span><span class="en">For whom</span></div><div><span class="ar">لِلْمُتَّقِينَ</span><small><span class="ms">orang bertakwa, lalu disebut amal mereka (3:134)</span><span class="en">the righteous, then their deeds are listed (3:134)</span></small></div><div class="lebih"><span class="ar">لِلَّذِينَ آمَنُوا بِاللَّهِ وَرُسُلِهِ</span><small><span class="ms">orang beriman, tanpa menyebut amal</span><span class="en">the believers, with no deeds mentioned</span></small></div></div>
+      <div class="brow" role="row"><div role="rowheader"><span class="ms">Penutup</span><span class="en">Closing</span></div><div><small>—</small></div><div class="lebih"><span class="ar">ذَلِكَ فَضْلُ اللَّهِ</span><small><span class="ms">"yang demikian ialah limpah kurnia Allah"</span><span class="en">"That is the bounty of Allāh"</span></small></div></div>
+    </div>
+    <p class="nota-kecil ms">Lajur kuning menandakan "lebih" menurut huraian Dr Fadil. Huraian makna dalam kurungan ialah ringkasan untuk pembaca, bukan terjemahan ayat.</p>
+    <p class="nota-kecil en">The yellow column marks "more" according to Dr Fadil's explanation. Glosses in brackets are reader summaries, not verse translations.</p>
+  </section>
+
+  <section>
+    <h2><span class="no">2</span><span class="ms">Dua Ayat Syurga</span><span class="en">The Two Verses on Paradise</span></h2>
+
+    <article class="kisah">
+      <div class="kepala"><div class="ikon">🏃</div>
+        <div><h3><span class="ms">Ali 'Imran: "bersegeralah"</span><span class="en">Al 'Imran: "hasten"</span></h3>
+        <div class="susah"><span class="ms">Untuk <b>orang bertakwa</b>, dengan sifat-sifat amal mereka</span><span class="en">For <b>the righteous</b>, with their deeds described</span></div></div></div>
+      <div class="isi">
+        <span class="label l-ayat"><span class="ms">Ayat</span><span class="en">Verses</span></span>
+        <p class="ayat">وَسَارِعُوا إِلَى مَغْفِرَةٍ مِنْ رَبِّكُمْ وَجَنَّةٍ عَرْضُهَا السَّمَاوَاتُ وَالْأَرْضُ أُعِدَّتْ لِلْمُتَّقِينَ ﴿١٣٣﴾ الَّذِينَ يُنْفِقُونَ فِي السَّرَّاءِ وَالضَّرَّاءِ وَالْكَاظِمِينَ الْغَيْظَ وَالْعَافِينَ عَنِ النَّاسِ وَاللَّهُ يُحِبُّ الْمُحْسِنِينَ ﴿١٣٤﴾</p>
+        <p class="terj ms">"Dan segeralah kamu kepada (mengerjakan amal-amal yang baik untuk mendapat) keampunan dari Tuhan kamu, dan (mendapat) Syurga yang bidangnya seluas segala langit dan bumi, yang disediakan bagi orang-orang yang bertaqwa; Iaitu orang-orang yang mendermakan hartanya pada masa senang dan susah, dan orang-orang yang menahan kemarahannya, dan orang-orang yang memaafkan kesalahan orang. Dan (ingatlah), Allah mengasihi orang-orang yang berbuat perkara-perkara yang baik;"</p>
+        <p class="terj en">"And hasten to forgiveness from your Lord and a garden [i.e., Paradise] as wide as the heavens and earth, prepared for the righteous. Who spend [in the cause of Allāh] during ease and hardship and who restrain anger and who pardon the people - and Allāh loves the doers of good;"</p>
+        <p class="ref">Ali 'Imran 3:133–134</p>
+      </div>
+    </article>
+
+    <article class="kisah">
+      <div class="kepala"><div class="ikon">🏁</div>
+        <div><h3><span class="ms">al-Hadid: "berlumba-lumbalah"</span><span class="en">al-Hadid: "race"</span></h3>
+        <div class="susah"><span class="ms">Untuk <b>orang beriman</b>, ditutup dengan <b>kurnia Allah</b></span><span class="en">For <b>the believers</b>, closed with <b>Allah's bounty</b></span></div></div></div>
+      <div class="isi">
+        <span class="label l-ayat"><span class="ms">Ayat</span><span class="en">Verse</span></span>
+        <p class="ayat">سَابِقُوا إِلَى مَغْفِرَةٍ مِنْ رَبِّكُمْ وَجَنَّةٍ عَرْضُهَا كَعَرْضِ السَّمَاءِ وَالْأَرْضِ أُعِدَّتْ لِلَّذِينَ آمَنُوا بِاللَّهِ وَرُسُلِهِ ذَلِكَ فَضْلُ اللَّهِ يُؤْتِيهِ مَنْ يَشَاءُ وَاللَّهُ ذُو الْفَضْلِ الْعَظِيمِ ﴿٢١﴾</p>
+        <p class="terj ms">"Berlumba-lumbalah kamu (mengerjakan amal-amal yang baik) untuk mendapat keampunan dari Tuhan kamu, dan mendapat Syurga yang bidangnya seluas segala langit dan bumi, yang disediakan bagi orang-orang yang beriman kepada Allah dan Rasul-rasulNya; yang demikian ialah limpah kurnia Allah, diberikanNya kepada sesiapa yang dikehendakiNya; dan Allah sememangnya mempunyai limpah kurnia yang besar."</p>
+        <p class="terj en">"Race [i.e., compete] toward forgiveness from your Lord and a Garden whose width is like the width of the heavens and earth, prepared for those who believed in Allāh and His messengers. That is the bounty of Allāh which He gives to whom He wills, and Allāh is the possessor of great bounty."</p>
+        <p class="ref">al-Hadid 57:21</p>
+        <div class="pengajaran ms">💡 <b>Perhatikan:</b> terjemahan Basmeih memberi bunyi yang sama untuk kedua-dua ayat ("seluas segala langit dan bumi"). Perbezaan <b>السَّمَاوَات</b> dan <b>السَّمَاء</b>, serta huruf <b>كَـ</b>, hanya kelihatan dalam teks Arab. Inilah sebabnya belajar bahasa al-Qur'an membuka pintu tadabbur yang lebih luas.</div>
+        <div class="pengajaran en">💡 <b>Notice:</b> many translations render both verses almost alike. The difference between <b>السَّمَاوَات</b> and <b>السَّمَاء</b>, and the letter <b>كَـ</b>, only shows in the Arabic. That is why learning the language of the Qur'an opens a wider door to reflection.</div>
+      </div>
+    </article>
+  </section>
+
+  <section>
+    <h2><span class="no">3</span><span class="ms">Kunci Perbezaan: السَّمَاء dan السَّمَاوَات</span><span class="en">The Key: السَّمَاء and السَّمَاوَات</span></h2>
+    <p class="ms">Menurut Dr Fadil, <b>as-samā’</b> dalam bahasa Arab dan al-Qur'an ada dua makna: (1) salah satu daripada tujuh langit; (2) <b>segala yang berada di atasmu</b>: bumbung, awan, ruang udara. Maka as-samā’ lebih luas, kerana ia merangkumi as-samāwāt dan lebih lagi. Bukti beliau: dua ayat ini.</p>
+    <p class="en">According to Dr Fadil, <b>samā’</b> in Arabic and in the Qur'an has two meanings: (1) one of the seven heavens; (2) <b>everything above you</b>: a ceiling, clouds, the open air. So samā’ is broader, since it includes the samāwāt and more. His proof: these two verses.</p>
+    <div class="kontras">
+      <div class="ya"><p class="ar">يَعْلَمُ <u>الْقَوْلَ</u> فِي <u>السَّمَاءِ</u> وَالْأَرْضِ</p><small><span class="ms">al-qawl (perkataan, lebih umum) bersama as-samā’ (lebih luas) · al-Anbiya' 21:4</span><span class="en">qawl (speech, more general) with samā’ (broader) · 21:4</span></small></div>
+      <div class="ya"><p class="ar">يَعْلَمُ <u>السِّرَّ</u> فِي <u>السَّمَاوَاتِ</u> وَالْأَرْضِ</p><small><span class="ms">as-sirr (rahsia, lebih khusus) bersama as-samāwāt · al-Furqan 25:6</span><span class="en">sirr (secret, more specific) with samāwāt · 25:6</span></small></div>
+    </div>
+    <div class="pisah"></div>
+    <p class="ayat">قَالَ رَبِّي يَعْلَمُ الْقَوْلَ فِي السَّمَاءِ وَالْأَرْضِ وَهُوَ السَّمِيعُ الْعَلِيمُ ﴿٤﴾</p>
+    <p class="terj ms">"(Bagi menjawab mereka, Nabi Muhammad) berkata: "Tuhanku mengetahui tiap-tiap perkataan (yang dilahirkan atau disembunyikan oleh makhluk-makhluk) di langit dan di bumi; dan Dia lah jua yang Maha Mendengar, lagi Maha Mengetahui"."</p>
+    <p class="terj en">"He [the Prophet (ﷺ)] said, "My Lord knows whatever is said throughout the heaven and earth, and He is the Hearing, the Knowing.""</p>
+    <p class="ref">al-Anbiya' 21:4</p>
+    <div class="pisah"></div>
+    <p class="ayat">قُلْ أَنْزَلَهُ الَّذِي يَعْلَمُ السِّرَّ فِي السَّمَاوَاتِ وَالْأَرْضِ إِنَّهُ كَانَ غَفُورًا رَحِيمًا ﴿٦﴾</p>
+    <p class="terj ms">"Katakanlah (Wahai Muhammad): "Al-Quran itu diturunkan oleh Allah yang mengetahui segala rahsia di langit dan di bumi; sesungguhnya adalah Ia Maha Pengampun, lagi Maha Mengasihani."</p>
+    <p class="terj en">"Say, [O Muḥammad], "It has been revealed by He who knows [every] secret within the heavens and the earth. Indeed, He is ever Forgiving and Merciful.""</p>
+    <p class="ref">al-Furqan 25:6</p>
+  </section>
+
+  <section>
+    <h2><span class="no">4</span><span class="ms">Empat Kata Kunci</span><span class="en">Four Key Words</span></h2>
+    <div class="kunci">
+      <div><p class="ar">سَارِعُوا</p><span><b>sāri‘ū</b><br><span class="ms">(bersegeralah)</span><span class="en">(hasten)</span></span></div>
+      <div><p class="ar">سَابِقُوا</p><span><b>sābiqū</b><br><span class="ms">(berlumba-lumbalah: bersegera, dan lebih lagi)</span><span class="en">(race: hastening, and more)</span></span></div>
+      <div><p class="ar">كَـ</p><span><b>kāf at-tasybīh</b><br><span class="ms">(huruf yang bermaksud "seperti")</span><span class="en">(the letter meaning "like")</span></span></div>
+      <div><p class="ar">فَضْل</p><span><b>faḍl</b><br><span class="ms">(limpah kurnia, pemberian melebihi hak)</span><span class="en">(bounty, giving beyond what is due)</span></span></div>
+    </div>
+    <p class="nota-kecil ms" style="margin-top:10px">Huraian makna di atas ialah ringkasan umum untuk pembaca, bukan takrif daripada satu kitab tertentu.</p>
+    <p class="nota-kecil en" style="margin-top:10px">These meanings are a general summary for readers, not definitions taken from a particular book.</p>
+  </section>
+
+  <section>
+    <h2><span class="no">5</span><span class="ms">Apa Kata Ulama</span><span class="en">What the Scholars Say</span></h2>
+    <span class="label l-ulama"><span class="ms">Nukilan · ada perbezaan pandangan</span><span class="en">Quoted · scholars differ</span></span>
+    <p class="ms">Dua ulama di bawah bersetuju bahawa ayat al-Hadid ditujukan kepada golongan yang lebih umum. Namun mereka berbeza pandangan: <b>ayat yang mana menggambarkan syurga yang lebih luas?</b></p>
+    <p class="en">Both scholars below agree that the al-Hadid verse addresses a broader group. But they differ: <b>which verse describes the wider Paradise?</b></p>
+
+    <blockquote>
+      <p class="ar">اتسع المكان فاتسع الخلق، ذكر السماء التي تشمل السموات وزيادة، وذكر الذين آمنوا بالله ورسله وهي تشمل المتقين وزيادة، ثم زاد وقال: "ذلك فضل الله"</p>
+      <p class="tr ms"><b>Pandangan 1, Dr Fadil as-Samarra'i: ayat al-Hadid lebih luas.</b> "Tempat menjadi lebih luas kerana makhluk (yang menghuninya) lebih ramai. Dia menyebut as-samā’ yang merangkumi langit-langit dan lebih lagi, dan menyebut orang yang beriman kepada Allah dan Rasul-rasul-Nya, yang merangkumi orang bertakwa dan lebih lagi. Kemudian Dia menambah: 'yang demikian ialah limpah kurnia Allah'."</p>
+      <p class="tr en"><b>View 1, Dr Fadil al-Samarra'i: the al-Hadid verse is wider.</b> "The place widened because the people widened. He mentioned samā’, which includes the heavens and more, and mentioned those who believe in Allah and His messengers, which includes the righteous and more. Then He added: 'That is the bounty of Allah'."</p>
+      <cite class="ms">Fadil Salih as-Samarra'i, <i>Lamasat Bayaniyyah fi Nusus min at-Tanzil (Muhadarat)</i>, hlm. 826 (Shamela; nombor halaman mengikut penomboran automatik Shamela, bukan cetakan).</cite>
+      <cite class="en">Fadil Salih al-Samarra'i, <i>Lamasat Bayaniyya fi Nusus min al-Tanzil (Muhadarat)</i>, p. 826 (Shamela's automatic page numbering, not a printed edition).</cite>
+    </blockquote>
+
+    <blockquote>
+      <p class="ar">ولأن هؤلاء أدون حالا من أولئك جعل عرض الجنة هنا أقل فقال وَجَنَّةٍ عَرْضُها كَعَرْضِ السَّماءِ وَالْأَرْضِ فلم يجمع السماء وأدخل حرف التشبيه الدال على أن المشبه أدون حالا من المشبه به</p>
+      <p class="tr ms"><b>Pandangan 2, an-Naisaburi: ayat al-Hadid lebih kecil.</b> "Oleh kerana mereka (orang beriman secara umum) lebih rendah kedudukannya daripada mereka (orang bertakwa), Dia menjadikan lebar syurga di sini lebih kecil. Dia tidak menjamakkan as-samā’, dan memasukkan huruf tasybih yang menunjukkan bahawa perkara yang dibandingkan lebih rendah daripada perkara yang dijadikan bandingan." Beliau juga berkata kalimah <i>sābiqū</i> mengisyaratkan martabat mereka berbeza-beza, sebahagian mendahului yang lain.</p>
+      <p class="tr en"><b>View 2, al-Naysaburi: the al-Hadid verse is smaller.</b> "Because these (believers in general) are of a lower rank than those (the righteous), He made the width of Paradise here smaller. He did not make samā’ plural, and He added the letter of comparison, which shows that the thing compared is lower than what it is compared to." He also says <i>sābiqū</i> hints that their ranks differ, some ahead of others.</p>
+      <cite class="ms">Nizam ad-Din an-Naisaburi (w. 850H), <i>Ghara'ib al-Qur'an wa Ragha'ib al-Furqan</i>, 6/258 (Shamela).</cite>
+      <cite class="en">Nizam al-Din al-Naysaburi (d. 850 AH), <i>Ghara'ib al-Qur'an wa Ragha'ib al-Furqan</i>, 6/258 (Shamela).</cite>
+    </blockquote>
+
+    <p class="ms">Tentang maksud "lebar" (<i>al-‘arḍ</i>) syurga itu sendiri, ar-Razi menukilkan beberapa pandangan:</p>
+    <p class="en">On what the "width" (<i>al-‘arḍ</i>) of Paradise itself means, al-Razi reports several views:</p>
+    <ul class="pandangan ms">
+      <li><b>Muqatil:</b> jika tujuh langit dan tujuh bumi dijadikan kepingan dan dicantumkan, itulah lebar syurga.</li>
+      <li><b>Ibn 'Abbas (riwayat 'Ata'):</b> setiap orang yang taat mendapat syurga seluas itu.</li>
+      <li><b>as-Suddi:</b> yang disebut hanya lebarnya; panjangnya tentu berlipat kali ganda.</li>
+      <li><b>az-Zajjaj:</b> ia perumpamaan dengan sesuatu yang paling luas yang dapat dibayangkan manusia.</li>
+    </ul>
+    <ul class="pandangan en">
+      <li><b>Muqatil:</b> if the seven heavens and seven earths were laid out as sheets joined together, that is its width.</li>
+      <li><b>Ibn 'Abbas (via 'Ata'):</b> each obedient person has a garden of that size.</li>
+      <li><b>al-Suddi:</b> only the width is mentioned; its length is many times more.</li>
+      <li><b>al-Zajjaj:</b> it is a likeness using the widest thing people can imagine.</li>
+    </ul>
+    <p class="nota-kecil ms">Fakhr ad-Din ar-Razi (w. 606H), <i>Mafatih al-Ghaib</i>, 29/465 (Shamela). Nombor jilid/halaman mungkin berbeza dalam cetakan lain.</p>
+    <p class="nota-kecil en">Fakhr al-Din al-Razi (d. 606 AH), <i>Mafatih al-Ghayb</i>, 29/465 (Shamela). Pagination may differ in other editions.</p>
+  </section>
+
+  <section class="renung">
+    <span class="label l-renung"><span class="ms">Tadabbur · renungan peribadi</span><span class="en">Tadabbur · personal reflection</span></span>
+    <h2><span class="ms">Pintu Kurnia yang Terbuka Luas</span><span class="en">A Wide-Open Door of Bounty</span></h2>
+    <div class="ms">
+      <p>Ayat Ali 'Imran memanggil kita kepada amal: berinfak, menahan marah, memaafkan. Ayat al-Hadid pula, mengikut huraian Dr Fadil, membuka pintu yang lebih luas: <em>"yang demikian ialah limpah kurnia Allah"</em>.</p>
+      <p>Syurga bukan harga yang kita bayar dengan amal. Amal kita terlalu kecil untuk menebusnya. Ia kurnia, dan kurnia Allah lebih luas daripada langit itu sendiri.</p>
+      <p>Namun ayat yang sama membuka dengan <em>sābiqū</em>: berlumba-lumbalah. Luasnya kurnia bukan alasan untuk berlengah. Ia jemputan untuk berlari lebih laju, kerana yang berlumba itu ramai.</p>
+      <p>Berharaplah pada kurnia-Nya seperti orang yang yakin, dan beramallah seperti orang yang takut ketinggalan.</p>
+    </div>
+    <div class="en">
+      <p>The Al 'Imran verse calls us to deeds: spending, restraining anger, forgiving. The al-Hadid verse, in Dr Fadil's explanation, opens a wider door: <em>"That is the bounty of Allah"</em>.</p>
+      <p>Paradise is not a price we pay with deeds. Our deeds are far too small to purchase it. It is bounty, and Allah's bounty is wider than the sky itself.</p>
+      <p>Yet the same verse opens with <em>sābiqū</em>: race. The width of His bounty is no excuse to delay. It is an invitation to run faster, because many are racing.</p>
+      <p>Hope in His bounty like one who is certain, and act like one who fears being left behind.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="no">6</span><span class="ms">Muhasabah</span><span class="en">Muhasabah (self-reflection)</span></h2>
+    <ol class="muhasabah ms">
+      <li>Adakah saya "bersegera" kepada kebaikan, atau sekadar menunggu masa lapang?</li>
+      <li>Antara amal dalam 3:134 (berinfak, menahan marah, memaafkan), yang mana paling sukar bagi saya minggu ini?</li>
+      <li>Adakah saya bergantung pada amal sendiri, atau benar-benar berharap pada kurnia Allah?</li>
+    </ol>
+    <ol class="muhasabah en">
+      <li>Do I "hasten" to good, or wait until I have free time?</li>
+      <li>Of the deeds in 3:134 (spending, restraining anger, forgiving), which is hardest for me this week?</li>
+      <li>Do I rely on my own deeds, or truly hope in Allah's bounty?</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2><span class="no">7</span><span class="ms">Amalan Minggu Ini</span><span class="en">Practice This Week</span></h2>
+    <ul class="amal ms">
+      <li><b>Satu infak senyap:</b> beri sedekah sekali minggu ini, ketika senang atau ketika sempit, seperti dalam 3:134.</li>
+      <li><b>Tahan sekali marah:</b> apabila rasa marah, diam dan ingat «وَالْكَاظِمِينَ الْغَيْظَ».</li>
+      <li><b>Maafkan seorang:</b> pilih seseorang yang pernah menyakiti hati, dan maafkan dia kerana Allah.</li>
+      <li><b>Kenal satu perkataan al-Qur'an:</b> bandingkan السَّمَاء dan السَّمَاوَات setiap kali bertemu dalam bacaan.</li>
+    </ul>
+    <ul class="amal en">
+      <li><b>One quiet act of giving:</b> give charity once this week, in ease or in hardship, as in 3:134.</li>
+      <li><b>Hold back anger once:</b> when anger rises, stay silent and remember «وَالْكَاظِمِينَ الْغَيْظَ».</li>
+      <li><b>Forgive someone:</b> choose one person who hurt you, and forgive them for Allah's sake.</li>
+      <li><b>Know one Qur'anic word:</b> notice السَّمَاء and السَّمَاوَات whenever they appear in your recitation.</li>
+    </ul>
+  </section>
+
+  <div class="zikir">
+    <p class="ar">ذَلِكَ فَضْلُ اللَّهِ يُؤْتِيهِ مَنْ يَشَاءُ</p>
+    <p class="ms">"…yang demikian ialah limpah kurnia Allah, diberikanNya kepada sesiapa yang dikehendakiNya…" (al-Hadid 57:21)</p>
+    <p class="en">"…That is the bounty of Allāh which He gives to whom He wills…" (57:21)</p>
+  </div>
+
+  <section class="sertai">
+    <img src="attartil-logo.png" alt="AtTartil Quranic Institute">
+    <h2><span class="ms">Ingin memahami al-Qur'an seperti ini?</span><span class="en">Want to understand the Qur'an like this?</span></h2>
+    <p class="lead ms">Sertai <b>AFAM (AtTartil Full-Access Membership)</b> dan teruskan perjalanan daripada membaca, kepada memahami, merenung dan mengamalkan al-Qur'an.</p>
+    <p class="lead en">Join <b>AFAM (AtTartil Full-Access Membership)</b> and continue the journey from reading the Qur'an to understanding, reflecting on and living it.</p>
+    <ul class="ms">
+      <li>Akses kepada kelas rakaman dan program-program lepas AtTartil</li>
+      <li>Kandungan tadabbur dan bahasa al-Qur'an</li>
+      <li>Belajar ikut masa anda, di mana-mana peranti</li>
+      <li>Komuniti pelajar untuk bertanya dan saling menyokong</li>
+    </ul>
+    <ul class="en">
+      <li>Access to AtTartil's recorded classes and past programmes</li>
+      <li>Tadabbur and Qur'anic language content</li>
+      <li>Learn at your own pace, on any device</li>
+      <li>A learners' community for questions and support</li>
+    </ul>
+    <p class="harga"><span class="ms">$10 sebulan atau $120 setahun</span><span class="en">$10 a month or $120 a year</span></p>
+    <div class="cta">
+      <a class="utama" href="https://attartilqi.com/afam" target="_blank" rel="noopener"><span class="ms">Sertai AFAM</span><span class="en">Join AFAM</span> →</a>
+      <a class="kedua" href="https://wa.me/6593725111" target="_blank" rel="noopener"><span class="ms">Tanya di WhatsApp</span><span class="en">Ask on WhatsApp</span></a>
+    </div>
+    <p class="sosial"><span class="ms">Ikuti siri Peringatan Ulama:</span><span class="en">Follow the Scholars' Reminders series:</span><br>
+      <a href="https://www.instagram.com/attartilqi/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/attartil" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.youtube.com/channel/UCPv1RPGjbULC0Wfx9BQ3v1Q" target="_blank" rel="noopener">YouTube</a> · <a href="https://www.tiktok.com/@attartilcs" target="_blank" rel="noopener">TikTok</a> · <a href="https://chat.whatsapp.com/JCuiFYFNTSn3CycNfE0k6T" target="_blank" rel="noopener"><span class="ms">Komuniti WhatsApp</span><span class="en">WhatsApp Community</span></a></p>
+  </section>
+
+  <p style="text-align:center;margin:36px 0 0;font-family:'Inter',system-ui,sans-serif;font-weight:600"><a href="../" style="color:var(--hijau);text-decoration:none">← <span class="ms">Semua siri Peringatan Ulama</span><span class="en">All Scholars' Reminders episodes</span></a></p>
+
+  <footer>
+    <div class="visi"><img src="attartil-logo.png" alt=""><span><b>ATTARTIL QURANIC INSTITUTE</b>"Where Qur'anic Knowledge Transforms Lives"</span></div>
+    <div class="ms">
+      <b>Rujukan</b>
+      <ol>
+        <li>Teks ayat: al-Maktabah al-Shamela (riwayat Hafs 'an 'Asim).</li>
+        <li>Terjemahan ayat (BM): <i>Tafsir Pimpinan ar-Rahman</i>, Sheikh Abdullah Basmeih (JAKIM).</li>
+        <li>Fadil Salih as-Samarra'i, <i>Lamasat Bayaniyyah fi Nusus min at-Tanzil (Muhadarat)</i>, hlm. 826 (penomboran Shamela); an-Naisaburi, <i>Ghara'ib al-Qur'an</i>, 6/258; ar-Razi, <i>Mafatih al-Ghaib</i>, 29/465 (al-Maktabah al-Shamela; halaman mungkin berbeza dalam cetakan lain).</li>
+        <li>Isi ceramah: rakaman video pendek (bahasa Arab) bertajuk Lamasat Bayaniyyah, «عرضها السماوات · كعرض السماء» (bahagian 0:00–5:42).</li>
+      </ol>
+      <p>Bahagian bertanda "Tadabbur" ialah renungan peribadi, bukan tafsir. Nota ini ialah bahan pembelajaran dan bukan fatwa.</p>
+    </div>
+    <div class="en">
+      <b>References</b>
+      <ol>
+        <li>Arabic verse text: al-Maktabah al-Shamela (Hafs 'an 'Asim).</li>
+        <li>English verse translation: Saheeh International.</li>
+        <li>Fadil Salih al-Samarra'i, <i>Lamasat Bayaniyya fi Nusus min al-Tanzil (Muhadarat)</i>, p. 826 (Shamela numbering); al-Naysaburi, <i>Ghara'ib al-Qur'an</i>, 6/258; al-Razi, <i>Mafatih al-Ghayb</i>, 29/465 (al-Maktabah al-Shamela; pagination may differ in other editions).</li>
+        <li>Lecture content: short video clip (in Arabic) titled Lamasat Bayaniyya, «عرضها السماوات · كعرض السماء» (part 0:00–5:42).</li>
+      </ol>
+      <p>Sections marked "Tadabbur" are personal reflection, not tafsir. These notes are learning material and not a fatwa.</p>
+    </div>
+  </footer>
+</main>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  var titles={ms:"Luasnya Syurga, Luasnya Kurnia",en:"The Width of Paradise, the Width of His Bounty"};
+  function set(lang){
+    root.setAttribute("data-lang",lang);
+    root.setAttribute("lang",lang);
+    document.title=titles[lang];
+    var b=document.querySelectorAll(".toggle button");
+    for(var i=0;i<b.length;i++){b[i].setAttribute("aria-pressed",b[i].getAttribute("data-set")===lang?"true":"false");}
+    var v=document.querySelectorAll("video");
+    for(var j=0;j<v.length;j++){if(!v[j].classList.contains(lang)){try{v[j].pause();}catch(e){}}}
+    try{localStorage.setItem("drfadhel-lang",lang);}catch(e){}
+  }
+  var saved=null;
+  try{saved=localStorage.getItem("drfadhel-lang");}catch(e){}
+  if(saved==="ms"||saved==="en"){set(saved);}
+  document.querySelector(".toggle").addEventListener("click",function(e){
+    var t=e.target.closest("button");
+    if(t){set(t.getAttribute("data-set"));}
+  });
+})();
+</script>
+</body>
+</html>
+
