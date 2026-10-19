@@ -12,6 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Amiri+Quran&family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@500;600&display=swap" rel="stylesheet">
 <style>
+.banding.tiga .brow{grid-template-columns:34px 1fr 1.7fr}.banding.tiga .brow>div{align-items:flex-start}
 :root{
   --hutan:#10301f;      /* deep forest */
   --hijau:#2f7a10;      /* logo green, softened */
@@ -94,6 +95,8 @@ h2 .no{flex:none;width:34px;height:34px;border-radius:50%;background:var(--hutan
 .l-renung{background:rgba(255,225,77,.16);color:var(--kuning);border:1px solid rgba(255,225,77,.4)}
 .nota-kecil{font-size:.9rem;color:var(--redup)}
 mark{background:linear-gradient(transparent 58%,rgba(255,225,77,.55) 58%);color:inherit;padding:0 2px}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) mark{background:linear-gradient(transparent 58%,rgba(255,225,77,.28) 58%)}}
+:root[data-theme="dark"] mark{background:linear-gradient(transparent 58%,rgba(255,225,77,.28) 58%)}
 
 .video{margin:4px auto 22px;max-width:360px;background:var(--hutan);border-radius:20px;padding:10px;
   box-shadow:0 10px 26px rgba(16,48,31,.18),0 0 0 3px var(--lime)}
@@ -205,7 +208,7 @@ footer ol{padding-left:18px;margin:6px 0 12px}
 }
 
 /* Siri 02: jadual perbandingan */
-.banding{border:1px solid var(--garis);border-radius:14px;overflow:hidden;margin:14px 0 10px;background:#fff}
+.banding{border:1px solid var(--garis);border-radius:14px;overflow:hidden;margin:14px 0 10px;background:var(--kad)}
 .brow{display:grid;grid-template-columns:92px 1fr 1fr;border-top:1px solid var(--garis)}
 .brow:first-child{border-top:0}
 .brow>div{padding:10px 10px;text-align:center}
@@ -263,8 +266,8 @@ footer ol{padding-left:18px;margin:6px 0 12px}
       <p><b>إنك لمن المرسلين · على صراط مستقيم</b><br><span class="ms">Peringatan Ulama · Siri 05 · Prof. Dr Fadil Salih as-Samarra'i<br>Bahasa Arab, sari kata Melayu · 2 min 29 s</span><span class="en">Scholars' Reminders · Episode 05 · Prof. Dr Fadil Salih al-Samarra'i<br>Arabic, English subtitles · 2 min 29 s</span></p>
     </figure>
     <div class="penceramah">
-      <p class="ms"><b>Penceramah: Prof. Dr Fadil Salih as-Samarra'i</b> (lahir 1933, Samarra, Iraq). PhD nahu (tatabahasa Arab), Universiti Ain Shams, Kaherah (1968); bekas profesor nahu di Universiti Baghdad selama kira-kira 40 tahun; ahli al-Majma' al-'Ilmi al-'Iraqi (Akademi Sains Iraq); pengarang <i>Ma'ani an-Nahw</i> (Makna-makna Nahu) dan <i>at-Ta'bir al-Qur'ani</i> (Gaya Pengungkapan al-Qur'an); dikenali melalui rancangan TV <i>Lamasat Bayaniyyah</i> (Sentuhan Keindahan Bahasa).</p>
-      <p class="en"><b>Speaker: Prof. Dr Fadil Salih al-Samarra'i</b> (b. 1933, Samarra, Iraq). PhD in Arabic grammar, Ain Shams University, Cairo (1968); professor of grammar at the University of Baghdad for about 40 years; member of the Iraqi Academy of Sciences (al-Majma' al-'Ilmi al-'Iraqi); author of <i>Ma'ani al-Nahw</i> and <i>al-Ta'bir al-Qur'ani</i>; widely known through the TV programme <i>Lamasat Bayaniyya</i>.</p>
+      <p class="ms"><b>Penceramah: Prof. Dr Fadil Salih as-Samarra'i</b> (lahir 1933, Samarra, Iraq). PhD bahasa Arab, Universiti Ain Shams, Kaherah (1968); bekas profesor nahu di Universiti Baghdad selama kira-kira 40 tahun; ahli al-Majma' al-'Ilmi al-'Iraqi (Akademi Sains Iraq); pengarang <i>Ma'ani an-Nahw</i> (Makna-makna Nahu) dan <i>at-Ta'bir al-Qur'ani</i> (Gaya Pengungkapan al-Qur'an); dikenali melalui rancangan TV <i>Lamasat Bayaniyyah</i> (Sentuhan Keindahan Bahasa).</p>
+      <p class="en"><b>Speaker: Prof. Dr Fadil Salih al-Samarra'i</b> (b. 1933, Samarra, Iraq). PhD in Arabic language, Ain Shams University, Cairo (1968); professor of grammar at the University of Baghdad for about 40 years; member of the Iraqi Academy of Sciences (al-Majma' al-'Ilmi al-'Iraqi); author of <i>Ma'ani al-Nahw</i> and <i>al-Ta'bir al-Qur'ani</i>; widely known through the TV programme <i>Lamasat Bayaniyya</i>.</p>
     </div>
     <p class="ms">Dr Fadil memberi tiga sebab bagi susunan ini, dan menegaskan: <mark><b>dalam al-Qur'an tiada kata yang lebihan atau sekadar pengisi. Sama sekali tidak mungkin.</b></mark></p>
     <p class="en">Dr Fadil gives three reasons for this order, and stresses: <mark><b>in the Qur'an there is no superfluous or filler word. It is absolutely impossible.</b></mark></p>
@@ -288,7 +291,7 @@ footer ol{padding-left:18px;margin:6px 0 12px}
 
   <section>
     <h2><span class="no">2</span><span class="ms">Tiga Sebab Menurut Dr Fadil</span><span class="en">Three Reasons, According to Dr Fadil</span></h2>
-    <div class="banding" role="table">
+    <div class="banding tiga" role="table">
       <div class="brow bhead" role="row"><div role="columnheader"></div><div role="columnheader"><span class="ms">Sebab</span><span class="en">Reason</span></div><div role="columnheader"><span class="ms">Huraian</span><span class="en">Explanation</span></div></div>
       <div class="brow" role="row"><div role="rowheader">1</div><div class="lebih"><small><span class="ms"><b>Yang lebih utama</b> didahulukan</span><span class="en"><b>The greater</b> comes first</span></small></div><div><small><span class="ms">Menjadi rasul lebih tinggi daripada sekadar berada di atas jalan lurus. Kerasulan secara <i>taḍammun</i> (tersirat) sudah merangkumi jalan lurus, tetapi tidak sebaliknya.</span><span class="en">Being a messenger is higher than merely being on a straight path. Messengerhood includes the path by <i>taḍammun</i> (implication), but not the reverse.</span></small></div></div>
       <div class="brow" role="row"><div role="rowheader">2</div><div class="lebih"><small><span class="ms"><b>Sebab</b> sebelum <b>akibat</b></span><span class="en"><b>Cause</b> before <b>effect</b></span></small></div><div><small><span class="ms">Baginda di atas jalan lurus <i>kerana</i> baginda rasul. Kerasulan ialah sebab; jalan lurus ialah akibatnya.</span><span class="en">He is on the straight path <i>because</i> he is a messenger. The mission is the cause; the straight path is its result.</span></small></div></div>
@@ -338,27 +341,27 @@ footer ol{padding-left:18px;margin:6px 0 12px}
 
     <blockquote>
       <p class="ar">عَلى صِراطٍ مُسْتَقِيمٍ خبر بعد خبر، أو صلة للمرسلين. فإن قلت: أى حاجة إليه خبرا كان أو صلة، وقد علم أنّ المرسلين لا يكونون إلا على صراط مستقيم؟ قلت: ليس الغرض بذكره ما ذهبت إليه من تمييز من أرسل على صراط مستقيم عن غيره ممن ليس على صفته، وإنما الغرض وصفه ووصف ما جاء به من الشريعة، فجمع بين الوصفين في نظام واحد</p>
-      <p class="tr ms"><b>az-Zamakhsyari:</b> "«‘Alā ṣirāṭin mustaqīm» ialah <i>khabar</i> (predikat) selepas <i>khabar</i>, atau berkait dengan «al-mursalīn». Jika engkau bertanya: apa perlunya ia, sedangkan sudah diketahui bahawa para rasul pasti di atas jalan yang lurus? Aku menjawab: tujuannya bukan membezakan rasul yang di atas jalan lurus daripada yang tidak, tetapi untuk menyifatkan baginda dan menyifatkan syariat yang dibawanya, lalu kedua-dua sifat itu dihimpunkan dalam satu susunan." Beliau menambah: bentuk nakirah (tanpa "al") pada <i>ṣirāṭ</i> menunjukkan jalan itu agung, tidak terungkap sifatnya.</p>
-      <p class="tr en"><b>al-Zamakhshari:</b> "«‘Alā ṣirāṭin mustaqīm» is a predicate after a predicate, or attached to «al-mursalīn». If you ask: what need is there for it, when it is known that messengers are only ever on a straight path? I say: the aim is not to distinguish a messenger on a straight path from one who is not, but to describe him and to describe the law he brought, joining both descriptions in one arrangement." He adds: the indefinite form of <i>ṣirāṭ</i> shows a path of indescribable greatness.</p>
+      <p class="tr ms"><b>az-Zamakhsyari:</b> "«‘Alā ṣirāṭin mustaqīm» ialah <i>khabar</i> (predikat) selepas <i>khabar</i>, atau berkait dengan «al-mursalīn». Jika engkau bertanya: apa perlunya ia, sedangkan sudah diketahui bahawa para rasul pasti di atas jalan yang lurus? Aku menjawab: tujuannya bukan membezakan rasul yang di atas jalan lurus daripada yang tidak, tetapi untuk menyifatkan baginda dan menyifatkan syariat yang dibawanya, lalu kedua-dua sifat itu dihimpunkan dalam satu susunan." Beliau menambah: bentuk nakirah (tanpa "al") pada <i>ṣirāṭ</i> menunjukkan bahawa, di antara jalan-jalan yang lurus, baginda diutus di atas satu jalan lurus yang tidak terjangkau hakikat sifatnya.</p>
+      <p class="tr en"><b>al-Zamakhshari:</b> "«‘Alā ṣirāṭin mustaqīm» is a predicate after a predicate, or attached to «al-mursalīn». If you ask: what need is there for it, when it is known that messengers are only ever on a straight path? I say: the aim is not to distinguish a messenger on a straight path from one who is not, but to describe him and to describe the law he brought, joining both descriptions in one arrangement." He adds: the indefinite form of <i>ṣirāṭ</i> shows that, among straight paths, he was sent on a straight path whose description cannot be fathomed.</p>
       <cite class="ms">az-Zamakhsyari (w. 538H), <i>al-Kasysyaf</i>, 4/3–4, tafsir Yasin 36:4 (Shamela; cetakan bersama <i>al-Intisaf</i>).</cite>
       <cite class="en">al-Zamakhshari (d. 538 AH), <i>al-Kashshaf</i>, 4/3–4, on Yasin 36:4 (Shamela; edition with <i>al-Intisaf</i>).</cite>
     </blockquote>
 
     <blockquote>
       <p class="ar">عَلى صِراطٍ مُسْتَقِيمٍ خَبَرٌ ثَانٍ لِ (إِنَّ)، أَوْ حَالٌ مِنِ اسْمِ (إِنَّ) … وَلَيْسَ الْغَرَضُ مِنَ الْإِخْبَارِ بِهِ عَنِ الْمُخَاطَبِ إِفَادَةَ كَوْنِهِ عَلَى صِرَاطٍ مُسْتَقِيمٍ لِأَنَّ ذَلِكَ مَعْلُومٌ حُصُولُهُ مِنَ الْأَخْبَارِ مِنْ كَوْنِهِ أَحَدَ الْمُرْسَلِينَ … وَلَكِنَّ الْغَرَضَ الْجَمْعُ بَيْنَ حَالِ الرَّسُولِ ﵊ وَبَيْنَ حَالِ دِينِهِ لِيَكُونَ الْعِلْمُ بِأَنَّ دِينَهُ صِرَاطٌ مُسْتَقِيمٌ عِلْمًا مُسْتَقِلًّا لَا ضِمْنِيًّا</p>
-      <p class="tr ms"><b>Ibn 'Asyur:</b> "«‘Alā ṣirāṭin mustaqīm» ialah <i>khabar</i> kedua bagi <i>inna</i>, atau <i>ḥāl</i> (keterangan keadaan) bagi ism <i>inna</i> … Tujuannya bukan memaklumkan bahawa baginda di atas jalan yang lurus, kerana itu sudah diketahui daripada kenyataan bahawa baginda salah seorang rasul … tetapi untuk menghimpunkan keadaan Rasul dengan keadaan agamanya, supaya pengetahuan bahawa agamanya ialah jalan yang lurus menjadi pengetahuan yang berdiri sendiri, bukan sekadar tersirat."</p>
+      <p class="tr ms"><b>Ibn 'Asyur:</b> "«‘Alā ṣirāṭin mustaqīm» ialah <i>khabar</i> kedua bagi <i>inna</i> (kata penegas "sesungguhnya"), atau <i>ḥāl</i> (keterangan keadaan) bagi <i>ism inna</i> (subjek <i>inna</i>, iaitu "engkau") … Tujuannya bukan memaklumkan bahawa baginda di atas jalan yang lurus, kerana itu sudah diketahui daripada kenyataan bahawa baginda salah seorang rasul … tetapi untuk menghimpunkan keadaan Rasul dengan keadaan agamanya, supaya pengetahuan bahawa agamanya ialah jalan yang lurus menjadi pengetahuan yang berdiri sendiri, bukan sekadar tersirat."</p>
       <p class="tr en"><b>Ibn 'Ashur:</b> "«‘Alā ṣirāṭin mustaqīm» is a second predicate of <i>inna</i>, or a <i>ḥāl</i> (circumstantial clause) of the subject of <i>inna</i> … The aim is not to inform that he is on a straight path, since that is known from his being one of the messengers … but to join the state of the Messenger with the state of his religion, so that knowing his religion is a straight path becomes knowledge in its own right, not merely implied."</p>
       <cite class="ms">Ibn 'Asyur (w. 1393H), <i>at-Tahrir wa at-Tanwir</i>, 22/346, tafsir Yasin 36:4 (Shamela).</cite>
       <cite class="en">Ibn 'Ashur (d. 1393 AH), <i>al-Tahrir wa al-Tanwir</i>, 22/346, on Yasin 36:4 (Shamela).</cite>
     </blockquote>
 
     <ul class="pandangan ms">
-      <li><b>Persamaan:</b> ketiga-tiga ulama (termasuk Dr Fadil) bersetuju bahawa kerasulan sudah merangkumi jalan yang lurus; maka sebutan «‘alā ṣirāṭin mustaqīm» membawa tujuan tambahan.</li>
+      <li><b>Persamaan:</b> ketiga-tiga ulama (termasuk Dr Fadil) menyatakan bahawa kerasulan sudah merangkumi jalan yang lurus. az-Zamakhsyari dan Ibn 'Asyur menambah: sebutan «‘alā ṣirāṭin mustaqīm» tetap membawa tujuan tersendiri.</li>
       <li><b>Perbezaan i‘rāb:</b> az-Zamakhsyari: <i>khabar</i> kedua atau berkait dengan «al-mursalīn». Ibn 'Asyur: <i>khabar</i> kedua atau <i>ḥāl</i>. Sebab ketiga Dr Fadil (berkait dengan «al-mursalīn») sepadan dengan pilihan kedua az-Zamakhsyari.</li>
       <li><b>Tujuan:</b> az-Zamakhsyari dan Ibn 'Asyur menekankan pujian terhadap syariat Nabi ﷺ; Dr Fadil menekankan susunan: yang lebih utama dan yang menjadi sebab didahulukan.</li>
     </ul>
     <ul class="pandangan en">
-      <li><b>Agreement:</b> all three (including Dr Fadil) agree messengerhood already includes the straight path, so mentioning «‘alā ṣirāṭin mustaqīm» serves an added purpose.</li>
+      <li><b>Agreement:</b> all three (including Dr Fadil) state that messengerhood already includes the straight path. Al-Zamakhshari and Ibn 'Ashur add that mentioning «‘alā ṣirāṭin mustaqīm» still serves a purpose of its own.</li>
       <li><b>I‘rāb difference:</b> al-Zamakhshari: second predicate or attached to «al-mursalīn». Ibn 'Ashur: second predicate or <i>ḥāl</i>. Dr Fadil's third reason (attaching to «al-mursalīn») matches al-Zamakhshari's second option.</li>
       <li><b>Purpose:</b> al-Zamakhshari and Ibn 'Ashur stress praise of the Prophet's ﷺ law; Dr Fadil stresses the order: the greater and the cause come first.</li>
     </ul>

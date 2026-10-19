@@ -94,6 +94,8 @@ h2 .no{flex:none;width:34px;height:34px;border-radius:50%;background:var(--hutan
 .l-renung{background:rgba(255,225,77,.16);color:var(--kuning);border:1px solid rgba(255,225,77,.4)}
 .nota-kecil{font-size:.9rem;color:var(--redup)}
 mark{background:linear-gradient(transparent 58%,rgba(255,225,77,.55) 58%);color:inherit;padding:0 2px}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) mark{background:linear-gradient(transparent 58%,rgba(255,225,77,.28) 58%)}}
+:root[data-theme="dark"] mark{background:linear-gradient(transparent 58%,rgba(255,225,77,.28) 58%)}
 
 .video{margin:4px auto 22px;max-width:360px;background:var(--hutan);border-radius:20px;padding:10px;
   box-shadow:0 10px 26px rgba(16,48,31,.18),0 0 0 3px var(--lime)}
@@ -205,7 +207,7 @@ footer ol{padding-left:18px;margin:6px 0 12px}
 }
 
 /* Siri 02: jadual perbandingan */
-.banding{border:1px solid var(--garis);border-radius:14px;overflow:hidden;margin:14px 0 10px;background:#fff}
+.banding{border:1px solid var(--garis);border-radius:14px;overflow:hidden;margin:14px 0 10px;background:var(--kad)}
 .brow{display:grid;grid-template-columns:92px 1fr 1fr;border-top:1px solid var(--garis)}
 .brow:first-child{border-top:0}
 .brow>div{padding:10px 10px;text-align:center}
@@ -248,7 +250,7 @@ footer ol{padding-left:18px;margin:6px 0 12px}
 
 <main class="wrap">
 
-  <p class="pembuka ms">Dalam setiap rakaat kita membaca <b><bdi lang="ar">اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ</bdi></b>, dan Basmeih menterjemahkannya "Tunjukilah kami jalan yang lurus". Tetapi dua kata itu, <i>aṣ-ṣirāṭ</i> dan <i>al-mustaqīm</i>, masing-masing membawa makna tersendiri. Bila kedua-duanya digabungkan, doa ini menjadi jauh lebih dalam.</p>
+  <p class="pembuka ms">Dalam setiap rakaat kita membaca <b><bdi lang="ar">اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ</bdi></b>, dan Basmeih menterjemahkannya "Tunjukilah kami jalan yang lurus". Tetapi dua kata itu, <i>aṣ-ṣirāṭ</i> (jalan) dan <i>al-mustaqīm</i> (yang lurus), masing-masing membawa makna tersendiri. Bila kedua-duanya digabungkan, doa ini menjadi jauh lebih dalam.</p>
   <p class="pembuka en">In every rak'ah we recite <b><bdi lang="ar">اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ</bdi></b>, "Guide us to the straight path". But the two words, <i>al-ṣirāṭ</i> and <i>al-mustaqīm</i>, each carry a meaning of their own. Put together, the prayer becomes far deeper.</p>
 
   <section>
@@ -263,8 +265,8 @@ footer ol{padding-left:18px;margin:6px 0 12px}
       <p><b>الصراط المستقيم</b><br><span class="ms">Peringatan Ulama · Siri 04 · Prof. Dr Fadil Salih as-Samarra'i<br>Bahasa Arab, sari kata Melayu · 2 min 33 s</span><span class="en">Scholars' Reminders · Episode 04 · Prof. Dr Fadil Salih al-Samarra'i<br>Arabic, English subtitles · 2 min 33 s</span></p>
     </figure>
     <div class="penceramah">
-      <p class="ms"><b>Penceramah: Prof. Dr Fadil Salih as-Samarra'i</b> (lahir 1933, Samarra, Iraq). PhD nahu (tatabahasa Arab), Universiti Ain Shams, Kaherah (1968); bekas profesor nahu di Universiti Baghdad selama kira-kira 40 tahun; ahli al-Majma' al-'Ilmi al-'Iraqi (Akademi Sains Iraq); pengarang <i>Ma'ani an-Nahw</i> (Makna-makna Nahu) dan <i>at-Ta'bir al-Qur'ani</i> (Gaya Pengungkapan al-Qur'an); dikenali melalui rancangan TV <i>Lamasat Bayaniyyah</i> (Sentuhan Keindahan Bahasa).</p>
-      <p class="en"><b>Speaker: Prof. Dr Fadil Salih al-Samarra'i</b> (b. 1933, Samarra, Iraq). PhD in Arabic grammar, Ain Shams University, Cairo (1968); professor of grammar at the University of Baghdad for about 40 years; member of the Iraqi Academy of Sciences (al-Majma' al-'Ilmi al-'Iraqi); author of <i>Ma'ani al-Nahw</i> and <i>al-Ta'bir al-Qur'ani</i>; widely known through the TV programme <i>Lamasat Bayaniyya</i>.</p>
+      <p class="ms"><b>Penceramah: Prof. Dr Fadil Salih as-Samarra'i</b> (lahir 1933, Samarra, Iraq). PhD bahasa Arab, Universiti Ain Shams, Kaherah (1968); bekas profesor nahu di Universiti Baghdad selama kira-kira 40 tahun; ahli al-Majma' al-'Ilmi al-'Iraqi (Akademi Sains Iraq); pengarang <i>Ma'ani an-Nahw</i> (Makna-makna Nahu) dan <i>at-Ta'bir al-Qur'ani</i> (Gaya Pengungkapan al-Qur'an); dikenali melalui rancangan TV <i>Lamasat Bayaniyyah</i> (Sentuhan Keindahan Bahasa).</p>
+      <p class="en"><b>Speaker: Prof. Dr Fadil Salih al-Samarra'i</b> (b. 1933, Samarra, Iraq). PhD in Arabic language, Ain Shams University, Cairo (1968); professor of grammar at the University of Baghdad for about 40 years; member of the Iraqi Academy of Sciences (al-Majma' al-'Ilmi al-'Iraqi); author of <i>Ma'ani al-Nahw</i> and <i>al-Ta'bir al-Qur'ani</i>; widely known through the TV programme <i>Lamasat Bayaniyya</i>.</p>
     </div>
     <p class="ms">Soalan pengacara: bukankah <i>ṣirāṭ</i> itu sendiri sudah lurus? Jawapan Dr Fadil: <mark><b>tidak semestinya. Ṣirāṭ ialah jalan yang luas. "Lurus" dan "paling dekat ke tujuan" datang daripada kata mustaqīm.</b></mark></p>
     <p class="en">The host asks: isn't a <i>ṣirāṭ</i> already straight? Dr Fadil answers: <mark><b>not necessarily. A ṣirāṭ is a wide road. "Straight" and "nearest to the goal" come from the word mustaqīm.</b></mark></p>
@@ -338,10 +340,10 @@ footer ol{padding-left:18px;margin:6px 0 12px}
 
     <blockquote>
       <p class="ar">السِّرَاطُ: الطّريق المستسهل، أصله من: سَرَطْتُ الطعامَ وزردته: ابتلعته، فقيل: سِرَاطٌ، تصوّرا أنه يبتلعه سالكه، أو يبتلع سالكه … وكذا سمّي الطريق اللّقم، والملتقم، اعتبارا بأنّ سالكه يلتقمه.</p>
-      <p class="tr ms"><b>Asal kata, al-Raghib al-Asfahani:</b> "As-sirāṭ ialah jalan yang mudah dilalui. Asalnya daripada <i>saraṭtu aṭ-ṭa‘ām</i> (aku menelan makanan). Maka dinamakan sirāṭ kerana dibayangkan seolah-olah pejalan menelannya, atau ia menelan pejalannya … Begitu juga jalan dinamakan <i>al-laqam</i> dan <i>al-multaqam</i>, kerana pejalannya «ditelan» olehnya."</p>
-      <p class="tr en"><b>The origin, al-Raghib al-Isfahani:</b> "Al-sirāṭ is the easily travelled road. Its origin is <i>saraṭtu al-ṭa‘ām</i> (I swallowed the food). It was called sirāṭ as if the traveller swallows it, or it swallows the traveller … Likewise a road is called <i>al-laqam</i> and <i>al-multaqam</i>, since its traveller is «gulped» by it."</p>
-      <cite class="ms">al-Raghib al-Asfahani (w. 502H), <i>al-Mufradat fi Gharib al-Qur'an</i>, hlm. 407, entri <b><bdi lang="ar">سرط</bdi></b> (Shamela).</cite>
-      <cite class="en">al-Raghib al-Isfahani (d. 502 AH), <i>al-Mufradat fi Gharib al-Qur'an</i>, p. 407, entry <b><bdi lang="ar">سرط</bdi></b> (Shamela).</cite>
+      <p class="tr ms"><b>Asal kata, al-Raghib al-Asfahani:</b> "As-sirāṭ ialah jalan yang mudah dilalui. Asalnya daripada <i>saraṭtu aṭ-ṭa‘ām</i> (aku menelan makanan). Maka dinamakan sirāṭ kerana dibayangkan seolah-olah pejalan menelannya, atau ia menelan pejalannya … Begitu juga jalan dinamakan <i>al-laqam</i> dan <i>al-multaqam</i>, kerana dibayangkan pejalannya «menelan» jalan itu."</p>
+      <p class="tr en"><b>The origin, al-Raghib al-Isfahani:</b> "Al-sirāṭ is the easily travelled road. Its origin is <i>saraṭtu al-ṭa‘ām</i> (I swallowed the food). It was called sirāṭ as if the traveller swallows it, or it swallows the traveller … Likewise a road is called <i>al-laqam</i> and <i>al-multaqam</i>, since its traveller «gulps» it."</p>
+      <cite class="ms">al-Raghib al-Asfahani (w. ± 502H), <i>al-Mufradat fi Gharib al-Qur'an</i>, hlm. 407, entri <b><bdi lang="ar">سرط</bdi></b> (Shamela).</cite>
+      <cite class="en">al-Raghib al-Isfahani (d. c. 502 AH), <i>al-Mufradat fi Gharib al-Qur'an</i>, p. 407, entry <b><bdi lang="ar">سرط</bdi></b> (Shamela).</cite>
     </blockquote>
 
     <p class="ms">Ulama yang dinukil di sini bersetuju tentang asal kata ini. Perbezaannya: adakah makna "lurus" sudah terkandung dalam kata <i>ṣirāṭ</i> itu sendiri?</p>
@@ -357,8 +359,8 @@ footer ol{padding-left:18px;margin:6px 0 12px}
 
     <blockquote>
       <p class="ar">ليس كل طريق صراطًا، بل هو الطريق الواسع المستقيم المعتدل، الذي ليس فيه اعوجاج … وإذا جعلنا الصراط هو الطريق الواسع المعتدل صارت المستقيم بيانًا للواقع وصفة كاشفة</p>
-      <p class="tr ms"><b>Pandangan 2, Ibn 'Uthaimin: "lurus" sudah ada dalam kata ṣirāṭ.</b> "Bukan setiap jalan itu ṣirāṭ. Ia ialah jalan yang luas, lurus dan seimbang, tanpa bengkok … Jika ṣirāṭ ditafsirkan sebagai jalan yang luas dan seimbang, maka kata <i>al-mustaqīm</i> menjadi penjelasan kepada hakikat itu, iaitu <i>ṣifah kāsyifah</i> (sifat yang menerangkan, bukan menambah makna baharu)." Beliau menambah: jika ṣirāṭ ditafsirkan sebagai jalan secara umum, kata mustaqīm wajib disebut.</p>
-      <p class="tr en"><b>View 2, Ibn 'Uthaymin: "straight" is already inside ṣirāṭ.</b> "Not every road is a ṣirāṭ. It is the wide, straight, balanced road without crookedness … If ṣirāṭ is taken as the wide, balanced road, then <i>al-mustaqīm</i> becomes a statement of that reality, a <i>ṣifa kāshifa</i> (a descriptive attribute that explains, not one that adds)." He adds: if ṣirāṭ is taken as any road, then mustaqīm must be stated.</p>
+      <p class="tr ms"><b>Pandangan 2, dinukil Ibn 'Uthaimin: "lurus" sudah ada dalam kata ṣirāṭ.</b> "Bukan setiap jalan itu ṣirāṭ. Ia ialah jalan yang luas, lurus dan seimbang, tanpa bengkok … Jika ṣirāṭ ditafsirkan sebagai jalan yang luas dan seimbang, maka kata <i>al-mustaqīm</i> menjadi penjelasan kepada hakikat itu, iaitu <i>ṣifah kāsyifah</i> (sifat yang menerangkan, bukan menambah makna baharu)." Beliau menambah: jika ṣirāṭ ditafsirkan sebagai jalan secara umum, kata mustaqīm wajib disebut.</p>
+      <p class="tr en"><b>View 2, cited by Ibn 'Uthaymin: "straight" is already inside ṣirāṭ.</b> "Not every road is a ṣirāṭ. It is the wide, straight, balanced road without crookedness … If ṣirāṭ is taken as the wide, balanced road, then <i>al-mustaqīm</i> becomes a statement of that reality, a <i>ṣifa kāshifa</i> (a descriptive attribute that explains, not one that adds)." He adds: if ṣirāṭ is taken as any road, then mustaqīm must be stated.</p>
       <cite class="ms">Muhammad ibn Salih al-'Uthaimin (w. 1421H), <i>Tafsir al-'Uthaimin: as-Saffat</i>, hlm. 264, tafsir 37:118; beliau menukilnya daripada "para ulama" (Shamela).</cite>
       <cite class="en">Muhammad ibn Salih al-'Uthaymin (d. 1421 AH), <i>Tafsir al-'Uthaymin: al-Saffat</i>, p. 264, on 37:118; he cites it from "the scholars" (Shamela).</cite>
     </blockquote>

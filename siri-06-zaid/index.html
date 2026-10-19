@@ -94,6 +94,8 @@ h2 .no{flex:none;width:34px;height:34px;border-radius:50%;background:var(--hutan
 .l-renung{background:rgba(255,225,77,.16);color:var(--kuning);border:1px solid rgba(255,225,77,.4)}
 .nota-kecil{font-size:.9rem;color:var(--redup)}
 mark{background:linear-gradient(transparent 58%,rgba(255,225,77,.55) 58%);color:inherit;padding:0 2px}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) mark{background:linear-gradient(transparent 58%,rgba(255,225,77,.28) 58%)}}
+:root[data-theme="dark"] mark{background:linear-gradient(transparent 58%,rgba(255,225,77,.28) 58%)}
 
 .video{margin:4px auto 22px;max-width:360px;background:var(--hutan);border-radius:20px;padding:10px;
   box-shadow:0 10px 26px rgba(16,48,31,.18),0 0 0 3px var(--lime)}
@@ -205,7 +207,7 @@ footer ol{padding-left:18px;margin:6px 0 12px}
 }
 
 /* Siri 02: jadual perbandingan */
-.banding{border:1px solid var(--garis);border-radius:14px;overflow:hidden;margin:14px 0 10px;background:#fff}
+.banding{border:1px solid var(--garis);border-radius:14px;overflow:hidden;margin:14px 0 10px;background:var(--kad)}
 .brow{display:grid;grid-template-columns:92px 1fr 1fr;border-top:1px solid var(--garis)}
 .brow:first-child{border-top:0}
 .brow>div{padding:10px 10px;text-align:center}
@@ -263,8 +265,8 @@ footer ol{padding-left:18px;margin:6px 0 12px}
       <p><b>الحرف الزائد في القرآن</b><br><span class="ms">Peringatan Ulama · Siri 06 · Prof. Dr Fadil Salih as-Samarra'i<br>Bahasa Arab, sari kata Melayu · 3 min 17 s</span><span class="en">Scholars' Reminders · Episode 06 · Prof. Dr Fadil Salih al-Samarra'i<br>Arabic, English subtitles · 3 min 17 s</span></p>
     </figure>
     <div class="penceramah">
-      <p class="ms"><b>Penceramah: Prof. Dr Fadil Salih as-Samarra'i</b> (lahir 1933, Samarra, Iraq). PhD nahu (tatabahasa Arab), Universiti Ain Shams, Kaherah (1968); bekas profesor nahu di Universiti Baghdad selama kira-kira 40 tahun; ahli al-Majma' al-'Ilmi al-'Iraqi (Akademi Sains Iraq); pengarang <i>Ma'ani an-Nahw</i> (Makna-makna Nahu) dan <i>at-Ta'bir al-Qur'ani</i> (Gaya Pengungkapan al-Qur'an); dikenali melalui rancangan TV <i>Lamasat Bayaniyyah</i> (Sentuhan Keindahan Bahasa).</p>
-      <p class="en"><b>Speaker: Prof. Dr Fadil Salih al-Samarra'i</b> (b. 1933, Samarra, Iraq). PhD in Arabic grammar, Ain Shams University, Cairo (1968); professor of grammar at the University of Baghdad for about 40 years; member of the Iraqi Academy of Sciences (al-Majma' al-'Ilmi al-'Iraqi); author of <i>Ma'ani al-Nahw</i> and <i>al-Ta'bir al-Qur'ani</i>; widely known through the TV programme <i>Lamasat Bayaniyya</i>.</p>
+      <p class="ms"><b>Penceramah: Prof. Dr Fadil Salih as-Samarra'i</b> (lahir 1933, Samarra, Iraq). PhD bahasa Arab, Universiti Ain Shams, Kaherah (1968); bekas profesor nahu di Universiti Baghdad selama kira-kira 40 tahun; ahli al-Majma' al-'Ilmi al-'Iraqi (Akademi Sains Iraq); pengarang <i>Ma'ani an-Nahw</i> (Makna-makna Nahu) dan <i>at-Ta'bir al-Qur'ani</i> (Gaya Pengungkapan al-Qur'an); dikenali melalui rancangan TV <i>Lamasat Bayaniyyah</i> (Sentuhan Keindahan Bahasa).</p>
+      <p class="en"><b>Speaker: Prof. Dr Fadil Salih al-Samarra'i</b> (b. 1933, Samarra, Iraq). PhD in Arabic language, Ain Shams University, Cairo (1968); professor of grammar at the University of Baghdad for about 40 years; member of the Iraqi Academy of Sciences (al-Majma' al-'Ilmi al-'Iraqi); author of <i>Ma'ani al-Nahw</i> and <i>al-Ta'bir al-Qur'ani</i>; widely known through the TV programme <i>Lamasat Bayaniyya</i>.</p>
     </div>
     <p class="ms">Jawapan Dr Fadil: <mark><b>"zā'id" ialah istilah ahli nahu, bukan bermaksud huruf itu tiada faedah. Jika dibuang, makna umum kekal, tetapi penegasannya hilang. Huruf itu didatangkan untuk menguatkan makna.</b></mark></p>
     <p class="en">Dr Fadil's answer: <mark><b>"zā'id" is a grammarians' term; it does not mean the letter is useless. If removed, the general meaning stays, but the emphasis is lost. The letter is there to strengthen the meaning.</b></mark></p>
@@ -303,13 +305,13 @@ footer ol{padding-left:18px;margin:6px 0 12px}
       <div class="ya"><p class="ar">مُحَمَّدٌ قَادِمٌ</p><small><span class="ms">"Muhammad datang": berita biasa</span><span class="en">"Muhammad is coming": a plain statement</span></small></div>
       <div class="ya"><p class="ar"><u>إِنَّ</u> مُحَمَّدًا قَادِمٌ</p><small><span class="ms">"Sesungguhnya Muhammad datang": makna sama, penegasan bertambah</span><span class="en">"Indeed, Muhammad is coming": same meaning, more emphasis</span></small></div>
     </div>
-    <p class="nota-kecil ms">Contoh ayat biasa (bukan ayat al-Qur'an) yang diberi Dr Fadil dalam klip: <i>inna</i> tidak mengubah makna asas, tetapi menambah penegasan. Begitu juga huruf <i>zā'id</i>.</p>
+    <p class="nota-kecil ms">Contoh ayat biasa (bukan ayat al-Qur'an) yang diberi Dr Fadil dalam klip: <i>inna</i> (sesungguhnya) tidak mengubah makna asas, tetapi menambah penegasan. Begitu juga huruf <i>zā'id</i>.</p>
     <p class="nota-kecil en">An ordinary sentence (not a Qur'anic verse) given by Dr Fadil in the clip: <i>inna</i> does not change the basic meaning but adds emphasis. So too the <i>zā'id</i> letter.</p>
   </section>
 
   <section>
     <h2><span class="no">3</span><span class="ms">Nama-nama yang Digunakan Ulama</span><span class="en">The Names Scholars Use</span></h2>
-    <p class="ms">Menurut az-Zarkasyi, istilah <b>az-ziyādah</b> (tambahan) dan <b>al-laghw</b> ialah ungkapan ahli nahu Basrah, manakala <b>aṣ-ṣilah</b> (penyambung) dan <b>al-ḥasyw</b> ialah ungkapan ahli nahu Kufah. Dr Fadil menyebut dalam klip bahawa ulama terdahulu menamakannya <b>ḥarf ṣilah</b>. Kata beliau, ini soal istilah: <i>lā musyāḥḥah fi l-iṣṭilāḥ</i> (tiada pertikaian dalam istilah).</p>
+    <p class="ms">Menurut az-Zarkasyi, istilah <b>az-ziyādah</b> (tambahan) dan <b>al-laghw</b> (sia-sia) ialah ungkapan ahli nahu Basrah, manakala <b>aṣ-ṣilah</b> (penyambung) dan <b>al-ḥasyw</b> (pengisi) ialah ungkapan ahli nahu Kufah. Dr Fadil menyebut dalam klip bahawa ulama terdahulu menamakannya <b>ḥarf ṣilah</b>. Kata beliau, ini soal istilah: <i>lā musyāḥḥah fi l-iṣṭilāḥ</i> (tiada pertikaian dalam istilah).</p>
     <p class="en">According to al-Zarkashi, the terms <b>al-ziyāda</b> (addition) and <b>al-laghw</b> are the Basran grammarians' expressions, while <b>al-ṣila</b> (connector) and <b>al-ḥashw</b> are the Kufans'. Dr Fadil notes in the clip that earlier scholars called it <b>ḥarf ṣila</b>. As he says, this is a matter of terms: <i>lā mushāḥḥa fi l-iṣṭilāḥ</i> (no quarrel over terminology).</p>
   </section>
 
@@ -331,7 +333,7 @@ footer ol{padding-left:18px;margin:6px 0 12px}
 
     <blockquote>
       <p class="ar">لا توجد كلمة زائدة في القرآن أو حشو وإنما كل كلمة لها دلالة. في القرآن يقولون حرف جر زائد وهذا مصطلح لا يعنون به الزيادة التي ليس لها فائدة وإنما وقوعها بين العامل والمعمول لغرض وهو الزيادة للتوكيد كما في قوله (وما ربك بظلام للعبيد)</p>
-      <p class="tr ms"><b>Dr Fadil as-Samarra'i:</b> "Tiada kata yang lebihan atau <i>ḥasyw</i> (pengisi) dalam al-Qur'an; setiap kata ada maknanya. Dalam al-Qur'an mereka berkata 'huruf jar zā'id', dan ini istilah. Mereka tidak maksudkan tambahan yang tiada faedah, tetapi letaknya antara <i>al-‘āmil</i> dan <i>al-ma‘mūl</i> untuk satu tujuan, iaitu tambahan penegasan, seperti firman-Nya <b><bdi lang="ar">وَمَا رَبُّكَ بِظَلَّامٍ لِلْعَبِيدِ</bdi></b>." Beliau menambah: biasanya ia untuk penegasan, dan kadang-kadang untuk makna lain.</p>
+      <p class="tr ms"><b>Dr Fadil as-Samarra'i:</b> "Tiada kata yang lebihan atau <i>ḥasyw</i> (pengisi) dalam al-Qur'an; setiap kata ada maknanya. Dalam al-Qur'an mereka berkata 'huruf jar (kata sendi) zā'id', dan ini istilah. Mereka tidak maksudkan tambahan yang tiada faedah, tetapi letaknya antara <i>al-‘āmil</i> dan <i>al-ma‘mūl</i> untuk satu tujuan, iaitu tambahan penegasan, seperti firman-Nya <b><bdi lang="ar">وَمَا رَبُّكَ بِظَلَّامٍ لِلْعَبِيدِ</bdi></b>." Beliau menambah: biasanya ia untuk penegasan, dan kadang-kadang untuk makna lain.</p>
       <p class="tr en"><b>Dr Fadil al-Samarra'i:</b> "There is no superfluous word or <i>ḥashw</i> (filler) in the Qur'an; every word has meaning. In the Qur'an they say 'an extra preposition', and this is a term. They do not mean an addition with no benefit, but its position between the <i>‘āmil</i> and <i>ma‘mūl</i> for a purpose, namely added emphasis, as in His words <b><bdi lang="ar">وَمَا رَبُّكَ بِظَلَّامٍ لِلْعَبِيدِ</bdi></b>." He adds: usually it is for emphasis, and sometimes for another sense.</p>
       <cite class="ms">Fadil Salih as-Samarra'i, <i>Lamasat Bayaniyyah fi Nusus min at-Tanzil (Muhadarat)</i>, hlm. 1054 (Shamela; penomboran automatik Shamela, bukan cetakan).</cite>
       <cite class="en">Fadil Salih al-Samarra'i, <i>Lamasat Bayaniyya fi Nusus min al-Tanzil (Muhadarat)</i>, p. 1054 (Shamela's automatic page numbering, not a printed edition).</cite>
@@ -339,8 +341,8 @@ footer ol{padding-left:18px;margin:6px 0 12px}
 
     <blockquote>
       <p class="ar">وَالْأَوْلَى اجْتِنَابُ مِثْلِ هَذِهِ الْعِبَارَةِ فِي كِتَابِ اللَّهِ تَعَالَى فَإِنَّ مُرَادَ النَّحْوِيِّينَ بِالزَّائِدِ مِنْ جِهَةِ الْإِعْرَابِ لَا مِنْ جِهَةِ الْمَعْنَى</p>
-      <p class="tr ms"><b>az-Zarkasyi:</b> "Yang lebih utama ialah mengelakkan ungkapan seperti ini terhadap Kitab Allah, kerana maksud ahli nahu dengan 'zā'id' ialah dari sudut i'rab, bukan dari sudut makna." Beliau juga menegaskan: zā'id ialah apa yang didatangkan untuk menguatkan dan menegaskan, berbeza dengan <i>muhmal</i> (kata yang tidak dipakai orang Arab).</p>
-      <p class="tr en"><b>al-Zarkashi:</b> "It is better to avoid such an expression regarding the Book of Allah, for what grammarians mean by 'extra' is from the angle of i'rab, not of meaning." He also stresses: the zā'id is what is brought to strengthen and emphasise, unlike the <i>muhmal</i> (a word the Arabs never used).</p>
+      <p class="tr ms"><b>az-Zarkasyi:</b> "Yang lebih utama ialah mengelakkan ungkapan seperti ini terhadap Kitab Allah, kerana maksud ahli nahu dengan 'zā'id' ialah dari sudut i'rab, bukan dari sudut makna." Beliau juga menukil sanggahan terhadap ar-Razi: zā'id ialah apa yang didatangkan untuk menguatkan dan menegaskan, berbeza dengan <i>muhmal</i> (lafaz yang tidak dicipta dan tidak dipakai oleh orang Arab).</p>
+      <p class="tr en"><b>al-Zarkashi:</b> "It is better to avoid such an expression regarding the Book of Allah, for what grammarians mean by 'extra' is from the angle of i'rab, not of meaning." He also records a rebuttal of al-Razi: the zā'id is what is brought to strengthen and emphasise, unlike the <i>muhmal</i> (a form the Arabs never coined or used).</p>
       <cite class="ms">Badr ad-Din az-Zarkasyi (w. 794H), <i>al-Burhan fi 'Ulum al-Qur'an</i>, 3/72–73 (Shamela).</cite>
       <cite class="en">Badr al-Din al-Zarkashi (d. 794 AH), <i>al-Burhan fi 'Ulum al-Qur'an</i>, 3/72–73 (Shamela).</cite>
     </blockquote>
@@ -349,12 +351,12 @@ footer ol{padding-left:18px;margin:6px 0 12px}
     <p class="en">Al-Zarkashi also records a <b>difference of views</b> on whether zā'id letters occur in the Qur'an:</p>
     <ul class="pandangan ms">
       <li><b>Menolak:</b> al-Mubarrad dan Tha'lab berpendapat tiada <i>ṣilah</i> dalam al-Qur'an (dinukil az-Zarkasyi melalui at-Turtusi dalam <i>al-'Umdah</i>).</li>
-      <li><b>Menerima, untuk penegasan:</b> majoriti ulama, fuqaha dan mufassir menetapkan adanya <i>ṣilah</i> dalam al-Qur'an. Ibn as-Sarraj (dinukil melalui Ibn al-Khabbaz) pula berkata tiada yang zā'id dalam bahasa Arab, kerana itu bercakap tanpa faedah; apa yang kelihatan begitu beliau bawa kepada makna penegasan.</li>
+      <li><b>Menerima:</b> majoriti ulama, fuqaha (ahli fiqh) dan mufassir (ahli tafsir) menetapkan adanya <i>ṣilah</i> dalam al-Qur'an (juga melalui nukilan at-Turtusi).</li><li><b>Menolak istilah "zā'id" sama sekali:</b> Ibn as-Sarraj (dinukil melalui Ibn al-Khabbaz) berkata tiada yang zā'id dalam bahasa Arab, kerana itu bercakap tanpa faedah; apa yang kelihatan begitu beliau bawa kepada makna penegasan.</li>
       <li><b>Menerima tetapi menganggapnya tiada:</b> ada yang membenarkannya dan menganggap kewujudannya seperti tiada; az-Zarkasyi menyebutnya "<i>afsad aṭ-ṭuruq</i>" (pendekatan yang paling rosak).</li>
     </ul>
     <ul class="pandangan en">
       <li><b>Rejecting:</b> al-Mubarrad and Tha'lab held there is no <i>ṣila</i> in the Qur'an (reported by al-Zarkashi via al-Turtusi's <i>al-'Umda</i>).</li>
-      <li><b>Accepting, for emphasis:</b> most scholars, jurists and exegetes affirm <i>ṣila</i> in the Qur'an. Ibn al-Sarraj (reported via Ibn al-Khabbaz) said nothing in Arabic is extra, since that would be speech without benefit; what appears so he took as emphasis.</li>
+      <li><b>Accepting:</b> most scholars, jurists and exegetes affirm <i>ṣila</i> in the Qur'an (also in al-Turtusi's report).</li><li><b>Rejecting the term "extra" altogether:</b> Ibn al-Sarraj (reported via Ibn al-Khabbaz) said nothing in Arabic is extra, since that would be speech without benefit; what appears so he took as emphasis.</li>
       <li><b>Accepting but treating it as absent:</b> some allowed it and treated it as if non-existent; al-Zarkashi calls this "<i>afsad al-ṭuruq</i>" (the most unsound approach).</li>
     </ul>
     <p class="nota-kecil ms">Pandangan al-Mubarrad, Tha'lab dan Ibn as-Sarraj dinukil secara berwasitah melalui az-Zarkasyi, <i>al-Burhan</i> 3/72–73; kami belum membaca sumber asal mereka. Nombor jilid/halaman mungkin berbeza dalam cetakan lain.</p>
