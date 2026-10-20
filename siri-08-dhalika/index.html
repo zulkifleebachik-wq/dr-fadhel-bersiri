@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="ms" data-lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kitab Itu, al-Qur'an Ini</title>
+<meta name="description" content="Peringatan Ulama Siri 08: Kenapa «dhalika al-kitab» dalam al-Baqarah tetapi «hadha al-Qur'an» dalam al-Isra'? Prof. Dr Fadil Salih as-Samarra'i, nota renungan dwibahasa AtTartil.">
+<meta property="og:title" content="Kitab Itu, al-Qur'an Ini · Peringatan Ulama Siri 08 | AtTartil">
+<meta property="og:description" content="Prof. Dr Fadil Salih as-Samarra'i: kenapa «itu» untuk al-Kitab dan «ini» untuk al-Qur'an?">
+<meta property="og:image" content="reel-poster-ms.jpg">
+<link rel="icon" href="attartil-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Amiri+Quran&family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --hutan:#10301f;      /* deep forest */
+  --hijau:#2f7a10;      /* logo green, softened */
+  --daun:#3d9002;       /* logo centre */
+  --lime:#9ad102;       /* logo ring */
+  --kuning:#ffe14d;     /* logo yellow, softened */
+  --kuning-pucat:#fff7cf;
+  --hitam:#141414;
+  --kertas:#fbfaf3;
+  --kad:#ffffff;
+  --lembut:#f1f6e6;
+  --teks:#1f2420;
+  --redup:#5b6658;
+  --garis:#e3e9d6;
+  --ayat:#24600c;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --kertas:#0e1510; --kad:#151e17; --lembut:#1a2a1c; --teks:#ecefe7; --redup:#a7b3a3;
+    --garis:#273626; --ayat:#b5e05a; --kuning-pucat:#2a2711; --hijau:#9ad102;
+  }
+}
+:root[data-theme="dark"]{
+  --kertas:#0e1510; --kad:#151e17; --lembut:#1a2a1c; --teks:#ecefe7; --redup:#a7b3a3;
+  --garis:#273626; --ayat:#b5e05a; --kuning-pucat:#2a2711; --hijau:#9ad102;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--kertas);color:var(--teks);
+  font-family:"Lora",Georgia,serif;font-size:18px;line-height:1.85}
+
+/* language switching */
+html[data-lang="ms"] .en{display:none!important}
+html[data-lang="en"] .ms{display:none!important}
+
+/* TOP BAR */
+.bar{position:sticky;top:0;z-index:10;background:rgba(16,48,31,.94);backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);border-bottom:3px solid var(--lime)}
+.bar .in{max-width:780px;margin:0 auto;padding:8px 16px;display:flex;align-items:center;gap:10px}
+.bar img{width:38px;height:38px;border-radius:50%;flex:none}
+.bar .nm{color:#fff;font-family:"Inter",system-ui,sans-serif;font-size:.78rem;font-weight:600;letter-spacing:.06em;line-height:1.25;flex:1;min-width:0}
+.bar .nm small{display:block;color:var(--kuning);font-weight:500;letter-spacing:.04em}
+.toggle{display:flex;background:#0a1f14;border:1px solid #2c5a1b;border-radius:999px;padding:3px;flex:none}
+.toggle button{appearance:none;border:0;background:transparent;color:#cfe3c4;font-family:"Inter",system-ui,sans-serif;
+  font-weight:600;font-size:.8rem;padding:6px 13px;border-radius:999px;cursor:pointer;min-height:32px}
+.toggle button[aria-pressed="true"]{background:var(--kuning);color:var(--hitam)}
+.toggle button:focus-visible{outline:2px solid var(--lime);outline-offset:2px}
+
+/* HERO */
+header.hero{position:relative;overflow:hidden;color:#fff;text-align:center;
+  background:radial-gradient(110% 80% at 50% 0%,#2f6a17 0%,#16402a 55%,#0d2618 100%);padding:44px 16px 54px}
+header.hero::before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;
+  border:2px solid rgba(154,209,2,.18);left:50%;top:-250px;transform:translateX(-50%)}
+header.hero::after{content:"";position:absolute;width:360px;height:360px;border-radius:50%;
+  border:2px solid rgba(255,225,77,.14);left:50%;top:-170px;transform:translateX(-50%)}
+.hero .logo{position:relative;z-index:1;width:112px;height:112px;margin:0 auto 18px;border-radius:50%;
+  box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.hero .tag{position:relative;z-index:1;display:inline-block;font-family:"Inter",system-ui,sans-serif;font-size:.72rem;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--hitam);background:var(--kuning);padding:3px 12px;border-radius:999px}
+.hero .ar-big{position:relative;z-index:1;font-family:"Amiri",serif;font-size:2.3rem;line-height:1.6;color:var(--kuning);margin:16px 0 0}
+.hero h1{position:relative;z-index:1;font-weight:600;font-size:2rem;line-height:1.3;margin:8px 0 10px}
+.hero p.sub{position:relative;z-index:1;font-style:italic;color:#dcead2;margin:0 auto;max-width:540px;font-size:1.02rem}
+
+.wrap{max-width:760px;margin:0 auto;padding:0 16px 56px}
+.ar{font-family:"Amiri",serif;direction:rtl;line-height:2.1}
+.ayat{font-family:"Amiri Quran","Amiri",serif;direction:rtl;font-size:1.55rem;line-height:2.35;color:var(--ayat);text-align:center;margin:.3em 0 .5em}
+
+section{margin-top:44px}
+h2{font-size:1.32rem;color:var(--teks);margin:0 0 14px;display:flex;align-items:center;gap:12px;line-height:1.35}
+h2 .no{flex:none;width:34px;height:34px;border-radius:50%;background:var(--hutan);color:var(--kuning);
+  font-family:"Inter",system-ui,sans-serif;font-size:.9rem;display:grid;place-items:center;font-weight:600;
+  box-shadow:0 0 0 3px var(--lime)}
+.pembuka{font-size:1.14rem;font-style:italic;margin:40px 0 0;padding:20px 22px;border-radius:14px;
+  background:var(--kuning-pucat);border-left:5px solid var(--kuning);position:relative}
+.label{display:inline-block;font-family:"Inter",system-ui,sans-serif;font-size:.68rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
+  padding:3px 11px;border-radius:999px;margin-bottom:10px}
+.l-video{background:var(--hutan);color:var(--kuning)}
+.l-ayat{background:var(--lembut);color:var(--hijau);border:1px solid var(--garis)}
+.l-ulama{background:var(--kuning);color:var(--hitam)}
+.l-renung{background:rgba(255,225,77,.16);color:var(--kuning);border:1px solid rgba(255,225,77,.4)}
+.nota-kecil{font-size:.9rem;color:var(--redup)}
+mark{background:linear-gradient(transparent 58%,rgba(255,225,77,.55) 58%);color:inherit;padding:0 2px}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) mark{background:linear-gradient(transparent 58%,rgba(255,225,77,.28) 58%)}}
+:root[data-theme="dark"] mark{background:linear-gradient(transparent 58%,rgba(255,225,77,.28) 58%)}
+
+.video{margin:4px auto 22px;max-width:360px;background:var(--hutan);border-radius:20px;padding:10px;
+  box-shadow:0 10px 26px rgba(16,48,31,.18),0 0 0 3px var(--lime)}
+.video video{display:block;width:100%;height:auto;max-height:70vh;border-radius:12px;background:#000}
+.video p{margin:8px 4px 2px;font-family:"Inter",system-ui,sans-serif;font-size:.74rem;color:#cfe3c4;line-height:1.45;text-align:center}
+.video p b{color:var(--kuning);font-weight:600}
+.penceramah{background:var(--kad);border:1px solid var(--garis);border-left:5px solid var(--lime);border-radius:12px;
+  padding:12px 16px;margin:0 0 18px;font-size:.92rem;line-height:1.7}
+.penceramah p{margin:0}
+.sertai{margin-top:44px;border-radius:22px;overflow:hidden;background:linear-gradient(160deg,#2f6a17 0%,#16402a 55%,#0d2618 100%);
+  color:#fff;text-align:center;padding:30px 20px 26px;position:relative}
+.sertai::before{content:"";position:absolute;width:300px;height:300px;border-radius:50%;border:2px solid rgba(154,209,2,.25);
+  left:50%;top:-150px;transform:translateX(-50%)}
+.sertai img{position:relative;width:92px;height:92px;border-radius:50%;box-shadow:0 8px 22px rgba(0,0,0,.35)}
+.sertai h2{display:block;color:#fff;font-size:1.45rem;margin:14px 0 6px}
+.sertai .lead{color:#dcead2;margin:0 auto 16px;max-width:520px;font-size:1rem}
+.sertai ul{list-style:none;padding:0;margin:0 auto 20px;max-width:420px;text-align:left;font-size:.98rem}
+.sertai li{position:relative;padding:5px 0 5px 28px}
+.sertai li::before{content:"";position:absolute;left:4px;top:15px;width:11px;height:11px;border-radius:50%;background:var(--kuning)}
+.sertai .harga{font-family:"Inter",system-ui,sans-serif;color:var(--lime);font-weight:600;margin:0 0 16px;font-size:.92rem}
+.cta{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.cta a{font-family:"Inter",system-ui,sans-serif;font-weight:600;text-decoration:none;border-radius:999px;padding:12px 20px;
+  font-size:.95rem;min-height:44px;display:inline-flex;align-items:center;gap:6px}
+.cta .utama{background:var(--kuning);color:var(--hitam)}
+.cta .kedua{background:transparent;color:#fff;border:2px solid var(--lime)}
+.cta a:focus-visible{outline:3px solid #fff;outline-offset:2px}
+.sosial{margin-top:18px;font-family:"Inter",system-ui,sans-serif;font-size:.82rem;color:#cfe3c4}
+.sosial a{color:var(--kuning);text-decoration:none;margin:0 4px;white-space:nowrap;display:inline-block;padding:4px 0}
+.kontras{background:var(--kad);border:1px solid var(--garis);border-radius:14px;padding:14px 16px;margin:12px 0;
+  display:grid;grid-template-columns:1fr 1fr;gap:10px;text-align:center}
+.kontras div{border-radius:10px;padding:8px}
+.kontras .ya{background:var(--lembut)}
+.kontras .tidak{opacity:.7}
+.kontras .ar{font-size:1.35rem;margin:0;line-height:1.7}
+.kontras .ya .ar{color:var(--ayat)}
+.kontras small{display:block;font-size:.82rem;color:var(--redup);line-height:1.4}
+
+.kisah{background:var(--kad);border:1px solid var(--garis);border-radius:18px;padding:0;margin:20px 0;overflow:hidden;
+  box-shadow:0 6px 18px rgba(16,48,31,.06)}
+.kisah .kepala{display:flex;gap:14px;align-items:center;padding:16px 20px;background:var(--hutan);color:#fff}
+.kisah .ikon{flex:none;width:46px;height:46px;border-radius:50%;display:grid;place-items:center;font-size:1.35rem;
+  background:#0a1f14;box-shadow:0 0 0 2px var(--lime)}
+.kisah h3{margin:0;font-size:1.1rem;line-height:1.35;color:#fff}
+.kisah .susah{font-size:.86rem;color:#cfe3c4;line-height:1.5}
+.kisah .susah b{color:var(--kuning)}
+.kisah .isi{padding:18px 20px 20px}
+.terj{font-size:.98rem;color:var(--redup);text-align:center;margin:0 0 4px}
+.ref{font-family:"Inter",system-ui,sans-serif;font-size:.76rem;font-weight:500;color:var(--hijau);text-align:center;letter-spacing:.03em}
+.pisah{height:1px;background:var(--garis);margin:16px 0}
+.pengajaran{background:var(--kuning-pucat);border-radius:12px;padding:12px 16px;margin-top:16px;font-size:.98rem;border-left:4px solid var(--kuning)}
+
+.kunci{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+@media (min-width:640px){.kunci{grid-template-columns:repeat(4,1fr)}}
+.kunci div{background:var(--kad);border:1px solid var(--garis);border-top:4px solid var(--lime);border-radius:12px;padding:12px 10px;text-align:center}
+.kunci .ar{font-size:1.7rem;color:var(--ayat);line-height:1.5;margin:0}
+.kunci span{display:block;font-size:.86rem;color:var(--redup);line-height:1.45}
+.kunci b{color:var(--teks)}
+
+ul.pandangan{list-style:none;padding:0;margin:0 0 6px}
+ul.pandangan li{position:relative;padding:8px 0 8px 28px;border-bottom:1px dashed var(--garis)}
+ul.pandangan li:last-child{border-bottom:0}
+ul.pandangan li::before{content:"";position:absolute;left:4px;top:19px;width:10px;height:10px;border-radius:50%;
+  background:var(--lime);box-shadow:0 0 0 3px rgba(154,209,2,.25)}
+
+blockquote{margin:16px 0;background:var(--kad);border:1px solid var(--garis);border-right:5px solid var(--daun);
+  border-radius:14px;padding:16px 18px}
+blockquote .ar{font-size:1.25rem;margin:0;color:var(--teks)}
+blockquote .tr{font-size:.98rem;margin:8px 0 8px;padding-top:8px;border-top:1px dashed var(--garis)}
+blockquote cite{display:block;font-style:normal;font-family:"Inter",system-ui,sans-serif;font-size:.74rem;color:var(--redup);line-height:1.55}
+
+.renung{background:linear-gradient(160deg,#16402a 0%,#0d2618 70%,#0a1d12 100%);color:#eef3ea;border-radius:20px;
+  padding:28px 22px;position:relative;overflow:hidden}
+.renung::after{content:"";position:absolute;right:-60px;bottom:-60px;width:200px;height:200px;border-radius:50%;
+  border:2px solid rgba(255,225,77,.18)}
+.renung h2{color:#fff}
+.renung p{margin:0 0 14px;position:relative;z-index:1}
+.renung p:last-child{margin:0;font-size:1.08rem}
+.renung em{color:var(--kuning);font-style:normal}
+
+ol.muhasabah{counter-reset:m;list-style:none;padding:0;margin:0}
+ol.muhasabah li{counter-increment:m;position:relative;padding:12px 14px 12px 52px;margin-bottom:10px;background:var(--kad);
+  border:1px solid var(--garis);border-radius:12px}
+ol.muhasabah li::before{content:counter(m);position:absolute;left:14px;top:12px;width:26px;height:26px;border-radius:50%;
+  background:var(--kuning);color:var(--hitam);font-family:"Inter",system-ui,sans-serif;font-size:.8rem;font-weight:600;display:grid;place-items:center}
+ul.amal{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+ul.amal li{background:var(--lembut);border-radius:12px;padding:12px 16px;border-left:5px solid var(--daun)}
+ul.amal li b{color:var(--hijau)}
+
+.zikir{text-align:center;margin-top:44px;padding:26px 16px;border-radius:20px;background:var(--kuning-pucat);border:1px solid rgba(255,225,77,.6)}
+.zikir .ar{font-size:2.1rem;color:var(--ayat);margin:0;line-height:1.7}
+.zikir p{color:var(--redup);font-style:italic;margin:2px 0 0}
+
+footer{margin-top:44px;padding-top:18px;border-top:3px solid var(--hutan);font-family:"Inter",system-ui,sans-serif;font-size:.8rem;color:var(--redup);line-height:1.65}
+footer .visi{display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:16px;text-align:left}
+footer .visi img{width:46px;height:46px;border-radius:50%}
+footer .visi span{font-family:"Lora",serif;font-style:italic;font-size:1rem;color:var(--teks);line-height:1.4}
+footer .visi b{display:block;font-style:normal;font-family:"Inter",system-ui,sans-serif;font-size:.78rem;color:var(--hijau);letter-spacing:.05em}
+footer ol{padding-left:18px;margin:6px 0 12px}
+
+@media (max-width:520px){
+  body{font-size:17px}
+  .bar .nm{font-size:.7rem}
+  .hero .ar-big{font-size:1.85rem}
+  .hero h1{font-size:1.6rem}
+  .hero .logo{width:96px;height:96px}
+  .ayat{font-size:1.36rem}
+  .kisah .kepala{padding:14px 16px}
+  .kisah .isi{padding:16px}
+}
+
+/* Siri 02: jadual perbandingan */
+.banding{border:1px solid var(--garis);border-radius:14px;overflow:hidden;margin:14px 0 10px;background:var(--kad)}
+.brow{display:grid;grid-template-columns:92px 1fr 1fr;border-top:1px solid var(--garis)}
+.brow:first-child{border-top:0}
+.brow>div{padding:10px 10px;text-align:center}
+.brow>div:first-child{text-align:left;font-family:"Inter",system-ui,sans-serif;font-size:.8rem;font-weight:600;color:var(--hijau);display:flex;align-items:center}
+.brow .ar{display:block;font-family:"Amiri Quran","Amiri",serif;font-size:1.3rem;line-height:1.9;color:var(--ayat);direction:rtl}
+.brow small{display:block;font-family:"Inter",system-ui,sans-serif;font-size:.74rem;line-height:1.35;color:var(--redup)}
+.brow .lebih{background:var(--kuning-pucat)}
+.bhead>div{background:var(--hutan);color:var(--kuning);font-family:"Inter",system-ui,sans-serif;font-size:.8rem;font-weight:600;padding:9px 6px}
+.bhead>div.lebih{background:var(--hutan)}
+.kontras .ya small{display:block;font-family:"Inter",system-ui,sans-serif;font-size:.76rem;color:var(--redup);margin-top:4px}
+.kontras .ya u{text-decoration-color:var(--kuning);text-decoration-thickness:3px;text-underline-offset:6px}
+@media (max-width:420px){.brow{grid-template-columns:70px 1fr 1fr}.brow .ar{font-size:1.12rem}}
+@media print{
+  .bar{position:static}
+  .toggle{display:none}
+  body{background:#fff;font-size:12pt}
+  .kisah,blockquote,.renung,ul.amal li,ol.muhasabah li{break-inside:avoid}
+  header.hero,.renung,.kisah .kepala,.bar{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+.nw{white-space:nowrap}
+</style>
+<body>
+
+<div class="bar"><div class="in">
+  <img src="attartil-logo.png" alt="">
+  <div class="nm">ATTARTIL QURANIC INSTITUTE<small><span class="ms">Nota Renungan</span><span class="en">Reflection Notes</span></small></div>
+  <div class="toggle" role="group" aria-label="Bahasa / Language">
+    <button type="button" data-set="en" aria-pressed="false">EN</button>
+    <button type="button" data-set="ms" aria-pressed="true">BM</button>
+  </div>
+</div></div>
+
+<header class="hero">
+  <img class="logo" src="attartil-logo.png" alt="AtTartil Quranic Institute">
+  <div><span class="tag"><span class="ms">Peringatan Ulama · Siri 08</span><span class="en">Scholars' Reminders · Episode 08</span></span></div>
+  <p class="ar-big">ذَلِكَ الْكِتَابُ<br>إِنَّ هَذَا الْقُرْآنَ</p>
+  <h1><span class="ms">"Kitab Itu", "<span class="nw">Al-Qur'an</span> Ini"</span><span class="en">"That Book", "This Qur'an"</span></h1>
+  <p class="sub ms">Kenapa <span class="nw">al-Qur'an</span> ditunjuk dengan «itu» dalam <span class="nw">al-Baqarah,</span> tetapi dengan «ini» dalam <span class="nw">al-Isra'</span>?</p>
+  <p class="sub en">Why is the Qur'an pointed to with "that" in <span class="nw">al-Baqarah,</span> but with "this" in <span class="nw">al-Isra'</span>?</p>
+</header>
+
+<main class="wrap">
+
+  <p class="pembuka ms">Dalam bahasa Melayu, kita berkata "itu" untuk yang jauh dan "ini" untuk yang dekat. Bahasa Arab juga begitu: <i>dhālika</i> (itu) dan <i>hādhā</i> (ini). Jadi kenapa Kitab yang sama disebut "itu" di awal <span class="nw">al-Baqarah,</span> tetapi "ini" dalam surah <span class="nw">al-Isra'</span>? Jawapannya membuka satu sudut keindahan bahasa <span class="nw">al-Qur'an.</span></p>
+  <p class="pembuka en">In English we say "that" for what is far and "this" for what is near. Arabic does the same: <i>dhālika</i> (that) and <i>hādhā</i> (this). So why is the same Book called "that" at the start of <span class="nw">al-Baqarah,</span> but "this" in Surat <span class="nw">al-Isra'</span>? The answer opens a window onto the beauty of the Qur'an's language.</p>
+
+  <section>
+    <span class="label l-video"><span class="ms">Inti video</span><span class="en">From the video</span></span>
+    <figure class="video">
+      <video class="ms" controls playsinline preload="metadata" poster="reel-poster-ms.jpg">
+        <source src="video-ms.mp4" type="video/mp4">
+      </video>
+      <video class="en" controls playsinline preload="metadata" poster="reel-poster-en.jpg">
+        <source src="video-en.mp4" type="video/mp4">
+      </video>
+      <p><b>سر أسماء الإشارة: ذلك الكتاب، إن هذا القرآن</b><br><span class="ms">Peringatan Ulama · Siri 08 · Prof. Dr Fadil Salih <span class="nw">as-Samarra'i</span><br>Bahasa Arab, sari kata Melayu · 3&nbsp;min&nbsp;42&nbsp;s</span><span class="en">Scholars' Reminders · Episode 08 · Prof. Dr Fadil Salih <span class="nw">al-Samarra'i</span><br>Arabic, English subtitles · 3&nbsp;min&nbsp;42&nbsp;s</span></p>
+    </figure>
+    <div class="penceramah">
+      <p class="ms"><b>Penceramah: Prof. Dr Fadil Salih <span class="nw">as-Samarra'i</span></b> (lahir 1933, Samarra, Iraq). PhD bahasa Arab, Universiti Ain Shams, Kaherah (1968); bekas profesor nahu di Universiti Baghdad selama kira-kira 40 tahun; ahli <span class="nw">al-Majma'</span> <span class="nw">al-'Ilmi</span> <span class="nw">al-'Iraqi</span> (Akademi Sains Iraq); pengarang <i>Ma'ani <span class="nw">an-Nahw</span></i> (Makna-makna Nahu) dan <i><span class="nw">at-Ta'bir</span> <span class="nw">al-Qur'ani</span></i> (Gaya Pengungkapan <span class="nw">al-Qur'an);</span> dikenali melalui rancangan TV <i>Lamasat Bayaniyyah</i> (Sentuhan Keindahan Bahasa).</p>
+      <p class="en"><b>Speaker: Prof. Dr Fadil Salih <span class="nw">al-Samarra'i</span></b> (b. 1933, Samarra, Iraq). PhD in Arabic language, Ain Shams University, Cairo (1968); professor of grammar at the University of Baghdad for about 40 years; member of the Iraqi Academy of Sciences (<span class="nw">al-Majma'</span> <span class="nw">al-'Ilmi</span> <span class="nw">al-'Iraqi);</span> author of <i>Ma'ani <span class="nw">al-Nahw</span></i> and <i><span class="nw">al-Ta'bir</span> <span class="nw">al-Qur'ani</span></i>; widely known through the TV programme <i>Lamasat Bayaniyya</i>.</p>
+    </div>
+    <p class="ms">Jawapan Dr Fadil, ringkasnya: <mark><b>«dhālika» (itu) menunjukkan Kitab ini tinggi martabatnya, jauh daripada keraguan dan jauh di luar kemampuan manusia untuk menandinginya. «Hādhā» (ini) datang bersama hidayah, kerana petunjuk mesti dekat dengan kefahaman manusia.</b></mark></p>
+    <p class="en">Dr Fadil's answer in short: <mark><b>"dhālika" (that) shows this Book is lofty in rank, far from doubt and far beyond human power to rival it. "Hādhā" (this) comes with guidance, because guidance must be near to people's understanding.</b></mark></p>
+  </section>
+
+  <section>
+    <h2><span class="no">1</span><span class="ms">Dua Ayat yang Dibandingkan</span><span class="en">The Two Verses Compared</span></h2>
+    <article class="kisah">
+      <div class="kepala"><div class="ikon">📖</div>
+        <div><h3><span class="ms"><span class="nw">al-Baqarah:</span> «itu»</span><span class="en"><span class="nw">al-Baqarah:</span> "that"</span></h3>
+        <div class="susah"><span class="ms">kata isyarat untuk yang <b>jauh</b></span><span class="en">the demonstrative for what is <b>far</b></span></div></div></div>
+      <div class="isi">
+        <span class="label l-ayat"><span class="ms">Ayat</span><span class="en">Verse</span></span>
+        <p class="ayat"><mark>ذَلِكَ</mark> الْكِتَابُ لَا رَيْبَ فِيهِ هُدًى لِلْمُتَّقِينَ ﴿٢﴾</p>
+        <p class="terj ms">"Kitab <span class="nw">Al-Quran</span> ini, tidak ada sebarang syak padanya (tentang datangnya dari Allah dan tentang sempurnanya); ia pula menjadi petunjuk bagi orang-orang yang (hendak) bertaqwa;"</p>
+        <p class="terj en">"This is the Book about which there is no doubt, a guidance for those conscious of Allāh -"</p>
+        <p class="ref"><span class="nw">al-Baqarah</span> 2:2</p>
+        <div class="pengajaran ms">💡 <b>Perhatikan:</b> terjemahan Basmeih dan Saheeh International sama-sama menterjemah <b><bdi lang="ar" class="nw">ذَلِكَ</bdi></b> di sini sebagai "ini" / "This". Ini selari dengan pandangan <span class="nw">at-Tabari</span> dan kebanyakan ahli tafsir bahawa maknanya <b><bdi lang="ar" class="nw">هذا الكتاب</bdi></b> (lihat bahagian 7). Nuansa "jauh" yang dihuraikan Dr Fadil ialah pada pilihan lafaz Arabnya.</div>
+        <div class="pengajaran en">💡 <b>Notice:</b> both Basmeih and Saheeh International render <b><bdi lang="ar" class="nw">ذَلِكَ</bdi></b> here as "ini" / "This". This matches the view of <span class="nw">al-Tabari</span> and most exegetes that it means <b><bdi lang="ar" class="nw">هذا الكتاب</bdi></b> (see section 7). The nuance of "far" that Dr Fadil explains lies in the choice of the Arabic word itself.</div>
+      </div>
+    </article>
+    <article class="kisah">
+      <div class="kepala"><div class="ikon">🧭</div>
+        <div><h3><span class="ms"><span class="nw">al-Isra':</span> «ini»</span><span class="en"><span class="nw">al-Isra':</span> "this"</span></h3>
+        <div class="susah"><span class="ms">kata isyarat untuk yang <b>dekat</b></span><span class="en">the demonstrative for what is <b>near</b></span></div></div></div>
+      <div class="isi">
+        <span class="label l-ayat"><span class="ms">Ayat</span><span class="en">Verse</span></span>
+        <p class="ayat">إِنَّ <mark>هَذَا</mark> الْقُرْآنَ يَهْدِي لِلَّتِي هِيَ أَقْوَمُ وَيُبَشِّرُ الْمُؤْمِنِينَ الَّذِينَ يَعْمَلُونَ الصَّالِحَاتِ أَنَّ لَهُمْ أَجْرًا كَبِيرًا ﴿٩﴾</p>
+        <p class="terj ms">"Sesungguhnya <span class="nw">Al-Quran</span> ini memberi petunjuk ke jalan yang amat betul (ugama Islam), dan memberikan berita yang mengembirakan orang-orang yang beriman yang mengerjakan amal-amal soleh, bahawa mereka beroleh pahala yang besar."</p>
+        <p class="terj en">"Indeed, this Qur’ān guides to that which is most suitable and gives good tidings to the believers who do righteous deeds that they will have a great reward"</p>
+        <p class="ref"><span class="nw">al-Isra'</span> 17:9</p>
+      </div>
+    </article>
+  </section>
+
+  <section>
+    <h2><span class="no">2</span><span class="ms">«Itu» dan «Ini»: Perbandingan</span><span class="en">"That" and "This": A Comparison</span></h2>
+    <div class="banding" role="table">
+      <div class="brow bhead" role="row"><div role="columnheader"></div><div role="columnheader">ذَلِكَ الْكِتَابُ</div><div role="columnheader">إِنَّ هَذَا الْقُرْآنَ</div></div>
+      <div class="brow" role="row"><div role="rowheader"><span class="ms">Kata isyarat</span><span class="en">Demonstrative</span></div><div class="lebih"><small><span class="ms"><i>dhālika</i>: untuk yang jauh</span><span class="en"><i>dhālika</i>: for the far</span></small></div><div><small><span class="ms"><i>hādhā</i>: untuk yang dekat</span><span class="en"><i>hādhā</i>: for the near</span></small></div></div>
+      <div class="brow" role="row"><div role="rowheader"><span class="ms">Konteks</span><span class="en">Context</span></div><div class="lebih"><small><span class="ms">menafikan keraguan, lalu mencabar: datangkan satu surah (2:23–24)</span><span class="en">negating doubt, then the challenge: produce one surah (2:23–24)</span></small></div><div><small><span class="ms">hidayah: memberi petunjuk ke jalan yang paling lurus</span><span class="en">guidance: leading to what is most upright</span></small></div></div>
+      <div class="brow" role="row"><div role="rowheader"><span class="ms">Maksud "jauh / dekat"</span><span class="en">What "far / near" conveys</span></div><div class="lebih"><small><span class="ms">tinggi martabat; jauh daripada keraguan; di luar capaian manusia</span><span class="en">high rank; far from doubt; beyond human reach</span></small></div><div><small><span class="ms">dekat dengan kefahaman supaya manusia faham dan beramal</span><span class="en">near to understanding so people grasp it and act</span></small></div></div>
+      <div class="brow" role="row"><div role="rowheader"><span class="ms">Nama yang dipakai</span><span class="en">Name used</span></div><div class="lebih"><small><span class="ms"><i><span class="nw">al-kitāb</span></i> (Kitab)</span><span class="en"><i><span class="nw">al-kitāb</span></i> (the Book)</span></small></div><div><small><span class="ms"><i><span class="nw">al-qur'ān</span></i>: nama khas (<i>ism 'alam</i>), supaya tidak disangka Taurat (17:2)</span><span class="en"><i><span class="nw">al-qur'ān</span></i>: a proper name (<i>ism 'alam</i>), so it is not mistaken for the Torah (17:2)</span></small></div></div>
+    </div>
+    <p class="nota-kecil ms">Jadual ini meringkaskan penerangan Dr Fadil dalam klip.</p>
+    <p class="nota-kecil en">This table summarises Dr Fadil's explanation in the clip.</p>
+  </section>
+
+  <section>
+    <h2><span class="no">3</span><span class="ms">«Itu» dan Cabaran: Jauh daripada Kemampuan Manusia</span><span class="en">"That" and the Challenge: Beyond Human Ability</span></h2>
+    <p class="ayat">وَإِنْ كُنْتُمْ فِي رَيْبٍ مِمَّا نَزَّلْنَا عَلَى عَبْدِنَا فَأْتُوا بِسُورَةٍ مِنْ مِثْلِهِ وَادْعُوا شُهَدَاءَكُمْ مِنْ دُونِ اللَّهِ إِنْ كُنْتُمْ صَادِقِينَ ﴿٢٣﴾ فَإِنْ لَمْ تَفْعَلُوا <mark>وَلَنْ تَفْعَلُوا</mark> فَاتَّقُوا النَّارَ الَّتِي وَقُودُهَا النَّاسُ وَالْحِجَارَةُ أُعِدَّتْ لِلْكَافِرِينَ ﴿٢٤﴾</p>
+    <p class="terj ms">"Dan kalau kamu ada menaruh syak tentang apa yang Kami turunkan (<span class="nw">Al-Quran)</span> kepada hamba kami (Muhammad), maka cubalah buat dan datangkanlah satu surah yang sebanding dengan <span class="nw">Al-Quran</span> itu, dan panggilah orang-orang yang kamu percaya boleh menolong kamu selain dari Allah, jika betul kamu orang-orang yang benar. Maka kalau kamu tidak dapat membuatnya, dan sudah tentu kamu tidak dapat membuatnya, maka peliharalah diri kamu dari api neraka yang bahan-bahan bakarannya: manusia dan batu-batu (berhala), (iaitu neraka) yang disediakan untuk orang-orang kafir."</p>
+    <p class="terj en">"And if you are in doubt about what We have sent down [i.e., the Qur’ān] upon Our Servant [i.e., Prophet Muḥammad (ﷺ)], then produce a sūrah the like thereof and call upon your witnesses [i.e., supporters] other than Allāh, if you should be truthful. But if you do not - and you will never be able to - then fear the Fire, whose fuel is people and stones, prepared for the disbelievers."</p>
+    <p class="ref"><span class="nw">al-Baqarah</span> 2:23–24</p>
+    <p class="ms">Dr Fadil menghubungkan ayat 2 dengan ayat 23–24. Allah menafikan keraguan («lā rayba fīh», tiada keraguan padanya), kemudian berfirman: jika kamu ragu, datangkanlah satu surah. Lalu: «wa lan taf‘alū» (dan kamu tidak akan dapat melakukannya). Perkara itu jauh daripada kemampuan mereka. Maka sesuai Kitab itu ditunjuk dengan kata isyarat untuk yang jauh.</p>
+    <p class="en">Dr Fadil links verse 2 with verses 23–24. Allah negates doubt ("lā rayba fīh", no doubt in it), then says: if you are in doubt, produce one surah. Then: "wa lan taf‘alū" (and you will never do it). The matter is far beyond their ability. So it fits that the Book is pointed to with the demonstrative for the far.</p>
+    <p class="ms">Beliau juga menegaskan: <b>«dhālika» merujuk kepada Kitab, bukan kepada keraguan.</b> Yang "jauh" ialah kedudukan Kitab itu.</p>
+    <p class="en">He also stresses: <b>"dhālika" refers to the Book, not to the doubt.</b> What is "far" is the Book's standing.</p>
+    <div class="pengajaran ms">💡 <b>Dalam <i>Lamasat Bayaniyyah</i> (transkrip kuliahnya):</b> Dr Fadil menyebut «wa lan taf‘alū» ialah <i>jumlah i‘tiraḍiyyah</i> (ayat sisipan) untuk memastikan secara putus bahawa mereka tidak akan dapat melakukannya, dan ini sesuai dengan «lā rayba fīh» (<i>Lamasat Bayaniyyah</i>, hlm. 852, penomboran Shamela).</div>
+    <div class="pengajaran en">💡 <b>In <i>Lamasat Bayaniyya</i> (transcribed lectures):</b> Dr Fadil says "wa lan taf‘alū" is a <i>jumla i‘tiraḍiyya</i> (parenthetical clause) to state decisively that they will not do it, and this suits "lā rayba fīh" (<i>Lamasat Bayaniyya</i>, p. 852, Shamela numbering).</div>
+  </section>
+
+  <section>
+    <h2><span class="no">4</span><span class="ms">«Ini» dan Hidayah; Kenapa «<span class="nw">al-Qur'an</span>», Bukan «<span class="nw">al-Kitab</span>»?</span><span class="en">"This" and Guidance; Why "<span class="nw">al-Qur'an</span>", Not "<span class="nw">al-Kitab</span>"?</span></h2>
+    <p class="ms"><b>Sebab pertama: hidayah mesti dekat.</b> Ayat <span class="nw">al-Isra'</span> berbicara tentang <span class="nw">al-Qur'an</span> yang memberi petunjuk. Petunjuk perlu dekat dengan manusia supaya mereka faham hukum-hakamnya dan mengamalkannya.</p>
+    <p class="en"><b>First reason: guidance must be near.</b> The verse of <span class="nw">al-Isra'</span> speaks of the Qur'an as guiding. Guidance must be near to people so they understand its rulings and act on them.</p>
+    <p class="ms"><b>Sebab kedua: konteks surah.</b> Beberapa ayat sebelumnya, Allah menyebut Kitab Nabi Musa:</p>
+    <p class="en"><b>Second reason: the surah's context.</b> A few verses earlier, Allah mentions the Book of Moses:</p>
+    <p class="ayat">وَآتَيْنَا مُوسَى <mark>الْكِتَابَ</mark> وَجَعَلْنَاهُ هُدًى لِبَنِي إِسْرَائِيلَ أَلَّا تَتَّخِذُوا مِنْ دُونِي وَكِيلًا ﴿٢﴾</p>
+    <p class="terj ms">"Dan Kami telah memberikan Nabi Musa Kitab Taurat, dan Kami jadikan Kitab itu petunjuk bagi Bani Israil (serta Kami perintahkan mereka): "Janganlah kamu jadikan yang lain daripadaKu sebagai Tuhan (untuk menyerahkan urusan kamu kepadanya)"."</p>
+    <p class="terj en">"And We gave Moses the Scripture and made it a guidance for the Children of Israel that you not take other than Me as Disposer of affairs,"</p>
+    <p class="ref"><span class="nw">al-Isra'</span> 17:2</p>
+    <p class="ms">Jika ayat 9 berbunyi «inna dhālika <span class="nw">al-kitāba</span> yahdī…», "Kitab itu" boleh difahami sebagai Taurat yang disebut tadi. Maka Allah memilih <b>«hādhā» (ini)</b> dan nama khas <b>«<span class="nw">al-Qur'ān</span>»</b>, supaya jelas yang dimaksudkan ialah <span class="nw">al-Qur'an.</span></p>
+    <p class="en">Had verse 9 read "inna dhālika <span class="nw">al-kitāba</span> yahdī…", "that Book" could be taken as the Torah just mentioned. So Allah chose <b>"hādhā" (this)</b> and the proper name <b>"<span class="nw">al-Qur'ān</span>"</b>, so it is clear the Qur'an is meant.</p>
+  </section>
+
+  <section>
+    <h2><span class="no">5</span><span class="ms">Satu Corak dalam Seluruh <span class="nw">al-Qur'an</span></span><span class="en">A Pattern Across the Whole Qur'an</span></h2>
+    <p class="ms">Dr Fadil menyebut: apabila <span class="nw">al-Qur'an</span> ditunjuk dengan nama «<span class="nw">al-Qur'ān</span>», kata isyaratnya sentiasa <b>«hādhā»</b>, tidak pernah «dhālika». Contoh yang beliau baca:</p>
+    <p class="en">Dr Fadil states: when the Qur'an is pointed to by the name "<span class="nw">al-Qur'ān</span>", the demonstrative is always <b>"hādhā"</b>, never "dhālika". The examples he recites:</p>
+    <div class="kontras" style="grid-template-columns:1fr">
+      <div class="ya"><p class="ar">وَأُوحِيَ إِلَيَّ <u>هَذَا الْقُرْآنُ</u> لِأُنْذِرَكُمْ بِهِ وَمَنْ بَلَغَ</p><small><span class="ms"><span class="nw">al-An'am</span> 6:19 (petikan)</span><span class="en">6:19 (excerpt)</span></small></div>
+      <div class="ya"><p class="ar">وَمَا كَانَ <u>هَذَا الْقُرْآنُ</u> أَنْ يُفْتَرَى مِنْ دُونِ اللَّهِ</p><small><span class="ms">Yunus 10:37 (petikan)</span><span class="en">10:37 (excerpt)</span></small></div>
+      <div class="ya"><p class="ar">وَلَقَدْ صَرَّفْنَا لِلنَّاسِ فِي <u>هَذَا الْقُرْآنِ</u> مِنْ كُلِّ مَثَلٍ</p><small><span class="ms"><span class="nw">al-Isra'</span> 17:89 (petikan)</span><span class="en">17:89 (excerpt)</span></small></div>
+    </div>
+    <p class="terj ms">6:19: "…dan diwahyukan kepadaku <span class="nw">Al-Quran</span> ini, supaya aku memberi amaran dengannya kepada kamu dan juga (kepada) sesiapa yang telah sampai kepadanya seruan <span class="nw">Al-Quran</span> itu.…"<br>10:37: "Dan bukanlah <span class="nw">Al-Quran</span> ini sesuatu yang boleh diada-adakan oleh yang lain dari Allah;…"<br>17:89: "Dan sesungguhnya Kami telah menerangkan berulang-ulang kepada manusia, di dalam <span class="nw">Al-Quran</span> ini, dengan berbagai-bagai contoh perbandingan (yang mendatangkan iktibar);…"</p>
+    <p class="terj en">6:19: "…And this Qur’ān was revealed to me that I may warn you thereby and whomever it reaches.…"<br>10:37: "And it was not [possible] for this Qur’ān to be produced by other than Allāh,…"<br>17:89: "And We have certainly diversified for the people in this Qur’ān from every [kind of] example,…"</p>
+    <div class="pengajaran ms">🔎 <b>Semakan kami:</b> carian dalam teks <span class="nw">al-Qur'an</span> (<span class="nw">al-Maktabah</span> <span class="nw">al-Shamela)</span> menemui <b>16 kali</b> <b><bdi lang="ar" class="nw">هذا القرآن</bdi></b> (14 kali dalam bentuk ini, serta <b><bdi lang="ar" class="nw">بهذا القرآن</bdi></b> dalam Saba' 34:31 dan <b><bdi lang="ar" class="nw">لهذا القرآن</bdi></b> dalam Fussilat 41:26), dan <b><bdi lang="ar" class="nw">ذلك القرآن</bdi></b> <b>tiada</b>. Satu catatan: dalam <span class="nw">al-Hijr</span> 15:1 dan <span class="nw">an-Naml</span> 27:1 terdapat <b><bdi lang="ar" class="nw">تِلْكَ آيَاتُ…</bdi></b> (itulah ayat-ayat…); di situ kata isyarat jauh «tilka» (itu) menunjuk kepada "ayat-ayat", bukan terus kepada kata «<span class="nw">al-Qur'ān</span>».</div>
+    <div class="pengajaran en">🔎 <b>Our check:</b> a search of the Qur'an text (<span class="nw">al-Maktabah</span> <span class="nw">al-Shamela)</span> finds <b><bdi lang="ar" class="nw">هذا القرآن</bdi></b> <b>16 times</b> (14 in this form, plus <b><bdi lang="ar" class="nw">بهذا القرآن</bdi></b> in Saba' 34:31 and <b><bdi lang="ar" class="nw">لهذا القرآن</bdi></b> in Fussilat 41:26), and <b><bdi lang="ar" class="nw">ذلك القرآن</bdi></b> <b>none</b>. One note: <span class="nw">al-Hijr</span> 15:1 and <span class="nw">al-Naml</span> 27:1 have <b><bdi lang="ar" class="nw">تِلْكَ آيَاتُ…</bdi></b> (those are the verses…); there the far demonstrative "tilka" (that/those) points to "the verses", not directly to the word "<span class="nw">al-Qur'ān</span>".</div>
+    <p class="ms"><b>Kenapa?</b> Dr Fadil menjawab: kata «<span class="nw">al-Qur'ān</span>» berasal daripada <i>qirā'ah</i> (bacaan), dan membaca berlaku dari dekat. Maka sesuai ia ditunjuk dengan «hādhā».</p>
+    <p class="en"><b>Why?</b> Dr Fadil answers: the word "<span class="nw">al-Qur'ān</span>" comes from <i>qirā'a</i> (reading), and reading happens up close. So it fits to point to it with "hādhā".</p>
+  </section>
+
+  <section>
+    <h2><span class="no">6</span><span class="ms">Lima Kata Kunci</span><span class="en">Five Key Words</span></h2>
+    <div class="kunci">
+      <div><p class="ar">ذَلِكَ</p><span><b>dhālika</b><br><span class="ms">(itu; kata isyarat untuk yang jauh)</span><span class="en">(that; demonstrative for the far)</span></span></div>
+      <div><p class="ar">هَذَا</p><span><b>hādhā</b><br><span class="ms">(ini; kata isyarat untuk yang dekat)</span><span class="en">(this; demonstrative for the near)</span></span></div>
+      <div><p class="ar">الْكِتَاب</p><span><b><span class="nw">al-kitāb</span></b><br><span class="ms">(Kitab; yang ditulis)</span><span class="en">(the Book; what is written)</span></span></div>
+      <div><p class="ar">الْقُرْآن</p><span><b><span class="nw">al-qur'ān</span></b><br><span class="ms">(Kalam Allah; dikaitkan dengan bacaan)</span><span class="en">(Allah's Speech; linked to reading)</span></span></div>
+      <div style="grid-column:1/-1"><p class="ar">رَيْب</p><span><b>raib</b><br><span class="ms">(keraguan)</span><span class="en">(doubt)</span></span></div>
+    </div>
+    <p class="nota-kecil ms" style="margin-top:10px">Huraian makna di atas ialah ringkasan umum untuk pembaca, bukan takrif daripada satu kitab tertentu.</p>
+    <p class="nota-kecil en" style="margin-top:10px">These meanings are a general summary for readers, not definitions taken from a particular book.</p>
+  </section>
+
+  <section>
+    <h2><span class="no">7</span><span class="ms">Apa Kata Ulama</span><span class="en">What the Scholars Say</span></h2>
+    <span class="label l-ulama"><span class="ms">Nukilan · ada perbezaan pandangan</span><span class="en">Quoted · scholars differ</span></span>
+
+    <blockquote>
+      <p class="ar">أما استخدام إسم الاشارة "هذا" فجاء مع الهدى لأن الهداية ينبغي أن تكون قريبة من أفهام الناس حتى يفهموا ويعملوا. أما في التحدي فيستعمل "ذلك" لأنه صعب الوصول إليه.</p>
+      <p class="tr ms"><b>Dr Fadil <span class="nw">as-Samarra'i:</span></b> "Adapun penggunaan kata isyarat 'hādhā', ia datang bersama hidayah, kerana hidayah sepatutnya dekat dengan kefahaman manusia supaya mereka faham dan beramal. Adapun dalam cabaran, digunakan 'dhālika' kerana ia sukar dicapai."</p>
+      <p class="tr en"><b>Dr Fadil <span class="nw">al-Samarra'i:</span></b> "As for the use of the demonstrative 'hādhā', it comes with guidance, because guidance should be near to people's understanding so that they understand and act. As for the challenge, 'dhālika' is used because it is hard to attain."</p>
+      <cite class="ms">Fadil Salih <span class="nw">as-Samarra'i,</span> <i>Lamasat Bayaniyyah fi Nusus min <span class="nw">at-Tanzil</span> (Muhadarat)</i>, hlm. 852 (penomboran automatik Shamela, bukan cetakan).</cite>
+      <cite class="en">Fadil Salih <span class="nw">al-Samarra'i,</span> <i>Lamasat Bayaniyya fi Nusus min <span class="nw">al-Tanzil</span> (Muhadarat)</i>, p. 852 (Shamela's automatic numbering, not a printed edition).</cite>
+    </blockquote>
+
+    <p class="ms"><b>Kenapa «dhālika» untuk Kitab yang dekat?</b> Para ulama memberi beberapa penjelasan (tidak semestinya bercanggah):</p>
+    <p class="en"><b>Why "dhālika" for a Book that is near?</b> Scholars give several explanations (not necessarily in conflict):</p>
+    <ul class="pandangan ms">
+      <li><b>Pandangan 1, maknanya "Kitab ini"</b> (<span class="nw">at-Tabari,</span> menukil "kebanyakan ahli tafsir", antaranya Mujahid dan 'Ikrimah): <b><bdi lang="ar" class="nw">ذلك الكتاب</bdi></b> bermaksud <b><bdi lang="ar" class="nw">هذا الكتاب</bdi></b>. Beliau menjelaskan, «dhālika» dipakai kerana ia merujuk kepada «Alif Lam Mim» yang baru diucapkan dan sudah berlalu. <span class="nw">At-Tabari,</span> <i>Jami' <span class="nw">al-Bayan</span></i>, 1/228–229.</li>
+      <li><b>Pandangan 2, jauh dari segi ucapan</b> (<span class="nw">az-Zamakhsyari):</span> kata isyarat merujuk kepada «Alif Lam Mim» yang sudah diucapkan dan berlalu; yang sudah berlalu dianggap jauh. Atau kerana Kitab itu sampai daripada Pengutus kepada yang diutus. Ada juga pendapat: "Kitab yang telah dijanjikan kepada mereka". <i><span class="nw">Al-Kasysyaf</span></i>, 1/32.</li>
+      <li><b>Pandangan 3, jauh dari segi martabat</b> (Ibn <span class="nw">al-Munayyir;</span> Ibn 'Asyur): "jauh" di sini kerana ketinggian kedudukannya, jauh di atas setiap kitab lain. Ibn 'Asyur: kata isyarat untuk yang jauh dipakai "untuk menzahirkan ketinggian kedudukan <span class="nw">al-Qur'an</span> ini". Huraian Dr Fadil dalam klip selari dengan pandangan ini, dengan tambahan kaitan kepada cabaran 2:23–24.</li>
+    </ul>
+    <ul class="pandangan en">
+      <li><b>View 1, it means "this Book"</b> (<span class="nw">al-Tabari,</span> citing "most of the exegetes", including Mujahid and 'Ikrima): <b><bdi lang="ar" class="nw">ذلك الكتاب</bdi></b> means <b><bdi lang="ar" class="nw">هذا الكتاب</bdi></b>. He explains that "dhālika" is used because it refers to "Alif Lam Mim", just uttered and now past. <span class="nw">Al-Tabari,</span> <i>Jami' <span class="nw">al-Bayan</span></i>, 1/228–229.</li>
+      <li><b>View 2, far in terms of speech</b> (<span class="nw">al-Zamakhshari):</span> the demonstrative points to "Alif Lam Mim", already uttered and past; what has passed is treated as far. Or because the Book came from the Sender to the one sent to. Another opinion: "the Book they were promised". <i><span class="nw">Al-Kashshaf</span></i>, 1/32.</li>
+      <li><b>View 3, far in rank</b> (Ibn <span class="nw">al-Munayyir;</span> Ibn 'Ashur): "far" here because of its lofty standing, far above every other book. Ibn 'Ashur: the far demonstrative is used "to show the high standing of this Qur'an". Dr Fadil's explanation in the clip fits this view, adding the link to the challenge in 2:23–24.</li>
+    </ul>
+
+    <blockquote>
+      <p class="ar">ولأن البعد هنا باعتبار علو المنزلة، وبعد مرتبة المشار إليه من مرتبة كل كتاب سواه</p>
+      <p class="tr ms"><b>Ibn <span class="nw">al-Munayyir</span></b> (dalam nota kaki <i><span class="nw">al-Kasysyaf</span></i>, mengulas <span class="nw">az-Zamakhsyari):</span> "Dan kerana 'jauh' di sini dari segi ketinggian kedudukan, dan jauhnya martabat yang ditunjuk daripada martabat setiap kitab selainnya."</p>
+      <p class="tr en"><b>Ibn <span class="nw">al-Munayyir</span></b> (in a footnote to <i><span class="nw">al-Kashshaf</span></i>, commenting on <span class="nw">al-Zamakhshari):</span> "And because 'distance' here is in terms of lofty standing, and the distance of the rank of what is pointed to from the rank of every other book."</p>
+      <cite class="ms">Ahmad ibn <span class="nw">al-Munayyir</span> (w. 683H), <i><span class="nw">al-Intisaf</span></i>, dicetak sebagai nota kaki <i><span class="nw">al-Kasysyaf</span></i>, 1/32 (Shamela). Ini kata-kata Ibn <span class="nw">al-Munayyir,</span> bukan <span class="nw">az-Zamakhsyari.</span></cite>
+      <cite class="en">Ahmad ibn <span class="nw">al-Munayyir</span> (d. 683 AH), <i><span class="nw">al-Intisaf</span></i>, printed as a footnote to <i><span class="nw">al-Kashshaf</span></i>, 1/32 (Shamela). These are Ibn <span class="nw">al-Munayyir's</span> words, not <span class="nw">al-Zamakhshari's.</span></cite>
+    </blockquote>
+
+    <blockquote>
+      <p class="ar">فلا جرم أن كانت الإشارة في الآية باستعمال اسم الإشارة للبعيد لإظهار رفعة شأن هذا القرآن لجعله بعيد المنزلة</p>
+      <p class="tr ms"><b>Ibn 'Asyur:</b> "Maka tidak hairanlah isyarat dalam ayat ini menggunakan kata isyarat untuk yang jauh, bagi menzahirkan ketinggian kedudukan <span class="nw">al-Qur'an</span> ini, dengan menjadikannya jauh martabatnya."</p>
+      <p class="tr en"><b>Ibn 'Ashur:</b> "So it is no wonder that the reference in the verse uses the far demonstrative, to show the high standing of this Qur'an by making it far in rank."</p>
+      <cite class="ms">Ibn 'Asyur (w. 1393H), <i><span class="nw">at-Tahrir</span> wa <span class="nw">at-Tanwir</span></i>, 1/219–220; petikan di 1/220 (Shamela). Beliau juga menukil Ibn Malik (<i><span class="nw">at-Tashil</span></i>) dan pensyarahnya bahawa kata isyarat dekat dan jauh boleh silih berganti untuk rujukan yang sama, lalu menyokongnya; contohnya <b><bdi lang="ar" class="nw">ذلك نتلوه عليك</bdi></b> (Ali 'Imran 3:58) dan <b><bdi lang="ar" class="nw">إن هذا لهو القصص الحق</bdi></b> (3:62).</cite>
+      <cite class="en">Ibn 'Ashur (d. 1393 AH), <i><span class="nw">al-Tahrir</span> wa <span class="nw">al-Tanwir</span></i>, 1/219–220; quote on 1/220 (Shamela). He also cites Ibn Malik (<i><span class="nw">al-Tashil</span></i>) and his commentator that near and far demonstratives can alternate for the same referent, and supports it; for example <b><bdi lang="ar" class="nw">ذلك نتلوه عليك</bdi></b> (3:58) and <b><bdi lang="ar" class="nw">إن هذا لهو القصص الحق</bdi></b> (3:62).</cite>
+    </blockquote>
+
+    <p class="ms"><b>Dari mana datangnya kata «<span class="nw">al-Qur'ān</span>»?</b> <span class="nw">Az-Zarkasyi</span> mencatat perbezaan pandangan: (1) <span class="nw">asy-Syafi'i</span> (daripada gurunya Isma'il ibn Qustantin): ia nama khas bagi Kalam Allah, tidak diambil daripada <i>qara'tu</i> (aku membaca), seperti nama Taurat dan Injil; (2) daripada makna menghimpun, <i><span class="nw">al-qaryu</span></i> (<span class="nw">al-Jauhari,</span> Abu 'Ubaid), kerana ia menghimpun surah-surah; (3) daripada <i>qarantu</i> (menggabungkan; <span class="nw">al-Asy'ari)</span> atau <i>qarā'in</i> (yang saling membenarkan; <span class="nw">al-Qurtubi);</span> (4) daripada <i>qara'a</i> dengan makna menzahirkan, atau kerana bacaan dan tilawah (bacaan <span class="nw">al-Qur'an)</span> diambil daripadanya. Penjelasan Dr Fadil (daripada <i>qirā'ah</i>, bacaan) berpaut kepada makna membaca.</p>
+    <p class="en"><b>Where does the word "<span class="nw">al-Qur'ān</span>" come from?</b> <span class="nw">Al-Zarkashi</span> records differing views: (1) <span class="nw">al-Shafi'i</span> (from his teacher Isma'il ibn Qustantin): it is a proper name for Allah's Speech, not taken from <i>qara'tu</i> (I read), like the names Torah and Gospel; (2) from the sense of gathering (<span class="nw">al-Jawhari,</span> Abu 'Ubayd), as it gathers the surahs; (3) from <i>qarantu</i> (to join; <span class="nw">al-Ash'ari)</span> or <i>qara'in</i> (mutually confirming signs; <span class="nw">al-Qurtubi);</span> (4) from <i>qara'a</i> meaning to make manifest, or because reading and recitation are taken from it. Dr Fadil's explanation (from <i>qirā'a</i>, reading) rests on the sense of reading.</p>
+    <p class="nota-kecil ms">Badr <span class="nw">ad-Din</span> <span class="nw">az-Zarkasyi</span> (w. 794H), <i><span class="nw">al-Burhan</span> fi 'Ulum <span class="nw">al-Qur'an</span></i>, 1/277–278 (Shamela). Nombor jilid/halaman mungkin berbeza dalam cetakan lain.</p>
+    <p class="nota-kecil en">Badr <span class="nw">al-Din</span> <span class="nw">al-Zarkashi</span> (d. 794 AH), <i><span class="nw">al-Burhan</span> fi 'Ulum <span class="nw">al-Qur'an</span></i>, 1/277–278 (Shamela). Pagination may differ in other editions.</p>
+  </section>
+
+  <section class="renung">
+    <span class="label l-renung"><span class="ms">Tadabbur · renungan peribadi</span><span class="en">Tadabbur · personal reflection</span></span>
+    <h2><span class="ms">Tinggi, Tetapi Dekat</span><span class="en">Lofty, Yet Near</span></h2>
+    <div class="ms">
+      <p><span class="nw">Al-Qur'an</span> itu "jauh": terlalu tinggi untuk ditandingi, dan jauh daripada sebarang keraguan. Tetapi <span class="nw">al-Qur'an</span> juga "dekat": ia diturunkan untuk dibaca, difahami dan diamalkan.</p>
+      <p>Mungkin ada di antara kita yang menganggap <span class="nw">al-Qur'an</span> hanya "jauh": dihormati, diletakkan di rak yang tinggi, tetapi jarang dibuka. Sedangkan nama "<span class="nw">al-Qur'an</span>" sendiri mengajak kita membaca, dan membaca hanya berlaku apabila kita mendekat.</p>
+      <p>Hormati ketinggiannya, dan dekatilah ia setiap hari.</p>
+    </div>
+    <div class="en">
+      <p>The Qur'an is "far": too lofty to be rivalled, and far from any doubt. Yet the Qur'an is also "near": it was sent down to be read, understood and lived.</p>
+      <p>Some of us may treat the Qur'an as only "far": honoured, placed on a high shelf, but rarely opened. Yet the very name "<span class="nw">al-Qur'an</span>" invites us to read, and reading only happens when we draw near.</p>
+      <p>Honour its loftiness, and draw near to it every day.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="no">8</span><span class="ms">Muhasabah (menilai diri)</span><span class="en">Muhasabah (self-reflection)</span></h2>
+    <ol class="muhasabah ms">
+      <li>Adakah <span class="nw">al-Qur'an</span> "dekat" dengan saya, atau hanya dihormati dari jauh?</li>
+      <li>Bilakah kali terakhir saya membaca <span class="nw">al-Qur'an</span> dengan memahami maknanya?</li>
+      <li>Adakah masih ada sedikit keraguan dalam hati saya terhadap mana-mana ajaran <span class="nw">al-Qur'an</span>?</li>
+    </ol>
+    <ol class="muhasabah en">
+      <li>Is the Qur'an "near" to me, or only honoured from afar?</li>
+      <li>When did I last read the Qur'an while understanding its meaning?</li>
+      <li>Is there still any doubt in my heart about any teaching of the Qur'an?</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2><span class="no">9</span><span class="ms">Amalan Minggu Ini</span><span class="en">Practice This Week</span></h2>
+    <ul class="amal ms">
+      <li><b>Dekati <span class="nw">al-Qur'an</span> setiap hari:</b> baca sekurang-kurangnya satu halaman bersama terjemahannya.</li>
+      <li><b>Perhatikan kata isyarat:</b> apabila membaca, tandakan setiap <b><bdi lang="ar" class="nw">ذَلِكَ</bdi></b> dan <b><bdi lang="ar" class="nw">هَذَا</bdi></b>, dan tanya: kenapa yang ini dipilih?</li>
+      <li><b>Kongsikan satu pelajaran:</b> terangkan perbezaan «Kitab itu» dan «<span class="nw">al-Qur'an</span> ini» kepada seorang ahli keluarga.</li>
+      <li><b>Hafaz dua ayat:</b> <span class="nw">al-Baqarah</span> 2:2 dan <span class="nw">al-Isra'</span> 17:9.</li>
+    </ul>
+    <ul class="amal en">
+      <li><b>Draw near to the Qur'an daily:</b> read at least one page with its translation.</li>
+      <li><b>Notice the demonstratives:</b> as you read, mark each <b><bdi lang="ar" class="nw">ذَلِكَ</bdi></b> and <b><bdi lang="ar" class="nw">هَذَا</bdi></b>, and ask: why was this one chosen?</li>
+      <li><b>Share one lesson:</b> explain the difference between "that Book" and "this Qur'an" to a family member.</li>
+      <li><b>Memorise two verses:</b> <span class="nw">al-Baqarah</span> 2:2 and <span class="nw">al-Isra'</span> 17:9.</li>
+    </ul>
+  </section>
+
+  <div class="zikir">
+    <p class="ar">إِنَّ هَذَا الْقُرْآنَ يَهْدِي لِلَّتِي هِيَ أَقْوَمُ</p>
+    <p class="ms">(<span class="nw">al-Isra'</span> 17:9)</p>
+    <p class="en">(17:9)</p>
+  </div>
+
+  <section class="sertai">
+    <img src="attartil-logo.png" alt="AtTartil Quranic Institute">
+    <h2><span class="ms">Ingin memahami <span class="nw">al-Qur'an</span> seperti ini?</span><span class="en">Want to understand the Qur'an like this?</span></h2>
+    <p class="lead ms">Sertai <b>AFAM (AtTartil Full-Access Membership)</b> dan teruskan perjalanan daripada membaca, kepada memahami, merenung dan mengamalkan <span class="nw">al-Qur'an.</span></p>
+    <p class="lead en">Join <b>AFAM (AtTartil Full-Access Membership)</b> and continue the journey from reading the Qur'an to understanding, reflecting on and living it.</p>
+    <ul class="ms">
+      <li>Akses kepada kelas rakaman dan program-program lepas AtTartil</li>
+      <li>Kandungan tadabbur dan bahasa <span class="nw">al-Qur'an</span></li>
+      <li>Belajar ikut masa anda, di mana-mana peranti</li>
+      <li>Komuniti pelajar untuk bertanya dan saling menyokong</li>
+    </ul>
+    <ul class="en">
+      <li>Access to AtTartil's recorded classes and past programmes</li>
+      <li>Tadabbur and Qur'anic language content</li>
+      <li>Learn at your own pace, on any device</li>
+      <li>A learners' community for questions and support</li>
+    </ul>
+    <p class="harga"><span class="ms">$10 sebulan atau $120 setahun</span><span class="en">$10 a month or $120 a year</span></p>
+    <div class="cta">
+      <a class="utama" href="https://attartilqi.com/afam" target="_blank" rel="noopener"><span class="ms">Sertai AFAM</span><span class="en">Join AFAM</span> →</a>
+      <a class="kedua" href="https://wa.me/6593725111" target="_blank" rel="noopener"><span class="ms">Tanya di WhatsApp</span><span class="en">Ask on WhatsApp</span></a>
+    </div>
+    <p class="sosial"><span class="ms">Ikuti siri Peringatan Ulama:</span><span class="en">Follow the Scholars' Reminders series:</span><br>
+      <a href="https://www.instagram.com/attartilqi/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/attartil" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.youtube.com/channel/UCPv1RPGjbULC0Wfx9BQ3v1Q" target="_blank" rel="noopener">YouTube</a> · <a href="https://www.tiktok.com/@attartilcs" target="_blank" rel="noopener">TikTok</a> · <a href="https://chat.whatsapp.com/JCuiFYFNTSn3CycNfE0k6T" target="_blank" rel="noopener"><span class="ms">Komuniti WhatsApp</span><span class="en">WhatsApp Community</span></a></p>
+  </section>
+
+  <p style="text-align:center;margin:36px 0 0;font-family:'Inter',system-ui,sans-serif;font-weight:600"><a href="../" style="color:var(--hijau);text-decoration:none">← <span class="ms">Semua siri Peringatan Ulama</span><span class="en">All Scholars' Reminders episodes</span></a></p>
+
+  <footer>
+    <div class="visi"><img src="attartil-logo.png" alt=""><span><b>ATTARTIL QURANIC INSTITUTE</b>"Where Qur'anic Knowledge Transforms Lives"</span></div>
+    <div class="ms">
+      <b>Rujukan</b>
+      <ol>
+        <li>Teks ayat: <span class="nw">al-Maktabah</span> <span class="nw">al-Shamela</span> (riwayat Hafs 'an 'Asim).</li>
+        <li>Terjemahan ayat (BM): <i>Tafsir Pimpinan <span class="nw">ar-Rahman</span></i>, Sheikh Abdullah Basmeih (JAKIM).</li>
+        <li>Fadil Salih <span class="nw">as-Samarra'i,</span> <i>Lamasat Bayaniyyah fi Nusus min <span class="nw">at-Tanzil</span> (Muhadarat)</i>, hlm. 852 (penomboran Shamela); <span class="nw">at-Tabari,</span> <i>Jami' <span class="nw">al-Bayan</span></i> (tahqiq <span class="nw">at-Turki),</span> 1/228; <span class="nw">az-Zamakhsyari,</span> <i><span class="nw">al-Kasysyaf</span></i> bersama <i><span class="nw">al-Intisaf</span></i> oleh Ibn <span class="nw">al-Munayyir,</span> 1/32; Ibn 'Asyur, <i><span class="nw">at-Tahrir</span> wa <span class="nw">at-Tanwir</span></i>, 1/219–220; <span class="nw">az-Zarkasyi,</span> <i><span class="nw">al-Burhan</span> fi 'Ulum <span class="nw">al-Qur'an</span></i>, 1/277–278 (<span class="nw">al-Maktabah</span> <span class="nw">al-Shamela;</span> halaman mungkin berbeza dalam cetakan lain).</li>
+        <li>Isi ceramah: rakaman video (bahasa Arab), klip 3&nbsp;min&nbsp;42&nbsp;s (سر أسماء الإشارة: ذلك الكتاب، إن هذا القرآن).</li>
+      </ol>
+      <p>Bahagian bertanda "Tadabbur" ialah renungan peribadi, bukan tafsir. Nota ini ialah bahan pembelajaran dan bukan fatwa.</p>
+    </div>
+    <div class="en">
+      <b>References</b>
+      <ol>
+        <li>Arabic verse text: <span class="nw">al-Maktabah</span> <span class="nw">al-Shamela</span> (Hafs 'an 'Asim).</li>
+        <li>English verse translation: Saheeh International.</li>
+        <li>Fadil Salih <span class="nw">al-Samarra'i,</span> <i>Lamasat Bayaniyya fi Nusus min <span class="nw">al-Tanzil</span> (Muhadarat)</i>, p. 852 (Shamela numbering); <span class="nw">al-Tabari,</span> <i>Jami' <span class="nw">al-Bayan</span></i> (<span class="nw">al-Turki</span> ed.), 1/228; <span class="nw">al-Zamakhshari,</span> <i><span class="nw">al-Kashshaf</span></i> with Ibn <span class="nw">al-Munayyir's</span> <i><span class="nw">al-Intisaf</span></i>, 1/32; Ibn 'Ashur, <i><span class="nw">al-Tahrir</span> wa <span class="nw">al-Tanwir</span></i>, 1/219–220; <span class="nw">al-Zarkashi,</span> <i><span class="nw">al-Burhan</span> fi 'Ulum <span class="nw">al-Qur'an</span></i>, 1/277–278 (<span class="nw">al-Maktabah</span> <span class="nw">al-Shamela;</span> pagination may differ in other editions).</li>
+        <li>Lecture content: video recording (in Arabic), 3&nbsp;min&nbsp;42&nbsp;s clip (سر أسماء الإشارة: ذلك الكتاب، إن هذا القرآن).</li>
+      </ol>
+      <p>Sections marked "Tadabbur" are personal reflection, not tafsir. These notes are learning material and not a fatwa.</p>
+    </div>
+  </footer>
+</main>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  var titles={ms:"Kitab Itu, al-Qur'an Ini",en:"That Book, This Qur'an"};
+  function set(lang){
+    root.setAttribute("data-lang",lang);
+    root.setAttribute("lang",lang);
+    document.title=titles[lang];
+    var b=document.querySelectorAll(".toggle button");
+    for(var i=0;i<b.length;i++){b[i].setAttribute("aria-pressed",b[i].getAttribute("data-set")===lang?"true":"false");}
+    var v=document.querySelectorAll("video");
+    for(var j=0;j<v.length;j++){if(!v[j].classList.contains(lang)){try{v[j].pause();}catch(e){}}}
+    try{localStorage.setItem("tasbih-lang",lang);}catch(e){}
+  }
+  var saved=null;
+  try{saved=localStorage.getItem("tasbih-lang");}catch(e){}
+  if(saved==="ms"||saved==="en"){set(saved);}
+  document.querySelector(".toggle").addEventListener("click",function(e){
+    var t=e.target.closest("button");
+    if(t){set(t.getAttribute("data-set"));}
+  });
+})();
+</script>
+</body>
+</html>
+
+
+
+
+
+
