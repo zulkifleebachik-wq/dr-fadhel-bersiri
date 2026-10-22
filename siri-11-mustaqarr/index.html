@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="ms" data-lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Matahari dan Tempat Menetapnya</title>
+<meta name="description" content="Peringatan Ulama Siri 11: Apakah maksud «li-mustaqarrin laha» dalam Yasin 36:38? Prof. Dr Fadil Salih as-Samarra'i, nota renungan dwibahasa AtTartil.">
+<meta property="og:title" content="Matahari dan Tempat Menetapnya · Peringatan Ulama Siri 11 | AtTartil">
+<meta property="og:description" content="Prof. Dr Fadil Salih as-Samarra'i: satu kata «mustaqarr», tempat dan masa (Yasin 36:38).">
+<meta property="og:image" content="reel-poster-ms.jpg">
+<link rel="icon" href="attartil-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Amiri+Quran&family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --hutan:#10301f;      /* deep forest */
+  --hijau:#2f7a10;      /* logo green, softened */
+  --daun:#3d9002;       /* logo centre */
+  --lime:#9ad102;       /* logo ring */
+  --kuning:#ffe14d;     /* logo yellow, softened */
+  --kuning-pucat:#fff7cf;
+  --hitam:#141414;
+  --kertas:#fbfaf3;
+  --kad:#ffffff;
+  --lembut:#f1f6e6;
+  --teks:#1f2420;
+  --redup:#5b6658;
+  --garis:#e3e9d6;
+  --ayat:#24600c;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --kertas:#0e1510; --kad:#151e17; --lembut:#1a2a1c; --teks:#ecefe7; --redup:#a7b3a3;
+    --garis:#273626; --ayat:#b5e05a; --kuning-pucat:#2a2711; --hijau:#9ad102;
+  }
+}
+:root[data-theme="dark"]{
+  --kertas:#0e1510; --kad:#151e17; --lembut:#1a2a1c; --teks:#ecefe7; --redup:#a7b3a3;
+  --garis:#273626; --ayat:#b5e05a; --kuning-pucat:#2a2711; --hijau:#9ad102;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--kertas);color:var(--teks);
+  font-family:"Lora",Georgia,serif;font-size:18px;line-height:1.85}
+
+/* language switching */
+html[data-lang="ms"] .en{display:none!important}
+html[data-lang="en"] .ms{display:none!important}
+
+/* TOP BAR */
+.bar{position:sticky;top:0;z-index:10;background:rgba(16,48,31,.94);backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);border-bottom:3px solid var(--lime)}
+.bar .in{max-width:780px;margin:0 auto;padding:8px 16px;display:flex;align-items:center;gap:10px}
+.bar img{width:38px;height:38px;border-radius:50%;flex:none}
+.bar .nm{color:#fff;font-family:"Inter",system-ui,sans-serif;font-size:.78rem;font-weight:600;letter-spacing:.06em;line-height:1.25;flex:1;min-width:0}
+.bar .nm small{display:block;color:var(--kuning);font-weight:500;letter-spacing:.04em}
+.toggle{display:flex;background:#0a1f14;border:1px solid #2c5a1b;border-radius:999px;padding:3px;flex:none}
+.toggle button{appearance:none;border:0;background:transparent;color:#cfe3c4;font-family:"Inter",system-ui,sans-serif;
+  font-weight:600;font-size:.8rem;padding:6px 13px;border-radius:999px;cursor:pointer;min-height:32px}
+.toggle button[aria-pressed="true"]{background:var(--kuning);color:var(--hitam)}
+.toggle button:focus-visible{outline:2px solid var(--lime);outline-offset:2px}
+
+/* HERO */
+header.hero{position:relative;overflow:hidden;color:#fff;text-align:center;
+  background:radial-gradient(110% 80% at 50% 0%,#2f6a17 0%,#16402a 55%,#0d2618 100%);padding:44px 16px 54px}
+header.hero::before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;
+  border:2px solid rgba(154,209,2,.18);left:50%;top:-250px;transform:translateX(-50%)}
+header.hero::after{content:"";position:absolute;width:360px;height:360px;border-radius:50%;
+  border:2px solid rgba(255,225,77,.14);left:50%;top:-170px;transform:translateX(-50%)}
+.hero .logo{position:relative;z-index:1;width:112px;height:112px;margin:0 auto 18px;border-radius:50%;
+  box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.hero .tag{position:relative;z-index:1;display:inline-block;font-family:"Inter",system-ui,sans-serif;font-size:.72rem;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--hitam);background:var(--kuning);padding:3px 12px;border-radius:999px}
+.hero .ar-big{position:relative;z-index:1;font-family:"Amiri",serif;font-size:2.3rem;line-height:1.6;color:var(--kuning);margin:16px 0 0}
+.hero h1{position:relative;z-index:1;font-weight:600;font-size:2rem;line-height:1.3;margin:8px 0 10px}
+.hero p.sub{position:relative;z-index:1;font-style:italic;color:#dcead2;margin:0 auto;max-width:540px;font-size:1.02rem}
+
+.wrap{max-width:760px;margin:0 auto;padding:0 16px 56px}
+.ar{font-family:"Amiri",serif;direction:rtl;line-height:2.1}
+.ayat{font-family:"Amiri Quran","Amiri",serif;direction:rtl;font-size:1.55rem;line-height:2.35;color:var(--ayat);text-align:center;margin:.3em 0 .5em}
+
+section{margin-top:44px}
+h2{font-size:1.32rem;color:var(--teks);margin:0 0 14px;display:flex;align-items:center;gap:12px;line-height:1.35}
+h2 .no{flex:none;width:34px;height:34px;border-radius:50%;background:var(--hutan);color:var(--kuning);
+  font-family:"Inter",system-ui,sans-serif;font-size:.9rem;display:grid;place-items:center;font-weight:600;
+  box-shadow:0 0 0 3px var(--lime)}
+.pembuka{font-size:1.14rem;font-style:italic;margin:40px 0 0;padding:20px 22px;border-radius:14px;
+  background:var(--kuning-pucat);border-left:5px solid var(--kuning);position:relative}
+.label{display:inline-block;font-family:"Inter",system-ui,sans-serif;font-size:.68rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
+  padding:3px 11px;border-radius:999px;margin-bottom:10px}
+.l-video{background:var(--hutan);color:var(--kuning)}
+.l-ayat{background:var(--lembut);color:var(--hijau);border:1px solid var(--garis)}
+.l-ulama{background:var(--kuning);color:var(--hitam)}
+.l-renung{background:rgba(255,225,77,.16);color:var(--kuning);border:1px solid rgba(255,225,77,.4)}
+.nota-kecil{font-size:.9rem;color:var(--redup)}
+mark{background:linear-gradient(transparent 58%,rgba(255,225,77,.55) 58%);color:inherit;padding:0 2px}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) mark{background:linear-gradient(transparent 58%,rgba(255,225,77,.28) 58%)}}
+:root[data-theme="dark"] mark{background:linear-gradient(transparent 58%,rgba(255,225,77,.28) 58%)}
+
+.video{margin:4px auto 22px;max-width:360px;background:var(--hutan);border-radius:20px;padding:10px;
+  box-shadow:0 10px 26px rgba(16,48,31,.18),0 0 0 3px var(--lime)}
+.video video{display:block;width:100%;height:auto;max-height:70vh;border-radius:12px;background:#000}
+.video p{margin:8px 4px 2px;font-family:"Inter",system-ui,sans-serif;font-size:.74rem;color:#cfe3c4;line-height:1.45;text-align:center}
+.video p b{color:var(--kuning);font-weight:600}
+.penceramah{background:var(--kad);border:1px solid var(--garis);border-left:5px solid var(--lime);border-radius:12px;
+  padding:12px 16px;margin:0 0 18px;font-size:.92rem;line-height:1.7}
+.penceramah p{margin:0}
+.sertai{margin-top:44px;border-radius:22px;overflow:hidden;background:linear-gradient(160deg,#2f6a17 0%,#16402a 55%,#0d2618 100%);
+  color:#fff;text-align:center;padding:30px 20px 26px;position:relative}
+.sertai::before{content:"";position:absolute;width:300px;height:300px;border-radius:50%;border:2px solid rgba(154,209,2,.25);
+  left:50%;top:-150px;transform:translateX(-50%)}
+.sertai img{position:relative;width:92px;height:92px;border-radius:50%;box-shadow:0 8px 22px rgba(0,0,0,.35)}
+.sertai h2{display:block;color:#fff;font-size:1.45rem;margin:14px 0 6px}
+.sertai .lead{color:#dcead2;margin:0 auto 16px;max-width:520px;font-size:1rem}
+.sertai ul{list-style:none;padding:0;margin:0 auto 20px;max-width:420px;text-align:left;font-size:.98rem}
+.sertai li{position:relative;padding:5px 0 5px 28px}
+.sertai li::before{content:"";position:absolute;left:4px;top:15px;width:11px;height:11px;border-radius:50%;background:var(--kuning)}
+.sertai .harga{font-family:"Inter",system-ui,sans-serif;color:var(--lime);font-weight:600;margin:0 0 16px;font-size:.92rem}
+.cta{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.cta a{font-family:"Inter",system-ui,sans-serif;font-weight:600;text-decoration:none;border-radius:999px;padding:12px 20px;
+  font-size:.95rem;min-height:44px;display:inline-flex;align-items:center;gap:6px}
+.cta .utama{background:var(--kuning);color:var(--hitam)}
+.cta .kedua{background:transparent;color:#fff;border:2px solid var(--lime)}
+.cta a:focus-visible{outline:3px solid #fff;outline-offset:2px}
+.sosial{margin-top:18px;font-family:"Inter",system-ui,sans-serif;font-size:.82rem;color:#cfe3c4}
+.sosial a{color:var(--kuning);text-decoration:none;margin:0 4px;white-space:nowrap;display:inline-block;padding:4px 0}
+.kontras{background:var(--kad);border:1px solid var(--garis);border-radius:14px;padding:14px 16px;margin:12px 0;
+  display:grid;grid-template-columns:1fr 1fr;gap:10px;text-align:center}
+.kontras div{border-radius:10px;padding:8px}
+.kontras .ya{background:var(--lembut)}
+.kontras .tidak{opacity:.7}
+.kontras .ar{font-size:1.35rem;margin:0;line-height:1.7}
+.kontras .ya .ar{color:var(--ayat)}
+.kontras small{display:block;font-size:.82rem;color:var(--redup);line-height:1.4}
+
+.kisah{background:var(--kad);border:1px solid var(--garis);border-radius:18px;padding:0;margin:20px 0;overflow:hidden;
+  box-shadow:0 6px 18px rgba(16,48,31,.06)}
+.kisah .kepala{display:flex;gap:14px;align-items:center;padding:16px 20px;background:var(--hutan);color:#fff}
+.kisah .ikon{flex:none;width:46px;height:46px;border-radius:50%;display:grid;place-items:center;font-size:1.35rem;
+  background:#0a1f14;box-shadow:0 0 0 2px var(--lime)}
+.kisah h3{margin:0;font-size:1.1rem;line-height:1.35;color:#fff}
+.kisah .susah{font-size:.86rem;color:#cfe3c4;line-height:1.5}
+.kisah .susah b{color:var(--kuning)}
+.kisah .isi{padding:18px 20px 20px}
+.terj{font-size:.98rem;color:var(--redup);text-align:center;margin:0 0 4px}
+.ref{font-family:"Inter",system-ui,sans-serif;font-size:.76rem;font-weight:500;color:var(--hijau);text-align:center;letter-spacing:.03em}
+.pisah{height:1px;background:var(--garis);margin:16px 0}
+.pengajaran{background:var(--kuning-pucat);border-radius:12px;padding:12px 16px;margin-top:16px;font-size:.98rem;border-left:4px solid var(--kuning)}
+
+.kunci{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+@media (min-width:640px){.kunci{grid-template-columns:repeat(4,1fr)}}
+.kunci div{background:var(--kad);border:1px solid var(--garis);border-top:4px solid var(--lime);border-radius:12px;padding:12px 10px;text-align:center}
+.kunci .ar{font-size:1.7rem;color:var(--ayat);line-height:1.5;margin:0}
+.kunci span{display:block;font-size:.86rem;color:var(--redup);line-height:1.45}
+.kunci b{color:var(--teks)}
+
+ul.pandangan{list-style:none;padding:0;margin:0 0 6px}
+ul.pandangan li{position:relative;padding:8px 0 8px 28px;border-bottom:1px dashed var(--garis)}
+ul.pandangan li:last-child{border-bottom:0}
+ul.pandangan li::before{content:"";position:absolute;left:4px;top:19px;width:10px;height:10px;border-radius:50%;
+  background:var(--lime);box-shadow:0 0 0 3px rgba(154,209,2,.25)}
+
+blockquote{margin:16px 0;background:var(--kad);border:1px solid var(--garis);border-right:5px solid var(--daun);
+  border-radius:14px;padding:16px 18px}
+blockquote .ar{font-size:1.25rem;margin:0;color:var(--teks)}
+blockquote .tr{font-size:.98rem;margin:8px 0 8px;padding-top:8px;border-top:1px dashed var(--garis)}
+blockquote cite{display:block;font-style:normal;font-family:"Inter",system-ui,sans-serif;font-size:.74rem;color:var(--redup);line-height:1.55}
+
+.renung{background:linear-gradient(160deg,#16402a 0%,#0d2618 70%,#0a1d12 100%);color:#eef3ea;border-radius:20px;
+  padding:28px 22px;position:relative;overflow:hidden}
+.renung::after{content:"";position:absolute;right:-60px;bottom:-60px;width:200px;height:200px;border-radius:50%;
+  border:2px solid rgba(255,225,77,.18)}
+.renung h2{color:#fff}
+.renung p{margin:0 0 14px;position:relative;z-index:1}
+.renung p:last-child{margin:0;font-size:1.08rem}
+.renung em{color:var(--kuning);font-style:normal}
+
+ol.muhasabah{counter-reset:m;list-style:none;padding:0;margin:0}
+ol.muhasabah li{counter-increment:m;position:relative;padding:12px 14px 12px 52px;margin-bottom:10px;background:var(--kad);
+  border:1px solid var(--garis);border-radius:12px}
+ol.muhasabah li::before{content:counter(m);position:absolute;left:14px;top:12px;width:26px;height:26px;border-radius:50%;
+  background:var(--kuning);color:var(--hitam);font-family:"Inter",system-ui,sans-serif;font-size:.8rem;font-weight:600;display:grid;place-items:center}
+ul.amal{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+ul.amal li{background:var(--lembut);border-radius:12px;padding:12px 16px;border-left:5px solid var(--daun)}
+ul.amal li b{color:var(--hijau)}
+
+.zikir{text-align:center;margin-top:44px;padding:26px 16px;border-radius:20px;background:var(--kuning-pucat);border:1px solid rgba(255,225,77,.6)}
+.zikir .ar{font-size:2.1rem;color:var(--ayat);margin:0;line-height:1.7}
+.zikir p{color:var(--redup);font-style:italic;margin:2px 0 0}
+
+footer{margin-top:44px;padding-top:18px;border-top:3px solid var(--hutan);font-family:"Inter",system-ui,sans-serif;font-size:.8rem;color:var(--redup);line-height:1.65}
+footer .visi{display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:16px;text-align:left}
+footer .visi img{width:46px;height:46px;border-radius:50%}
+footer .visi span{font-family:"Lora",serif;font-style:italic;font-size:1rem;color:var(--teks);line-height:1.4}
+footer .visi b{display:block;font-style:normal;font-family:"Inter",system-ui,sans-serif;font-size:.78rem;color:var(--hijau);letter-spacing:.05em}
+footer ol{padding-left:18px;margin:6px 0 12px}
+
+@media (max-width:520px){
+  body{font-size:17px}
+  .bar .nm{font-size:.7rem}
+  .hero .ar-big{font-size:1.85rem}
+  .hero h1{font-size:1.6rem}
+  .hero .logo{width:96px;height:96px}
+  .ayat{font-size:1.36rem}
+  .kisah .kepala{padding:14px 16px}
+  .kisah .isi{padding:16px}
+}
+
+/* Siri 02: jadual perbandingan */
+.banding{border:1px solid var(--garis);border-radius:14px;overflow:hidden;margin:14px 0 10px;background:var(--kad)}
+.brow{display:grid;grid-template-columns:92px 1fr 1fr;border-top:1px solid var(--garis)}
+.brow:first-child{border-top:0}
+.brow>div{padding:10px 10px;text-align:center}
+.brow>div:first-child{text-align:left;font-family:"Inter",system-ui,sans-serif;font-size:.8rem;font-weight:600;color:var(--hijau);display:flex;align-items:center}
+.brow .ar{display:block;font-family:"Amiri Quran","Amiri",serif;font-size:1.3rem;line-height:1.9;color:var(--ayat);direction:rtl}
+.brow small{display:block;font-family:"Inter",system-ui,sans-serif;font-size:.74rem;line-height:1.35;color:var(--redup)}
+.brow .lebih{background:var(--kuning-pucat)}
+.bhead>div{background:var(--hutan);color:var(--kuning);font-family:"Inter",system-ui,sans-serif;font-size:.8rem;font-weight:600;padding:9px 6px}
+.bhead>div.lebih{background:var(--hutan)}
+.kontras .ya small{display:block;font-family:"Inter",system-ui,sans-serif;font-size:.76rem;color:var(--redup);margin-top:4px}
+.kontras .ya u{text-decoration-color:var(--kuning);text-decoration-thickness:3px;text-underline-offset:6px}
+@media (max-width:420px){.brow{grid-template-columns:70px 1fr 1fr}.brow .ar{font-size:1.12rem}}
+@media print{
+  .bar{position:static}
+  .toggle{display:none}
+  body{background:#fff;font-size:12pt}
+  .kisah,blockquote,.renung,ul.amal li,ol.muhasabah li{break-inside:avoid}
+  header.hero,.renung,.kisah .kepala,.bar{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+.nw{white-space:nowrap}
+</style>
+<body>
+
+<div class="bar"><div class="in">
+  <img src="attartil-logo.png" alt="">
+  <div class="nm">ATTARTIL QURANIC INSTITUTE<small><span class="ms">Nota Renungan</span><span class="en">Reflection Notes</span></small></div>
+  <div class="toggle" role="group" aria-label="Bahasa / Language">
+    <button type="button" data-set="en" aria-pressed="false">EN</button>
+    <button type="button" data-set="ms" aria-pressed="true">BM</button>
+  </div>
+</div></div>
+
+<header class="hero">
+  <img class="logo" src="attartil-logo.png" alt="AtTartil Quranic Institute">
+  <div><span class="tag"><span class="ms">Peringatan Ulama · Siri 11</span><span class="en">Scholars' Reminders · Episode 11</span></span></div>
+  <p class="ar-big">وَالشَّمْسُ تَجْرِي<br>لِمُسْتَقَرٍّ لَهَا</p>
+  <h1><span class="ms">Matahari dan Tempat Menetapnya</span><span class="en">The Sun and Its Settling Point</span></h1>
+  <p class="sub ms">Satu kata «mustaqarr» (tempat atau masa menetap), banyak makna: tempat, masa, dan ketentuan Allah.</p>
+  <p class="sub en">One word “mustaqarr” (a place or time of settling), many meanings: place, time, and Allah's decree.</p>
+</header>
+
+<main class="wrap">
+
+  <p class="pembuka ms">Setiap hari kita melihat matahari terbit dan terbenam. <span class="nw">Al-Qur'an</span> menyebutnya dengan satu ayat yang ringkas: matahari «beredar ke satu tempat menetap baginya». Tetapi apakah «tempat menetap» itu? Satu tempat? Satu waktu? Atau kedua-duanya? Jawapannya bermula daripada bentuk satu perkataan.</p>
+  <p class="pembuka en">Every day we watch the sun rise and set. The Qur'an describes it in one short verse: the sun "runs to a settling point of its own". But what is that "settling point"? A place? A time? Or both? The answer begins with the shape of a single word.</p>
+
+  <section>
+    <span class="label l-video"><span class="ms">Inti video</span><span class="en">From the video</span></span>
+    <figure class="video">
+      <video class="ms" controls playsinline preload="metadata" poster="reel-poster-ms.jpg">
+        <source src="video-ms.mp4" type="video/mp4">
+      </video>
+      <video class="en" controls playsinline preload="metadata" poster="reel-poster-en.jpg">
+        <source src="video-en.mp4" type="video/mp4">
+      </video>
+      <p><b>والشمس تجري لمستقر لها</b><br><span class="ms">Peringatan Ulama · Siri 11 · Prof. Dr Fadil Salih <span class="nw">as-Samarra'i</span><br>Bahasa Arab, sari kata Melayu · 3&nbsp;min&nbsp;9&nbsp;s</span><span class="en">Scholars' Reminders · Episode 11 · Prof. Dr Fadil Salih <span class="nw">al-Samarra'i</span><br>Arabic, English subtitles · 3&nbsp;min&nbsp;9&nbsp;s</span></p>
+    </figure>
+    <div class="penceramah">
+      <p class="ms"><b>Penceramah: Prof. Dr Fadil Salih <span class="nw">as-Samarra'i</span></b> (lahir 1933, Samarra, Iraq). PhD bahasa Arab, Universiti Ain Shams, Kaherah (1968); bekas profesor nahu di Universiti Baghdad selama kira-kira 40 tahun; ahli <span class="nw">al-Majma'</span> <span class="nw">al-'Ilmi</span> <span class="nw">al-'Iraqi</span> (Akademi Sains Iraq); pengarang <i>Ma'ani <span class="nw">an-Nahw</span></i> (Makna-makna Nahu) dan <i><span class="nw">at-Ta'bir</span> <span class="nw">al-Qur'ani</span></i> (Gaya Pengungkapan <span class="nw">al-Qur'an);</span> dikenali melalui rancangan TV <i>Lamasat Bayaniyyah</i> (Sentuhan Keindahan Bahasa).</p>
+      <p class="en"><b>Speaker: Prof. Dr Fadil Salih <span class="nw">al-Samarra'i</span></b> (b. 1933, Samarra, Iraq). PhD in Arabic language, Ain Shams University, Cairo (1968); professor of grammar at the University of Baghdad for about 40 years; member of the Iraqi Academy of Sciences (<span class="nw">al-Majma'</span> <span class="nw">al-'Ilmi</span> <span class="nw">al-'Iraqi);</span> author of <i>Ma'ani <span class="nw">al-Nahw</span></i> and <i><span class="nw">al-Ta'bir</span> <span class="nw">al-Qur'ani</span></i>; widely known through the TV programme <i>Lamasat Bayaniyya</i>.</p>
+    </div>
+    <p class="ms">Jawapan Dr Fadil, ringkasnya: <mark><b>«mustaqarr» dalam bentuk ini boleh bermakna tempat menetap atau masa menetap, kerana bentuk itu dikongsi oleh kata nama tempat, kata nama masa dan masdar mimi. Maka matahari ada had dari segi tempat (falak dan tempat terbitnya) dan dari segi masa (setiap tahun, hingga ajalnya pada hari kiamat). Semuanya ketentuan Allah.</b></mark></p>
+    <p class="en">Dr Fadil's answer in short: <mark><b>“mustaqarr” in this form can mean a place of settling or a time of settling, since the form is shared by the noun of place, the noun of time and the maṣdar mīmī. So the sun has a limit in place (its orbit and rising points) and in time (each year, up to its term on the Day of Resurrection). All of it is Allah's decree.</b></mark></p>
+  </section>
+
+  <section>
+    <h2><span class="no">1</span><span class="ms">Ayat yang Dibincangkan</span><span class="en">The Verse Discussed</span></h2>
+    <article class="kisah">
+      <div class="kepala"><div class="ikon">☀️</div>
+        <div><h3><span class="ms">Yasin 36:38: matahari dan tempat menetapnya</span><span class="en">Yasin 36:38: the sun and its settling point</span></h3>
+        <div class="susah"><span class="ms">satu kata, <b>tempat</b> dan <b>masa</b></span><span class="en">one word, <b>place</b> and <b>time</b></span></div></div></div>
+      <div class="isi">
+        <span class="label l-ayat"><span class="ms">Ayat</span><span class="en">Verse</span></span>
+        <p class="ayat">وَالشَّمْسُ تَجْرِي <mark>لِمُسْتَقَرٍّ لَهَا</mark> ذَلِكَ تَقْدِيرُ الْعَزِيزِ الْعَلِيمِ ﴿٣٨﴾</p>
+        <p class="terj ms">Dan (sebahagian dari dalil yang tersebut ialah) matahari; ia kelihatan beredar ke tempat yang ditetapkan baginya; itu adalah takdir Tuhan yang Maha Kuasa, lagi Maha Mengetahui;</p>
+        <p class="terj en">And (among those signs is) the sun; it appears to run to the place appointed for it. That is the decree of the All-Mighty, the All-Knowing.</p>
+        <p class="ref">Yasin 36:38</p>
+        <p class="nota-kecil ms">Terjemahan BM: Basmeih. Terjemahan Inggeris: terjemahan ringkas AtTartil yang mengikut makna Basmeih.</p>
+        <div class="pengajaran ms">💡 <b>Perhatikan terjemahan Basmeih:</b> (1) ia menambah dalam kurungan «(sebahagian dari dalil yang tersebut ialah)», selari dengan i'rab <b><bdi lang="ar" class="nw">وَالشَّمْسُ</bdi></b> yang disambung kepada <b><bdi lang="ar" class="nw">وَآيَةٌ لَهُمُ</bdi></b> (lihat bahagian 6); (2) ia menterjemah <b><bdi lang="ar" class="nw">لِمُسْتَقَرٍّ لَهَا</bdi></b> sebagai «ke tempat yang ditetapkan baginya», dengan kata «baginya» yang menonjolkan maksud <b><bdi lang="ar" class="nw">لَهَا</bdi></b> (lihat bahagian 5).</div>
+        <div class="pengajaran en">💡 <b>Notice Basmeih's Malay:</b> (1) it adds in brackets «(sebahagian dari dalil yang tersebut ialah)», "(among the signs mentioned is)", matching the analysis of <b><bdi lang="ar" class="nw">وَالشَّمْسُ</bdi></b> as joined to <b><bdi lang="ar" class="nw">وَآيَةٌ لَهُمُ</bdi></b> (see section 6); (2) it renders <b><bdi lang="ar" class="nw">لِمُسْتَقَرٍّ لَهَا</bdi></b> as «ke tempat yang ditetapkan baginya», "to the place appointed for it", whose «baginya» brings out <b><bdi lang="ar" class="nw">لَهَا</bdi></b> (see section 5).</div>
+        <p class="nota-kecil en">Malay translation: Basmeih. English: AtTartil's own simple translation, following Basmeih's meaning.</p>
+      </div>
+    </article>
+  </section>
+
+  <section>
+    <h2><span class="no">2</span><span class="ms">Satu Bentuk, Empat Jenis Kata</span><span class="en">One Form, Four Kinds of Word</span></h2>
+    <p class="ms">«Mustaqarr» (مُسْتَقَرّ) datang daripada kata kerja «istaqarra» (menetap), kata kerja yang lebih daripada tiga huruf (<i>ghair <span class="nw">ath-thulathi</span></i>). Bagi kata kerja seperti ini, satu bentuk yang sama dikongsi oleh beberapa jenis kata nama:</p>
+    <p class="en">“Mustaqarr” (مُسْتَقَرّ) comes from the verb “istaqarra” (to settle), a verb of more than three letters (<i>ghayr <span class="nw">al-thulāthī</span></i>). For such verbs, one and the same form is shared by several kinds of noun:</p>
+    <div class="banding" role="table">
+      <div class="brow bhead" role="row"><div role="columnheader"></div><div role="columnheader"><span class="ms">Jenis</span><span class="en">Type</span></div><div role="columnheader"><span class="ms">Makna «mustaqarr»</span><span class="en">“Mustaqarr” means</span></div></div>
+      <div class="brow" role="row"><div role="rowheader">1</div><div class="lebih"><small><span class="ms"><i>ism makan</i> (kata nama tempat)</span><span class="en"><i>ism makān</i> (noun of place)</span></small></div><div><small><span class="ms">tempat menetap</span><span class="en">the place of settling</span></small></div></div>
+      <div class="brow" role="row"><div role="rowheader">2</div><div class="lebih"><small><span class="ms"><i>ism zaman</i> (kata nama masa)</span><span class="en"><i>ism zamān</i> (noun of time)</span></small></div><div><small><span class="ms">masa menetap</span><span class="en">the time of settling</span></small></div></div>
+      <div class="brow" role="row"><div role="rowheader">3</div><div class="lebih"><small><span class="ms"><i>masdar mimi</i> (kata nama terbitan berawalan mim)</span><span class="en"><i>maṣdar mīmī</i> (verbal noun with mīm)</span></small></div><div><small><span class="ms">perbuatan menetap itu sendiri</span><span class="en">the act of settling itself</span></small></div></div>
+      <div class="brow" role="row"><div role="rowheader">4</div><div class="lebih"><small><span class="ms"><i>ism maf‘ul</i> (kata nama objek)</span><span class="en"><i>ism maf‘ūl</i> (passive participle)</span></small></div><div><small><span class="ms">bentuk yang sama; tetapi kerana «istaqarra» tidak transitif (<i>lazim</i>), ism maf‘ulnya hanya dengan sendi nama, cth. <b><bdi lang="ar" class="nw">مُسْتَقَرٌّ فِيهِ</bdi></b> (tempat yang didiami)</span><span class="en">the same shape; but since “istaqarra” is intransitive (<i>lāzim</i>), its passive participle needs a preposition, e.g. <b><bdi lang="ar" class="nw">مُسْتَقَرٌّ فِيهِ</bdi></b> (a place settled in)</span></small></div></div>
+    </div>
+    <p class="nota-kecil ms">Jadual ini meringkaskan penerangan Dr Fadil dalam klip. Ulama nahu juga menyebut kaedah ini. Ibn Malik menulis <b><bdi lang="ar">يجيء المصدر على زنة اسم المفعول في الثلاثي قليلا، وفي غيره كثيرا</bdi></b> (masdar datang dengan bentuk ism maf‘ul: sedikit pada kata kerja tiga huruf, banyak pada yang lain). Pensyarahnya, Nazir <span class="nw">al-Jaisy,</span> menjelaskan bahawa bagi kata kerja bukan tiga huruf, bentuk ism maf‘ul itu juga menunjukkan perbuatan, masanya dan tempatnya, seperti <b><bdi lang="ar" class="nw">وَمَزَّقْنَاهُمْ كُلَّ مُمَزَّقٍ</bdi></b> (Saba' 34:19), iaitu <b><bdi lang="ar" class="nw">كُلَّ تَمْزِيقٍ</bdi></b> (dengan sehancur-hancurnya). Orang Arab juga berkata untuk tempat: <b><bdi lang="ar" class="nw">مُخْرَجُنا</bdi></b> (tempat keluar kami) dan <b><bdi lang="ar" class="nw">مُدْخَلُنا</bdi></b> (tempat masuk kami).</p>
+    <p class="nota-kecil en">This table summarises Dr Fadil's explanation in the clip. The grammarians state the rule too. Ibn Malik writes <b><bdi lang="ar">يجيء المصدر على زنة اسم المفعول في الثلاثي قليلا، وفي غيره كثيرا</bdi></b> (the verbal noun comes in the shape of the passive participle: rarely for three-letter verbs, often for others). His commentator Nazir <span class="nw">al-Jaysh</span> explains that for non-triliteral verbs this passive-participle form also denotes the act, its time and its place, as in <b><bdi lang="ar" class="nw">وَمَزَّقْنَاهُمْ كُلَّ مُمَزَّقٍ</bdi></b> (Saba' 34:19), meaning <b><bdi lang="ar" class="nw">كُلَّ تَمْزِيقٍ</bdi></b> (utter tearing apart). For place the Arabs also say <b><bdi lang="ar" class="nw">مُخْرَجُنا</bdi></b> (our place of exit) and <b><bdi lang="ar" class="nw">مُدْخَلُنا</bdi></b> (our place of entry).</p>
+    <p class="nota-kecil ms">Ibn Malik, <i><span class="nw">at-Tashil</span></i>, dalam Nazir <span class="nw">al-Jaisy</span> (w. 778H), <i>Tamhid <span class="nw">al-Qawa'id</span></i>, 8/3812–3813 (Shamela).</p>
+    <p class="nota-kecil en">Ibn Malik, <i><span class="nw">al-Tashil</span></i>, in Nazir <span class="nw">al-Jaysh</span> (d. 778 AH), <i>Tamhid <span class="nw">al-Qawa'id</span></i>, 8/3812–3813 (Shamela).</p>
+  </section>
+
+  <section>
+    <h2><span class="no">3</span><span class="ms">Tempat atau Masa? Kedua-duanya</span><span class="en">Place or Time? Both</span></h2>
+    <p class="ms"><b>Dari segi tempat:</b> matahari berada dalam falak (orbit), dan berakhir pada had yang tidak dilangkauinya; tempat terbitnya beralih antara musim sejuk dan musim panas hingga yang paling hujung.</p>
+    <p class="en"><b>As to place:</b> the sun is within an orbit and ends at a limit it does not pass; its rising point shifts between winter and summer up to the furthest one.</p>
+    <p class="ms"><b>Dari segi masa:</b> ia ada masa yang ditentukan, kitaran setiap tahun, hingga ajalnya yang ditetapkan pada hari kiamat.</p>
+    <p class="en"><b>As to time:</b> it has a set time, a cycle each year, up to its appointed term on the Day of Resurrection.</p>
+    <p class="ms">Kata Dr Fadil: "semuanya boleh". Bentuk kata itu sendiri memberi keluasan makna (<i>tawassu‘</i>).</p>
+    <p class="en">As Dr Fadil puts it: "all are possible". The form of the word itself gives breadth of meaning (<i>tawassu‘</i>).</p>
+  </section>
+
+  <section>
+    <h2><span class="no">4</span><span class="ms">Apa Kata Ahli Tafsir tentang «Mustaqarr»?</span><span class="en">What the Exegetes Say about “Mustaqarr”</span></h2>
+    <span class="label l-ulama"><span class="ms">Nukilan · ada perbezaan pandangan</span><span class="en">Quoted · scholars differ</span></span>
+    <p class="ms"><span class="nw">Al-Qurtubi</span> mencatat beberapa pandangan:</p>
+    <p class="en"><span class="nw">Al-Qurtubi</span> records several views:</p>
+    <ul class="pandangan ms">
+      <li><b>Hadis Abu Dzar</b> (dinukil <span class="nw">al-Qurtubi):</span> Nabi ﷺ ditanya tentang ayat ini, lalu bersabda: <b><bdi lang="ar" class="nw">مُسْتَقَرُّهَا تَحْتَ الْعَرْشِ</bdi></b> (tempat menetapnya di bawah 'Arasy). (Sahih Muslim, dinukil <span class="nw">al-Qurtubi;</span> turut diriwayatkan <span class="nw">al-Bukhari.)</span></li>
+      <li><b><span class="nw">Al-Kalbi</span> dan lain-lain:</b> ia beredar hingga tempat terjauhnya, lalu kembali ke tempat terdekat; tempat yang tidak dilangkauinya itulah «mustaqarr»nya.</li>
+      <li><b><span class="nw">Al-Hasan:</span></b> matahari ada 360 tempat terbit dalam setahun; ia beredar di tempat-tempat itu, dan itulah «mustaqarr»nya.</li>
+      <li><b>Ibn 'Abbas:</b> apabila ia terbenam dan sampai ke tempat yang tidak dilangkauinya, ia menetap di bawah 'Arasy hingga terbit. <span class="nw">Al-Qurtubi</span> berkata pandangan ini menghimpunkan pandangan-pandangan lain.</li>
+      <li><b>Pandangan lain:</b> hingga berakhir tempohnya, ketika dunia berakhir.</li>
+    </ul>
+    <ul class="pandangan en">
+      <li><b>The hadith of Abu Dharr</b> (quoted by <span class="nw">al-Qurtubi):</span> the Prophet ﷺ was asked about this verse and said: <b><bdi lang="ar" class="nw">مُسْتَقَرُّهَا تَحْتَ الْعَرْشِ</bdi></b> (its settling point is beneath the Throne). (Sahih Muslim, as quoted by <span class="nw">al-Qurtubi;</span> also narrated by <span class="nw">al-Bukhari.)</span></li>
+      <li><b><span class="nw">Al-Kalbi</span> and others:</b> it runs to its furthest station, then returns to the nearest; the point it does not pass is its "mustaqarr".</li>
+      <li><b><span class="nw">Al-Hasan:</span></b> the sun has 360 rising points in a year; it runs through them, and that is its "mustaqarr".</li>
+      <li><b>Ibn 'Abbas:</b> when it sets and reaches the point it does not pass, it settles beneath the Throne until it rises. <span class="nw">Al-Qurtubi</span> says this view combines the others.</li>
+      <li><b>Another view:</b> until the end of its term, when this world ends.</li>
+    </ul>
+    <div class="pengajaran ms">📖 <b>Satu bacaan lain:</b> Ibn Mas'ud dan Ibn 'Abbas diriwayatkan membaca <b><bdi lang="ar" class="nw">لَا مُسْتَقَرَّ لَهَا</bdi></b> (tiada tempat menetap baginya), iaitu ia terus beredar tanpa berhenti hingga Allah menggulungnya pada hari kiamat. Bacaan ini bukan bacaan mushaf; Abu Bakr <span class="nw">al-Anbari</span> menolak hujah orang yang mahu membacanya bertentangan dengan mushaf, kerana dua sanad (rantaian perawi) yang sahih daripada Ibn 'Abbas membawa bacaan mushaf, manakala riwayat bacaan ini bersanad lemah.</div>
+    <div class="pengajaran en">📖 <b>Another reading:</b> Ibn Mas'ud and Ibn 'Abbas are reported to have read <b><bdi lang="ar" class="nw">لَا مُسْتَقَرَّ لَهَا</bdi></b> (it has no settling point), i.e. it runs without stopping until Allah folds it up on the Day of Resurrection. This is not the reading of the muṣḥaf; Abu Bakr <span class="nw">al-Anbari</span> rejects the argument of those who would read it against the muṣḥaf: two sound chains from Ibn 'Abbas carry the muṣḥaf reading, while this one comes by a weak chain.</div>
+    <p class="nota-kecil ms"><span class="nw">Al-Qurtubi</span> (w. 671H), <i><span class="nw">al-Jami'</span> li Ahkam <span class="nw">al-Qur'an</span></i>, 15/27–29; <span class="nw">az-Zamakhsyari</span> (w. 538H), <i><span class="nw">al-Kasysyaf</span></i>, 4/16 (Shamela).</p>
+    <p class="nota-kecil en"><span class="nw">Al-Qurtubi</span> (d. 671 AH), <i><span class="nw">al-Jami'</span> li Ahkam <span class="nw">al-Qur'an</span></i>, 15/27–29; <span class="nw">al-Zamakhshari</span> (d. 538 AH), <i><span class="nw">al-Kashshaf</span></i>, 4/16 (Shamela).</p>
+  </section>
+
+  <section>
+    <h2><span class="no">5</span><span class="ms">«Li-Mustaqarrin Lahā», Bukan «Li-Mustaqarrihā»</span><span class="en">“Li-Mustaqarrin Lahā”, Not “Li-Mustaqarrihā”</span></h2>
+    <p class="ms">Dr Fadil bertanya: kenapa tidak disebut <b><bdi lang="ar" class="nw">لِمُسْتَقَرِّهَا</bdi></b> (ke tempat menetapnya)? Jawapannya: Allah Subhanahu wa Ta‘ala telah <b>menetapkan baginya</b> satu tempat menetap yang ia beredar padanya, dalam falaknya dan di tempat-tempat lain. Bentuk <b><bdi lang="ar" class="nw">مُسْتَقَرٍّ لَهَا</bdi></b> (satu tempat menetap baginya) menonjolkan bahawa had itu diberi dan ditentukan untuknya.</p>
+    <p class="en">Dr Fadil asks: why not <b><bdi lang="ar" class="nw">لِمُسْتَقَرِّهَا</bdi></b> (to its settling point)? His answer: Allah, Glorified and Exalted, <b>set for it</b> a settling point in which it runs, in its orbit and elsewhere. The phrasing <b><bdi lang="ar" class="nw">مُسْتَقَرٍّ لَهَا</bdi></b> (a settling point for it) brings out that the limit was given and fixed for it.</p>
+    <p class="nota-kecil ms">Huraian di atas ialah ringkasan kata-kata Dr Fadil dalam klip.</p>
+    <p class="nota-kecil en">The above summarises Dr Fadil's words in the clip.</p>
+  </section>
+
+  <section>
+    <h2><span class="no">6</span><span class="ms">Kenapa «<span class="nw">Wasy-Syamsu</span>» Berbaris Hadapan?</span><span class="en">Why Is “<span class="nw">Wa’l-Shamsu</span>” Nominative?</span></h2>
+    <p class="ms">Dalam perbualan itu disebut bahawa <b><bdi lang="ar" class="nw">وَالشَّمْسُ</bdi></b> di‘atafkan (disambung) kepada <b><bdi lang="ar" class="nw">وَآيَةٌ لَهُمُ</bdi></b> dalam ayat-ayat sebelumnya, dan Dr Fadil mengiyakannya. Maksudnya, matahari juga satu tanda, sama seperti bumi, pasangan-pasangan, serta malam dan siang. <span class="nw">Al-Qurtubi</span> mencatat tiga kemungkinan i'rab (kedudukan tatabahasa):</p>
+    <p class="en">In the exchange, <b><bdi lang="ar" class="nw">وَالشَّمْسُ</bdi></b> is said to be joined to <b><bdi lang="ar" class="nw">وَآيَةٌ لَهُمُ</bdi></b> in the preceding verses, and Dr Fadil agrees. That is, the sun too is a sign, like the earth, the pairs, and night and day. <span class="nw">Al-Qurtubi</span> records three possible i'rāb (grammatical analyses):</p>
+    <ul class="pandangan ms">
+      <li><b>(1)</b> taqdirnya (anggaran asalnya) <b><bdi lang="ar" class="nw">وَآيَةٌ لَهُمُ الشَّمْسُ</bdi></b> (dan satu tanda bagi mereka ialah matahari), selari dengan huraian Dr Fadil;</li>
+      <li><b>(2)</b> marfu‘ (berbaris hadapan) dengan kata kerja tersembunyi yang dijelaskan oleh kata kerja selepasnya;</li>
+      <li><b>(3)</b> mubtada' (subjek), dan <b><bdi lang="ar" class="nw">تَجْرِي</bdi></b> khabarnya (predikat).</li>
+    </ul>
+    <ul class="pandangan en">
+      <li><b>(1)</b> its implied form is <b><bdi lang="ar" class="nw">وَآيَةٌ لَهُمُ الشَّمْسُ</bdi></b> (and a sign for them is the sun), matching Dr Fadil's explanation;</li>
+      <li><b>(2)</b> nominative through a hidden verb explained by the following verb;</li>
+      <li><b>(3)</b> a subject (mubtada'), with <b><bdi lang="ar" class="nw">تَجْرِي</bdi></b> as its predicate (khabar).</li>
+    </ul>
+    <p class="ayat">وَآيَةٌ لَهُمُ الْأَرْضُ الْمَيْتَةُ أَحْيَيْنَاهَا ﴿٣٣﴾ … وَآيَةٌ لَهُمُ اللَّيْلُ نَسْلَخُ مِنْهُ النَّهَارَ ﴿٣٧﴾</p>
+    <p class="ref">Yasin 36:33, 36:37 (petikan / excerpts)</p>
+    <p class="nota-kecil ms"><span class="nw">Al-Qurtubi,</span> <i><span class="nw">al-Jami'</span> li Ahkam <span class="nw">al-Qur'an</span></i>, 15/27 (Shamela).</p>
+    <p class="nota-kecil en"><span class="nw">Al-Qurtubi,</span> <i><span class="nw">al-Jami'</span> li Ahkam <span class="nw">al-Qur'an</span></i>, 15/27 (Shamela).</p>
+  </section>
+
+  <section>
+    <h2><span class="no">7</span><span class="ms">Lima Kata Kunci</span><span class="en">Five Key Words</span></h2>
+    <div class="kunci">
+      <div><p class="ar">تَجْرِي</p><span><b>tajrī</b><br><span class="ms">(beredar, bergerak)</span><span class="en">(runs, moves)</span></span></div>
+      <div><p class="ar">مُسْتَقَرّ</p><span><b>mustaqarr</b><br><span class="ms">(tempat atau masa menetap)</span><span class="en">(place or time of settling)</span></span></div>
+      <div><p class="ar">تَقْدِير</p><span><b>taqdīr</b><br><span class="ms">(ketentuan, sukatan yang tepat)</span><span class="en">(decree, precise measure)</span></span></div>
+      <div><p class="ar">الْعَزِيز</p><span><b><span class="nw">al-‘Azīz</span></b><br><span class="ms">(Yang Maha Perkasa)</span><span class="en">(the Almighty)</span></span></div>
+      <div style="grid-column:1/-1"><p class="ar">الْعَلِيم</p><span><b><span class="nw">al-‘Alīm</span></b><br><span class="ms">(Yang Maha Mengetahui)</span><span class="en">(the All-Knowing)</span></span></div>
+    </div>
+    <p class="nota-kecil ms" style="margin-top:10px">Huraian makna di atas ialah ringkasan umum untuk pembaca, bukan takrif daripada satu kitab tertentu.</p>
+    <p class="nota-kecil en" style="margin-top:10px">These meanings are a general summary for readers, not definitions taken from a particular book.</p>
+  </section>
+
+  <section class="renung">
+    <span class="label l-renung"><span class="ms">Tadabbur · renungan peribadi</span><span class="en">Tadabbur · personal reflection</span></span>
+    <h2><span class="ms">Setiap Perjalanan Ada Hadnya</span><span class="en">Every Journey Has Its Limit</span></h2>
+    <div class="ms">
+      <p>Matahari yang begitu besar pun tidak beredar sesuka hati. Ia ada falak, ada had tempat, dan ada had masa, semuanya <b><bdi lang="ar" class="nw">تَقْدِيرُ الْعَزِيزِ الْعَلِيمِ</bdi></b> (ketentuan Yang Maha Perkasa, Maha Mengetahui).</p>
+      <p>Kita juga sedang beredar: dari pagi ke petang, dari tahun ke tahun, menuju «mustaqarr» kita sendiri, iaitu ajal yang telah ditentukan.</p>
+      <p>Setiap kali melihat matahari terbenam, kita boleh bertanya: ke mana arah perjalanan aku hari ini?</p>
+    </div>
+    <div class="en">
+      <p>Even the vast sun does not run as it pleases. It has an orbit, a limit in place and a limit in time, all <b><bdi lang="ar" class="nw">تَقْدِيرُ الْعَزِيزِ الْعَلِيمِ</bdi></b> (the decree of the Almighty, the All-Knowing).</p>
+      <p>We too are running: from morning to evening, from year to year, towards our own "mustaqarr", the term that has been set.</p>
+      <p>Each time we watch the sun set, we can ask: which way did my journey go today?</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="no">8</span><span class="ms">Muhasabah (menilai diri)</span><span class="en">Muhasabah (self-reflection)</span></h2>
+    <ol class="muhasabah ms">
+      <li>Bilakah kali terakhir saya merenung matahari terbit atau terbenam sebagai tanda kebesaran Allah?</li>
+      <li>Ke manakah arah perjalanan hidup saya, dan adakah saya bersedia apabila sampai ke «mustaqarr» saya?</li>
+      <li>Adakah saya redha dengan ketentuan Allah, sebagaimana matahari tunduk kepada ketentuan-Nya?</li>
+    </ol>
+    <ol class="muhasabah en">
+      <li>When did I last reflect on a sunrise or sunset as a sign of Allah's greatness?</li>
+      <li>Where is my life's journey heading, and am I ready to reach my own "mustaqarr"?</li>
+      <li>Am I content with Allah's decree, as the sun submits to His decree?</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2><span class="no">9</span><span class="ms">Amalan Minggu Ini</span><span class="en">Practice This Week</span></h2>
+    <ul class="amal ms">
+      <li><b>Renung satu matahari terbenam:</b> berhenti seketika ketika Maghrib dan baca Yasin 36:38.</li>
+      <li><b>Belajar satu bentuk kata:</b> kenal pasti kata seperti <b><bdi lang="ar" class="nw">مُسْتَقَرّ</bdi></b>, <b><bdi lang="ar" class="nw">مُنْقَلَب</bdi></b> (26:227) dan <b><bdi lang="ar" class="nw">مُدْخَل</bdi></b> (17:80); tanya: tempat, masa atau perbuatan?</li>
+      <li><b>Baca rangkaian tanda:</b> baca Yasin <span class="nw">36:33–40</span> dan senaraikan semua <b><bdi lang="ar" class="nw">آيَة</bdi></b> (tanda) yang disebut.</li>
+      <li><b>Hargai masa:</b> pilih satu amalan yang anda tangguhkan, dan lakukannya sebelum matahari terbenam hari ini.</li>
+    </ul>
+    <ul class="amal en">
+      <li><b>Reflect on one sunset:</b> pause at Maghrib and read Yasin 36:38.</li>
+      <li><b>Learn one word form:</b> spot words like <b><bdi lang="ar" class="nw">مُسْتَقَرّ</bdi></b>, <b><bdi lang="ar" class="nw">مُنْقَلَب</bdi></b> (26:227) and <b><bdi lang="ar" class="nw">مُدْخَل</bdi></b> (17:80); ask: place, time or act?</li>
+      <li><b>Read the chain of signs:</b> read Yasin <span class="nw">36:33–40</span> and list every <b><bdi lang="ar" class="nw">آيَة</bdi></b> (sign) mentioned.</li>
+      <li><b>Value time:</b> pick one deed you have been delaying, and do it before sunset today.</li>
+    </ul>
+  </section>
+
+  <div class="zikir">
+    <p class="ar">وَالشَّمْسُ تَجْرِي لِمُسْتَقَرٍّ لَهَا<br>ذَلِكَ تَقْدِيرُ الْعَزِيزِ الْعَلِيمِ</p>
+    <p class="ms">(Yasin 36:38)</p>
+    <p class="en">(36:38)</p>
+  </div>
+
+  <section class="sertai">
+    <img src="attartil-logo.png" alt="AtTartil Quranic Institute">
+    <h2><span class="ms">Ingin memahami <span class="nw">al-Qur'an</span> seperti ini?</span><span class="en">Want to understand the Qur'an like this?</span></h2>
+    <p class="lead ms">Sertai <b>AFAM (AtTartil Full-Access Membership)</b> dan teruskan perjalanan daripada membaca, kepada memahami, merenung dan mengamalkan <span class="nw">al-Qur'an.</span></p>
+    <p class="lead en">Join <b>AFAM (AtTartil Full-Access Membership)</b> and continue the journey from reading the Qur'an to understanding, reflecting on and living it.</p>
+    <ul class="ms">
+      <li>Akses kepada kelas rakaman dan program-program lepas AtTartil</li>
+      <li>Kandungan tadabbur dan bahasa <span class="nw">al-Qur'an</span></li>
+      <li>Belajar ikut masa anda, di mana-mana peranti</li>
+      <li>Komuniti pelajar untuk bertanya dan saling menyokong</li>
+    </ul>
+    <ul class="en">
+      <li>Access to AtTartil's recorded classes and past programmes</li>
+      <li>Tadabbur and Qur'anic language content</li>
+      <li>Learn at your own pace, on any device</li>
+      <li>A learners' community for questions and support</li>
+    </ul>
+    <p class="harga"><span class="ms">$10 sebulan atau $120 setahun</span><span class="en">$10 a month or $120 a year</span></p>
+    <div class="cta">
+      <a class="utama" href="https://attartilqi.com/afam" target="_blank" rel="noopener"><span class="ms">Sertai AFAM</span><span class="en">Join AFAM</span> →</a>
+      <a class="kedua" href="https://wa.me/6593725111" target="_blank" rel="noopener"><span class="ms">Tanya di WhatsApp</span><span class="en">Ask on WhatsApp</span></a>
+    </div>
+    <p class="sosial"><span class="ms">Ikuti siri Peringatan Ulama:</span><span class="en">Follow the Scholars' Reminders series:</span><br>
+      <a href="https://www.instagram.com/attartilqi/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/attartil" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.youtube.com/channel/UCPv1RPGjbULC0Wfx9BQ3v1Q" target="_blank" rel="noopener">YouTube</a> · <a href="https://www.tiktok.com/@attartilcs" target="_blank" rel="noopener">TikTok</a> · <a href="https://chat.whatsapp.com/JCuiFYFNTSn3CycNfE0k6T" target="_blank" rel="noopener"><span class="ms">Komuniti WhatsApp</span><span class="en">WhatsApp Community</span></a></p>
+  </section>
+
+  <p style="text-align:center;margin:36px 0 0;font-family:'Inter',system-ui,sans-serif;font-weight:600"><a href="../" style="color:var(--hijau);text-decoration:none">← <span class="ms">Semua siri Peringatan Ulama</span><span class="en">All Scholars' Reminders episodes</span></a></p>
+
+  <footer>
+    <div class="visi"><img src="attartil-logo.png" alt=""><span><b>ATTARTIL QURANIC INSTITUTE</b>"Where Qur'anic Knowledge Transforms Lives"</span></div>
+    <div class="ms">
+      <b>Rujukan</b>
+      <ol>
+        <li>Teks ayat: <span class="nw">al-Maktabah</span> <span class="nw">al-Shamela</span> (riwayat Hafs 'an 'Asim).</li>
+        <li>Terjemahan ayat (BM): <i>Tafsir Pimpinan <span class="nw">ar-Rahman</span></i>, Sheikh Abdullah Basmeih (JAKIM).</li>
+        <li><span class="nw">al-Qurtubi,</span> <i><span class="nw">al-Jami'</span> li Ahkam <span class="nw">al-Qur'an</span></i>, 15/27–29; <span class="nw">az-Zamakhsyari,</span> <i><span class="nw">al-Kasysyaf</span></i>, 4/16; Nazir <span class="nw">al-Jaisy,</span> <i>Tamhid <span class="nw">al-Qawa'id</span> bi Syarh Tashil <span class="nw">al-Fawa'id</span></i>, 8/3812–3813 (<span class="nw">al-Maktabah</span> <span class="nw">al-Shamela;</span> halaman mungkin berbeza dalam cetakan lain).</li>
+        <li>Isi ceramah: rakaman video (bahasa Arab), klip 3&nbsp;min&nbsp;9&nbsp;s (والشمس تجري لمستقر لها).</li>
+      </ol>
+      <p>Bahagian bertanda "Tadabbur" ialah renungan peribadi, bukan tafsir. Nota ini ialah bahan pembelajaran dan bukan fatwa.</p>
+    </div>
+    <div class="en">
+      <b>References</b>
+      <ol>
+        <li>Arabic verse text: <span class="nw">al-Maktabah</span> <span class="nw">al-Shamela</span> (Hafs 'an 'Asim).</li>
+        <li>English verse translation: AtTartil's own simple translation, following the meaning of Basmeih (checked by AtTartil's verifier).</li>
+        <li><span class="nw">al-Qurtubi,</span> <i><span class="nw">al-Jami'</span> li Ahkam <span class="nw">al-Qur'an</span></i>, 15/27–29; <span class="nw">al-Zamakhshari,</span> <i><span class="nw">al-Kashshaf</span></i>, 4/16; Nazir <span class="nw">al-Jaysh,</span> <i>Tamhid <span class="nw">al-Qawa'id</span> bi Sharh Tashil <span class="nw">al-Fawa'id</span></i>, 8/3812–3813 (<span class="nw">al-Maktabah</span> <span class="nw">al-Shamela;</span> pagination may differ in other editions).</li>
+        <li>Lecture content: video recording (in Arabic), 3&nbsp;min&nbsp;9&nbsp;s clip (والشمس تجري لمستقر لها).</li>
+      </ol>
+      <p>Sections marked "Tadabbur" are personal reflection, not tafsir. These notes are learning material and not a fatwa.</p>
+    </div>
+  </footer>
+</main>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  var titles={ms:"Matahari dan Tempat Menetapnya",en:"The Sun and Its Settling Point"};
+  function set(lang){
+    root.setAttribute("data-lang",lang);
+    root.setAttribute("lang",lang);
+    document.title=titles[lang];
+    var b=document.querySelectorAll(".toggle button");
+    for(var i=0;i<b.length;i++){b[i].setAttribute("aria-pressed",b[i].getAttribute("data-set")===lang?"true":"false");}
+    var v=document.querySelectorAll("video");
+    for(var j=0;j<v.length;j++){if(!v[j].classList.contains(lang)){try{v[j].pause();}catch(e){}}}
+    try{localStorage.setItem("tasbih-lang",lang);}catch(e){}
+  }
+  var saved=null;
+  try{saved=localStorage.getItem("tasbih-lang");}catch(e){}
+  if(saved==="ms"||saved==="en"){set(saved);}
+  document.querySelector(".toggle").addEventListener("click",function(e){
+    var t=e.target.closest("button");
+    if(t){set(t.getAttribute("data-set"));}
+  });
+})();
+</script>
+</body>
+</html>
+
+
+
+
+
+
