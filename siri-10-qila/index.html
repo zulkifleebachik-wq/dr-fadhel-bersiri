@@ -44,8 +44,9 @@ body{margin:0;background:var(--kertas);color:var(--teks);
   font-family:"Lora",Georgia,serif;font-size:18px;line-height:1.85}
 
 /* language switching */
-html[data-lang="ms"] .en{display:none!important}
-html[data-lang="en"] .ms{display:none!important}
+.lang-in{position:absolute;opacity:0;width:1px;height:1px;margin:0;pointer-events:none}
+#lang-ms:checked ~ * .en,#lang-ms:checked ~ .en{display:none!important}
+#lang-en:checked ~ * .ms,#lang-en:checked ~ .ms{display:none!important}
 
 /* TOP BAR */
 .bar{position:sticky;top:0;z-index:10;background:rgba(16,48,31,.94);backdrop-filter:blur(8px);
@@ -55,10 +56,10 @@ html[data-lang="en"] .ms{display:none!important}
 .bar .nm{color:#fff;font-family:"Inter",system-ui,sans-serif;font-size:.78rem;font-weight:600;letter-spacing:.06em;line-height:1.25;flex:1;min-width:0}
 .bar .nm small{display:block;color:var(--kuning);font-weight:500;letter-spacing:.04em}
 .toggle{display:flex;background:#0a1f14;border:1px solid #2c5a1b;border-radius:999px;padding:3px;flex:none}
-.toggle button{appearance:none;border:0;background:transparent;color:#cfe3c4;font-family:"Inter",system-ui,sans-serif;
+.toggle label{display:inline-flex;align-items:center;user-select:none;-webkit-user-select:none;appearance:none;border:0;background:transparent;color:#cfe3c4;font-family:"Inter",system-ui,sans-serif;
   font-weight:600;font-size:.8rem;padding:6px 13px;border-radius:999px;cursor:pointer;min-height:32px}
-.toggle button[aria-pressed="true"]{background:var(--kuning);color:var(--hitam)}
-.toggle button:focus-visible{outline:2px solid var(--lime);outline-offset:2px}
+#lang-ms:checked ~ * .toggle label[for="lang-ms"],#lang-en:checked ~ * .toggle label[for="lang-en"]{background:var(--kuning);color:var(--hitam)}
+#lang-ms:focus-visible ~ * .toggle label[for="lang-ms"],#lang-en:focus-visible ~ * .toggle label[for="lang-en"]{outline:2px solid var(--lime);outline-offset:2px}
 
 /* HERO */
 header.hero{position:relative;overflow:hidden;color:#fff;text-align:center;
@@ -230,13 +231,14 @@ footer ol{padding-left:18px;margin:6px 0 12px}
 .nw{white-space:nowrap}
 </style>
 <body>
+<input type="radio" name="bahasa" id="lang-ms" class="lang-in" checked aria-label="Bahasa Melayu"><input type="radio" name="bahasa" id="lang-en" class="lang-in" aria-label="English">
 
 <div class="bar"><div class="in">
   <img src="attartil-logo.png" alt="">
   <div class="nm">ATTARTIL QURANIC INSTITUTE<small><span class="ms">Nota Renungan</span><span class="en">Reflection Notes</span></small></div>
   <div class="toggle" role="group" aria-label="Bahasa / Language">
-    <button type="button" data-set="en" aria-pressed="false">EN</button>
-    <button type="button" data-set="ms" aria-pressed="true">BM</button>
+    <label for="lang-en">EN</label>
+    <label for="lang-ms">BM</label>
   </div>
 </div></div>
 
@@ -493,23 +495,26 @@ footer ol{padding-left:18px;margin:6px 0 12px}
 (function(){
   var root=document.documentElement;
   var titles={ms:"Masuklah Syurga: Babak yang Dilipat",en:"Enter Paradise: The Folded Scene"};
-  function set(lang){
+  var r={ms:document.getElementById("lang-ms"),en:document.getElementById("lang-en")};
+  function set(lang,save){
+    r[lang].checked=true;
     root.setAttribute("data-lang",lang);
     root.setAttribute("lang",lang);
     document.title=titles[lang];
-    var b=document.querySelectorAll(".toggle button");
-    for(var i=0;i<b.length;i++){b[i].setAttribute("aria-pressed",b[i].getAttribute("data-set")===lang?"true":"false");}
     var v=document.querySelectorAll("video");
     for(var j=0;j<v.length;j++){if(!v[j].classList.contains(lang)){try{v[j].pause();}catch(e){}}}
-    try{localStorage.setItem("tasbih-lang",lang);}catch(e){}
+    if(save){try{localStorage.setItem("tasbih-lang",lang);}catch(e){}}
   }
+  var q=null;
+  try{q=new URLSearchParams(location.search).get("lang");}catch(e){}
+  if(q==="bm")q="ms";
   var saved=null;
   try{saved=localStorage.getItem("tasbih-lang");}catch(e){}
-  if(saved==="ms"||saved==="en"){set(saved);}
-  document.querySelector(".toggle").addEventListener("click",function(e){
-    var t=e.target.closest("button");
-    if(t){set(t.getAttribute("data-set"));}
-  });
+  if(q==="ms"||q==="en"){set(q,true);}
+  else if(saved==="ms"||saved==="en"){set(saved,false);}
+  else if(r.en.checked){set("en",false);}
+  r.ms.addEventListener("change",function(){set("ms",true);});
+  r.en.addEventListener("change",function(){set("en",true);});
 })();
 </script>
 </body>

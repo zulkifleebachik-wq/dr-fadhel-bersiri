@@ -16,15 +16,17 @@
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--kertas:#0e1510;--kad:#151e17;--teks:#ecefe7;--redup:#a7b3a3;--garis:#273626;--hijau:#9ad102}}
 :root[data-theme="dark"]{--kertas:#0e1510;--kad:#151e17;--teks:#ecefe7;--redup:#a7b3a3;--garis:#273626;--hijau:#9ad102}
 *{box-sizing:border-box}
-html[data-lang="ms"] .en{display:none!important}html[data-lang="en"] .ms{display:none!important}
+.lang-in{position:absolute;opacity:0;width:1px;height:1px;margin:0;pointer-events:none}
+#lang-ms:checked ~ * .en,#lang-ms:checked ~ .en{display:none!important}
+#lang-en:checked ~ * .ms,#lang-en:checked ~ .ms{display:none!important}
 body{margin:0;background:var(--kertas);color:var(--teks);font-family:"Lora",Georgia,serif;font-size:18px;line-height:1.75}
 .bar{position:sticky;top:0;z-index:10;background:rgba(16,48,31,.94);border-bottom:3px solid var(--lime)}
 .bar .in{max-width:780px;margin:0 auto;padding:8px 16px;display:flex;align-items:center;gap:10px}
 .bar img{width:38px;height:38px;border-radius:50%}
 .bar .nm{flex:1;color:#fff;font-family:"Inter",system-ui,sans-serif;font-size:.78rem;font-weight:600;letter-spacing:.06em}
 .toggle{display:flex;background:#0a1f14;border:1px solid #2c5a1b;border-radius:999px;padding:3px}
-.toggle button{border:0;background:none;color:#cfe3c4;font:600 .8rem "Inter",system-ui,sans-serif;padding:6px 13px;border-radius:999px;cursor:pointer;min-height:32px}
-.toggle button[aria-pressed="true"]{background:var(--kuning);color:var(--hitam)}
+.toggle label{display:inline-flex;align-items:center;user-select:none;-webkit-user-select:none;border:0;background:none;color:#cfe3c4;font:600 .8rem "Inter",system-ui,sans-serif;padding:6px 13px;border-radius:999px;cursor:pointer;min-height:32px}
+#lang-ms:checked ~ * .toggle label[for="lang-ms"],#lang-en:checked ~ * .toggle label[for="lang-en"]{background:var(--kuning);color:var(--hitam)}
 header{text-align:center;color:#fff;padding:44px 16px 50px;background:radial-gradient(110% 80% at 50% 0%,#2f6a17 0%,#16402a 55%,#0d2618 100%)}
 header img{width:110px;height:110px;border-radius:50%;box-shadow:0 10px 30px rgba(0,0,0,.35)}
 header .tag{display:inline-block;margin-top:14px;font:600 .72rem "Inter",system-ui,sans-serif;letter-spacing:.16em;text-transform:uppercase;background:var(--kuning);color:var(--hitam);padding:3px 12px;border-radius:999px}
@@ -58,12 +60,13 @@ footer a{color:var(--hijau)}
 </style>
 </head>
 <body>
+<input type="radio" name="bahasa" id="lang-ms" class="lang-in" checked aria-label="Bahasa Melayu"><input type="radio" name="bahasa" id="lang-en" class="lang-in" aria-label="English">
 <div class="bar"><div class="in">
   <img src="assets/attartil-logo.png" alt="">
   <a class="nm" href="https://www.attartilqi.com" target="_blank" rel="noopener">ATTARTIL QURANIC INSTITUTE</a>
   <div class="toggle" role="group" aria-label="Bahasa / Language">
-    <button type="button" data-set="en" aria-pressed="false">EN</button>
-    <button type="button" data-set="ms" aria-pressed="true">BM</button>
+    <label for="lang-en">EN</label>
+    <label for="lang-ms">BM</label>
   </div>
 </div></div>
 
@@ -206,12 +209,25 @@ footer a{color:var(--hijau)}
 <script>
 (function(){
   var root=document.documentElement;
-  function set(l){root.setAttribute("data-lang",l);root.setAttribute("lang",l);
-    var b=document.querySelectorAll(".toggle button");for(var i=0;i<b.length;i++){b[i].setAttribute("aria-pressed",b[i].getAttribute("data-set")===l?"true":"false");}
-    try{localStorage.setItem("tasbih-lang",l);}catch(e){}}
-  var s=null;try{s=localStorage.getItem("tasbih-lang");}catch(e){}
-  if(s==="ms"||s==="en")set(s);
-  document.querySelector(".toggle").addEventListener("click",function(e){var t=e.target.closest("button");if(t)set(t.getAttribute("data-set"));});
+  var r={ms:document.getElementById("lang-ms"),en:document.getElementById("lang-en")};
+  function set(lang,save){
+    r[lang].checked=true;
+    root.setAttribute("data-lang",lang);
+    root.setAttribute("lang",lang);
+    var v=document.querySelectorAll("video");
+    for(var j=0;j<v.length;j++){if(!v[j].classList.contains(lang)){try{v[j].pause();}catch(e){}}}
+    if(save){try{localStorage.setItem("tasbih-lang",lang);}catch(e){}}
+  }
+  var q=null;
+  try{q=new URLSearchParams(location.search).get("lang");}catch(e){}
+  if(q==="bm")q="ms";
+  var saved=null;
+  try{saved=localStorage.getItem("tasbih-lang");}catch(e){}
+  if(q==="ms"||q==="en"){set(q,true);}
+  else if(saved==="ms"||saved==="en"){set(saved,false);}
+  else if(r.en.checked){set("en",false);}
+  r.ms.addEventListener("change",function(){set("ms",true);});
+  r.en.addEventListener("change",function(){set("en",true);});
 })();
 </script>
 </body>
