@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="ms" data-lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amal Dahulu, atau Khabīr Dahulu?</title>
+<meta name="description" content="Peringatan Ulama Siri 12: kenapa al-Qur'an kadang menyebut «wallahu bima ta'malun khabir» dan kadang «wallahu khabir bima ta'malun»? Prof. Dr Fadil Salih as-Samarra'i, nota renungan dwibahasa AtTartil.">
+<meta property="og:title" content="Amal Dahulu, atau Khabīr Dahulu? · Peringatan Ulama Siri 12 | AtTartil">
+<meta property="og:description" content="Prof. Dr Fadil Salih as-Samarra'i: bila amal didahulukan, bila «Khabir» didahulukan.">
+<meta property="og:image" content="https://dr-fadhel-bersiri.vercel.app/siri-12-khabir/reel-poster-ms.jpg">
+<link rel="icon" href="attartil-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Amiri+Quran&family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --hutan:#10301f;      /* deep forest */
+  --hijau:#2f7a10;      /* logo green, softened */
+  --daun:#3d9002;       /* logo centre */
+  --lime:#9ad102;       /* logo ring */
+  --kuning:#ffe14d;     /* logo yellow, softened */
+  --kuning-pucat:#fff7cf;
+  --hitam:#141414;
+  --kertas:#fbfaf3;
+  --kad:#ffffff;
+  --lembut:#f1f6e6;
+  --teks:#1f2420;
+  --redup:#5b6658;
+  --garis:#e3e9d6;
+  --ayat:#24600c;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --kertas:#0e1510; --kad:#151e17; --lembut:#1a2a1c; --teks:#ecefe7; --redup:#a7b3a3;
+    --garis:#273626; --ayat:#b5e05a; --kuning-pucat:#2a2711; --hijau:#9ad102;
+  }
+}
+:root[data-theme="dark"]{
+  --kertas:#0e1510; --kad:#151e17; --lembut:#1a2a1c; --teks:#ecefe7; --redup:#a7b3a3;
+  --garis:#273626; --ayat:#b5e05a; --kuning-pucat:#2a2711; --hijau:#9ad102;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--kertas);color:var(--teks);
+  font-family:"Lora",Georgia,serif;font-size:18px;line-height:1.85}
+
+/* language switching */
+.lang-in{position:absolute;opacity:0;width:1px;height:1px;margin:0;pointer-events:none}
+#lang-ms:checked ~ * .en,#lang-ms:checked ~ .en{display:none!important}
+#lang-en:checked ~ * .ms,#lang-en:checked ~ .ms{display:none!important}
+
+/* TOP BAR */
+.bar{position:sticky;top:0;z-index:10;background:rgba(16,48,31,.94);backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);border-bottom:3px solid var(--lime)}
+.bar .in{max-width:780px;margin:0 auto;padding:8px 16px;display:flex;align-items:center;gap:10px}
+.bar img{width:38px;height:38px;border-radius:50%;flex:none}
+.bar .nm{color:#fff;font-family:"Inter",system-ui,sans-serif;font-size:.78rem;font-weight:600;letter-spacing:.06em;line-height:1.25;flex:1;min-width:0}
+.bar .nm small{display:block;color:var(--kuning);font-weight:500;letter-spacing:.04em}
+.toggle{display:flex;background:#0a1f14;border:1px solid #2c5a1b;border-radius:999px;padding:3px;flex:none}
+.toggle label{display:inline-flex;line-height:normal;align-items:center;user-select:none;-webkit-user-select:none;appearance:none;border:0;background:transparent;color:#cfe3c4;font-family:"Inter",system-ui,sans-serif;
+  font-weight:600;font-size:.8rem;padding:6px 13px;border-radius:999px;cursor:pointer;min-height:32px}
+#lang-ms:checked ~ * .toggle label[for="lang-ms"],#lang-en:checked ~ * .toggle label[for="lang-en"]{background:var(--kuning);color:var(--hitam)}
+#lang-ms:focus-visible ~ * .toggle label[for="lang-ms"],#lang-en:focus-visible ~ * .toggle label[for="lang-en"]{outline:2px solid var(--lime);outline-offset:2px}
+
+/* HERO */
+header.hero{position:relative;overflow:hidden;color:#fff;text-align:center;
+  background:radial-gradient(110% 80% at 50% 0%,#2f6a17 0%,#16402a 55%,#0d2618 100%);padding:44px 16px 54px}
+header.hero::before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;
+  border:2px solid rgba(154,209,2,.18);left:50%;top:-250px;transform:translateX(-50%)}
+header.hero::after{content:"";position:absolute;width:360px;height:360px;border-radius:50%;
+  border:2px solid rgba(255,225,77,.14);left:50%;top:-170px;transform:translateX(-50%)}
+.hero .logo{position:relative;z-index:1;width:112px;height:112px;margin:0 auto 18px;border-radius:50%;
+  box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.hero .tag{position:relative;z-index:1;display:inline-block;font-family:"Inter",system-ui,sans-serif;font-size:.72rem;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--hitam);background:var(--kuning);padding:3px 12px;border-radius:999px}
+.hero .ar-big{position:relative;z-index:1;font-family:"Amiri",serif;font-size:2.3rem;line-height:1.6;color:var(--kuning);margin:16px 0 0}
+.hero h1{position:relative;z-index:1;font-weight:600;font-size:2rem;line-height:1.3;margin:8px 0 10px}
+.hero p.sub{position:relative;z-index:1;font-style:italic;color:#dcead2;margin:0 auto;max-width:540px;font-size:1.02rem}
+
+.wrap{max-width:760px;margin:0 auto;padding:0 16px 56px}
+.ar{font-family:"Amiri",serif;direction:rtl;line-height:2.1}
+.ayat{font-family:"Amiri Quran","Amiri",serif;direction:rtl;font-size:1.55rem;line-height:2.35;color:var(--ayat);text-align:center;margin:.3em 0 .5em}
+
+section{margin-top:44px}
+h2{font-size:1.32rem;color:var(--teks);margin:0 0 14px;display:flex;align-items:center;gap:12px;line-height:1.35}
+h2 .no{flex:none;width:34px;height:34px;border-radius:50%;background:var(--hutan);color:var(--kuning);
+  font-family:"Inter",system-ui,sans-serif;font-size:.9rem;display:grid;place-items:center;font-weight:600;
+  box-shadow:0 0 0 3px var(--lime)}
+.pembuka{font-size:1.14rem;font-style:italic;margin:40px 0 0;padding:20px 22px;border-radius:14px;
+  background:var(--kuning-pucat);border-left:5px solid var(--kuning);position:relative}
+.label{display:inline-block;font-family:"Inter",system-ui,sans-serif;font-size:.68rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
+  padding:3px 11px;border-radius:999px;margin-bottom:10px}
+.l-video{background:var(--hutan);color:var(--kuning)}
+.l-ayat{background:var(--lembut);color:var(--hijau);border:1px solid var(--garis)}
+.l-ulama{background:var(--kuning);color:var(--hitam)}
+.l-renung{background:rgba(255,225,77,.16);color:var(--kuning);border:1px solid rgba(255,225,77,.4)}
+.nota-kecil{font-size:.9rem;color:var(--redup)}
+mark{background:linear-gradient(transparent 58%,rgba(255,225,77,.55) 58%);color:inherit;padding:0 2px}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) mark{background:linear-gradient(transparent 58%,rgba(255,225,77,.28) 58%)}}
+:root[data-theme="dark"] mark{background:linear-gradient(transparent 58%,rgba(255,225,77,.28) 58%)}
+
+.video{margin:4px auto 22px;max-width:360px;background:var(--hutan);border-radius:20px;padding:10px;
+  box-shadow:0 10px 26px rgba(16,48,31,.18),0 0 0 3px var(--lime)}
+.video video{display:block;width:100%;height:auto;max-height:70vh;border-radius:12px;background:#000}
+.video p{margin:8px 4px 2px;font-family:"Inter",system-ui,sans-serif;font-size:.74rem;color:#cfe3c4;line-height:1.45;text-align:center}
+.video p b{color:var(--kuning);font-weight:600}
+.penceramah{background:var(--kad);border:1px solid var(--garis);border-left:5px solid var(--lime);border-radius:12px;
+  padding:12px 16px;margin:0 0 18px;font-size:.92rem;line-height:1.7}
+.penceramah p{margin:0}
+.sertai{margin-top:44px;border-radius:22px;overflow:hidden;background:linear-gradient(160deg,#2f6a17 0%,#16402a 55%,#0d2618 100%);
+  color:#fff;text-align:center;padding:30px 20px 26px;position:relative}
+.sertai::before{content:"";position:absolute;width:300px;height:300px;border-radius:50%;border:2px solid rgba(154,209,2,.25);
+  left:50%;top:-150px;transform:translateX(-50%)}
+.sertai img{position:relative;width:92px;height:92px;border-radius:50%;box-shadow:0 8px 22px rgba(0,0,0,.35)}
+.sertai h2{display:block;color:#fff;font-size:1.45rem;margin:14px 0 6px}
+.sertai .lead{color:#dcead2;margin:0 auto 16px;max-width:520px;font-size:1rem}
+.sertai ul{list-style:none;padding:0;margin:0 auto 20px;max-width:420px;text-align:left;font-size:.98rem}
+.sertai li{position:relative;padding:5px 0 5px 28px}
+.sertai li::before{content:"";position:absolute;left:4px;top:15px;width:11px;height:11px;border-radius:50%;background:var(--kuning)}
+.sertai .harga{font-family:"Inter",system-ui,sans-serif;color:var(--lime);font-weight:600;margin:0 0 16px;font-size:.92rem}
+.cta{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.cta a{font-family:"Inter",system-ui,sans-serif;font-weight:600;text-decoration:none;border-radius:999px;padding:12px 20px;
+  font-size:.95rem;min-height:44px;display:inline-flex;align-items:center;gap:6px}
+.cta .utama{background:var(--kuning);color:var(--hitam)}
+.cta .kedua{background:transparent;color:#fff;border:2px solid var(--lime)}
+.cta a:focus-visible{outline:3px solid #fff;outline-offset:2px}
+.sosial{margin-top:18px;font-family:"Inter",system-ui,sans-serif;font-size:.82rem;color:#cfe3c4}
+.sosial a{color:var(--kuning);text-decoration:none;margin:0 4px;white-space:nowrap;display:inline-block;padding:4px 0}
+.kontras{background:var(--kad);border:1px solid var(--garis);border-radius:14px;padding:14px 16px;margin:12px 0;
+  display:grid;grid-template-columns:1fr 1fr;gap:10px;text-align:center}
+.kontras div{border-radius:10px;padding:8px}
+.kontras .ya{background:var(--lembut)}
+.kontras .tidak{opacity:.7}
+.kontras .ar{font-size:1.35rem;margin:0;line-height:1.7}
+.kontras .ya .ar{color:var(--ayat)}
+.kontras small{display:block;font-size:.82rem;color:var(--redup);line-height:1.4}
+
+.kisah{background:var(--kad);border:1px solid var(--garis);border-radius:18px;padding:0;margin:20px 0;overflow:hidden;
+  box-shadow:0 6px 18px rgba(16,48,31,.06)}
+.kisah .kepala{display:flex;gap:14px;align-items:center;padding:16px 20px;background:var(--hutan);color:#fff}
+.kisah .ikon{flex:none;width:46px;height:46px;border-radius:50%;display:grid;place-items:center;font-size:1.35rem;
+  background:#0a1f14;box-shadow:0 0 0 2px var(--lime)}
+.kisah h3{margin:0;font-size:1.1rem;line-height:1.35;color:#fff}
+.kisah .susah{font-size:.86rem;color:#cfe3c4;line-height:1.5}
+.kisah .susah b{color:var(--kuning)}
+.kisah .isi{padding:18px 20px 20px}
+.terj{font-size:.98rem;color:var(--redup);text-align:center;margin:0 0 4px}
+.ref{font-family:"Inter",system-ui,sans-serif;font-size:.76rem;font-weight:500;color:var(--hijau);text-align:center;letter-spacing:.03em}
+.pisah{height:1px;background:var(--garis);margin:16px 0}
+.pengajaran{background:var(--kuning-pucat);border-radius:12px;padding:12px 16px;margin-top:16px;font-size:.98rem;border-left:4px solid var(--kuning)}
+
+.kunci{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+@media (min-width:640px){.kunci{grid-template-columns:repeat(4,1fr)}}
+.kunci div{background:var(--kad);border:1px solid var(--garis);border-top:4px solid var(--lime);border-radius:12px;padding:12px 10px;text-align:center}
+.kunci .ar{font-size:1.7rem;color:var(--ayat);line-height:1.5;margin:0}
+.kunci span{display:block;font-size:.86rem;color:var(--redup);line-height:1.45}
+.kunci b{color:var(--teks)}
+
+ul.pandangan{list-style:none;padding:0;margin:0 0 6px}
+ul.pandangan li{position:relative;padding:8px 0 8px 28px;border-bottom:1px dashed var(--garis)}
+ul.pandangan li:last-child{border-bottom:0}
+ul.pandangan li::before{content:"";position:absolute;left:4px;top:19px;width:10px;height:10px;border-radius:50%;
+  background:var(--lime);box-shadow:0 0 0 3px rgba(154,209,2,.25)}
+
+blockquote{margin:16px 0;background:var(--kad);border:1px solid var(--garis);border-right:5px solid var(--daun);
+  border-radius:14px;padding:16px 18px}
+blockquote .ar{font-size:1.25rem;margin:0;color:var(--teks)}
+blockquote .tr{font-size:.98rem;margin:8px 0 8px;padding-top:8px;border-top:1px dashed var(--garis)}
+blockquote cite{display:block;font-style:normal;font-family:"Inter",system-ui,sans-serif;font-size:.74rem;color:var(--redup);line-height:1.55}
+
+.renung{background:linear-gradient(160deg,#16402a 0%,#0d2618 70%,#0a1d12 100%);color:#eef3ea;border-radius:20px;
+  padding:28px 22px;position:relative;overflow:hidden}
+.renung::after{content:"";position:absolute;right:-60px;bottom:-60px;width:200px;height:200px;border-radius:50%;
+  border:2px solid rgba(255,225,77,.18)}
+.renung h2{color:#fff}
+.renung p{margin:0 0 14px;position:relative;z-index:1}
+.renung p:last-child{margin:0;font-size:1.08rem}
+.renung em{color:var(--kuning);font-style:normal}
+
+ol.muhasabah{counter-reset:m;list-style:none;padding:0;margin:0}
+ol.muhasabah li{counter-increment:m;position:relative;padding:12px 14px 12px 52px;margin-bottom:10px;background:var(--kad);
+  border:1px solid var(--garis);border-radius:12px}
+ol.muhasabah li::before{content:counter(m);position:absolute;left:14px;top:12px;width:26px;height:26px;border-radius:50%;
+  background:var(--kuning);color:var(--hitam);font-family:"Inter",system-ui,sans-serif;font-size:.8rem;font-weight:600;display:grid;place-items:center}
+ul.amal{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+ul.amal li{background:var(--lembut);border-radius:12px;padding:12px 16px;border-left:5px solid var(--daun)}
+ul.amal li b{color:var(--hijau)}
+
+.zikir{text-align:center;margin-top:44px;padding:26px 16px;border-radius:20px;background:var(--kuning-pucat);border:1px solid rgba(255,225,77,.6)}
+.zikir .ar{font-size:2.1rem;color:var(--ayat);margin:0;line-height:1.7}
+.zikir p{color:var(--redup);font-style:italic;margin:2px 0 0}
+
+footer{margin-top:44px;padding-top:18px;border-top:3px solid var(--hutan);font-family:"Inter",system-ui,sans-serif;font-size:.8rem;color:var(--redup);line-height:1.65}
+footer .visi{display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:16px;text-align:left}
+footer .visi img{width:46px;height:46px;border-radius:50%}
+footer .visi span{font-family:"Lora",serif;font-style:italic;font-size:1rem;color:var(--teks);line-height:1.4}
+footer .visi b{display:block;font-style:normal;font-family:"Inter",system-ui,sans-serif;font-size:.78rem;color:var(--hijau);letter-spacing:.05em}
+footer ol{padding-left:18px;margin:6px 0 12px}
+
+@media (max-width:520px){
+  body{font-size:17px}
+  .bar .nm{font-size:.7rem}
+  .hero .ar-big{font-size:1.85rem}
+  .hero h1{font-size:1.6rem}
+  .hero .logo{width:96px;height:96px}
+  .ayat{font-size:1.36rem}
+  .kisah .kepala{padding:14px 16px}
+  .kisah .isi{padding:16px}
+}
+
+/* Siri 02: jadual perbandingan */
+.banding{border:1px solid var(--garis);border-radius:14px;overflow:hidden;margin:14px 0 10px;background:var(--kad)}
+.brow{display:grid;grid-template-columns:92px 1fr 1fr;border-top:1px solid var(--garis)}
+.brow:first-child{border-top:0}
+.brow>div{padding:10px 10px;text-align:center}
+.brow>div:first-child{text-align:left;font-family:"Inter",system-ui,sans-serif;font-size:.8rem;font-weight:600;color:var(--hijau);display:flex;align-items:center}
+.brow .ar{display:block;font-family:"Amiri Quran","Amiri",serif;font-size:1.3rem;line-height:1.9;color:var(--ayat);direction:rtl}
+.brow small{display:block;font-family:"Inter",system-ui,sans-serif;font-size:.74rem;line-height:1.35;color:var(--redup)}
+.brow .lebih{background:var(--kuning-pucat)}
+.bhead>div{background:var(--hutan);color:var(--kuning);font-family:"Inter",system-ui,sans-serif;font-size:.8rem;font-weight:600;padding:9px 6px}
+.bhead>div.lebih{background:var(--hutan)}
+.kontras .ya small{display:block;font-family:"Inter",system-ui,sans-serif;font-size:.76rem;color:var(--redup);margin-top:4px}
+.kontras .ya u{text-decoration-color:var(--kuning);text-decoration-thickness:3px;text-underline-offset:6px}
+@media (max-width:420px){.brow{grid-template-columns:70px 1fr 1fr}.brow .ar{font-size:1.12rem}}
+@media print{
+  .bar{position:static}
+  .toggle{display:none}
+  body{background:#fff;font-size:12pt}
+  .kisah,blockquote,.renung,ul.amal li,ol.muhasabah li{break-inside:avoid}
+  header.hero,.renung,.kisah .kepala,.bar{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+.nw{white-space:nowrap}
+</style>
+<body>
+<input type="radio" name="bahasa" id="lang-ms" class="lang-in" checked aria-label="Bahasa Melayu"><input type="radio" name="bahasa" id="lang-en" class="lang-in" aria-label="English">
+
+<div class="bar"><div class="in">
+  <img src="attartil-logo.png" alt="">
+  <div class="nm">ATTARTIL QURANIC INSTITUTE<small><span class="ms">Nota Renungan</span><span class="en">Reflection Notes</span></small></div>
+  <div class="toggle" role="group" aria-label="Bahasa / Language">
+    <label for="lang-en">EN</label>
+    <label for="lang-ms">BM</label>
+  </div>
+</div></div>
+
+<header class="hero">
+  <img class="logo" src="attartil-logo.png" alt="AtTartil Quranic Institute">
+  <div><span class="tag"><span class="ms">Peringatan Ulama · Siri 12</span><span class="en">Scholars' Reminders · Episode 12</span></span></div>
+  <p class="ar-big">وَاللَّهُ بِمَا تَعْمَلُونَ خَبِيرٌ<br>وَاللَّهُ خَبِيرٌ بِمَا تَعْمَلُونَ</p>
+  <h1><span class="ms">Amal Dahulu, atau «Khabīr» Dahulu?</span><span class="en">Deeds First, or “All-Aware” First?</span></h1>
+  <p class="sub ms">Dua susunan yang hampir sama, dua penekanan yang berbeza: bila <span class="nw">al-Qur'an</span> mendahulukan amal kita, dan bila ia mendahulukan «Khabīr» (Maha Mendalam Pengetahuan-Nya).</p>
+  <p class="sub en">Two almost identical phrasings, two different emphases: when the Qur'an puts our deeds first, and when it puts “Khabīr” (the All-Aware) first.</p>
+</header>
+
+<main class="wrap">
+
+  <p class="pembuka ms">Banyak ayat <span class="nw">al-Qur'an</span> ditutup dengan peringatan bahawa Allah mengetahui amal kita secara mendalam. Kadang-kadang ia berbunyi <b><bdi lang="ar" class="nw">وَاللَّهُ بِمَا تَعْمَلُونَ خَبِيرٌ</bdi></b>, dan kadang-kadang <b><bdi lang="ar" class="nw">وَاللَّهُ خَبِيرٌ بِمَا تَعْمَلُونَ</bdi></b>. Perkataannya sama; hanya susunannya berbeza. Adakah perbezaan kecil ini membawa makna?</p>
+  <p class="pembuka en">Many verses of the Qur'an close with a reminder that Allah knows our deeds in depth. Sometimes it reads <b><bdi lang="ar" class="nw">وَاللَّهُ بِمَا تَعْمَلُونَ خَبِيرٌ</bdi></b>, and sometimes <b><bdi lang="ar" class="nw">وَاللَّهُ خَبِيرٌ بِمَا تَعْمَلُونَ</bdi></b>. The words are the same; only the order differs. Does this small difference carry meaning?</p>
+
+  <section>
+    <span class="label l-video"><span class="ms">Inti video</span><span class="en">From the video</span></span>
+    <figure class="video">
+      <video class="ms" controls playsinline preload="metadata" poster="reel-poster-ms.jpg">
+        <source src="video-ms.mp4" type="video/mp4">
+      </video>
+      <video class="en" controls playsinline preload="metadata" poster="reel-poster-en.jpg">
+        <source src="video-en.mp4" type="video/mp4">
+      </video>
+      <p><b>الفرق بين والله خبير بما تعملون و والله بما تعملون خبير</b><br><span class="ms">Peringatan Ulama · Siri 12 · Prof. Dr Fadil Salih <span class="nw">as-Samarra'i</span><br>Bahasa Arab, sari kata Melayu · 3&nbsp;min&nbsp;4&nbsp;s</span><span class="en">Scholars' Reminders · Episode 12 · Prof. Dr Fadil Salih <span class="nw">al-Samarra'i</span><br>Arabic, English subtitles · 3&nbsp;min&nbsp;4&nbsp;s</span></p>
+    </figure>
+    <div class="penceramah">
+      <p class="ms"><b>Penceramah: Prof. Dr Fadil Salih <span class="nw">as-Samarra'i</span></b> (lahir 1933, Samarra, Iraq). PhD bahasa Arab, Universiti Ain Shams, Kaherah (1968); bekas profesor nahu di Universiti Baghdad selama kira-kira 40 tahun; ahli <span class="nw">al-Majma'</span> <span class="nw">al-'Ilmi</span> <span class="nw">al-'Iraqi</span> (Akademi Sains Iraq); pengarang <i>Ma'ani <span class="nw">an-Nahw</span></i> (Makna-makna Nahu) dan <i><span class="nw">at-Ta'bir</span> <span class="nw">al-Qur'ani</span></i> (Gaya Pengungkapan <span class="nw">al-Qur'an);</span> dikenali melalui rancangan TV <i>Lamasat Bayaniyyah</i>.</p>
+      <p class="en"><b>Speaker: Prof. Dr Fadil Salih <span class="nw">al-Samarra'i</span></b> (b. 1933, Samarra, Iraq). PhD in Arabic language, Ain Shams University, Cairo (1968); former professor of grammar at the University of Baghdad for about 40 years; member of the Iraqi Academy of Sciences (<span class="nw">al-Majma'</span> <span class="nw">al-'Ilmi</span> <span class="nw">al-'Iraqi);</span> author of <i>Ma'ani <span class="nw">al-Nahw</span></i> and <i><span class="nw">al-Ta'bir</span> <span class="nw">al-Qur'ani</span></i>; widely known through the TV programme <i>Lamasat Bayaniyya</i>.</p>
+    </div>
+    <p class="ms">Jawapan Dr Fadil, ringkasnya: <mark><b>jika konteks ayat tentang amal manusia, didahulukan amal: «bimā ta‘malūna khabīr». Jika konteksnya bukan amal, seperti perkara hati, atau tentang sifat Allah sendiri, didahulukan «khabīr» (Maha Mendalam Pengetahuan): «khabīrun bimā ta‘malūn».</b></mark></p>
+    <p class="en">Dr Fadil's answer in short: <mark><b>when the context of the verse is a person's deeds, the deed comes first: “bimā ta‘malūna khabīr”. When the context is not deeds, such as a matter of the heart, or is about Allah's own attribute, “khabīr” (the All-Aware) comes first: “khabīrun bimā ta‘malūn”.</b></mark></p>
+  </section>
+
+  <section>
+    <h2><span class="no">1</span><span class="ms">Dua Susunan, Dua Penekanan</span><span class="en">Two Orders, Two Emphases</span></h2>
+    <p class="ms">Kedua-dua susunan bermaksud sama: Allah mengetahui amal kita secara mendalam. Yang berbeza ialah apa yang diletakkan di hadapan. Dalam bahasa Arab, perkara yang didahulukan biasanya ialah perkara yang mahu ditonjolkan.</p>
+    <p class="en">Both orders mean the same: Allah knows our deeds in depth. What differs is what is placed in front. In Arabic, what comes first is usually what the speaker wants to bring forward.</p>
+    <div class="banding" role="table">
+      <div class="brow bhead" role="row"><div role="columnheader"></div><div role="columnheader"><span class="ms">Susunan</span><span class="en">Order</span></div><div role="columnheader"><span class="ms">Bila digunakan (menurut Dr Fadil)</span><span class="en">When used (per Dr Fadil)</span></div></div>
+      <div class="brow" role="row"><div role="rowheader">1</div><div class="lebih"><p class="ar">بِمَا تَعْمَلُونَ خَبِيرٌ</p><small><span class="ms">amal dahulu</span><span class="en">deeds first</span></small></div><div><small><span class="ms">konteksnya amal manusia: sedekah, infak, jihad, idah (tempoh menunggu)</span><span class="en">the context is human deeds: charity, spending, striving, the waiting period (‘iddah)</span></small></div></div>
+      <div class="brow" role="row"><div role="rowheader">2</div><div class="lebih"><p class="ar">خَبِيرٌ بِمَا تَعْمَلُونَ</p><small><span class="ms">«khabīr» dahulu</span><span class="en">“khabīr” first</span></small></div><div><small><span class="ms">konteksnya perkara hati (nifaq, takwa) atau sifat Allah</span><span class="en">the context is the heart (hypocrisy, taqwa) or Allah's attribute</span></small></div></div>
+    </div>
+    <p class="nota-kecil ms">Jadual ini meringkaskan kaedah Dr Fadil dalam klip. Beliau menyebut kaedah yang sama dalam <i>Lamasat Bayaniyyah</i>, hlm. 191–192 (lihat bahagian 5).</p>
+    <p class="nota-kecil en">This table summarises Dr Fadil's rule in the clip. He gives the same rule in <i>Lamasat Bayaniyya</i>, pp. 191–192 (see section 5).</p>
+  </section>
+
+  <section>
+    <h2><span class="no">2</span><span class="ms">Bila Amal Didahulukan</span><span class="en">When Deeds Come First</span></h2>
+    <article class="kisah">
+      <div class="kepala"><div class="ikon">🤲</div>
+        <div><h3><span class="ms">Sedekah, terang atau sembunyi</span><span class="en">Charity, open or hidden</span></h3>
+        <div class="susah"><span class="ms">amal: <b>bersedekah</b></span><span class="en">the deed: <b>giving charity</b></span></div></div></div>
+      <div class="isi">
+        <span class="label l-ayat"><span class="ms">Ayat</span><span class="en">Verse</span></span>
+        <p class="ayat">إِنْ تُبْدُوا الصَّدَقَاتِ فَنِعِمَّا هِيَ وَإِنْ تُخْفُوهَا وَتُؤْتُوهَا الْفُقَرَاءَ فَهُوَ خَيْرٌ لَكُمْ وَيُكَفِّرُ عَنْكُمْ مِنْ سَيِّئَاتِكُمْ <mark>وَاللَّهُ بِمَا تَعْمَلُونَ خَبِيرٌ</mark> ﴿٢٧١﴾</p>
+        <p class="terj ms">Kalau kamu zahirkan sedekah-sedekah itu (secara terang), maka yang demikian adalah baik (kerana menjadi contoh yang baik). Dan kalau pula kamu sembunyikan sedekah-sedekah itu serta kamu berikan kepada orang-orang fakir miskin, maka itu adalah baik bagi kamu; dan Allah akan menghapuskan dari kamu sebahagian dari kesalahan-kesalahan kamu. Dan (ingatlah), Allah Maha Mengetahui secara mendalam akan apa yang kamu lakukan.</p>
+        <p class="terj en">If you disclose your charity (openly), that is good (as it sets a good example). And if you conceal it and give it to the poor, that is good for you; and Allah will remove from you some of your misdeeds. And (remember), Allah is deeply Aware of what you do.</p>
+        <p class="ref"><span class="nw">al-Baqarah</span> 2:271</p>
+        <div class="pengajaran ms">💡 <b>Perhatikan:</b> seluruh ayat bercakap tentang amal, iaitu menzahirkan atau menyembunyikan sedekah. Maka penutupnya mendahulukan amal: <b><bdi lang="ar" class="nw">بِمَا تَعْمَلُونَ</bdi></b> (terhadap apa yang kamu lakukan), kemudian <b><bdi lang="ar" class="nw">خَبِيرٌ</bdi></b>.</div>
+        <div class="pengajaran en">💡 <b>Notice:</b> the whole verse speaks of a deed, giving charity openly or in secret. So its closing puts the deed first: <b><bdi lang="ar" class="nw">بِمَا تَعْمَلُونَ</bdi></b> (of what you do), then <b><bdi lang="ar" class="nw">خَبِيرٌ</bdi></b>.</div>
+      </div>
+    </article>
+    <article class="kisah">
+      <div class="kepala"><div class="ikon">⚖️</div>
+        <div><h3><span class="ms">Berinfak dan berjuang, sebelum dan selepas</span><span class="en">Spending and striving, before and after</span></h3>
+        <div class="susah"><span class="ms">amal: <b>infak dan jihad</b></span><span class="en">the deed: <b>spending and striving</b></span></div></div></div>
+      <div class="isi">
+        <span class="label l-ayat"><span class="ms">Ayat</span><span class="en">Verse</span></span>
+        <p class="ayat">وَمَا لَكُمْ أَلَّا تُنْفِقُوا فِي سَبِيلِ اللَّهِ وَلِلَّهِ مِيرَاثُ السَّمَاوَاتِ وَالْأَرْضِ لَا يَسْتَوِي مِنْكُمْ مَنْ أَنْفَقَ مِنْ قَبْلِ الْفَتْحِ وَقَاتَلَ أُولَئِكَ أَعْظَمُ دَرَجَةً مِنَ الَّذِينَ أَنْفَقُوا مِنْ بَعْدُ وَقَاتَلُوا وَكُلًّا وَعَدَ اللَّهُ الْحُسْنَى <mark>وَاللَّهُ بِمَا تَعْمَلُونَ خَبِيرٌ</mark> ﴿١٠﴾</p>
+        <p class="terj ms">Dan mengapa kamu tidak membelanjakan harta benda kamu pada jalan Allah? - Padahal Allah jualah yang mewarisi langit dan bumi (serta segala isinya). Tidaklah sama di antara kamu, orang-orang yang membelanjakan hartanya serta turut berperang sebelum kemenangan (Nabi menguasai Makkah). Mereka itu lebih besar darjatnya daripada orang-orang yang membelanjakan hartanya serta turut berperang sesudah itu. Dan tiap-tiap satu puak dari keduanya, Allah janjikan (balasan) yang sebaik-baiknya. Dan (ingatlah), Allah Maha Mendalam PengetahuanNya akan apa yang kamu kerjakan.</p>
+        <p class="terj en">And why do you not spend your wealth in the way of Allah? - When it is Allah alone who inherits the heavens and the earth (and all they contain). Not equal among you are those who spent and fought before the victory (when the Prophet took Makkah). They are greater in rank than those who spent and fought afterwards. And to each of the two groups Allah has promised the best (reward). And (remember), Allah is deeply Aware of what you do.</p>
+        <p class="ref"><span class="nw">al-Hadid</span> 57:10</p>
+      </div>
+    </article>
+    <p class="ms">Dr Fadil turut menyebut dua contoh lain: ayat idah (tempoh menunggu) isteri yang kematian suami, <b><bdi lang="ar">…فَلَا جُنَاحَ عَلَيْكُمْ فِيمَا فَعَلْنَ فِي أَنْفُسِهِنَّ بِالْمَعْرُوفِ وَاللَّهُ بِمَا تَعْمَلُونَ خَبِيرٌ</bdi></b> (<span class="nw">al-Baqarah</span> 2:234), dan ayat kebangkitan, <b><bdi lang="ar" class="nw">…ثُمَّ لَتُنَبَّؤُنَّ بِمَا عَمِلْتُمْ…</bdi></b> (<span class="nw">at-Taghabun</span> 64:7), yang diikuti <b><bdi lang="ar" class="nw">وَاللَّهُ بِمَا تَعْمَلُونَ خَبِيرٌ</bdi></b> (64:8). Kedua-duanya bercakap tentang amal.</p>
+    <p class="en">Dr Fadil also mentions two more examples: the verse on the waiting period (‘iddah) of a widow, <b><bdi lang="ar">…فَلَا جُنَاحَ عَلَيْكُمْ فِيمَا فَعَلْنَ فِي أَنْفُسِهِنَّ بِالْمَعْرُوفِ وَاللَّهُ بِمَا تَعْمَلُونَ خَبِيرٌ</bdi></b> (<span class="nw">al-Baqarah</span> 2:234), and the verse on resurrection, <b><bdi lang="ar" class="nw">…ثُمَّ لَتُنَبَّؤُنَّ بِمَا عَمِلْتُمْ…</bdi></b> (<span class="nw">at-Taghabun</span> 64:7), followed by <b><bdi lang="ar" class="nw">وَاللَّهُ بِمَا تَعْمَلُونَ خَبِيرٌ</bdi></b> (64:8). Both speak of deeds.</p>
+  </section>
+
+  <section>
+    <h2><span class="no">3</span><span class="ms">Bila «Khabīr» Didahulukan</span><span class="en">When “Khabīr” Comes First</span></h2>
+    <article class="kisah">
+      <div class="kepala"><div class="ikon">🫀</div>
+        <div><h3><span class="ms">Sumpah orang munafik</span><span class="en">The hypocrites' oath</span></h3>
+        <div class="susah"><span class="ms">perkara hati: <b>nifaq</b> (kepura-puraan)</span><span class="en">a matter of the heart: <b>hypocrisy</b></span></div></div></div>
+      <div class="isi">
+        <span class="label l-ayat"><span class="ms">Ayat (petikan)</span><span class="en">Verse (excerpt)</span></span>
+        <p class="ayat">وَأَقْسَمُوا بِاللَّهِ جَهْدَ أَيْمَانِهِمْ … قُلْ لَا تُقْسِمُوا طَاعَةٌ مَعْرُوفَةٌ <mark>إِنَّ اللَّهَ خَبِيرٌ بِمَا تَعْمَلُونَ</mark> ﴿٥٣﴾</p>
+        <p class="terj ms">Dan mereka (yang munafik) bersumpah dengan nama Allah… Katakanlah: " Janganlah kamu bersumpah, (taat kamu itu) taat yang terkenal (dustanya). Sesungguhnya Allah Amat Mendalam pengetahuanNya tentang apa yang kamu lakukan".</p>
+        <p class="terj en">And they (the hypocrites) swear by Allah… Say: “Do not swear; (your obedience is) an obedience well known (to be false). Indeed, Allah is deeply Aware of what you do.”</p>
+        <p class="ref"><span class="nw">an-Nur</span> 24:53</p>
+        <div class="pengajaran ms">💡 <b>Perhatikan:</b> menurut Dr Fadil, nifaq ialah perkara hati, bukan amal yang zahir. Maka didahulukan <b><bdi lang="ar" class="nw">خَبِيرٌ</bdi></b>: Allah mengetahui apa yang tersembunyi di sebalik sumpah mereka.</div>
+        <div class="pengajaran en">💡 <b>Notice:</b> per Dr Fadil, hypocrisy is a matter of the heart, not an outward deed. So <b><bdi lang="ar" class="nw">خَبِيرٌ</bdi></b> comes first: Allah knows what lies hidden behind their oaths.</div>
+      </div>
+    </article>
+    <article class="kisah">
+      <div class="kepala"><div class="ikon">🌱</div>
+        <div><h3><span class="ms">Takwa dan bekalan untuk hari esok</span><span class="en">Taqwa and provision for tomorrow</span></h3>
+        <div class="susah"><span class="ms">perkara hati: <b>takwa</b></span><span class="en">a matter of the heart: <b>taqwa</b></span></div></div></div>
+      <div class="isi">
+        <span class="label l-ayat"><span class="ms">Ayat</span><span class="en">Verse</span></span>
+        <p class="ayat">يَاأَيُّهَا الَّذِينَ آمَنُوا اتَّقُوا اللَّهَ وَلْتَنْظُرْ نَفْسٌ مَا قَدَّمَتْ لِغَدٍ وَاتَّقُوا اللَّهَ <mark>إِنَّ اللَّهَ خَبِيرٌ بِمَا تَعْمَلُونَ</mark> ﴿١٨﴾</p>
+        <p class="terj ms">Wahai orang-orang yang beriman! Bertaqwalah kepada Allah (dengan mengerjakan suruhanNya dan meninggalkan laranganNya); dan hendaklah tiap-tiap diri melihat dan memerhatikan apa yang ia telah sediakan (dari amal-amalnya) untuk hari esok (hari akhirat). Dan (sekali lagi diingatkan): Bertaqwalah kepada Allah, sesungguhnya Allah Amat Meliputi PengetahuanNya akan segala yang kamu kerjakan.</p>
+        <p class="terj en">O you who believe! Fear Allah (by doing what He commands and leaving what He forbids); and let every soul look and consider what it has prepared (of its deeds) for tomorrow (the Hereafter). And (once more): fear Allah; indeed, Allah's knowledge fully encompasses all that you do.</p>
+        <p class="ref"><span class="nw">al-Hasyr</span> 59:18</p>
+      </div>
+    </article>
+    <p class="ms">Contoh ketiga Dr Fadil ialah ayat tentang ciptaan Allah: <b><bdi lang="ar">صُنْعَ اللَّهِ الَّذِي أَتْقَنَ كُلَّ شَيْءٍ إِنَّهُ خَبِيرٌ بِمَا تَفْعَلُونَ</bdi></b> (<span class="nw">an-Naml</span> 27:88). Konteksnya sifat dan perbuatan Allah sendiri, maka didahulukan <b><bdi lang="ar" class="nw">خَبِيرٌ</bdi></b>. (Dalam ayat ini katanya <b><bdi lang="ar" class="nw">تَفْعَلُونَ</bdi></b>, bukan <b><bdi lang="ar" class="nw">تَعْمَلُونَ</bdi></b>.)</p>
+    <p class="en">Dr Fadil's third example is a verse about Allah's making: <b><bdi lang="ar">صُنْعَ اللَّهِ الَّذِي أَتْقَنَ كُلَّ شَيْءٍ إِنَّهُ خَبِيرٌ بِمَا تَفْعَلُونَ</bdi></b> (<span class="nw">an-Naml</span> 27:88). The context is Allah's own attribute and work, so <b><bdi lang="ar" class="nw">خَبِيرٌ</bdi></b> comes first. (Here the word is <b><bdi lang="ar" class="nw">تَفْعَلُونَ</bdi></b>, not <b><bdi lang="ar" class="nw">تَعْمَلُونَ</bdi></b>.)</p>
+  </section>
+
+  <section>
+    <h2><span class="no">4</span><span class="ms">Berapa Kali dalam <span class="nw">al-Qur'an</span>?</span><span class="en">How Often in the Qur'an?</span></h2>
+    <p class="ms">Jika dikira bentuk tepat yang bermula dengan <b><bdi lang="ar" class="nw">وَاللَّهُ</bdi></b>, hasilnya (riwayat Hafs):</p>
+    <p class="en">Counting the exact forms that begin with <b><bdi lang="ar" class="nw">وَاللَّهُ</bdi></b>, the result (Hafs reading) is:</p>
+    <ul class="pandangan ms">
+      <li><b><bdi lang="ar" class="nw">وَاللَّهُ بِمَا تَعْمَلُونَ خَبِيرٌ</bdi></b>: <b>7 kali</b>, iaitu 2:234, 2:271, 3:180, 57:10, 58:3, 58:11, 64:8.</li>
+      <li><b><bdi lang="ar" class="nw">وَاللَّهُ خَبِيرٌ بِمَا تَعْمَلُونَ</bdi></b>: <b>4 kali</b>, iaitu 3:153, 9:16, 58:13, 63:11.</li>
+    </ul>
+    <ul class="pandangan en">
+      <li><b><bdi lang="ar" class="nw">وَاللَّهُ بِمَا تَعْمَلُونَ خَبِيرٌ</bdi></b>: <b>7 times</b>: 2:234, 2:271, 3:180, 57:10, 58:3, 58:11, 64:8.</li>
+      <li><b><bdi lang="ar" class="nw">وَاللَّهُ خَبِيرٌ بِمَا تَعْمَلُونَ</bdi></b>: <b>4 times</b>: 3:153, 9:16, 58:13, 63:11.</li>
+    </ul>
+    <p class="nota-kecil ms">Kiraan ini hanya untuk bentuk <b><bdi lang="ar" class="nw">وَاللَّهُ …</bdi></b> dan tidak termasuk bentuk lain seperti <b><bdi lang="ar" class="nw">إِنَّ اللَّهَ خَبِيرٌ بِمَا تَعْمَلُونَ</bdi></b>. Carian: indeks <span class="nw">al-Qur'an</span> <span class="nw"><span class="nw">al-Maktabah</span></span> <span class="nw"><span class="nw">al-Shamela</span></span>. Kiraan ini disediakan oleh penyusun, bukan daripada klip.</p>
+    <p class="nota-kecil en">This count covers only the <b><bdi lang="ar" class="nw">وَاللَّهُ …</bdi></b> forms and excludes others such as <b><bdi lang="ar" class="nw">إِنَّ اللَّهَ خَبِيرٌ بِمَا تَعْمَلُونَ</bdi></b>. Search: the Qur'an index of <span class="nw">al-Maktabah</span> <span class="nw">al-Shamela.</span> The count was compiled by the editor, not taken from the clip.</p>
+  </section>
+
+  <section>
+    <h2><span class="no">5</span><span class="ms">Apa Kata Ulama?</span><span class="en">What the Scholars Say</span></h2>
+    <span class="label l-ulama"><span class="ms">Nukilan · ada perbezaan pandangan</span><span class="en">Quoted · scholars differ</span></span>
+    <p class="ms">Ada beberapa pandangan tentang sebab susunan ini berbeza:</p>
+    <p class="en">There are several views on why the order differs:</p>
+    <ul class="pandangan ms">
+      <li><b>Dr Fadil <span class="nw">as-Samarra'i:</span></b> mengikut konteks (<i>siyaq</i>). Jika tentang amal manusia, didahulukan amal; jika tentang perkara hati atau sifat Allah, didahulukan «khabīr».</li>
+      <li><b><span class="nw">As-Samin</span> <span class="nw">al-Halabi:</span></b> pada ayat 2:234, <b><bdi lang="ar" class="nw">بِمَا تَعْمَلُونَ</bdi></b> didahulukan untuk menjaga fasilah (keselarasan bunyi hujung ayat).</li>
+      <li><b>Satu kajian semasa</b> dalam <i>Majallat <span class="nw">al-Buhuth</span> <span class="nw">al-Islamiyyah</span></i>: mendahulukan <b><bdi lang="ar" class="nw">بِمَا تَعْمَلُونَ</bdi></b> memberi makna hasr (pengkhususan) yang terhad (<i>idafi</i>), kerana Allah juga mengetahui apa yang tidak kita lakukan; manakala mendahulukan <b><bdi lang="ar" class="nw">خَبِيرٌ</bdi></b> untuk menonjolkan perhatian (<i>ihtimam</i>) dan memberi amaran kepada yang ingkar.</li>
+    </ul>
+    <ul class="pandangan en">
+      <li><b>Dr Fadil <span class="nw">al-Samarra'i:</span></b> it follows the context (<i>siyāq</i>). About human deeds, the deed comes first; about the heart or Allah's attribute, “khabīr” comes first.</li>
+      <li><b><span class="nw">Al-Samin</span> <span class="nw">al-Halabi:</span></b> in 2:234, <b><bdi lang="ar" class="nw">بِمَا تَعْمَلُونَ</bdi></b> comes first to keep the verse-ending rhyme (<i>fāṣila</i>).</li>
+      <li><b>A contemporary study</b> in <i>Majallat <span class="nw">al-Buhuth</span> <span class="nw">al-Islamiyya</span></i>: putting <b><bdi lang="ar" class="nw">بِمَا تَعْمَلُونَ</bdi></b> first gives a limited restriction (<i>ḥaṣr iḍāfī</i>), since Allah also knows what we do not do; putting <b><bdi lang="ar" class="nw">خَبِيرٌ</bdi></b> first is for emphasis (<i>ihtimām</i>) and as a warning to those who go against Him.</li>
+    </ul>
+    <blockquote>
+      <p class="ar"><b><bdi lang="ar">إذا كان السياق في عمل الإنسان يقدم العمل (والله بما تعملون خبير) … وإذا كان السياق في أمور قلبية أو عن الله … يقول (خبير بما تعملون)</bdi></b></p>
+      <p class="ms">"Jika konteksnya tentang amal manusia, didahulukan amal … dan jika konteksnya tentang perkara hati atau tentang Allah Subhanahu, Dia berfirman «khabīrun bimā ta‘malūn»."</p>
+      <p class="en">"If the context is about human deeds, the deed comes first … and if the context is about matters of the heart or about Allah, Glorified be He, He says ‘khabīrun bimā ta‘malūn’."</p>
+      <cite>Fadil Salih <span class="nw">as-Samarra'i,</span> <i>Lamasat Bayaniyyah fi Nusus min <span class="nw">at-Tanzil</span></i>, hlm./p. 191 (Shamela)</cite>
+    </blockquote>
+    <blockquote>
+      <p class="ar"><b><bdi lang="ar">و"بما تعملون" متعلق ب"خبيرٌ". وقُدِّمَ لأجلِ الفاصلةِ</bdi></b></p>
+      <p class="ms">"«Bimā ta‘malūn» berkait dengan «khabīr», dan ia didahulukan kerana fasilah (keselarasan hujung ayat)."</p>
+      <p class="en">"‘Bimā ta‘malūn’ is attached to ‘khabīr’, and it is put first for the sake of the verse-ending rhyme."</p>
+      <cite><span class="nw">As-Samin</span> <span class="nw">al-Halabi</span> (w./d. 756H), <i><span class="nw">ad-Durr</span> <span class="nw">al-Masun</span></i>, 2/481, pada/on 2:234 (Shamela)</cite>
+    </blockquote>
+    <p class="nota-kecil ms">Pandangan-pandangan ini boleh saling melengkapi: fasilah menjelaskan bunyi, manakala konteks dan penekanan menjelaskan makna. <i>Majallat <span class="nw">al-Buhuth</span> <span class="nw">al-Islamiyyah</span></i>, 92/227 (Shamela). Halaman mungkin berbeza dalam cetakan lain.</p>
+    <p class="nota-kecil en">These views can complement one another: the rhyme explains the sound, while context and emphasis explain the meaning. <i>Majallat <span class="nw">al-Buhuth</span> <span class="nw">al-Islamiyya</span></i>, 92/227 (Shamela). Pagination may differ in other editions.</p>
+  </section>
+
+  <section>
+    <h2><span class="no">6</span><span class="ms">Empat Kata Kunci</span><span class="en">Four Key Words</span></h2>
+    <div class="kunci">
+      <div><p class="ar">خَبِير</p><span><b>khabīr</b><br><span class="ms">(Maha Mendalam Pengetahuan, mengetahui hal yang tersembunyi)</span><span class="en">(All-Aware, knowing what is hidden)</span></span></div>
+      <div><p class="ar">تَعْمَلُونَ</p><span><b>ta‘malūn</b><br><span class="ms">(kamu lakukan, kamu kerjakan)</span><span class="en">(you do, you work)</span></span></div>
+      <div><p class="ar">تَقْدِيم</p><span><b>taqdīm</b><br><span class="ms">(mendahulukan)</span><span class="en">(putting first)</span></span></div>
+      <div><p class="ar">سِيَاق</p><span><b>siyāq</b><br><span class="ms">(konteks ayat)</span><span class="en">(context of the verse)</span></span></div>
+    </div>
+    <p class="nota-kecil ms" style="margin-top:10px">Huraian makna di atas ialah ringkasan umum untuk pembaca, bukan takrif daripada satu kitab tertentu.</p>
+    <p class="nota-kecil en" style="margin-top:10px">These meanings are a general summary for readers, not definitions taken from a particular book.</p>
+  </section>
+
+  <section class="renung">
+    <span class="label l-renung"><span class="ms">Tadabbur · renungan peribadi</span><span class="en">Tadabbur · personal reflection</span></span>
+    <h2><span class="ms">Allah Melihat Amal, dan Mengetahui Hati</span><span class="en">Allah Sees the Deed, and Knows the Heart</span></h2>
+    <div class="ms">
+      <p>Apabila kita bersedekah atau berinfak, ayat menutup dengan <b><bdi lang="ar" class="nw">بِمَا تَعْمَلُونَ خَبِيرٌ</bdi></b>: amal itu sendiri diletakkan di hadapan, seolah-olah setiap ringgit dan setiap langkah dicatat.</p>
+      <p>Apabila yang dibicarakan ialah hati, ayat mendahulukan <b><bdi lang="ar" class="nw">خَبِيرٌ</bdi></b>: Allah mengetahui apa yang tidak dilihat orang. Imam <span class="nw">al-Ghazali</span> menulis tentang nama <i><span class="nw">al-Khabir</span></i>: <b><bdi lang="ar">هُوَ الَّذِي لَا تعزب عَنهُ الْأَخْبَار الْبَاطِنَة</bdi></b> (Dia yang tidak terlepas daripada-Nya khabar-khabar yang tersembunyi), dan bahagian hamba daripadanya ialah <b><bdi lang="ar">أَن يكون خَبِيرا بِمَا يجْرِي فِي عالمه وعالمه قلبه وبدنه</bdi></b> (menjadi orang yang mengenali dengan mendalam apa yang berlaku dalam alamnya, iaitu hati dan tubuhnya).</p>
+      <p>Maka amal yang baik perlu disertai hati yang ikhlas, kerana Yang Maha Mendalam Pengetahuan-Nya melihat kedua-duanya.</p>
+    </div>
+    <div class="en">
+      <p>When we give charity or spend in Allah's way, the verse closes with <b><bdi lang="ar" class="nw">بِمَا تَعْمَلُونَ خَبِيرٌ</bdi></b>: the deed itself is set in front, as if every coin and every step is recorded.</p>
+      <p>When the subject is the heart, the verse puts <b><bdi lang="ar" class="nw">خَبِيرٌ</bdi></b> first: Allah knows what no one else sees. Imam <span class="nw">al-Ghazali</span> writes of the name <i><span class="nw">al-Khabīr</span></i>: <b><bdi lang="ar">هُوَ الَّذِي لَا تعزب عَنهُ الْأَخْبَار الْبَاطِنَة</bdi></b> (He from whom no hidden news escapes), and the servant's share of it is <b><bdi lang="ar">أَن يكون خَبِيرا بِمَا يجْرِي فِي عالمه وعالمه قلبه وبدنه</bdi></b> (to know deeply what happens in his own world, that is, his heart and body).</p>
+      <p>So a good deed needs a sincere heart, for the All-Aware sees both.</p>
+    </div>
+    <p class="nota-kecil" style="color:#cfe3c4"><span class="nw">Al-Ghazali</span> (w./d. 505H), <i><span class="nw">al-Maqsad</span> <span class="nw">al-Asna</span></i>, hlm./p. 103 (Shamela).</p>
+  </section>
+
+  <section>
+    <h2><span class="no">7</span><span class="ms">Muhasabah (menilai diri)</span><span class="en">Muhasabah (self-reflection)</span></h2>
+    <ol class="muhasabah ms">
+      <li>Apabila saya bersedekah, adakah saya sedar bahawa Allah mengetahui amal itu secara mendalam, sama ada ia terang atau tersembunyi?</li>
+      <li>Adakah ada perkara dalam hati saya yang saya sembunyikan daripada orang, tetapi lupa bahawa Allah «Khabīr» terhadapnya?</li>
+      <li>Apakah yang telah saya sediakan untuk «hari esok» (59:18)?</li>
+    </ol>
+    <ol class="muhasabah en">
+      <li>When I give charity, am I aware that Allah knows that deed in depth, whether it is open or hidden?</li>
+      <li>Is there something in my heart I hide from people, while forgetting that Allah is “Khabīr” of it?</li>
+      <li>What have I prepared for “tomorrow” (59:18)?</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2><span class="no">8</span><span class="ms">Amalan Minggu Ini</span><span class="en">Practice This Week</span></h2>
+    <ul class="amal ms">
+      <li><b>Satu sedekah tersembunyi:</b> beri satu sedekah yang tiada siapa tahu, sambil mengingati 2:271.</li>
+      <li><b>Uji kaedah:</b> baca empat ayat <b><bdi lang="ar" class="nw">وَاللَّهُ خَبِيرٌ بِمَا تَعْمَلُونَ</bdi></b> (3:153, 9:16, 58:13, 63:11) dan renungkan konteks setiap satu.</li>
+      <li><b>Semak hati sebelum beramal:</b> sebelum satu amal yang dilihat orang, tanya diri: untuk siapa saya melakukannya?</li>
+      <li><b>Hafaz dengan faham:</b> kaitkan penutup ayat dengan isinya, seperti saranan dalam klip, supaya lebih mudah diingati.</li>
+    </ul>
+    <ul class="amal en">
+      <li><b>One hidden charity:</b> give one charity no one knows about, recalling 2:271.</li>
+      <li><b>Test the rule:</b> read the four <b><bdi lang="ar" class="nw">وَاللَّهُ خَبِيرٌ بِمَا تَعْمَلُونَ</bdi></b> verses (3:153, 9:16, 58:13, 63:11) and reflect on each one's context.</li>
+      <li><b>Check the heart before acting:</b> before a deed others will see, ask yourself: who am I doing it for?</li>
+      <li><b>Memorise with understanding:</b> link each verse ending to its content, as the clip suggests, so it is easier to remember.</li>
+    </ul>
+  </section>
+
+  <div class="zikir">
+    <p class="ar">إِنَّ اللَّهَ خَبِيرٌ بِمَا تَعْمَلُونَ</p>
+    <p class="ms">(<span class="nw">al-Hasyr</span> 59:18)</p>
+    <p class="en">(<span class="nw">al-Hashr</span> 59:18)</p>
+  </div>
+
+  <section class="sertai">
+    <img src="attartil-logo.png" alt="AtTartil Quranic Institute">
+    <h2><span class="ms">Ingin memahami <span class="nw">al-Qur'an</span> seperti ini?</span><span class="en">Want to understand the Qur'an like this?</span></h2>
+    <p class="lead ms">Sertai <b>AFAM (AtTartil Full-Access Membership)</b> dan teruskan perjalanan daripada membaca, kepada memahami, merenung dan mengamalkan <span class="nw">al-Qur'an.</span></p>
+    <p class="lead en">Join <b>AFAM (AtTartil Full-Access Membership)</b> and continue the journey from reading the Qur'an to understanding, reflecting on and living it.</p>
+    <ul class="ms">
+      <li>Akses kepada kelas rakaman dan program-program lepas AtTartil</li>
+      <li>Kandungan tadabbur dan bahasa <span class="nw">al-Qur'an</span></li>
+      <li>Belajar ikut masa anda, di mana-mana peranti</li>
+      <li>Komuniti pelajar untuk bertanya dan saling menyokong</li>
+    </ul>
+    <ul class="en">
+      <li>Access to AtTartil's recorded classes and past programmes</li>
+      <li>Tadabbur and Qur'anic language content</li>
+      <li>Learn at your own pace, on any device</li>
+      <li>A learners' community for questions and support</li>
+    </ul>
+    <p class="harga"><span class="ms">$10 sebulan atau $120 setahun</span><span class="en">$10 a month or $120 a year</span></p>
+    <div class="cta">
+      <a class="utama" href="https://attartilqi.com/afam" target="_blank" rel="noopener"><span class="ms">Sertai AFAM</span><span class="en">Join AFAM</span> →</a>
+      <a class="kedua" href="https://wa.me/6593725111" target="_blank" rel="noopener"><span class="ms">Tanya di WhatsApp</span><span class="en">Ask on WhatsApp</span></a>
+    </div>
+    <p class="sosial"><span class="ms">Ikuti siri Peringatan Ulama:</span><span class="en">Follow the Scholars' Reminders series:</span><br>
+      <a href="https://www.instagram.com/attartilqi/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/attartil" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.youtube.com/channel/UCPv1RPGjbULC0Wfx9BQ3v1Q" target="_blank" rel="noopener">YouTube</a> · <a href="https://www.tiktok.com/@attartilcs" target="_blank" rel="noopener">TikTok</a> · <a href="https://chat.whatsapp.com/JCuiFYFNTSn3CycNfE0k6T" target="_blank" rel="noopener"><span class="ms">Komuniti WhatsApp</span><span class="en">WhatsApp Community</span></a></p>
+  </section>
+
+  <p style="text-align:center;margin:36px 0 0;font-family:'Inter',system-ui,sans-serif;font-weight:600"><a href="../" style="color:var(--hijau);text-decoration:none">← <span class="ms">Semua siri Peringatan Ulama</span><span class="en">All Scholars' Reminders episodes</span></a></p>
+
+  <footer>
+    <div class="visi"><img src="attartil-logo.png" alt=""><span><b>ATTARTIL QURANIC INSTITUTE</b>"Where Qur'anic Knowledge Transforms Lives"</span></div>
+    <div class="ms">
+      <b>Rujukan</b>
+      <ol>
+        <li>Teks ayat: <span class="nw">al-Maktabah</span> <span class="nw">al-Shamela</span> (riwayat Hafs 'an 'Asim).</li>
+        <li>Terjemahan ayat (BM): <i>Tafsir Pimpinan <span class="nw">ar-Rahman</span></i>, Sheikh Abdullah Basmeih (JAKIM). Terjemahan ayat (Inggeris): terjemahan ringkas AtTartil yang mengikut makna Basmeih (disemak oleh penyemak AtTartil).</li>
+        <li>Fadil Salih <span class="nw">as-Samarra'i,</span> <i>Lamasat Bayaniyyah fi Nusus min <span class="nw">at-Tanzil</span></i>, hlm. 191–192; <span class="nw">as-Samin</span> <span class="nw">al-Halabi,</span> <i><span class="nw">ad-Durr</span> <span class="nw">al-Masun</span></i>, <span class="nw">2/481</span>; <i>Majallat <span class="nw">al-Buhuth</span> <span class="nw">al-Islamiyyah</span></i>, <span class="nw">92/227</span>; <span class="nw">al-Ghazali,</span> <i><span class="nw">al-Maqsad</span> <span class="nw">al-Asna</span></i>, hlm. 103 (<span class="nw">al-Maktabah</span> <span class="nw">al-Shamela;</span> halaman mungkin berbeza dalam cetakan lain).</li>
+        <li>Isi ceramah: rakaman video (bahasa Arab), klip 3&nbsp;min&nbsp;4&nbsp;s (الفرق بين والله خبير بما تعملون و والله بما تعملون خبير).</li>
+      </ol>
+      <p>Bahagian bertanda "Tadabbur" ialah renungan peribadi, bukan tafsir. Nota ini ialah bahan pembelajaran dan bukan fatwa.</p>
+    </div>
+    <div class="en">
+      <b>References</b>
+      <ol>
+        <li>Arabic verse text: <span class="nw">al-Maktabah</span> <span class="nw">al-Shamela</span> (Hafs 'an 'Asim).</li>
+        <li>Malay verse translation: <i>Tafsir Pimpinan <span class="nw">ar-Rahman</span></i>, Sheikh Abdullah Basmeih (JAKIM). English verse translation: AtTartil's own simple translation, following the meaning of Basmeih (checked by AtTartil's verifier).</li>
+        <li>Fadil Salih <span class="nw">al-Samarra'i,</span> <i>Lamasat Bayaniyya fi Nusus min <span class="nw">al-Tanzil</span></i>, pp. 191–192; <span class="nw">al-Samin</span> <span class="nw">al-Halabi,</span> <i><span class="nw">al-Durr</span> <span class="nw">al-Masun</span></i>, <span class="nw">2/481</span>; <i>Majallat <span class="nw">al-Buhuth</span> <span class="nw">al-Islamiyya</span></i>, <span class="nw">92/227</span>; <span class="nw">al-Ghazali,</span> <i><span class="nw">al-Maqsad</span> <span class="nw">al-Asna</span></i>, p. 103 (<span class="nw">al-Maktabah</span> <span class="nw">al-Shamela;</span> pagination may differ in other editions).</li>
+        <li>Lecture content: video recording (in Arabic), 3&nbsp;min&nbsp;4&nbsp;s clip (الفرق بين والله خبير بما تعملون و والله بما تعملون خبير).</li>
+      </ol>
+      <p>Sections marked "Tadabbur" are personal reflection, not tafsir. These notes are learning material and not a fatwa.</p>
+    </div>
+  </footer>
+</main>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  var titles={ms:"Amal Dahulu, atau Khabīr Dahulu?",en:"Deeds First, or All-Aware First?"};
+  var r={ms:document.getElementById("lang-ms"),en:document.getElementById("lang-en")};
+  function set(lang,save){
+    r[lang].checked=true;
+    root.setAttribute("data-lang",lang);
+    root.setAttribute("lang",lang);
+    document.title=titles[lang];
+    var v=document.querySelectorAll("video");
+    for(var j=0;j<v.length;j++){if(!v[j].classList.contains(lang)){try{v[j].pause();}catch(e){}}}
+    if(save){try{localStorage.setItem("tasbih-lang",lang);}catch(e){}}
+  }
+  var q=null;
+  try{q=new URLSearchParams(location.search).get("lang");}catch(e){}
+  if(q==="bm")q="ms";
+  var saved=null;
+  try{saved=localStorage.getItem("tasbih-lang");}catch(e){}
+  if(q==="ms"||q==="en"){set(q,true);}
+  else if(saved==="ms"||saved==="en"){set(saved,false);}
+  else if(r.en.checked){set("en",false);}
+  r.ms.addEventListener("change",function(){set("ms",true);});
+  r.en.addEventListener("change",function(){set("en",true);});
+})();
+</script>
+</body>
+</html>
+
+
+
+
+
+
